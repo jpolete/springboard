@@ -1,0 +1,887 @@
+﻿
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit; 
+  box-model: border-box;
+}
+
+html, 
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: $font-size-base;
+  font-weight: normal;
+  font-style: normal;
+  font-family: inherit;
+}
+
+
+/*
+
+ Disable buggy font boosting in Chrome for Android
+ https://bugs.webkit.org/show_bug.cgi?id=84186
+
+*/
+body * {
+  max-height: 1000000em;
+}
+
+body {
+  font-family: $font-stack-sans;
+  line-height: 1.4;
+  color: $color-font;
+  font-size: $font-size-base;
+  // @include ligatures();
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+p, 
+ul, 
+ol, 
+dl,
+blockquote,
+form,
+fieldset,
+table,
+caption,
+figure {
+  margin: 0 0 $line-height;
+}
+
+
+/*
+  Typography
+
+  Line-heights and top and bottom margins are both #{$line-height} for blocks 
+  of text including p, ul, ol, dl, blockquote, form, fieldset, table, caption 
+  and figure.
+
+  Ligatures are turned off by default, but can be turned on by uncommenting @include ligatures()
+
+  Styleguide 1.0
+*/
+
+/*
+  Headings
+
+  Use the following color and font stack:
+
+  - $color-soft-black: #{$color-soft-black}
+  - $font-stack-sans: #{$font-stack-sans}
+
+  You can include <small> within a heading to get a lighter and 60% smaller font
+
+  markup: 
+  <h1>Heading 1 <small>small aside</small></h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ratione placeat, mollitia fugiat doloribus accusamus incidunt commodi. Sequi hic cupiditate dicta assumenda perspiciatis officia, mollitia quidem laborum delectus, itaque illo.</p>
+  <h2>Heading 2</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ratione placeat, mollitia fugiat doloribus accusamus incidunt commodi. Sequi hic cupiditate dicta assumenda perspiciatis officia, mollitia quidem laborum delectus, itaque illo.</p>
+  <h3>Heading 3</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ratione placeat, mollitia fugiat doloribus accusamus incidunt commodi. Sequi hic cupiditate dicta assumenda perspiciatis officia, mollitia quidem laborum delectus, itaque illo.</p>
+  <h4>Heading 4</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ratione placeat, mollitia fugiat doloribus accusamus incidunt commodi. Sequi hic cupiditate dicta assumenda perspiciatis officia, mollitia quidem laborum delectus, itaque illo.</p>
+  <h5>Heading 5</h5>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ratione placeat, mollitia fugiat doloribus accusamus incidunt commodi. Sequi hic cupiditate dicta assumenda perspiciatis officia, mollitia quidem laborum delectus, itaque illo.</p>
+  <h6>Heading 6</h6>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ratione placeat, mollitia fugiat doloribus accusamus incidunt commodi. Sequi hic cupiditate dicta assumenda perspiciatis officia, mollitia quidem laborum delectus, itaque illo.</p>
+
+  Styleguide 1.1
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-stack-sans;
+  color: $color-soft-black;
+  font-weight: bold;
+  line-height: 1;
+}
+
+h1, .h1 {
+  font-size: 2.625em; 
+  margin-bottom: $line-height;
+
+  @include tablet {
+    font-size: 3.75em;
+  }
+}
+
+h2, .h2 {
+  font-size: 2em;
+  margin-bottom: $line-height/2;
+}
+
+h3, .h3 {
+  font-size: 1.5em;
+  margin-bottom: $line-height/2;
+}
+
+h4, .h4 {
+  font-size: 1.3125em;
+  margin-bottom: $line-height/2;
+}
+
+h5, .h5 {
+  font-size: 1.125em;
+  margin-bottom: $line-height/2;
+}
+
+h6, .h6 {
+  font-size: 1em;
+  margin-bottom: $line-height/2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+/*
+  Lists
+
+  Unordered and ordered lists use disc and decimals respectively, 
+  and definition lists display definition terms in bold.
+
+  markup: 
+  <ul>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+  </ul>
+  <ol>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+  </ol>
+  <ol>
+    <li>Nested lists!
+      <ol>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+      </ol>
+    </li>
+    <li>Item</li>
+    <li>Item</li>
+  </ol>
+
+  Styleguide 1.2
+*/
+ul, ol {
+  padding-left: 1.5em;
+}
+
+ul {
+  list-style: disc outside;
+}
+
+ol {
+  list-style: decimal outside;
+
+  ol {
+    list-style: lower-alpha outside;
+  }
+}
+
+li {
+  margin-bottom: $line-height/2;
+
+  > ul, ol, dl {
+    margin-top: $line-height/2;
+    margin-bottom: $line-height/2;
+  }
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: $line-height;
+}
+
+
+/*
+
+  Blockquotes
+
+  Use blockquotes for larger quote passages. Include the quote 
+  itself in one or more &lt;p&gt; elements.
+
+  markup:
+  <p>From The Haunting of Hill House…</p>
+  <blockquote>
+    <p>
+      No live organism can continue for long to exist sanely under conditions
+      of absolute reality; even larks and katydids are supposed, by some, to 
+      dream. Hill House, not sane, stood by itself against its hills, holding 
+      darkness within; it had stood so for eighty years and might stand for 
+      eighty more. Within, walls continued upright, bricks met neatly, floors 
+      were firm, and doors were sensibly shut; silence lay steadily against 
+      the wood and stone of Hill House, and whatever walked there, walked 
+      alone.
+    </p> 
+  </blockquote>
+
+  Styleguide 1.3
+  
+*/
+blockquote {
+  border-left: solid 4px #ccc;
+  padding-left: 1.4em;
+  color: #777;
+  font-family: $font-stack-serif;
+  line-height: 1.5;
+}
+
+
+/*
+  Figure
+
+  Use a figure anytime you have "...an image, an illustration, a diagram, a code snippet, or a schema that is referenced in the main text, but that can be moved to another page or to an appendix without affecting the main flow"
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure
+
+  markup:
+  <figure>
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Alice_par_John_Tenniel_02.png/392px-Alice_par_John_Tenniel_02.png" alt="" />
+    <figcaption>The White Rabbit</figcaption>
+  </figure>
+
+  Styleguide 1.4
+*/
+figure {
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
+}
+
+figcaption {
+  color: #777;
+  font-style: italic;
+  font-family: $font-stack-serif;
+}
+
+
+/*
+  Various inline styles 
+
+  strong, em, sub, sup, mark, q, time, meter, progress, b, i, pre, abbr.
+
+  markup:
+  <p>Here are some <mark>marked words</mark>, and some <em>emphasized words</em> and some <strong>strong text</strong> and an <i>i element</i> and a <b>b element</b> and <q>This is an inline quote using a <code>&lt;q&gt;</code> element.</q> and this is a superscript<sup>1</sup> and a subscript<sub>2</sub>… and <abbr title="Hypertext Markup Language"> HTML</abbr> is an abbreviation.</p>
+
+  Styleguide 1.5
+*/
+img {
+  max-width: 100%;
+}
+
+strong {
+  color: #333;
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+mark {
+  background: #ff0;
+  font-weight: 400;
+  font-style: normal;
+}
+
+pre {
+  white-space: pre;
+  font-family: $font-stack-mono;
+  font-size: 90%;
+  font-style: normal;
+  text-transform: none;
+}
+
+abbr {
+  border-bottom: dotted 1px #ccc;
+}
+
+q:before {
+  content: "“";
+}
+
+q:after {
+  content: "”";
+}
+
+time {}
+
+meter {}
+
+progress {}
+
+b {
+  font-weight: bold; /* http://dev.w3.org/html5/markup/b.html */
+}
+
+i {
+  font-style: italic; /* http://dev.w3.org/html5/markup/i.html */
+}
+
+
+/*
+  Code
+
+  Inline code should be wrapped in the &lt;code&gt; tag. Blocks of code should be wrapped in &lt;code class="code-block"&gt;.
+
+  markup:
+  <p>Use the <code>var</code> keyword to initialize a variable.</p>
+  <code class="code-block">function ( param ) {
+    var foo = param;
+    doSomething( foo );
+  }
+  </code>
+
+  Styleguide 1.6
+*/
+
+code {
+  background: #f3f3f3;
+  padding: 0 .3em;
+  border: solid 1px #ddd;
+  border-radius: .2em;
+  font-family: $font-stack-mono;
+  font-size: 90%;
+  font-style: normal;
+  text-transform: none;
+}
+
+code.code-block {
+  display: block;
+  white-space: pre;
+  padding: 1em;
+}
+
+
+
+/*
+  Link
+
+  Default link state is #{$color-secondary} and no underline.
+
+  markup:
+  <a class="{$modifiers}" href="http:example.com/safasfsdf">link</a>
+
+  :visited - color #{lighten($color-secondary, 15%)}
+  :hover   - hover state
+  :focus   - same as hover state
+  :active  - same as hover and focus
+
+  Styleguide 1.7
+*/
+a {
+  color: $color-tertiary;
+  text-decoration: none;
+  border-bottom: solid 1px #ccc;
+
+  &:visited { 
+    color: desaturate(lighten($color-tertiary, 25%), 5%);
+  }
+
+  &:hover,
+  &:focus,
+  &:active { 
+    text-decoration: none;
+    border-bottom: none;
+  }
+}
+
+
+/*
+
+  Horizontal rule 
+
+  Horizontal rules are great for visually separating distinct “chunks” of a page.
+
+  markup: 
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nisi corrupti, animi esse quam harum dolore aut, et perferendis iusto nihil vel earum tempora eum beatae ipsam, quisquam, mollitia quas.</p>
+  <hr>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nisi corrupti, animi esse quam harum dolore aut, et perferendis iusto nihil vel earum tempora eum beatae ipsam, quisquam, mollitia quas.</p>
+
+  Styleguide 1.8
+*/
+hr {
+  clear: both;
+  border: solid 1px #ccc;
+  border-width: 1px 0 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+
+
+
+/* 
+
+  Tables 
+
+  By default tables will expand to 100% of their container. Content will be top-left aligned and cells in even rows are tinted.
+
+  markup:
+  <table>
+    <caption>This is a caption!</caption>
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+        <th>Header 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>data</td>
+        <td>data</td>
+        <td>data</td>
+        <td>data</td>
+      </tr>
+      <tr>
+        <td>data</td>
+        <td>data</td>
+        <td>data</td>
+        <td>data</td>
+      </tr>
+      <tr>
+        <td>data</td>
+        <td>data</td>
+        <td>data</td>
+        <td>data</td>
+      </tr>
+      <tr>
+        <td>data</td>
+        <td>data</td>
+        <td>data</td>
+        <td>data</td>
+      </tr>
+      <tr>
+        <td>data</td>
+        <td>data</td>
+        <td>data</td>
+        <td>data</td>
+      </tr>
+    </tbody>
+  </table>
+
+  Styleguide 2.0
+
+*/
+
+table {
+  width: 100%;
+  padding: 0;
+  margin: 1em 0;
+  overflow-x: scroll;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+thead,
+tbody,
+tfoot {
+  width: 100%;
+}
+
+th, td {
+  font-family: $font-stack-sans;
+  vertical-align: top;
+  text-align: left;
+  border-bottom: solid 1px #ccc;
+  padding: $font-size-base/4 $font-size-base;
+}
+
+tr:nth-child(even) th,
+tr:nth-child(even) td {
+  background: #f3f3f3;
+}
+
+th {
+  font-weight: bold;
+}
+
+caption {
+  color: #888;
+  caption-side: top;
+  text-align: left;
+}
+
+
+/*
+
+  Forms
+
+  Styleguide 3.0
+
+*/
+
+
+/* 
+
+  Fieldset and legend
+
+  markup:
+  <fieldset>
+    <legend>Below are form fields!!</legend>
+    <label for="field">Label</label>
+    <input type="text" id="field" name="field" />
+  </fieldset>
+  
+  Styleguide 3.1 
+
+*/
+fieldset 
+{
+  border: solid 1px #ccc;
+  border-radius: .5em .5em .5em .5em; 
+  padding: #{$line-height};
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+legend 
+{
+  padding: 0 1em;
+  margin-left: -1em;
+  color: #333;
+  font-family: $font-stack-form-ui;
+  font-weight: bold;
+}
+
+
+/* 
+  Labels and Inputs
+
+  :focus   - darker border
+  :valid   - no special style (negates default outline/color added by some browsers);
+  :invalid - #{color-error} border;
+
+  markup:
+  <label for="name">Name</label>
+  <input class="{$modifiers}" type="text" id="name" name="name" placeholder="first and last" />
+  
+  Styleguide 3.2 
+*/
+label
+{
+  display: inline-block;
+  padding-left: .4em;
+  margin: 0 0 .25em;
+  color: #555;
+  text-transform: uppercase;
+  font-size: 80%;
+  font-family: $font-stack-form-ui;
+  letter-spacing: 1px;
+}
+
+/*
+  Input types
+
+  Each of the different HTML5 input types.
+
+  markup:
+  <label for="i1">Text</label>
+  <input type="text" id="i1" name="i1" value="" />
+  <br><br>
+  <label for="i2">Password</label>
+  <input type="password" id="2" name="i2" value="" />
+  <br><br>
+  <label for="i3">File</label>
+  <input type="file" id="3" name="i3" value="" />
+  <br><br>
+  <label for="i4">Datetime</label>
+  <input type="datetime" id="" name="i4" value="" />
+  <br><br>
+  <label for="i5">Datetime-local</label>
+  <input type="datetime-local" id="i5" name="i5" value="" />
+  <br><br>
+  <label for="i6">Date</label>
+  <input type="date" id="i6" name="i6" value="" />
+  <br><br>
+  <label for="i7">Month</label>
+  <input type="month" id="i7" name="i7" value="" />
+  <br><br>
+  <label for="i8">Time</label>
+  <input type="time" id="i8" name="i8" value="" />
+  <br><br>
+  <label for="i9">Week</label>
+  <input type="week" id="i9" name="i9" value="" />
+  <br><br>
+  <label for="i10">Number</label>
+  <input type="number" id="i10" name="i10" value="" />
+  <br><br>
+  <label for="i11">Email</label>
+  <input type="email" id="i11" name="i11" value="" />
+  <br><br>
+  <label for="i12">Url</label>
+  <input type="url" id="i12" name="i12" value="" />
+  <br><br>
+  <label for="i13">Search</label>
+  <input type="search" id="i13" name="i13" value="" />
+  <br><br>
+  <label for="i14">Tel</label>
+  <input type="tel" id="i14" name="i14" value="" />
+  <br><br>
+  <label for="i15">Color</label>
+  <input type="color" id="i15" name="i15" value="" />
+  <br><br>
+  <label for="i16">Range</label>
+  <input type="range" id="i16" name="i16" min="0" max="100" step="10" value="" />
+
+  Styleguide 3.2.1
+
+*/
+input[type="text"], 
+input[type="password"], 
+input[type="file"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+select, 
+textarea {
+  display: inline-block;
+  width: 100%;
+  padding: .5em;
+  border: solid 1px #999;
+  border-radius: .25em; 
+  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+  outline: 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: $color-font;
+  background: #fff;
+  @include appearance(none);
+}
+
+input[type="color"], 
+input[type="range"] {
+  font-size: inherit;
+  font-family: $font-stack-form-ui;
+  outline: 0;
+  display: inline-block;
+  width: 100%;
+  box-shadow: none;
+}
+
+/*
+Make sure date/time fields are as tall as empty text fields for consistency.
+Mobile Safari collapses them.
+line height + vertical padding + border widths
+*/
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"] {
+  min-height: calc(#{$line-height} + .5em + 4px); 
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="file"]:focus, 
+input[type="datetime"]:focus, 
+input[type="datetime-local"]:focus, 
+input[type="date"]:focus, 
+input[type="month"]:focus, 
+input[type="time"]:focus, 
+input[type="week"]:focus, 
+input[type="number"]:focus, 
+input[type="email"]:focus, 
+input[type="url"]:focus, 
+input[type="search"]:focus, 
+input[type="tel"]:focus, 
+select:focus, 
+textarea:focus {
+  border-color: #777;
+  box-shadow: none;
+  outline: 0;
+}
+
+input[type="color"]:focus, 
+input[type="range"]:focus {
+  outline: 0;
+}
+
+input[type="color"] {
+  /*Ensure height matches text input height*/
+  height: $font-size-base/2 + #{$line-height};
+  background: transparent;
+}
+
+
+/*
+
+  Select
+
+  markup:
+  <label for="i17">Select</label>
+  <select id="i17" name="i17">
+    <optgroup label="Group 1">
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </optgroup>
+  </select>
+  
+  Styleguide 3.2.2
+
+*/
+select,
+input[type="search"] {
+  //Remove goofy gradients and rounding chrome/safari 
+  @include appearance(none); 
+  background: #fff;
+}
+
+/*
+  
+  Radio buttons.
+
+  markup:
+  <input id="set1-yes" type="radio" name="set1" value="yes" />
+  <label for="set1-yes">Yes</label>
+  <br>
+  <input id="set1-no" type="radio" name="set1" value="no" />
+  <label for="set1-no">No</label>
+
+  Styleguide 3.2.3
+
+*/
+input[type="radio"] {
+  border: solid 1px #999;
+  font-size: 1.3em;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  vertical-align: middle;
+  @include appearance(none);
+
+  &:checked, 
+  &:active, 
+  &:focus {
+    outline: 0;
+  }
+}
+
+/*
+
+  Checkbox
+
+  markup:
+  <input type="checkbox" id="cb1" name="cb1" value="strawberries" />
+  <label for="cb1">Strawberries</label>
+  <br>
+  <input type="checkbox" id="cb2" name="cb2" value="grapes" />
+  <label for="cb2">Grapes</label>
+  <br>
+  <input type="checkbox" id="cb3" name="cb3" value="blueberries" />
+  <label for="cb3">Blueberries</label>
+
+  Styleguide 3.2.4
+
+*/
+input[type="checkbox"] {
+  border: solid 1px #999;
+  border-radius: .2em;
+  font-size: 1.2em;
+  height: 1em;
+  width: 1em;
+  line-height: 1;
+  vertical-align: middle;
+  @include appearance(none);
+
+  &:checked, 
+  &:active, 
+  &:focus {
+    outline: 0;
+  }
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  transition: 
+    background-color 100ms ease-in-out, 
+    background-image 100ms ease-in-out, 
+    border 100ms ease-in-out;
+  margin: 0 0 .25em;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  background: 
+    $color-selected-box 
+    url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxOXB4IiBoZWlnaHQ9IjE5cHgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+DQogIDxkZWZzLz4NCiAgPGcgaWQ9ImNoZWNrIiBmaWxsPSIjRkZGRkZGIj4NCiAgICA8cGF0aCBkPSJNMy41ODAwNzgxMiwxMC45MzYwMzUyIEw1LjQ0MTE2MjExLDkuMjI0NjA5MzggTDcuNSwxMiBMMTQuMzQ4Mzg4Nyw0LjU5MzAxNzU4IEwxNS44MzE1NDMsNi4zMjg4NTc0MiBMNy41LDE1LjQ2MTQyNTggTDMuNTgwMDc4MTIsMTAuOTM2MDM1MiBaIiBpZD0iY2hlY2stMiI+PC9wYXRoPg0KICA8L2c+DQo8L3N2Zz4=)
+    50% 50%
+    no-repeat;
+  border-color: $color-selected-box;
+}
+
+input[type="email"]:valid,
+input[type="tel"]:valid,
+input[type="url"]:valid {
+  outline: 0;
+}
+ 
+input[type="email"]:invalid,
+input[type="tel"]:invalid,
+input[type="url"]:invalid {
+  border-color: $color-error;
+  outline: 0;
+  box-shadow: none;
+}
+
+
+

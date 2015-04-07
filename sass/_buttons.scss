@@ -1,0 +1,185 @@
+/*
+
+  Buttons 
+
+  Use .btn on &lt;button&gt;, &lt;input&gt;, or &lt;a&gt; elements. You can mix
+  and match classes. Examples: &lt;a.danger.delete&gt; or &lt;a.outline.forward&gt;
+
+  Note: .forward, .back, .add, and .delete have no effect on &lt;input&gt; elements.
+
+  :hover             - Hover state
+  :active            - Animates down slightly
+  :focus             - Outline with soft glow.
+  .small             - Slightly smaller button
+  .large             - Slightly larger
+  .important         - All caps text.
+  .forward           - Adds right arrow icon
+  .back              - Adds left arrow icon
+  .add               - Adds plus icon
+  .delete            - Adds ex icon
+  .download          - Adds download icon  
+  .outline           - Transparent background. Uses button color for border 
+  .outline.small     - Small outline button
+  .outline.large     - Large outline button
+  .outline.important - Important outline button
+  .outline.forward   - Outline forward
+  .outline.back      - Outline back
+  .outline.add       - Outline add
+  .outline.delete    - Outline delete
+  .outline.download  - Outline download
+  .danger            - Use for a button that makes permanent, non-undoable 
+                       changes.
+  .danger.delete     - Example combining danger and delete classes.
+
+  markup:
+  <input class="btn {$modifiers}" type="submit" value="Input" />
+  <a class="btn {$modifiers}" href="http://example.com">Link</a>
+  <button class="btn {$modifiers}" href="http://example.com">Button</button>
+  <a class="btn {$modifiers}" href="http://example.com" disabled>Disabled</a>
+
+  Styleguide 6.0
+
+*/
+%btn {
+  display: inline-block;
+  line-height: $line-height;
+  padding: .3em 1em;
+  margin: 0 .1em;
+  border-radius: .3em;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: $font-stack-sans;
+  font-size: .875em; 
+  transition: all 100ms ease-in-out;
+  @include appearance(none);
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 2px 2px $color-tertiary;
+  }
+
+  &:active {
+    transform: translateY(1px);
+    outline: 0;
+  }
+
+}
+
+.btn {
+  @extend %btn;
+  color: #fff;
+  border: solid 1px $color-btn;
+  background: $color-btn;
+
+  &:hover {
+    background: $color-btn-highlight;
+    border: solid 1px $color-btn-highlight;
+  }
+
+  &:visited, 
+  &:active, 
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btn.small {
+  font-size: 75%;
+  letter-spacing: 1px;
+}
+
+.btn.large {
+  font-size: 110%;
+  padding: .4em 1.2em;
+}
+
+.btn.important {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn.outline {
+  @extend %btn;
+  color: $color-btn;
+  border: solid 1px $color-btn;
+  background: transparent;
+
+  &:hover {
+    color: #fff;
+    background: $color-btn;
+  }
+}
+
+.btn.danger {
+  @extend %btn;
+  color: #fff;
+  background: $color-error;
+  border: solid 1px transparent;
+
+  &:link,
+  &:hover,
+  &:visited,
+  &:active,
+  &:focus {
+    color: #fff;
+    border: solid 1px transparent;
+  }
+
+}
+
+.btn.danger:hover {
+  background: saturate(lighten($color-error, 0%), 15%);
+  border: solid 1px transparent;
+}
+
+.btn:after,
+.btn:before {
+  color: inherit;
+  font-weight: normal;
+  opacity: .9;
+}
+
+.btn.forward:after {
+  content: '\203a';
+  font-size: 1.2em;
+  margin-left: .5em;
+}
+
+.btn.back {
+  padding-left: .7em;
+  &:before {
+    content: '\2039';
+    font-size: 1.2em;
+    margin-right: .5em;
+  }
+}
+
+.btn.add {
+  padding-left: .7em;
+  &:before {
+    content: '+';
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: .5em;
+  }
+}
+
+.btn.delete {
+  padding-left: .7em;
+  &:before {
+    content: '\00d7';
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: .5em;
+  }
+}
+
+.btn.download {
+  padding-left: .7em;
+  &:before {
+    content: '\2b07 ';
+    font-size: 90%;
+    margin-right: .5em;
+  }
+}
+

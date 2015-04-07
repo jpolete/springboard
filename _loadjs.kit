@@ -1,0 +1,32 @@
+<script>
+// Async js loading... https://github.com/filamentgroup/loadJS
+function loadJS( src, cb ) {
+  "use strict";
+  var ref = window.document.getElementsByTagName( "script" )[ 0 ],
+      script = window.document.createElement( "script" );
+  script.src = src;
+  script.async = true;
+  ref.parentNode.insertBefore( script, ref );
+  if ( cb && typeof( cb ) === "function" ) {
+    script.onload = cb;
+  }
+  return script;
+}
+
+// Cut-the-mustard / progressive enhancement
+// http://timkadlec.com/2014/10/reducing-javascript-bloat-with-shoestring/
+if ( "querySelector" in document && "addEventListener" in window ) {
+  document.documentElement.className += " enhanced";
+
+  // Use Filament Group's lightweight Shoestring library if you just need
+  // basic, cross-browser dom manipulation
+  // loadJS( "/js/lib/shoestring.min.js" );
+
+  // jQuery if you *really* need the full library
+  // loadJS( "/js/lib/jquery.min.js" );
+
+  // Picturefill polyfil
+  loadJS( "/js/lib/picturefill.min.js" );
+
+}
+</script>

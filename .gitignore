@@ -1,0 +1,30 @@
+# OS X noise
+.DS_Store
+profile
+
+# Sass noise
+*.scssc
+.sass-cache
+
+# Sublime Text config
+*.sublime-project
+*.sublime-workspace
+
+# Codekit config
+config.codekit
+
+# Bower
+bower_components/*
+
+# NPM
+node_modules/*
+
+# Styleguide (kss)
+styleguide/*
+
+# Generated CSS and sourcemaps
+**/*.css
+**/*.css.map
+
+# JS Libs
+js/lib/*

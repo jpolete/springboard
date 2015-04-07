@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <title>Home</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <!-- 
+    Place apple-touch-icon.png in root directory. 
+    If you want to go all out, target the various device sizes...
+
+    iPad 2, iPad mini
+    apple-touch-icon-76x76.png
+
+    iPhone 4s, 5, 6
+    apple-touch-icon-120x120.png
+
+    iPad and iPad mini
+    apple-touch-icon-152x152.png
+
+    iPhone 6+
+    apple-touch-icon-180x180.png
+
+    Catch-all
+    apple-touch-icon.png
+
+    Optionally explicitly include the link attribute.
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes=180x180">
+
+    https://github.com/audreyr/favicon-cheat-sheet#id5
+
+    https://developer.apple.com/library/ios/documentation/userexperience/conceptual/MobileHIG/IconMatrix.html
+
+    https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
+
+  -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!--[if lt IE 9]>
+  <script src="/js/lib/respond.min.js"></script>
+  <script src="/js/lib/html5shiv.min.js"></script>
+  <![endif]-->
+
+  <script>
+// Async js loading... https://github.com/filamentgroup/loadJS
+function loadJS( src, cb ) {
+  "use strict";
+  var ref = window.document.getElementsByTagName( "script" )[ 0 ],
+      script = window.document.createElement( "script" );
+  script.src = src;
+  script.async = true;
+  ref.parentNode.insertBefore( script, ref );
+  if ( cb && typeof( cb ) === "function" ) {
+    script.onload = cb;
+  }
+  return script;
+}
+
+// Cut-the-mustard / progressive enhancement
+// http://timkadlec.com/2014/10/reducing-javascript-bloat-with-shoestring/
+if ( "querySelector" in document && "addEventListener" in window ) {
+  document.documentElement.className += " enhanced";
+
+  // Use Filament Group's lightweight Shoestring library if you just need
+  // basic, cross-browser dom manipulation
+  // loadJS( "/js/lib/shoestring.min.js" );
+
+  // jQuery if you *really* need the full library
+  // loadJS( "/js/lib/jquery.min.js" );
+
+  // Picturefill polyfil
+  loadJS( "/js/lib/picturefill.min.js" );
+
+}
+</script>
+</head>
+<body>
+  <header role="banner">
+    <a class="logo" href="/">
+      <img src="/images/logo.png" srcset="/images/logo@2x.png 2x, /images/logo@3x.png 3x" width="128" alt="">
+    </a>
+  </header>
+  <div role="main">
+<p>The home page!!</p>
+  </div>
+  <footer role="contentinfo">
+    <nav id="nav" role="navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>

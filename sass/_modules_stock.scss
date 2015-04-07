@@ -1,0 +1,626 @@
+
+/* 
+
+  Form layout
+
+  Each line of a form should be wrapped in a &lt;div.form-line&gt;. 
+  A single label/input on a line should be wrapped in a &lt;div.form-input-full&gt;. For two label/inputs on a line wrap each in &lt;div.form-input-half&gt;. For three inputs wrap each in a &lt;div.form-input-third&gt; and for four inputs each should be wrapped in a &lt;div.form-input-quarter&gt;.
+
+  markup:
+  <div class="form-line">
+    <div class="form-input-half">
+      <label for="FirstName">First Name</label>
+      <input type="text" id="FirstName" name="FirstName" value="" /> 
+    </div>
+    <div class="form-input-half">
+      <label for="LastName">Last Name</label>
+      <input type="text" id="LastName" name="LastName" value="" /> 
+    </div>
+  </div>
+
+  Styleguide 3.3
+
+*/
+.form-input-full,
+.form-input-half,
+.form-input-third,
+.form-input-quarter {
+  width: 100%;
+  margin: 0 0 $line-height 0;
+}
+
+@include media($tablet) {
+
+  .form-line {
+    position: relative;
+    left: (3%/2); /*Keep form lines centered. Offsets the 3% trailing margin */
+    width: 100%;
+    margin-bottom: $line-height;
+    @include clearfix;
+  }
+
+  .form-input-full,
+  .form-input-half,
+  .form-input-third,
+  .form-input-fourth,
+  .form-input-three-fourths {
+    margin: 0;
+  }
+
+  .form-input-full {
+    float: left;
+    width: 97%;
+    margin-right: 3%;
+  }
+
+  .form-input-half {
+    float: left;
+    width: 47%;
+    margin-right: 3%;
+  }
+
+  .form-input-third {
+    float: left;
+    width: 30.3333333%;
+    margin-right: 3%;
+  }
+
+  .form-input-fourth {
+    float: left;
+    width: 22%;
+    margin-right: 3%;
+  }
+
+  .form-input-three-fourths {
+    float: left;
+    width: 72%;
+    margin-right: 3%;
+  }
+
+}
+
+
+
+/* 
+
+  Radio/Checkbox layout 
+
+  Group radiobuttons and checkboxes in a 
+  &lt;fieldset.radiobuttons&gt; and &lt;fieldset.checkboxes&gt; respectively, and place each input/label pair in &lt;ol&gt;&lt;li&gt; or &lt;ul&gt;&lt;li&gt;.
+
+  markup:
+  <fieldset class="checkboxes">
+    <legend>Checkboxes</legend>
+    <ul>
+      <li>
+        <input type="checkbox" id="cbone" name="cbone" />
+        <label for="cbone">One</label>
+      </li>
+      <li>
+        <input type="checkbox" id="cbtwo" name="cbtwo" />
+        <label for="cbtwo">Two</label>
+      </li>
+      <li>
+        <input type="checkbox" id="cbthree" name="cbthree" indeterminate="true" />
+        <label for="cbthree">Three</label>
+      </li>
+    </ul>
+  </fieldset>
+
+  Styleguide 3.4
+
+*/
+.radiobuttons,
+.checkboxes {
+
+  legend {
+    @extend label;
+    padding-left: .5em;
+    padding-right: .5em;
+    line-height: 1;
+  }
+
+  ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  li {
+    padding-top: .1em;
+    padding-bottom: .1em;
+    padding-left: 2.2em;
+    margin: 0;
+
+    > input {
+      margin-top: .1em;
+      margin-left: -2em;
+      vertical-align: top;
+    }
+  }
+
+  label {
+    text-transform: none;
+    font-size: 100%;
+  }
+}
+
+
+/*
+
+  Input hints
+
+  Use input hints to offer hints or instructions to help users complete a form field.
+
+  markup: 
+  <label for="input-hint">Name</label>
+  <input type="text" id="input-hint" name="input-hint" />
+  <span class="input-hint">Full, legal name</span>
+
+  Styleguide 3.5
+
+*/
+.input-hint 
+{
+  display: block;
+  padding: 0 .4em;
+  margin: .5em 0 0;
+  color: #aaa;
+  font-size: 80%;
+  font-family: $font-stack-form-ui;
+}
+
+
+/*
+  Error fields and inline messages
+
+  When validation fails for an input, wrap the label and 
+  input in a &lt;div.is-error&gt; and include a &lt;div.error-msg&gt; below the input (see .error-msg)
+
+  markup:
+  <div class="is-error">
+    <label for="error-field">Name</label>
+    <input type="text" id="error-field" name="error-field" />
+    <div class="error-msg">Wrong!! :)</div>
+  </div>
+
+  Styleguide 3.6
+*/
+.is-error {
+  label {
+    color: $color-error;
+  }
+  input {
+    border-color: $color-error;
+    border-radius: .2em .2em 0 0;
+    &:focus {
+      border-color: $color-error;
+    }
+  }
+}
+
+.error-msg {
+  display: block;
+  padding: .5em;
+  border-radius: 0 0 .2em .2em; 
+  background: $color-error;
+  color: #fff;
+  font-family: $font-stack-form-ui;
+}
+
+
+
+
+
+
+/* 
+
+  Numeric data
+
+  Mark numeric data as &lt;td.numeric&gt; for right-alignment.
+
+  markup:
+  <table>
+    <thead>
+      <tr>
+        <th class="numeric">Regular Price</th>
+        <th class="numeric">25% Off</th>
+        <th class="numeric">50% Off</th>
+        <th class="numeric">75% Off</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="numeric">$2.00</td>
+        <td class="numeric">$1.50</td>
+        <td class="numeric">$1.00</td>
+        <td class="numeric">$0.50</td>
+      </tr>
+      <tr>
+        <td class="numeric">$3.00</td>
+        <td class="numeric">$2.25</td>
+        <td class="numeric">$1.50</td>
+        <td class="numeric">$0.75</td>
+      </tr>
+      <tr>
+        <td class="numeric">$4.00</td>
+        <td class="numeric">$3.00</td>
+        <td class="numeric">$2.00</td>
+        <td class="numeric">$1.00</td>
+      </tr>
+    </tbody>
+  </table>
+
+  Styleguide 2.2
+
+*/
+.numeric {
+  text-align: right;
+}
+
+
+/*
+
+  Responsive wrapper
+
+  For a simple responsive solution, wrap tables in a &lt;div.table-wrap&gt;. Allows for horizonal scrolling for tables wider than the viewport.
+
+  markup:
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+          <th>Header 3</th>
+          <th>Header 4</th>
+          <th>Header 5</th>
+          <th>Header 6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+        </tr>
+        <tr>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+        </tr>
+        <tr>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+        </tr>
+        <tr>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+          <td>long_data_in_each_cell</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  Styleguide 2.4
+
+*/
+.table-wrap {
+  width: 100%;
+  overflow: auto;
+}
+
+
+
+
+
+
+
+
+/*
+  
+  Message box
+
+  Use to alert the user about a current or potential outcome such as
+  success, failure or a warning. There are four types of messages.
+
+  .warning - More important than your standard message. Warns of potential danger.
+  .error   - An error has occurred
+  .success - A success message
+
+  markup:
+  <div class="msg {$modifiers}">
+    <h2 class="notice__heading">Message Box</h2>
+    <p>I am an important message! 
+    Links are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">styled to match</a> 
+    the look of the warning box.</p>
+  </div>
+
+  Styleguide 4.0
+
+*/
+%msg {
+  display: block;
+  padding: 1em 1.4em;
+  margin: $line-height 0;
+  line-height: 1.4;
+  border-radius: .25em;
+  border-style: solid;
+  border-width: 2px;
+
+  >.notice__heading {
+    margin: 0 0 .25em;
+    padding: 0;
+    color: $color-soft-black;
+    color: rgba(0,0,0,.7);
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  >:last-child {
+    margin-bottom: 0;
+  }
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active,
+  a:focus {
+    text-decoration: none;
+    border: 0;
+    border-color: #000;
+    border-color: rgba(0,0,0,.7);
+    border-width: 0 0 1px;
+    border-style: solid;
+  }
+}
+
+.msg {
+  @extend %msg;
+  background: #c8edfd;
+  color: $color-info;
+  border-color: #0ca3e1;
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active,
+  a:focus {
+    color: $color-info;
+    text-decoration: none;
+    border-bottom-color: $color-info;
+  }
+}
+
+.msg.success {
+  @extend %msg;
+  background: #D0FDCF;
+  color: $color-success;
+  border-color: #79c279;
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active,
+  a:focus {
+    color: $color-success;
+    border-bottom-color: $color-success;
+  }
+}
+
+.msg.warning {
+  @extend %msg;
+  background: #FFFEDF;
+  color: $color-warning;
+  border-color: #cfcf70;
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active,
+  a:focus {
+    color: $color-warning;
+    border-bottom-color: $color-warning;
+  }
+}
+
+.msg.error {
+  @extend %msg;
+  background: #FFEEEE;
+  color: $color-error;
+  border-color: #cc0000;
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active,
+  a:focus {
+    color: $color-error;
+    border-bottom-color: $color-error;
+  }
+}
+
+
+
+/*
+
+  Misc styles
+
+  Various inline styles, not included elsewhere.
+
+  Styleguide 5.0
+
+*/
+
+/* 
+
+  Implied content
+
+  Use to hide content that would be implied for visual users, such
+  as in "read more" links. 
+  (idea swiped from the css of informationarchitects.jp)
+
+  markup:
+  <a href="#">read more <span class="implied">about jackelopes</span></a>
+
+  Styleguide 5.1
+
+*/
+.implied
+{
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  background: transparent;
+}
+
+
+/*
+
+  No wrap
+
+  Prevents text from breaking across lines.
+
+  markup: <span class="nowrap">This text doesn’t break</span>
+
+  Styleguide 5.2
+  
+*/
+.nowrap {
+  white-space: nowrap;
+}
+
+
+/*
+
+  Centered
+
+  Centers the inline content.
+
+  markup: <p class="centered">This text is centered</p>
+
+  Styleguide 5.3
+
+*/
+.centered {
+  text-align: center;
+}
+
+
+/*
+
+  Note
+
+  Note such as a footnote of asterisked note.
+
+  markup: <p class="note">* This is a note!</p>
+
+  Styleguide 5.4
+
+*/
+.note {
+  font-style: italic;
+  font-size: 90%;
+}
+
+
+/*
+
+  Important Label
+
+  A text label that communicates importance.
+
+  markup: <span class="label--important">New!</span> Some timely information.
+
+  Styleguide 5.5
+  
+*/
+%label {
+  font-size: 75%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.label--important {
+  @extend %label;
+  color: red;
+}
+
+/* 
+
+  Pull quote
+
+  Use a pullquote anytime you want to highlight a quote from a 
+  passage in a large and eye-catching manner.
+
+  markup:
+  <p>Paragraph before Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <blockquote class="pullquote">
+  If I had more time, I would have written a shorter letter.
+  </blockquote>
+  <p>Paragraph after Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  Styleguide 5.6
+
+*/
+.pullquote {
+  padding: 0 1em;
+  margin: 1em 0;
+  border: 0;
+  font-size: 160%;
+  font-family: $font-stack-serif;
+  font-style: italic;
+  line-height: 1.4;
+  text-align: center;
+
+  &:before {
+    content: '';
+    display: block;
+    margin: 0 auto 1em;
+    width: 5em;
+    height: .2em;
+    border-radius: .1em;
+    background: $color-tertiary
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    margin: 1em auto 0;
+    width: 5em;
+    height: .2em;
+    border-radius: .1em;
+    background: $color-tertiary
+  }
+
+  @include media($traditional) {
+    padding: .5em 0 .5em .9em;
+    margin: 0 0 .5em 1em;
+    width: 50%;
+    float: right;
+    border: 0;
+    border-left: 8px solid $color-tertiary;
+    text-align: left;
+
+    &:before, 
+    &:after {
+      content: none;
+    }
+  }
+}
+

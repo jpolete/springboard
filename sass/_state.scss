@@ -1,0 +1,21 @@
+
+
+/*
+
+  Disabled state for buttons.
+
+*/
+.btn[disabled],
+.btn[disabled]:link,
+.btn[disabled]:visited,
+.btn[disabled]:hover,
+.btn[disabled]:focus,
+.btn[disabled]:active {
+  cursor: default !important;
+  border: solid 1px #ccc !important;
+  color: #ccc !important;
+  background: transparent !important;
+  transform: none !important;
+  outline: none !important;
+  box-shadow: none;
+}
