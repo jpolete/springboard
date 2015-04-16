@@ -7,29 +7,28 @@
 
   Note: .forward, .back, .add, and .delete have no effect on &lt;input&gt; elements.
 
-  :hover             - Hover state
-  :active            - Animates down slightly
-  :focus             - Outline with soft glow.
-  .small             - Slightly smaller button
-  .large             - Slightly larger
-  .important         - All caps text.
-  .forward           - Adds right arrow icon
-  .back              - Adds left arrow icon
-  .add               - Adds plus icon
-  .delete            - Adds ex icon
-  .download          - Adds download icon  
-  .outline           - Transparent background. Uses button color for border 
-  .outline.small     - Small outline button
-  .outline.large     - Large outline button
-  .outline.important - Important outline button
-  .outline.forward   - Outline forward
-  .outline.back      - Outline back
-  .outline.add       - Outline add
-  .outline.delete    - Outline delete
-  .outline.download  - Outline download
-  .danger            - Use for a button that makes permanent, non-undoable 
-                       changes.
-  .danger.delete     - Example combining danger and delete classes.
+  :hover                       - Hover state
+  :active                      - Animates down slightly
+  :focus                       - Outline with soft glow.
+  .btn--small                  - Slightly smaller button
+  .btn--large                  - Slightly larger
+  .btn--important              - All caps text.
+  .btn--forward                - Adds right arrow icon
+  .btn--back                   - Adds left arrow icon
+  .btn--add                    - Adds plus icon
+  .btn--delete                 - Adds ex icon
+  .btn--download               - Adds download icon  
+  .btn--outline                - Transparent background. Uses button color for border 
+  .btn--outline.btn--small     - Small outline button
+  .btn--outline.btn--large     - Large outline button
+  .btn--outline.btn--important - Important outline button
+  .btn--outline.btn--forward   - Outline forward
+  .btn--outline.btn--back      - Outline back
+  .btn--outline.btn--add       - Outline add
+  .btn--outline.btn--delete    - Outline delete
+  .btn--outline.btn--download  - Outline download
+  .btn--danger                 - Use for a button that makes permanent, non-undoable changes. 
+  .danger.delete               - Example combining danger and delete classes.
 
   markup:
   <input class="btn {$modifiers}" type="submit" value="Input" />
@@ -83,26 +82,33 @@
   }
 }
 
-.btn.small {
+.btn--small {
   font-size: 75%;
   letter-spacing: 1px;
 }
 
-.btn.large {
+.btn--large {
   font-size: 110%;
   padding: .4em 1.2em;
 }
 
-.btn.important {
+.btn--important {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.btn.outline {
+.btn--outline {
   @extend %btn;
   color: $color-btn;
   border: solid 1px $color-btn;
   background: transparent;
+
+  &:visited, 
+  &:hover,
+  &:focus,
+  &:active { 
+    color: $color-btn;
+  }
 
   &:hover {
     color: #fff;
@@ -110,7 +116,7 @@
   }
 }
 
-.btn.danger {
+.btn--danger {
   @extend %btn;
   color: #fff;
   background: $color-error;
@@ -127,7 +133,7 @@
 
 }
 
-.btn.danger:hover {
+.btn--danger:hover {
   background: saturate(lighten($color-error, 0%), 15%);
   border: solid 1px transparent;
 }
@@ -139,13 +145,13 @@
   opacity: .9;
 }
 
-.btn.forward:after {
+.btn--forward:after {
   content: '\203a';
   font-size: 1.2em;
   margin-left: .5em;
 }
 
-.btn.back {
+.btn--back {
   padding-left: .7em;
   &:before {
     content: '\2039';
@@ -154,7 +160,7 @@
   }
 }
 
-.btn.add {
+.btn--add {
   padding-left: .7em;
   &:before {
     content: '+';
@@ -164,7 +170,7 @@
   }
 }
 
-.btn.delete {
+.btn--delete {
   padding-left: .7em;
   &:before {
     content: '\00d7';
@@ -174,7 +180,7 @@
   }
 }
 
-.btn.download {
+.btn--download {
   padding-left: .7em;
   &:before {
     content: '\2b07 ';
