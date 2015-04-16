@@ -28,3 +28,6 @@ styleguide/*
 
 # JS Libs
 js/lib/*
+
+# Minified JS
+js/*.min.js

@@ -18,15 +18,11 @@ function loadJS( src, cb ) {
 if ( "querySelector" in document && "addEventListener" in window ) {
   document.documentElement.className += " enhanced";
 
-  // Use Filament Group's lightweight Shoestring library if you just need
-  // basic, cross-browser dom manipulation
-  // loadJS( "/js/lib/shoestring.min.js" );
-
-  // jQuery if you *really* need the full library
-  // loadJS( "/js/lib/jquery.min.js" );
-
   // Picturefill polyfil
   loadJS( "/js/lib/picturefill.min.js" );
+
+  // Main JS file
+  loadJS( "/js/main.min.js" );
 
 }
 </script>
