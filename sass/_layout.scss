@@ -95,18 +95,9 @@
 .row {
   @include row();
   padding: 0 1em;
-
-  :first-child {
-    margin-top: 0;
-  }
-
-  :last-child {
-    margin-bottom: 0;
-  }
-
 }
 
-.row.padded {
+.padded {
   padding-top: 1em;
   padding-bottom: 1em;
 
@@ -121,7 +112,7 @@
   }
 }
 
-.row.padded-top {
+.padded-top {
   padding-top: 1em;
 
   @include tablet {
@@ -133,7 +124,7 @@
   }
 }
 
-.row.padded-bottom {
+.padded-bottom {
   padding-bottom: 1em;
 
   @include tablet {
