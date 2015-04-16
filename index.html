@@ -54,7 +54,25 @@
   <script src="/js/lib/html5shiv.min.js"></script>
   <![endif]-->
 
-  <script>
+</head>
+<body>
+  <header role="banner">
+    <a class="logo" href="/">
+      <img src="/apple-touch-icon.png" srcset="/apple-touch-icon.png 2x, /apple-touch-icon.png 3x" width="128" alt="">
+    </a>
+  </header>
+  <div role="main">
+<p>The home page!!</p>
+  </div>
+  <footer role="contentinfo">
+    <nav id="nav" role="navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+<script>
 // Async js loading... https://github.com/filamentgroup/loadJS
 function loadJS( src, cb ) {
   "use strict";
@@ -74,34 +92,11 @@ function loadJS( src, cb ) {
 if ( "querySelector" in document && "addEventListener" in window ) {
   document.documentElement.className += " enhanced";
 
-  // Use Filament Group's lightweight Shoestring library if you just need
-  // basic, cross-browser dom manipulation
-  // loadJS( "/js/lib/shoestring.min.js" );
-
-  // jQuery if you *really* need the full library
-  // loadJS( "/js/lib/jquery.min.js" );
-
   // Picturefill polyfil
   loadJS( "/js/lib/picturefill.min.js" );
 
+  // Main JS file
+  loadJS( "/js/main.min.js" );
+
 }
-</script>
-</head>
-<body>
-  <header role="banner">
-    <a class="logo" href="/">
-      <img src="/images/logo.png" srcset="/images/logo@2x.png 2x, /images/logo@3x.png 3x" width="128" alt="">
-    </a>
-  </header>
-  <div role="main">
-<p>The home page!!</p>
-  </div>
-  <footer role="contentinfo">
-    <nav id="nav" role="navigation">
-      <ul>
-        <li><a href="/">Home</a></li>
-      </ul>
-    </nav>
-  </footer>
-</body>
-</html>
+</script></html>
