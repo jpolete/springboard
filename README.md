@@ -1,7 +1,7 @@
 
 # Overview
 
-Springboard is my starter kit of HTML, SASS and JavaScript for new web projects. It includes
+Springboard is my starter kit of HTML, SASS and JavaScript for new web projects. It is designed for a design-in-the-browser workflow using [Codekit](https://incident57.com/codekit/) for file processing. It includes
 
 - CSS styles for common elements and modules using SASS and [SMACSS](https://smacss.com/)
 - JavaScript polyfills 
