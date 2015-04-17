@@ -5,7 +5,10 @@
 <!--[if IE 8]>
 <html class="ie ie8" lang="en-US">
 <![endif]-->
-<!--[if !(IE 7) & !(IE 8)]><!-->
+<!--[if IE 9]>
+<html class="ie ie9" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8) & !(IE 9)]><!-->
 <html lang="en-US">
 <!--<![endif]-->
 <head>
@@ -49,6 +52,8 @@
   
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
+  <link rel="stylesheet" href="/style.css" />
+
   <!--[if lt IE 9]>
   <script src="/js/lib/respond.min.js"></script>
   <script src="/js/lib/html5shiv.min.js"></script>
@@ -56,9 +61,47 @@
 
 </head>
 <body>
-  <header role="banner">
+  <header class="header" role="banner">
     <a class="logo" href="/">
-      <img src="/apple-touch-icon.png" srcset="/apple-touch-icon.png 2x, /apple-touch-icon.png 3x" width="128" alt="">
+      <picture>
+
+        <!-- The "art direction" case. First match wins. -->
+        <!-- Start with 1st choice of formats and larger viewports… -->
+        <source 
+          type="image/svg+xml" 
+          media="(min-width: 48em)"
+          sizes="222px"  
+          srcset="/images/logo-full.svg 222w" />
+
+        <!-- …then smaller viewports… -->
+        <source 
+          type="image/svg+xml" 
+          sizes="50px"  
+          srcset="/images/logo-small.svg 50w" /> 
+
+        <!-- …then 2nd choice formats… -->
+        <source 
+          media="(min-width: 48em)" 
+          sizes="222px"
+          srcset="/images/logo-full.png 222w,
+                  /images/logo-full@2x.png 444w
+                  /images/logo-full@3x.png 666w" /> 
+
+        <!-- 
+          …finally handle different sizes of the same image. 
+          Let the browser choose the best match based on viewport size, 
+          pixel density and whatever else it wants to consider along 
+          with the native width of the image options.
+        -->
+        <img 
+          src="/images/logo-small.png" 
+          sizes="50px"
+          srcset="/images/logo-small.png 50w,
+                  /images/logo-small@2x.png 100w
+                  /images/logo-small@3x.png 150w"
+          alt="Springboard Logo" />
+
+      </picture>
     </a>
   </header>
-  <div role="main">
+  <div class="main" role="main">
