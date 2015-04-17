@@ -65,8 +65,10 @@
     <a class="logo" href="/">
       <picture>
 
-        <!-- The "art direction" case. First match wins. -->
-        <!-- Start with 1st choice of formats and larger viewports… -->
+        <!-- 
+          The "art direction" case. First match wins.
+          Start with 1st choice of formats and larger viewports… 
+        -->
         <source 
           type="image/svg+xml" 
           media="(min-width: 48em)"
@@ -91,7 +93,7 @@
           …finally handle different sizes of the same image. 
           Let the browser choose the best match based on viewport size, 
           pixel density and whatever else it wants to consider along 
-          with the native width of the image options.
+          with the native width of the images themselves.
         -->
         <img 
           src="/images/logo-small.png" 
