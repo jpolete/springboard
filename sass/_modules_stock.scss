@@ -29,7 +29,7 @@
   margin: 0 0 $line-height 0;
 }
 
-@include media($tablet) {
+@include tablet {
 
   .form-line {
     position: relative;
@@ -608,7 +608,7 @@
     background: $color-tertiary
   }
 
-  @include media($traditional) {
+  @include traditional {
     padding: .5em 0 .5em .9em;
     margin: 0 0 .5em 1em;
     width: 50%;
