@@ -324,6 +324,88 @@
 }
 
 
+/*
+
+  Responsive Table (linearized)
+
+  "Linearizes" table cells for small viewports. Relies on duplicating the 
+  table headings in data-label attributes for each cell. See the example.
+
+  markup:
+  <table class="linearizable">
+    <thead>
+      <tr>
+        <th>Artist</th>
+        <th>Album</th>
+        <th>Year</th>
+        <th>Format</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Artist">Flaming Lips</td>
+        <td data-label="Album">The Soft Bulletin</td>
+        <td data-label="Year">1999</td>
+        <td data-label="Format">Vinyl</td>
+      </tr>
+      <tr>
+        <td data-label="Artist">Nirvana</td>
+        <td data-label="Album">Bleach</td>
+        <td data-label="Year">1991</td>
+        <td data-label="Format">CD</td>
+      </tr>
+      <tr>
+        <td data-label="Artist">Leonard Cohen</td>
+        <td data-label="Album">Old Ideas</td>
+        <td data-label="Year">2012</td>
+        <td data-label="Format">Vinyl</td>
+      </tr>
+      <tr>
+        <td data-label="Artist">Marshmallow Ghosts</td>
+        <td data-label="Album">S/T</td>
+        <td data-label="Year">2011</td>
+        <td data-label="Format">Vinyl</td>
+      </tr>
+    </tbody>
+  </table>
+
+  Styleguide 2.5
+
+*/
+@media screen and (max-width: 37.5em) {
+  .linearizable {
+    thead {
+      display: none;
+    }
+    tr {
+      display: block;
+      padding: .4em;
+      margin: 0 0 1em;
+      border: solid 1px #ccc;
+      border-radius: .4em;
+
+      &:nth-child(even) td {
+        background: transparent;
+      }
+    }
+    td {
+      display: block;
+      padding: .6em;
+      border-bottom: dotted 1px #ccc;
+      text-align: right;
+
+      &:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+      }
+
+      &:last-child {
+        border: 0;
+      }
+    }
+  }
+}
 
 
 

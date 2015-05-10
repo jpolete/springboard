@@ -512,7 +512,7 @@ table {
   width: 100%;
   padding: 0;
   margin: 1em 0;
-  overflow-x: scroll;
+  font-size: .9em;
 
   border-collapse: collapse;
   border-spacing: 0;
@@ -530,7 +530,7 @@ th, td {
   vertical-align: top;
   text-align: left;
   border-bottom: solid 1px #ccc;
-  padding: $font-size-base/4 $font-size-base;
+  padding: $font-size-base/2 $font-size-base;
 }
 
 tr:nth-child(even) th,
