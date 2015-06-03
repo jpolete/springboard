@@ -1,21 +1,21 @@
 {
-  "name": "boilerplate",
+  "name": "springboard",
   "version": "1.0.0",
-  "description": "HTML, CSS and JavaScript Project Boilerplate",
+  "description": "HTML, CSS and JavaScript project boilerplate",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jpolete/Boilerplate.git"
+    "url": "https://github.com/jpolete/springboard.git"
   },
-  "author": "",
+  "author": "Jason Polete",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jpolete/Boilerplate/issues"
+    "url": "https://github.com/jpolete/springboard/issues"
   },
-  "homepage": "https://github.com/jpolete/Boilerplate",
+  "homepage": "https://github.com/jpolete/springboard",
   "devDependencies": {
     "bower": "^1.3.12",
     "grunt": "^0.4.5",
