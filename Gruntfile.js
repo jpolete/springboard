@@ -27,11 +27,11 @@ module.exports = function( grunt ) {
       },
       copy: {
         command: [
-          "cp <%= dirs.bower.picturefill %> <%= dirs.js.lib %>/picturefill.min.js",
-          "cp <%= dirs.bower.jquery %> <%= dirs.js.lib %>/jquery.min.js",
-          "cp <%= dirs.bower.shoestring %> <%= dirs.js.lib %>/shoestring.min.js",
-          "cp <%= dirs.bower.respond %> <%= dirs.js.lib %>/respond.min.js",
-          "cp <%= dirs.bower.html5shiv %> <%= dirs.js.lib %>/html5shiv.min.js"
+          "cp <%= dirs.bower.picturefill %> <%= dirs.js.lib %>picturefill.min.js",
+          "cp <%= dirs.bower.jquery %> <%= dirs.js.lib %>jquery.min.js",
+          "cp <%= dirs.bower.shoestring %> <%= dirs.js.lib %>shoestring.min.js",
+          "cp <%= dirs.bower.respond %> <%= dirs.js.lib %>respond.min.js",
+          "cp <%= dirs.bower.html5shiv %> <%= dirs.js.lib %>html5shiv.min.js"
         ].join(";"),
       },
       kss: {
@@ -51,7 +51,7 @@ module.exports = function( grunt ) {
   grunt.registerTask(
     "default",
     "Just move bower downloaded files to their right place",
-    [ "copy" ]
+    [ "shell:copy" ]
   );
 
   grunt.registerTask(
