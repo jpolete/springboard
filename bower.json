@@ -1,11 +1,11 @@
 {
-  "name": "Boilerplate",
-  "version": "2.0.0",
-  "homepage": "https://github.com/jpolete/Boilerplate",
+  "name": "Springboard",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jpolete/springboard",
   "authors": [
     "Jason Polete <jason@jpolete.me>"
   ],
-  "description": "A web project boilerplate",
+  "description": "A web project starter kit",
   "main": "index.html",
   "license": "MIT",
   "private": true,
