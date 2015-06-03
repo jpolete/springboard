@@ -44,7 +44,6 @@ module.exports = function( grunt ) {
   });
 
   // Load grunt plugins
-  grunt.loadNpmTasks( "grunt-contrib-copy" );
   grunt.loadNpmTasks( "grunt-shell" );
 
   // Default (dev) build
