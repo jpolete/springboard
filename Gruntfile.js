@@ -27,6 +27,7 @@ module.exports = function( grunt ) {
       },
       copy: {
         command: [
+          "mkdir -p js/lib",
           "cp <%= dirs.bower.picturefill %> <%= dirs.js.lib %>picturefill.min.js",
           "cp <%= dirs.bower.jquery %> <%= dirs.js.lib %>jquery.min.js",
           "cp <%= dirs.bower.shoestring %> <%= dirs.js.lib %>shoestring.min.js",
