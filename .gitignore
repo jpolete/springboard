@@ -11,7 +11,7 @@ profile
 *.sublime-workspace
 
 # Codekit config
-config.codekit
+# config.codekit
 
 # Bower
 bower_components/*
