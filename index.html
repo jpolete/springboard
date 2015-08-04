@@ -58,7 +58,35 @@
   <script src="/js/lib/respond.min.js"></script>
   <script src="/js/lib/html5shiv.min.js"></script>
   <![endif]-->
+  
+  <script>
+// Async js loading... https://github.com/filamentgroup/loadJS
+function loadJS( src, cb ) {
+  "use strict";
+  var ref = window.document.getElementsByTagName( "script" )[ 0 ],
+      script = window.document.createElement( "script" );
+  script.src = src;
+  script.async = true;
+  ref.parentNode.insertBefore( script, ref );
+  if ( cb && typeof( cb ) === "function" ) {
+    script.onload = cb;
+  }
+  return script;
+}
 
+// Cut-the-mustard / progressive enhancement
+// http://timkadlec.com/2014/10/reducing-javascript-bloat-with-shoestring/
+if ( "querySelector" in document && "addEventListener" in window ) {
+  document.documentElement.className += " enhanced";
+
+  // Picturefill polyfil
+  loadJS( "/js/lib/picturefill.min.js" );
+
+  // Main JS file
+  loadJS( "/js/main.min.js" );
+
+}
+</script>
 </head>
 <body>
   <header class="header" role="banner">
@@ -117,31 +145,4 @@
     </nav>
   </footer>
 </body>
-<script>
-// Async js loading... https://github.com/filamentgroup/loadJS
-function loadJS( src, cb ) {
-  "use strict";
-  var ref = window.document.getElementsByTagName( "script" )[ 0 ],
-      script = window.document.createElement( "script" );
-  script.src = src;
-  script.async = true;
-  ref.parentNode.insertBefore( script, ref );
-  if ( cb && typeof( cb ) === "function" ) {
-    script.onload = cb;
-  }
-  return script;
-}
-
-// Cut-the-mustard / progressive enhancement
-// http://timkadlec.com/2014/10/reducing-javascript-bloat-with-shoestring/
-if ( "querySelector" in document && "addEventListener" in window ) {
-  document.documentElement.className += " enhanced";
-
-  // Picturefill polyfil
-  loadJS( "/js/lib/picturefill.min.js" );
-
-  // Main JS file
-  loadJS( "/js/main.min.js" );
-
-}
-</script></html>
+</html>

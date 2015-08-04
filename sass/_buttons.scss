@@ -50,7 +50,7 @@
   font-family: $font-stack-sans;
   font-size: .875em; 
   transition: all 100ms ease-in-out;
-  @include appearance(none);
+  appearance: none;
 
   &:focus {
     outline: 0;
