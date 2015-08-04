@@ -199,7 +199,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/js\/lib\/jquery.min.js": {
 		"fileType": 64,
@@ -210,7 +210,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/js\/lib\/picturefill.min.js": {
 		"fileType": 64,
@@ -221,7 +221,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/js\/lib\/respond.min.js": {
 		"fileType": 64,
@@ -232,7 +232,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/js\/lib\/shoestring.min.js": {
 		"fileType": 64,
@@ -243,7 +243,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/js\/main.js": {
 		"fileType": 64,
