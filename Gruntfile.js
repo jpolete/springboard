@@ -47,7 +47,6 @@ module.exports = function( grunt ) {
   // Load grunt plugins
   grunt.loadNpmTasks( "grunt-shell" );
 
-  // Default (dev) build
   grunt.registerTask(
     "default",
     "Just move bower downloaded files to their right place",

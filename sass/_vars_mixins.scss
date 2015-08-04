@@ -181,6 +181,25 @@ $large: 87.5em;     // 1400/16
 }
 
 
+/*
+
+  Clearfix.
+
+  Standard clearfix hack to clear floats in a container. Use flexbox for
+  layout when possible, but this is here just in case.
+
+  Styleguide 8.3
+
+*/
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+
 
 /*
 

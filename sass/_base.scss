@@ -702,7 +702,7 @@ textarea {
   font-family: inherit;
   color: $color-font;
   background: #fff;
-  @include appearance(none);
+  appearance: none;
 }
 
 input[type="color"], 
@@ -782,7 +782,7 @@ input[type="color"] {
 select,
 input[type="search"] {
   //Remove goofy gradients and rounding chrome/safari 
-  @include appearance(none); 
+  appearance: none; 
   background: #fff;
 }
 
@@ -807,7 +807,7 @@ input[type="radio"] {
   width: 1em;
   border-radius: 50%;
   vertical-align: middle;
-  @include appearance(none);
+  appearance: none;
 
   &:checked, 
   &:active, 
@@ -841,7 +841,7 @@ input[type="checkbox"] {
   width: 1em;
   line-height: 1;
   vertical-align: middle;
-  @include appearance(none);
+  appearance: none;
 
   &:checked, 
   &:active, 

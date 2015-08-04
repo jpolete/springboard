@@ -28,7 +28,7 @@ You can generate a style guide from CSS comments by running `grunt styleguide`. 
 
 # Kit Files
 
-A note about .kit files… I use [Codekit](https://incident57.com/codekit/) to process frontend assets. Codekit supports ".kit" files—HTML files with special comments to support variables and includes. It’s a quick and simple way to handle page templating and enables me to design in the browser. [Learn more here](https://incident57.com/codekit/help.html#kit)
+A note about .kit files… I use [Codekit](https://incident57.com/codekit/) to process frontend assets. Codekit supports ".kit" files—HTML files with special comments to support variables and includes. It’s a quick and simple way to handle page templating and enables a design-in-the-browser workflow. [Learn more here](https://incident57.com/codekit/help.html#kit)
 
 # To-do 
 

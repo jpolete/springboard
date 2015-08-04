@@ -22,8 +22,6 @@
     "respond-minmax": "~1.4.2",
     "picturefill": "~2.3",
     "filament-shoestring": "https://github.com/filamentgroup/shoestring/releases/download/v1.0.2/shoestring.min.js",
-    "kss-node-template": "jpolete/kss-node-template",
-    "bourbon": "~4.2",
-    "neat": "~1.7"
+    "kss-node-template": "jpolete/kss-node-template"
   }
 }
