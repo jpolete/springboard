@@ -3,14 +3,16 @@ Options +FollowSymLinks
 # Most of this is taken from h5bp examples here...
 # https://github.com/h5bp/server-configs-apache/blob/master/dist/.htaccess
 
+# Redirect to HTTPS
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
 
-RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 </IfModule>
 
+# Strip www from url for consistency and SEO concerns.
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{HTTPS} !=on
