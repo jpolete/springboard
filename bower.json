@@ -20,7 +20,7 @@
     "jquery": "~2.1.1",
     "html5shiv": "~3.7.2",
     "respond-minmax": "~1.4.2",
-    "picturefill": "~2.3",
+    "picturefill": "~3.0",
     "filament-shoestring": "https://github.com/filamentgroup/shoestring/releases/download/v1.0.2/shoestring.min.js",
     "kss-node-template": "jpolete/kss-node-template"
   }
