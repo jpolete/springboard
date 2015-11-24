@@ -29,9 +29,13 @@ body {
  Disable buggy font boosting in Chrome for Android
  https://bugs.webkit.org/show_bug.cgi?id=84186
 
+ ...And in mobile safari
+ https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
+
 */
 body * {
   max-height: 1000000em;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
