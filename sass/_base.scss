@@ -402,12 +402,12 @@ code.code-block {
 /*
   Link
 
-  Default link state is #{$color-secondary} and no underline.
+  Default link state is #{$color-link} and no underline.
 
   markup:
   <a class="{$modifiers}" href="http:example.com/safasfsdf">link</a>
 
-  :visited - color #{lighten($color-secondary, 15%)}
+  :visited - color #{lighten($color-link, 15%)}
   :hover   - hover state
   :focus   - same as hover state
   :active  - same as hover and focus
@@ -415,12 +415,12 @@ code.code-block {
   Styleguide 1.7
 */
 a {
-  color: $color-tertiary;
+  color: $color-link;
   text-decoration: none;
   border-bottom: solid 1px #ccc;
 
   &:visited { 
-    color: desaturate(lighten($color-tertiary, 25%), 5%);
+    color: desaturate(lighten($color-link, 25%), 5%);
   }
 
   &:hover,

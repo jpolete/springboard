@@ -15,9 +15,7 @@ $font-stack-form-ui: $font-stack-sans;
 
 
 // Colors
-$color-primary: #a00;
-$color-secondary: #06c;
-$color-tertiary: #09f;
+$color-link: #06c;
 
 $color-info: #066085;
 $color-success: #4b6b4b;
@@ -221,21 +219,6 @@ $large: 87.5em;     // 1400/16
 
   <h2>Colors</h2>
   <ul class="kss-color-swatches">
-    <li class="kss-color-swatch">
-      <div class="kss-color-block" style="background:#{$color-primary}"></div>
-      <div class="kss-color-name">$color-primary</div>
-      <div class="kss-color-value">#{$color-primary}</div>
-    </li>
-    <li class="kss-color-swatch">
-      <div class="kss-color-block" style="background:#{$color-secondary}"></div>
-      <div class="kss-color-name">$color-secondary</div>
-      <div class="kss-color-value">#{$color-secondary}</div>
-    </li>
-    <li class="kss-color-swatch">
-      <div class="kss-color-block" style="background:#{$color-tertiary}"></div>
-      <div class="kss-color-name">$color-tertiary</div>
-      <div class="kss-color-value">#{$color-tertiary}</div>
-    </li>
     <li class="kss-color-swatch">
       <div class="kss-color-block" style="background:#{$color-info}"></div>
       <div class="kss-color-name">$color-info</div>

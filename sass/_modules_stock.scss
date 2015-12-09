@@ -677,7 +677,7 @@
     width: 5em;
     height: .2em;
     border-radius: .1em;
-    background: $color-tertiary
+    background: $color-info;
   }
 
   &:after {
@@ -687,7 +687,7 @@
     width: 5em;
     height: .2em;
     border-radius: .1em;
-    background: $color-tertiary
+    background: $color-info;
   }
 
   @include traditional {
@@ -696,7 +696,7 @@
     width: 50%;
     float: right;
     border: 0;
-    border-left: 8px solid $color-tertiary;
+    border-left: 8px solid $color-info;
     text-align: left;
 
     &:before, 
