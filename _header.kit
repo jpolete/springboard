@@ -20,26 +20,9 @@
   <meta name="description" content="">
 
   <!-- 
-    Place apple-touch-icon.png in root directory. 
-    If you want to go all out, target the various device sizes...
 
-    iPad 2, iPad mini
-    apple-touch-icon-76x76.png
-
-    iPhone 4s, 5, 6
-    apple-touch-icon-120x120.png
-
-    iPad and iPad mini
-    apple-touch-icon-152x152.png
-
-    iPhone 6+
-    apple-touch-icon-180x180.png
-
-    Catch-all
-    apple-touch-icon.png
-
-    Optionally explicitly include the link attribute.
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes=180x180">
+    Try this to cover the ever-increasing icon gamut
+    http://realfavicongenerator.net/
 
     https://github.com/audreyr/favicon-cheat-sheet#id5
 
@@ -72,24 +55,24 @@
           Start with 1st choice of formats and larger viewports… 
         -->
         <source 
-          type="image/svg+xml" 
-          media="(min-width: 48em)"
-          sizes="222px"  
-          srcset="/images/logo-full.svg 222w" />
+        type="image/svg+xml" 
+        media="(min-width: 48em)"
+        sizes="222px"  
+        srcset="/images/logo-full.svg 222w" />
 
         <!-- …then smaller viewports… -->
         <source 
-          type="image/svg+xml" 
-          sizes="50px"  
-          srcset="/images/logo-small.svg 50w" /> 
+        type="image/svg+xml" 
+        sizes="50px"  
+        srcset="/images/logo-small.svg 50w" /> 
 
         <!-- …then 2nd choice formats… -->
         <source 
-          media="(min-width: 48em)" 
-          sizes="222px"
-          srcset="/images/logo-full.png 222w,
-                  /images/logo-full@2x.png 444w,
-                  /images/logo-full@3x.png 666w" /> 
+        media="(min-width: 48em)" 
+        sizes="222px"
+        srcset="/images/logo-full.png 222w,
+        /images/logo-full@2x.png 444w,
+        /images/logo-full@3x.png 666w" /> 
 
         <!-- 
           …finally handle different sizes of the same image. 
@@ -98,12 +81,12 @@
           with the native width of the images themselves.
         -->
         <img 
-          src="/images/logo-small.png" 
-          sizes="50px"
-          srcset="/images/logo-small.png 50w,
-                  /images/logo-small@2x.png 100w
-                  /images/logo-small@3x.png 150w"
-          alt="Springboard Logo" />
+        src="/images/logo-small.png" 
+        sizes="50px"
+        srcset="/images/logo-small.png 50w,
+        /images/logo-small@2x.png 100w
+        /images/logo-small@3x.png 150w"
+        alt="Springboard Logo" />
 
       </picture>
     </a>

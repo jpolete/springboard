@@ -32,3 +32,6 @@ js/lib/*
 
 # Minified JS
 js/*.min.js
+
+# Generated index page from .kit files
+index.html
