@@ -7,40 +7,24 @@ module.exports = function( grunt ) {
       js: {
         lib: "js/lib/"
       },
-      css: {
-        prod: "style.css",
-        styleguide: "styleguide-tmpl/style.css"
-      },
-      sass: "sass",
-      bower: {
-        respond: "bower_components/respond-minmax/dest/respond.min.js",
-        html5shiv: "bower_components/html5shiv/dist/html5shiv.min.js",
-        picturefill: "bower_components/picturefill/dist/picturefill.min.js",
-        shoestring: "bower_components/filament-shoestring/index.js",
-        jquery: "bower_components/jquery/dist/jquery.min.js",
-        kssTmpl: "bower_components/kss-node-template/template"
+      node: {
+        html5shiv: "node_modules/html5shiv/dist/html5shiv.min.js",
+        picturefill: "node_modules/picturefill/dist/picturefill.min.js",
+        shoestring: "node_modules/shoestring/dist/shoestring.js",
+        jquery: "node_modules/jquery/dist/jquery.min.js",
       }
     },
     shell: {
-      sass: {
-        command: "sass -t expanded sass/style.scss <%= dirs.css.styleguide %>"
-      },
       copy: {
         command: [
           "mkdir -p js/lib",
-          "cp <%= dirs.bower.picturefill %> <%= dirs.js.lib %>picturefill.min.js",
-          "cp <%= dirs.bower.jquery %> <%= dirs.js.lib %>jquery.min.js",
-          "cp <%= dirs.bower.shoestring %> <%= dirs.js.lib %>shoestring.min.js",
-          "cp <%= dirs.bower.respond %> <%= dirs.js.lib %>respond.min.js",
-          "cp <%= dirs.bower.html5shiv %> <%= dirs.js.lib %>html5shiv.min.js"
+          "cp <%= dirs.node.picturefill %> <%= dirs.js.lib %>picturefill.min.js",
+          "cp <%= dirs.node.jquery %> <%= dirs.js.lib %>jquery.min.js",
+          "cp <%= dirs.node.shoestring %> <%= dirs.js.lib %>shoestring.js",
+          "cp <%= dirs.node.html5shiv %> <%= dirs.js.lib %>html5shiv.min.js"
         ].join(";"),
       },
-      kss: {
-        command:
-          "kss-node styleguide-tmpl styleguide " +
-          "--template <%= dirs.bower.kssTmpl %> " +
-          "--css <%= dirs.css.styleguide %>"
-      }
+      kss: {}
     }
   });
 
@@ -49,14 +33,8 @@ module.exports = function( grunt ) {
 
   grunt.registerTask(
     "default",
-    "Just move bower downloaded files to their right place",
+    "Just move npm downloaded third-party files to their right place",
     [ "shell:copy" ]
-  );
-
-  grunt.registerTask(
-    "styleguide",
-    "Generate a KSS style guide",
-    [ "shell:sass", "shell:kss" ]
   );
 
 };

@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/jpolete/springboard",
   "devDependencies": {
-    "bower": "^1.3.12",
+    "jquery": "^2.1.4",
+    "html5shiv": "^3.7.3",
+    "picturefill": "~3.0.1",
+    "shoestring": "^1.0.3",
     "grunt": "^0.4.5",
     "grunt-shell": "^1.1.1",
     "kss": "^1.2.0"
