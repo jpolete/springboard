@@ -3,8 +3,8 @@
 profile
 
 # Sass noise
-*.scssc
-.sass-cache
+**/*.scssc
+**/.sass-cache
 
 # Sublime Text config
 *.sublime-project
@@ -13,25 +13,26 @@ profile
 # Codekit config
 # config.codekit
 
-# Bower
-bower_components/*
-
 # NPM
 node_modules/*
 npm-debug.log
-
-# Styleguide (kss)
-styleguide/*
 
 # Generated CSS and sourcemaps
 **/*.css
 **/*.css.map
 
 # JS Libs
-js/lib/*
+**/js/lib/*
 
 # Minified JS
-js/*.min.js
+**/js/*.min.js
 
 # Generated index page from .kit files
 index.html
+
+# Craft
+craft/storage/backups
+craft/storage/rebrand
+craft/storage/runtime
+craft/storage/userphotos
+
