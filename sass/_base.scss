@@ -299,6 +299,11 @@ img {
   max-width: 100%;
 }
 
+video {
+  width: 100% !important;
+  height: auto !important;
+}
+
 strong {
   color: #333;
   font-weight: bold;
