@@ -18,7 +18,7 @@
     </div>
   </div>
 
-  Styleguide 3.3
+  Styleguide Form.Layout
 
 */
 .form-input-full,
@@ -26,7 +26,7 @@
 .form-input-third,
 .form-input-quarter {
   width: 100%;
-  margin: 0 0 $line-height 0;
+  margin: 0 0 $line-height;
 }
 
 @include tablet {
@@ -82,7 +82,6 @@
 
 
 /* 
-
   Radio/Checkbox layout 
 
   Group radiobuttons and checkboxes in a 
@@ -107,8 +106,7 @@
     </ul>
   </fieldset>
 
-  Styleguide 3.4
-
+  Styleguide Form.RadioCheckboxLayout
 */
 .radiobuttons,
 .checkboxes {
@@ -157,7 +155,7 @@
   <input type="text" id="input-hint" name="input-hint" />
   <span class="input-hint">Full, legal name</span>
 
-  Styleguide 3.5
+  Styleguide Form.Hint
 
 */
 .input-hint 
@@ -184,7 +182,7 @@
     <div class="error-msg">Wrong!! :)</div>
   </div>
 
-  Styleguide 3.6
+  Styleguide Form.Errors
 */
 .is-error {
   label {
@@ -209,12 +207,7 @@
 }
 
 
-
-
-
-
 /* 
-
   Numeric data
 
   Mark numeric data as &lt;td.numeric&gt; for right-alignment.
@@ -251,8 +244,7 @@
     </tbody>
   </table>
 
-  Styleguide 2.2
-
+  Styleguide Table.Numeric
 */
 .numeric {
   text-align: right;
@@ -260,7 +252,6 @@
 
 
 /*
-
   Responsive wrapper
 
   For a simple responsive solution, wrap tables in a &lt;div.table-wrap&gt;. Allows for horizonal scrolling for tables wider than the viewport.
@@ -315,8 +306,7 @@
     </table>
   </div>
 
-  Styleguide 2.4
-
+  Styleguide Table.Responsive
 */
 .table-wrap {
   width: 100%;
@@ -325,7 +315,6 @@
 
 
 /*
-
   Responsive Table (linearized)
 
   "Linearizes" table cells for small viewports. Relies on duplicating the 
@@ -369,8 +358,7 @@
     </tbody>
   </table>
 
-  Styleguide 2.5
-
+  Styleguide Table.Linearize
 */
 @media screen and (max-width: 37.5em) {
   .linearizable {
@@ -413,7 +401,6 @@
 
 
 /*
-  
   Message box
 
   Use to alert the user about a current or potential outcome such as
@@ -431,8 +418,7 @@
     the look of the warning box.</p>
   </div>
 
-  Styleguide 4.0
-
+  Styleguide Modules.MessageBox
 */
 %msg {
   display: block;
@@ -536,19 +522,7 @@
 }
 
 
-
-/*
-
-  Misc styles
-
-  Various inline styles, not included elsewhere.
-
-  Styleguide 5.0
-
-*/
-
 /* 
-
   Implied content
 
   Use to hide content that would be implied for visual users, such
@@ -558,8 +532,7 @@
   markup:
   <a href="#">read more <span class="implied">about jackelopes</span></a>
 
-  Styleguide 5.1
-
+  Styleguide Typography.Implied
 */
 .implied
 {
@@ -573,15 +546,13 @@
 
 
 /*
-
   No wrap
 
   Prevents text from breaking across lines.
 
   markup: <span class="nowrap">This text doesn’t break</span>
 
-  Styleguide 5.2
-  
+  Styleguide Typography.Nowrap
 */
 .nowrap {
   white-space: nowrap;
@@ -589,31 +560,29 @@
 
 
 /*
-
   Centered
 
-  Centers the inline content.
+  Centers inline and block content.
 
   markup: <p class="centered">This text is centered</p>
 
-  Styleguide 5.3
-
+  Styleguide Modules.Centered
 */
 .centered {
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
 /*
-
   Note
 
   Note such as a footnote of asterisked note.
 
   markup: <p class="note">* This is a note!</p>
 
-  Styleguide 5.4
-
+  Styleguide Typography.Note
 */
 .note {
   font-style: italic;
@@ -622,15 +591,13 @@
 
 
 /*
-
   Important Label
 
   A text label that communicates importance.
 
   markup: <span class="label--important">New!</span> Some timely information.
 
-  Styleguide 5.5
-  
+  Styleguide Typography.TextLabel
 */
 %label {
   font-size: 75%;
@@ -643,8 +610,8 @@
   color: red;
 }
 
-/* 
 
+/* 
   Pull quote
 
   Use a pullquote anytime you want to highlight a quote from a 
@@ -657,8 +624,7 @@
   </blockquote>
   <p>Paragraph after Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-  Styleguide 5.6
-
+  Styleguide Typography.Pullquote
 */
 .pullquote {
   padding: 0 1em;

@@ -81,7 +81,7 @@ figure {
 
   Ligatures are turned off by default, but can be turned on by uncommenting @include ligatures()
 
-  Styleguide 1.0
+  Styleguide Typography
 */
 
 /*
@@ -108,7 +108,7 @@ figure {
   <h6>Heading 6</h6>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ratione placeat, mollitia fugiat doloribus accusamus incidunt commodi. Sequi hic cupiditate dicta assumenda perspiciatis officia, mollitia quidem laborum delectus, itaque illo.</p>
 
-  Styleguide 1.1
+  Styleguide Typography.Headings
 */
 h1,
 h2,
@@ -188,7 +188,7 @@ h6, .h6 {
     <li>Item</li>
   </ol>
 
-  Styleguide 1.2
+  Styleguide Typography.Lists
 */
 ul, ol {
   padding-left: 1.5em;
@@ -246,7 +246,7 @@ dd {
     </p> 
   </blockquote>
 
-  Styleguide 1.3
+  Styleguide Typography.Blockquotes
   
 */
 blockquote {
@@ -270,7 +270,7 @@ blockquote {
     <figcaption>The White Rabbit</figcaption>
   </figure>
 
-  Styleguide 1.4
+  Styleguide Typography.Figure
 */
 figure {
   margin-right: 0;
@@ -293,15 +293,10 @@ figcaption {
   markup:
   <p>Here are some <mark>marked words</mark>, and some <em>emphasized words</em> and some <strong>strong text</strong> and an <i>i element</i> and a <b>b element</b> and <q>This is an inline quote using a <code>&lt;q&gt;</code> element.</q> and this is a superscript<sup>1</sup> and a subscript<sub>2</sub>… and <abbr title="Hypertext Markup Language"> HTML</abbr> is an abbreviation.</p>
 
-  Styleguide 1.5
+  Styleguide Typography.InlineStyles
 */
 img {
   max-width: 100%;
-}
-
-video {
-  width: 100% !important;
-  height: auto !important;
 }
 
 strong {
@@ -361,11 +356,11 @@ meter {}
 progress {}
 
 b {
-  font-weight: bold; /* http://dev.w3.org/html5/markup/b.html */
+  font-weight: bold; // http://dev.w3.org/html5/markup/b.html 
 }
 
 i {
-  font-style: italic; /* http://dev.w3.org/html5/markup/i.html */
+  font-style: italic; // http://dev.w3.org/html5/markup/i.html 
 }
 
 
@@ -382,7 +377,7 @@ i {
   }
   </code>
 
-  Styleguide 1.6
+  Styleguide Typography.Code
 */
 
 code {
@@ -417,7 +412,7 @@ code.code-block {
   :focus   - same as hover state
   :active  - same as hover and focus
 
-  Styleguide 1.7
+  Styleguide Typography.Link
 */
 a {
   color: $color-link;
@@ -448,7 +443,7 @@ a {
   <hr>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nisi corrupti, animi esse quam harum dolore aut, et perferendis iusto nihil vel earum tempora eum beatae ipsam, quisquam, mollitia quas.</p>
 
-  Styleguide 1.8
+  Styleguide Typography.HorizontalRule
 */
 hr {
   clear: both;
@@ -463,7 +458,6 @@ hr {
 
 
 /* 
-
   Tables 
 
   By default tables will expand to 100% of their container. Content will be top-left aligned and cells in even rows are tinted.
@@ -513,10 +507,8 @@ hr {
     </tbody>
   </table>
 
-  Styleguide 2.0
-
+  Styleguide Table
 */
-
 table {
   width: 100%;
   padding: 0;
@@ -562,7 +554,7 @@ caption {
 
   Forms
 
-  Styleguide 3.0
+  Styleguide Form
 
 */
 
@@ -578,7 +570,7 @@ caption {
     <input type="text" id="field" name="field" />
   </fieldset>
   
-  Styleguide 3.1 
+  Styleguide Form.Fieldset
 
 */
 fieldset 
@@ -613,7 +605,7 @@ legend
   <label for="name">Name</label>
   <input class="{$modifiers}" type="text" id="name" name="name" placeholder="first and last" />
   
-  Styleguide 3.2 
+  Styleguide Form.Label
 */
 label
 {
@@ -681,8 +673,7 @@ label
   <label for="i16">Range</label>
   <input type="range" id="i16" name="i16" min="0" max="100" step="10" value="" />
 
-  Styleguide 3.2.1
-
+  Styleguide Form.Inputs
 */
 input[type="text"], 
 input[type="password"], 
@@ -772,30 +763,6 @@ input[type="color"] {
 
 
 /*
-
-  Select
-
-  markup:
-  <label for="i17">Select</label>
-  <select id="i17" name="i17">
-    <optgroup label="Group 1">
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-    </optgroup>
-  </select>
-  
-  Styleguide 3.2.2
-
-*/
-select,
-input[type="search"] {
-  //Remove goofy gradients and rounding chrome/safari 
-  appearance: none; 
-  background: #fff;
-}
-
-/*
   
   Radio buttons.
 
@@ -806,7 +773,7 @@ input[type="search"] {
   <input id="set1-no" type="radio" name="set1" value="no" />
   <label for="set1-no">No</label>
 
-  Styleguide 3.2.3
+  Styleguide Form.Radio
 
 */
 input[type="radio"] {
@@ -839,7 +806,7 @@ input[type="radio"] {
   <input type="checkbox" id="cb3" name="cb3" value="blueberries" />
   <label for="cb3">Blueberries</label>
 
-  Styleguide 3.2.4
+  Styleguide Form.Checkbox
 
 */
 input[type="checkbox"] {
@@ -890,6 +857,20 @@ input[type="url"]:invalid {
   border-color: $color-error;
   outline: 0;
   box-shadow: none;
+}
+
+
+
+/*
+  Video
+
+  Native HTML video element.
+
+  Styleguide Media.Video
+*/
+video {
+  width: 100% !important;
+  height: auto !important;
 }
 
 

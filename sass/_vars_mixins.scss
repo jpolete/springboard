@@ -7,7 +7,7 @@
 
 // Font attributes
 $font-size-base: 16px;
-$line-height: 1.375rem;
+$line-height: 1.4rem;
 $font-stack-sans: "Helvetica Neue", Helvetica, Verdana, sans-serif;
 $font-stack-serif: Georgia, serif;
 $font-stack-mono: "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
@@ -39,13 +39,11 @@ $large: 87.5em;     // 1400/16
 
 
 /*
-
   Breakpoint: Big Phone
 
   Mixin to make breakpoint declarations more succinct.
 
-  Styleguide 8.3
-
+  Styleguide Mixin.BreakpointBigPhone
 */
 @mixin bigphone {
   @media screen and (min-width: $bigphone) {
@@ -55,13 +53,11 @@ $large: 87.5em;     // 1400/16
 
 
 /*
-
   Breakpoint: Reader
 
   Mixin to make breakpoint declarations more succinct.
 
-  Styleguide 8.4
-
+  Styleguide Mixin.BreakpointReader
 */
 @mixin reader {
   @media screen and (min-width: $reader) {
@@ -71,13 +67,11 @@ $large: 87.5em;     // 1400/16
 
 
 /*
-
   Breakpoint: Tablet
 
   Mixin to make breakpoint declarations more succinct.
 
-  Styleguide 8.5
-
+  Styleguide Mixin.BreakpointTablet
 */
 @mixin tablet {
   @media screen and (min-width: $tablet) {
@@ -87,13 +81,11 @@ $large: 87.5em;     // 1400/16
 
 
 /*
-
   Breakpoint: Traditional
 
   Mixin to make breakpoint declarations more succinct.
 
-  Styleguide 8.6
-
+  Styleguide Mixin.BreakpointTraditional
 */
 @mixin traditional {
   @media screen and (min-width: $traditional) {
@@ -103,13 +95,11 @@ $large: 87.5em;     // 1400/16
 
 
 /*
-
   Breakpoint: Large
 
   Mixin to make breakpoint declarations more succinct.
 
-  Styleguide 8.7
-
+  Styleguide Mixin.BreakpointLarge
 */
 @mixin large {
   @media screen and (min-width: $large) {
@@ -117,19 +107,7 @@ $large: 87.5em;     // 1400/16
   }
 }
 
-
 /*
-
-  Sass Mixins
-
-  Sass mixins.
-
-  Styleguide 8.0
-
-*/
-
-/*
-
   ligatures()
 
   !!Use with care. Has broken font rendering in IE with some fonts!!
@@ -139,8 +117,7 @@ $large: 87.5em;     // 1400/16
 
   Compatible in IE 10+, FF 23+, Chrome 29+, Safari 7+, Opera 17+, iOS Safari 7+, Android Browser 4.4+, Blackberry 10+
 
-  Styleguide 8.1
-
+  Styleguide Mixin.Ligatures
 */
 @mixin ligatures() {
   font-feature-settings: "liga", "dlig";
@@ -152,42 +129,12 @@ $large: 87.5em;     // 1400/16
 
 
 /*
-
-  rems($property, $value)
-
-  Accepts either px or rem value. Using REM values allows
-  modern browsers to use a flexible, relative unit, while browsers that don't
-  understand REMs can use a px value.
-  (based on http://drublic.de/blog/rem-fallback-sass-less/)
-
-  $property - the css property
-  $value    - the px or rem value
-
-  Deprecated: Rems are supported in all modern browsers. Phase out px fallback.
-
-  Styleguide 8.2
-
-*/
-@mixin rems($property, $value) {
-  @if unit($value) == "px" {
-    #{$property}: $value;
-    #{$property}: #{$value / $font-size-base}rem;
-  } @else {
-    #{$property}: #{$value * $font-size-base}px;
-    #{$property}: #{$value}rem;
-  }
-}
-
-
-/*
-
   Clearfix.
 
   Standard clearfix hack to clear floats in a container. Use flexbox for
   layout when possible, but this is here just in case.
 
-  Styleguide 8.3
-
+  Styleguide Mixin.Clearfix
 */
 @mixin clearfix {
   &::after {
@@ -197,84 +144,3 @@ $large: 87.5em;     // 1400/16
   }
 }
 
-
-
-/*
-
-  Colors & Variables
-
-  Global variables for font, color and breakpoints.
-
-  <h2>Font Variables</h2>
-  <ul>
-    <li><strong>$font-size-base:</strong> #{$font-size-base}</li>
-    <li><strong>$line-height:</strong> #{$line-height}</li>
-    <li><strong>$font-stack-sans:</strong> #{$font-stack-sans}</li>
-    <li><strong>$font-stack-serif:</strong> #{$font-stack-serif}</li>
-    <li><strong>$font-stack-mono:</strong> #{$font-stack-mono}</li>
-    <li><strong>$font-stack-form-ui:</strong> #{$font-stack-form-ui}</li>
-  </ul>
-
-  <hr>
-
-  <h2>Colors</h2>
-  <ul class="kss-color-swatches">
-    <li class="kss-color-swatch">
-      <div class="kss-color-block" style="background:#{$color-info}"></div>
-      <div class="kss-color-name">$color-info</div>
-      <div class="kss-color-value">#{$color-info}</div>
-    </li>
-    <li class="kss-color-swatch">
-      <div class="kss-color-block" style="background:#{$color-success}"></div>
-      <div class="kss-color-name">$color-success</div>
-      <div class="kss-color-value">#{$color-success}</div>
-    </li>
-    <li class="kss-color-swatch">
-      <div class="kss-color-block" style="background:#{$color-warning}"></div>
-      <div class="kss-color-name">$color-warning</div>
-      <div class="kss-color-value">#{$color-warning}</div>
-    </li>
-    <li class="kss-color-swatch">
-      <div class="kss-color-block" style="background:#{$color-error}"></div>
-      <div class="kss-color-name">$color-error</div>
-      <div class="kss-color-value">#{$color-error}</div>
-    </li>
-    <li class="kss-color-swatch">
-      <div class="kss-color-block" style="background:#{$color-selected-box}"></div>
-      <div class="kss-color-name">$color-selected-box</div>
-      <div class="kss-color-value">#{$color-selected-box}</div>
-    </li>
-    <li class="kss-color-swatch">
-      <div class="kss-color-block" style="background:#{$color-btn}"></div>
-      <div class="kss-color-name">$color-btn</div>
-      <div class="kss-color-value">#{$color-btn}</div>
-    </li>
-    <li class="kss-color-swatch">
-      <div class="kss-color-block" style="background:#{$color-btn-highlight}"></div>
-      <div class="kss-color-name">$color-btn-highlight</div>
-      <div class="kss-color-value">#{$color-btn-highlight}</div>
-    </li>
-    <li class="kss-color-swatch">
-      <div class="kss-color-block" style="background:#{$color-soft-black}"></div>
-      <div class="kss-color-name">$color-soft-black</div>
-      <div class="kss-color-value">#{$color-soft-black}</div>
-    </li>
-    <li class="kss-color-swatch">
-      <div class="kss-color-block" style="background:#{$color-font}"></div>
-      <div class="kss-color-name">$color-font</div>
-      <div class="kss-color-value">#{$color-font}</div>
-    </li>
-  </ul>
-
-  <hr>
-
-  <h2>Named Breakpoints</h2>
-  <ul>
-    <li><strong>$reader</strong>: #{$reader}</li>
-    <li><strong>$tablet</strong>: #{$tablet}</li>
-    <li><strong>$traditional</strong>: #{$traditional}</li>
-  </ul>
-
-  Styleguide 7.0
-
-*/
