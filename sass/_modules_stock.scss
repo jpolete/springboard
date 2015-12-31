@@ -726,8 +726,7 @@
 */
 .intrinsic {
 
-  // Make sure <picture> wrapper is set to block
-  // Max-width is governed by parentNode
+  // Make sure wrapper is set to block
   display: block;
 
   // Intrinsic Ratio Box
@@ -735,8 +734,6 @@
   height: 0;
   width: 100%;
   padding-top: 100%; // Default to square
-
-  // Custom Styling
   background: #f0f0f0;
 
   // Add as many ratios as you'd like...
@@ -753,7 +750,10 @@
   }
 
   // Force the item to fill the intrinsic box
-  .intrinsic-item {
+  > img,
+  > iframe,
+  > embed,
+  > object {
     position: absolute;
     top: 0;
     left: 0;
