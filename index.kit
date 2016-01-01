@@ -31,23 +31,37 @@
 
   <p>SVG Icons (svg sprite)</p>
 
-  <svg class="icon">
+  <p>To create icon sprite:</p>
+  <ol>
+    <li>Export from Sketch</li>
+    <li>Run <code>svgo -f /folder-of-svgs</code> to clean/compact svg markup</li>
+    <li>Create SVG sprite on icomoon.io</li>
+  </ol>
+  <p><em>Sprite must be inline (in HTML doc head) to support IE8-11. Or use <a href="https://github.com/jonathantneal/svg4everybody">SVG for Everybody</a> or <a href="https://github.com/Keyamoon/svgxuse">svgxuse</a> for external SVG sprite.</em></p>
+
+  <!-- http://stackoverflow.com/questions/4697100/accessibility-recommended-alt-text-convention-for-svg-and-mathml -->
+  <svg role="img" aria-label="Twitter icon" class="icon">
+    <title>Twitter icon</title>
     <use xlink:href="#icon-twitter" />
   </svg>
 
-  <svg class="icon">
+  <svg role="img" aria-label="Facebook icon" class="icon">
+    <title>Facebook icon</title>
     <use xlink:href="#icon-facebook" />
   </svg>
 
-  <svg class="icon">
+  <svg role="img" aria-label="Instagram icon" class="icon">
+    <title>Instagram icon</title>
     <use xlink:href="#icon-instagram" />
   </svg>
 
-  <svg class="icon">
+  <svg role="img" aria-label="Vimeo icon" class="icon">
+    <title>Vimeo icon</title>
     <use xlink:href="#icon-vimeo" />
   </svg>
 
-  <svg class="icon">
+  <svg role="img" aria-label="Youtube icon" class="icon">
+    <title>Youtube icon</title>
     <use xlink:href="#icon-youtube" />
   </svg>
 
