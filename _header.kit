@@ -44,10 +44,22 @@
   
   <!-- @include _loadjs.kit -->
 
+  <!-- @include images/social-media-sprite.svg -->
+
   <!-- TODO: Remove this style element. Just used on sample index page -->
   <style>
     header {
       border-bottom: solid 1px #ccc;
+    }
+    svg.icon {
+      height: 32px;
+      width: 32px;
+      margin: 0 10px;
+      fill: rgba(0,0,0,.3);
+      transition: all 200ms ease-in-out;
+    }
+    svg.icon:hover {
+      fill: rgba(0,0,0,.6);
     }
     @media screen and (min-width: 600px) {
       section {
@@ -56,6 +68,7 @@
       }
     }
   </style>
+  <!-- END TODO -->
 
 </head>
 <body>
