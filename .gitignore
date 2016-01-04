@@ -27,9 +27,6 @@ npm-debug.log
 # Minified JS
 **/js/*.min.js
 
-# Generated index page from .kit files
-index.html
-
 # Craft
 craft/storage/backups
 craft/storage/rebrand
