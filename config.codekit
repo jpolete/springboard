@@ -502,13 +502,13 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styleguide-tmpl\/sbstyleguide.scss",
-		"outputAbbreviatedPath": "\/styleguide\/sbstyleguide.css",
+		"outputAbbreviatedPath": "\/styleguide-tmpl\/sbstyleguide.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
-		"useLibsass": 0
+		"useLibsass": 1
 		}
 	},
 "hooks": [
