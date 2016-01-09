@@ -262,9 +262,9 @@
 
   Use to alert the user about a current or potential outcome such as success, failure or a warning. There are four types of messages.
 
-  .warning - More important than your standard message. Warns of potential danger.
-  .error   - An error has occurred
-  .success - A success message
+  .msg--warning - More important than your standard message. Warns of potential danger.
+  .msg--error   - An error has occurred
+  .msg--success - A success message
 
   markup: message-box.html
 
@@ -294,7 +294,6 @@
 
   a:link,
   a:visited,
-  a:hover,
   a:active,
   a:focus {
     text-decoration: none;
@@ -303,6 +302,11 @@
     border-color: rgba(0,0,0,.7);
     border-width: 0 0 1px;
     border-style: solid;
+  }
+
+  a:hover {
+    text-decoration: none;
+    border: 0 !important;
   }
 }
 
@@ -314,7 +318,6 @@
 
   a:link,
   a:visited,
-  a:hover,
   a:active,
   a:focus {
     color: $color-info;
@@ -323,15 +326,17 @@
   }
 }
 
-.msg.success {
-  @extend %msg;
+.msg--success {
   background: #D0FDCF;
   color: $color-success;
   border-color: #79c279;
 
+  >.notice__heading {
+    color: $color-success;
+  }
+
   a:link,
   a:visited,
-  a:hover,
   a:active,
   a:focus {
     color: $color-success;
@@ -339,15 +344,17 @@
   }
 }
 
-.msg.warning {
-  @extend %msg;
+.msg--warning {
   background: #FFFEDF;
   color: $color-warning;
   border-color: #cfcf70;
 
+  >.notice__heading {
+    color: $color-warning;
+  }
+
   a:link,
   a:visited,
-  a:hover,
   a:active,
   a:focus {
     color: $color-warning;
@@ -355,11 +362,15 @@
   }
 }
 
-.msg.error {
+.msg--error {
   @extend %msg;
   background: #FFEEEE;
   color: $color-error;
   border-color: #cc0000;
+
+  >.notice__heading {
+    color: $color-error;
+  }
 
   a:link,
   a:visited,
