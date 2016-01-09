@@ -735,8 +735,8 @@
 		},
 	"\/styleguide-tmpl\/public\/kss.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/styleguide-tmpl\/public\/kss.js",
 		"outputAbbreviatedPath": "\/styleguide-tmpl\/public\/min\/kss-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -786,6 +786,42 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/styleguide\/public\/kss.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styleguide\/public\/kss.js",
+		"outputAbbreviatedPath": "\/styleguide\/public\/min\/kss-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/styleguide\/public\/sbstyleguide.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styleguide\/public\/sbstyleguide.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/styleguide\/public\/sbstyleguide.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styleguide\/public\/sbstyleguide.scss",
+		"outputAbbreviatedPath": "\/styleguide\/css\/sbstyleguide.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
 	"\/styleguide\/section-branding.html": {
 		"fileType": 8192,
