@@ -253,7 +253,7 @@ body {
 .sbs-example,
 .sbs-code,
 .sbs-block {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .sbs-example {
@@ -319,6 +319,12 @@ body {
   }
   .sbs-main {
     margin-left: $nav-width;
+  }
+  .sbs-style-header,
+  .sbs-example,
+  .sbs-code,
+  .sbs-block {
+    padding: 2rem;
   }
 }
 
