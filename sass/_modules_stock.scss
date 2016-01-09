@@ -1,25 +1,20 @@
 
+/*
+  Modules
+
+  Weight: 5
+
+  Styleguide Modules
+*/
+
 /* 
+  Form Layout
 
-  Form layout
+  Each line of a form should be wrapped in a `.form-line`. 
 
-  Each line of a form should be wrapped in a &lt;div.form-line&gt;. 
-  A single label/input on a line should be wrapped in a &lt;div.form-input-full&gt;. For two label/inputs on a line wrap each in &lt;div.form-input-half&gt;. For three inputs wrap each in a &lt;div.form-input-third&gt; and for four inputs each should be wrapped in a &lt;div.form-input-quarter&gt;.
-
-  markup:
-  <div class="form-line">
-    <div class="form-input-half">
-      <label for="FirstName">First Name</label>
-      <input type="text" id="FirstName" name="FirstName" value="" /> 
-    </div>
-    <div class="form-input-half">
-      <label for="LastName">Last Name</label>
-      <input type="text" id="LastName" name="LastName" value="" /> 
-    </div>
-  </div>
+  markup: formline.html
 
   Styleguide Form.Layout
-
 */
 .form-input-full,
 .form-input-half,
@@ -33,7 +28,7 @@
 
   .form-line {
     position: relative;
-    left: (3%/2); /*Keep form lines centered. Offsets the 3% trailing margin */
+    left: 1%; /*Keep form lines centered. Offsets the 3% trailing margin */
     width: 100%;
     margin-bottom: $line-height;
     @include clearfix;
@@ -49,68 +44,47 @@
 
   .form-input-full {
     float: left;
-    width: 97%;
-    margin-right: 3%;
+    width: 98%;
+    margin-right: 2%;
   }
 
   .form-input-half {
     float: left;
-    width: 47%;
-    margin-right: 3%;
+    width: 48%;
+    margin-right: 2%;
   }
 
   .form-input-third {
     float: left;
-    width: 30.3333333%;
-    margin-right: 3%;
+    width: 31.3333333%;
+    margin-right: 2%;
   }
 
   .form-input-fourth {
     float: left;
-    width: 22%;
-    margin-right: 3%;
+    width: 23%;
+    margin-right: 2%;
   }
 
   .form-input-three-fourths {
     float: left;
-    width: 72%;
-    margin-right: 3%;
+    width: 73%;
+    margin-right: 2%;
   }
 
 }
 
 
-
 /* 
-  Radio/Checkbox layout 
+  Radio/Checkbox Layout 
 
-  Group radiobuttons and checkboxes in a 
-  &lt;fieldset.radiobuttons&gt; and &lt;fieldset.checkboxes&gt; respectively, and place each input/label pair in &lt;ol&gt;&lt;li&gt; or &lt;ul&gt;&lt;li&gt;.
+  Group radio buttons and checkboxes in a `fieldset.input-list`
 
-  markup:
-  <fieldset class="checkboxes">
-    <legend>Checkboxes</legend>
-    <ul>
-      <li>
-        <input type="checkbox" id="cbone" name="cbone" />
-        <label for="cbone">One</label>
-      </li>
-      <li>
-        <input type="checkbox" id="cbtwo" name="cbtwo" />
-        <label for="cbtwo">Two</label>
-      </li>
-      <li>
-        <input type="checkbox" id="cbthree" name="cbthree" indeterminate="true" />
-        <label for="cbthree">Three</label>
-      </li>
-    </ul>
-  </fieldset>
+  markup: inputlist.html
 
   Styleguide Form.RadioCheckboxLayout
 */
-.radiobuttons,
-.checkboxes {
-
+.input-list {
   legend {
     @extend label;
     padding-left: .5em;
@@ -145,8 +119,7 @@
 
 
 /*
-
-  Input hints
+  Input Hints
 
   Use input hints to offer hints or instructions to help users complete a form field.
 
@@ -156,7 +129,6 @@
   <span class="input-hint">Full, legal name</span>
 
   Styleguide Form.Hint
-
 */
 .input-hint 
 {
@@ -170,10 +142,10 @@
 
 
 /*
-  Error fields and inline messages
+  Error Fields 
 
   When validation fails for an input, wrap the label and 
-  input in a &lt;div.is-error&gt; and include a &lt;div.error-msg&gt; below the input (see .error-msg)
+  input in a `div.is-error` and include a `div.error-msg` below the input. 
 
   markup:
   <div class="is-error">
@@ -208,41 +180,13 @@
 
 
 /* 
-  Numeric data
+  Numeric Data
 
-  Mark numeric data as &lt;td.numeric&gt; for right-alignment.
+  Mark numeric data as `td.numeric` for right-alignment.
 
-  markup:
-  <table>
-    <thead>
-      <tr>
-        <th class="numeric">Regular Price</th>
-        <th class="numeric">25% Off</th>
-        <th class="numeric">50% Off</th>
-        <th class="numeric">75% Off</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="numeric">$2.00</td>
-        <td class="numeric">$1.50</td>
-        <td class="numeric">$1.00</td>
-        <td class="numeric">$0.50</td>
-      </tr>
-      <tr>
-        <td class="numeric">$3.00</td>
-        <td class="numeric">$2.25</td>
-        <td class="numeric">$1.50</td>
-        <td class="numeric">$0.75</td>
-      </tr>
-      <tr>
-        <td class="numeric">$4.00</td>
-        <td class="numeric">$3.00</td>
-        <td class="numeric">$2.00</td>
-        <td class="numeric">$1.00</td>
-      </tr>
-    </tbody>
-  </table>
+  markup: table-numeric.html
+
+  weight: 1
 
   Styleguide Table.Numeric
 */
@@ -252,111 +196,28 @@
 
 
 /*
-  Responsive wrapper
+  Responsive Wrapper
 
-  For a simple responsive solution, wrap tables in a &lt;div.table-wrap&gt;. Allows for horizonal scrolling for tables wider than the viewport.
+  For a simple responsive solution, wrap tables in a `div.table-wrap`. Allows for horizonal scrolling for tables wider than the viewport.
 
-  markup:
-  <div class="table-wrap">
-    <table>
-      <thead>
-        <tr>
-          <th>Header 1</th>
-          <th>Header 2</th>
-          <th>Header 3</th>
-          <th>Header 4</th>
-          <th>Header 5</th>
-          <th>Header 6</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-        </tr>
-        <tr>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-        </tr>
-        <tr>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-        </tr>
-        <tr>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-          <td>long_data_in_each_cell</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  markup: table-responsive-scroll.html
 
   Styleguide Table.Responsive
 */
 .table-wrap {
   width: 100%;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 
 /*
-  Responsive Table (linearized)
+  Responsive Table (Linearized)
 
   "Linearizes" table cells for small viewports. Relies on duplicating the 
-  table headings in data-label attributes for each cell. See the example.
+  table headings in data-label attributes for each cell.
 
-  markup:
-  <table class="linearizable">
-    <thead>
-      <tr>
-        <th>Artist</th>
-        <th>Album</th>
-        <th>Year</th>
-        <th>Format</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td data-label="Artist">Flaming Lips</td>
-        <td data-label="Album">The Soft Bulletin</td>
-        <td data-label="Year">1999</td>
-        <td data-label="Format">Vinyl</td>
-      </tr>
-      <tr>
-        <td data-label="Artist">Nirvana</td>
-        <td data-label="Album">Bleach</td>
-        <td data-label="Year">1991</td>
-        <td data-label="Format">CD</td>
-      </tr>
-      <tr>
-        <td data-label="Artist">Leonard Cohen</td>
-        <td data-label="Album">Old Ideas</td>
-        <td data-label="Year">2012</td>
-        <td data-label="Format">Vinyl</td>
-      </tr>
-      <tr>
-        <td data-label="Artist">Marshmallow Ghosts</td>
-        <td data-label="Album">S/T</td>
-        <td data-label="Year">2011</td>
-        <td data-label="Format">Vinyl</td>
-      </tr>
-    </tbody>
-  </table>
+  markup: table-responsive-linear.html
 
   Styleguide Table.Linearize
 */
@@ -396,27 +257,16 @@
 }
 
 
-
-
-
-
 /*
-  Message box
+  Message Box
 
-  Use to alert the user about a current or potential outcome such as
-  success, failure or a warning. There are four types of messages.
+  Use to alert the user about a current or potential outcome such as success, failure or a warning. There are four types of messages.
 
   .warning - More important than your standard message. Warns of potential danger.
   .error   - An error has occurred
   .success - A success message
 
-  markup:
-  <div class="msg {$modifiers}">
-    <h2 class="notice__heading">Message Box</h2>
-    <p>I am an important message! 
-    Links are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">styled to match</a> 
-    the look of the warning box.</p>
-  </div>
+  markup: message-box.html
 
   Styleguide Modules.MessageBox
 */
@@ -523,14 +373,13 @@
 
 
 /* 
-  Implied content
+  Implied Content
 
   Use to hide content that would be implied for visual users, such
-  as in "read more" links. 
-  (idea swiped from the css of informationarchitects.jp)
+  as in "read more" links. (idea swiped from the css of informationarchitects.jp)
 
   markup:
-  <a href="#">read more <span class="implied">about jackelopes</span></a>
+  <a href="#">Read more <span class="implied">about jackelopes</span></a>
 
   Styleguide Typography.Implied
 */
@@ -546,11 +395,11 @@
 
 
 /*
-  No wrap
+  No Wrap
 
   Prevents text from breaking across lines.
 
-  markup: <span class="nowrap">This text doesn’t break</span>
+  markup: <span class="nowrap">This text won’t wrap.</span>
 
   Styleguide Typography.Nowrap
 */
@@ -576,37 +425,40 @@
 
 
 /*
-  Note
+  Fineprint
 
   Note such as a footnote of asterisked note.
 
-  markup: <p class="note">* This is a note!</p>
+  markup: <p class="fineprint">*This is fine print—terms, conditions, footnote, legalese, etc.</p>
 
-  Styleguide Typography.Note
+  Styleguide Typography.Fineprint
 */
-.note {
+.fineprint {
   font-style: italic;
-  font-size: 90%;
+  font-size: 85%;
 }
 
 
 /*
-  Important Label
+  Text Label
 
   A text label that communicates importance.
 
-  markup: <span class="label--important">New!</span> Some timely information.
+  .label--important - an important label
+
+  markup: <span class="label {{modifier_class}}">New!</span><br> Some timely information.
 
   Styleguide Typography.TextLabel
 */
-%label {
+.label {
   font-size: 75%;
   font-weight: bold;
   text-transform: uppercase;
+  color: #999;
 }
 
 .label--important {
-  @extend %label;
+  @extend .label;
   color: red;
 }
 
@@ -614,81 +466,87 @@
 /* 
   Pull quote
 
-  Use a pullquote anytime you want to highlight a quote from a 
-  passage in a large and eye-catching manner.
+  Use a pullquote to highlight a quote in a large and eye-catching manner.
 
-  markup:
-  <p>Paragraph before Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <blockquote class="pullquote">
-  If I had more time, I would have written a shorter letter.
-  </blockquote>
-  <p>Paragraph after Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  markup: pullquote.html
 
   Styleguide Typography.Pullquote
 */
 .pullquote {
-  padding: 0 1em;
-  margin: 1em 0;
+  padding: 0;
+  margin: 1em auto;
   border: 0;
-  font-size: 160%;
-  font-family: $font-stack-serif;
-  font-style: italic;
-  line-height: 1.4;
   text-align: center;
+  font-size: 1.6rem;
 
-  &:before {
-    content: '';
-    display: block;
-    margin: 0 auto 1em;
-    width: 5em;
-    height: .2em;
-    border-radius: .1em;
-    background: $color-info;
-  }
-
+  &:before,
   &:after {
     content: '';
     display: block;
-    margin: 1em auto 0;
-    width: 5em;
-    height: .2em;
-    border-radius: .1em;
-    background: $color-info;
+    height: 1px;
+    background: #ccc;
+    margin-right: auto;
+    margin-left: auto;
   }
 
-  @include traditional {
-    padding: .5em 0 .5em .9em;
-    margin: 0 0 .5em 1em;
-    width: 50%;
-    float: right;
-    border: 0;
-    border-left: 8px solid $color-info;
-    text-align: left;
+  &:before {
+    margin-bottom: 1em;
+  }
 
-    &:before, 
+  &:after {
+    margin-top: 1em;
+  }
+
+  .pullquote__quote {
+    margin: 0 auto 1rem;
+    max-width: 30em;
+    padding: 0 1rem;
+    font-family: $font-stack-serif;
+    font-style: italic;
+    line-height: 1.4;
+    color: $color-font;
+
+    &:before {
+      content: '“';
+    }
+
     &:after {
-      content: none;
+      content: '”'
+    }
+  }
+
+  .pullquote__source {
+    font-family: $font-stack-serif;
+    font-style: normal;
+    font-size: .9rem;
+    line-height: 1.4;
+    color: #aaa;
+  }
+
+  @include tablet {
+    padding: 1em;
+
+    &:before {
+      margin-bottom: 2.5rem;
+    }
+
+    &:after {
+      margin-top: 2.5rem;
     }
   }
 }
 
 
-
 /* 
+  Instrinsic Image Sizes
 
-  Instrinsic image dimensions...
   Renders image wrapper element at correct dimensions even before the image loads. Minimizes page repaints, reflows.
 
   http://daverupert.com/2015/12/intrinsic-placeholders-with-picture/
 
-  markup:
-  <picture class="intrinsic intrinsic--square">
-    <source media="(min-width: 500px)" srcset="large.jpg">
-    <img class="intrinsic-item" srcset="small.jpg" alt="">
-  </picture>
+  markup: intrinsic.html
 
   Styleguide Modules.InstrinsicImages
-
 */
 .intrinsic {
 
@@ -729,16 +587,17 @@
 }
 
 
-
-
 /*
-
   Old Browser Notice
 
-  A notice for display for older, browsers encouraging users to upgrade.
+  A notice banner for older browsers encouraging users to upgrade. Really only targets old IE
+  right now. Message is set to `display: none` unless it's a child of an element with a class of
+  `ie6`, `ie7`, `ie8`, `ie9`. Use IE conditional comments to add these classes to the `html` root
+  element.
+
+  markup: old-browser-notice.html
 
   Styleguide Modules.OldBrowserNotice
-
 */
 .old-browser-notice {
   display: none;
@@ -781,6 +640,8 @@
 
   Add information. Usage: add `.badge` to a span.
 
+  markup: <span class="badge">label</span>
+
   Styleguide Modules.Badge
 */
 .badge {
@@ -797,5 +658,26 @@
   text-transform: uppercase;
   background: #e0e5ee;
   color: rgba(0,0,0,.6);
+}
+
+
+/*
+  Code Block
+
+  A block of source code.
+
+  markup:
+  <code class="code-block">function ( param ) {
+    var foo = param;
+    doSomething( foo );
+  }
+  </code>
+
+  Styleguide Typography.CodeBlock
+*/
+code.code-block {
+  display: block;
+  white-space: pre;
+  padding: 1em;
 }
 

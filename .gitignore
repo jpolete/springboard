@@ -33,3 +33,6 @@ craft/storage/rebrand
 craft/storage/runtime
 craft/storage/userphotos
 
+# Generated Style Guide
+styleguide/*
+

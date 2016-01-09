@@ -1,5 +1,15 @@
 ﻿
 
+/*
+  Color
+
+  markup: colors.html
+
+  weight: -2
+
+  Styleguide Branding
+*/
+
 
 * {
   margin: 0;
@@ -75,11 +85,9 @@ figure {
 /*
   Typography
 
-  Line-heights and top and bottom margins are both #{$line-height} for blocks 
-  of text including p, ul, ol, dl, blockquote, form, fieldset, table, caption 
-  and figure.
-
   Ligatures are turned off by default, but can be turned on by uncommenting @include ligatures()
+
+  weight: 1
 
   Styleguide Typography
 */
@@ -87,26 +95,9 @@ figure {
 /*
   Headings
 
-  Use the following color and font stack:
+  markup: headings.html
 
-  - $color-soft-black: #{$color-soft-black}
-  - $font-stack-sans: #{$font-stack-sans}
-
-  You can include <small> within a heading to get a lighter and 60% smaller font
-
-  markup: 
-  <h1>Heading 1 <small>small aside</small></h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ratione placeat, mollitia fugiat doloribus accusamus incidunt commodi. Sequi hic cupiditate dicta assumenda perspiciatis officia, mollitia quidem laborum delectus, itaque illo.</p>
-  <h2>Heading 2</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ratione placeat, mollitia fugiat doloribus accusamus incidunt commodi. Sequi hic cupiditate dicta assumenda perspiciatis officia, mollitia quidem laborum delectus, itaque illo.</p>
-  <h3>Heading 3</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ratione placeat, mollitia fugiat doloribus accusamus incidunt commodi. Sequi hic cupiditate dicta assumenda perspiciatis officia, mollitia quidem laborum delectus, itaque illo.</p>
-  <h4>Heading 4</h4>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ratione placeat, mollitia fugiat doloribus accusamus incidunt commodi. Sequi hic cupiditate dicta assumenda perspiciatis officia, mollitia quidem laborum delectus, itaque illo.</p>
-  <h5>Heading 5</h5>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ratione placeat, mollitia fugiat doloribus accusamus incidunt commodi. Sequi hic cupiditate dicta assumenda perspiciatis officia, mollitia quidem laborum delectus, itaque illo.</p>
-  <h6>Heading 6</h6>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ratione placeat, mollitia fugiat doloribus accusamus incidunt commodi. Sequi hic cupiditate dicta assumenda perspiciatis officia, mollitia quidem laborum delectus, itaque illo.</p>
+  weight: -2
 
   Styleguide Typography.Headings
 */
@@ -122,7 +113,8 @@ h6 {
   line-height: 1;
 }
 
-h1, .h1 {
+h1, 
+.h1 {
   font-size: 2.625em; 
   margin-bottom: $line-height;
 
@@ -131,33 +123,52 @@ h1, .h1 {
   }
 }
 
-h2, .h2 {
+h2, 
+.h2 {
   font-size: 2em;
   margin-bottom: $line-height/2;
 }
 
-h3, .h3 {
+h3, 
+.h3 {
   font-size: 1.5em;
   margin-bottom: $line-height/2;
 }
 
-h4, .h4 {
+h4, 
+.h4 {
   font-size: 1.3125em;
   margin-bottom: $line-height/2;
 }
 
-h5, .h5 {
+h5, 
+.h5 {
   font-size: 1.125em;
   margin-bottom: $line-height/2;
 }
 
-h6, .h6 {
-  font-size: 1em;
-  margin-bottom: $line-height/2;
+h6, 
+.h6 {
+  font-size: .9em;
+  margin-bottom: $line-height/4;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: normal;
+  color: lighten($color-font, 30%);
 }
+
+/*
+  Paragraphs
+
+  Paragraphs are separated by a standard line height (see `_vars_mixins.scss` for all variables).
+
+  markup: paragraphs.html
+
+  weight: -1
+
+  Styleguide Typography.Paragraph
+*/
+
 
 /*
   Lists
@@ -165,32 +176,12 @@ h6, .h6 {
   Unordered and ordered lists use disc and decimals respectively, 
   and definition lists display definition terms in bold.
 
-  markup: 
-  <ul>
-    <li>Item</li>
-    <li>Item</li>
-    <li>Item</li>
-  </ul>
-  <ol>
-    <li>Item</li>
-    <li>Item</li>
-    <li>Item</li>
-  </ol>
-  <ol>
-    <li>Nested lists!
-      <ol>
-        <li>Item</li>
-        <li>Item</li>
-        <li>Item</li>
-      </ol>
-    </li>
-    <li>Item</li>
-    <li>Item</li>
-  </ol>
+  markup: lists.html
 
   Styleguide Typography.Lists
 */
-ul, ol {
+ul, 
+ol {
   padding-left: 1.5em;
 }
 
@@ -231,20 +222,7 @@ dd {
   Use blockquotes for larger quote passages. Include the quote 
   itself in one or more &lt;p&gt; elements.
 
-  markup:
-  <p>From The Haunting of Hill House…</p>
-  <blockquote>
-    <p>
-      No live organism can continue for long to exist sanely under conditions
-      of absolute reality; even larks and katydids are supposed, by some, to 
-      dream. Hill House, not sane, stood by itself against its hills, holding 
-      darkness within; it had stood so for eighty years and might stand for 
-      eighty more. Within, walls continued upright, bricks met neatly, floors 
-      were firm, and doors were sensibly shut; silence lay steadily against 
-      the wood and stone of Hill House, and whatever walked there, walked 
-      alone.
-    </p> 
-  </blockquote>
+  markup: blockquote.html
 
   Styleguide Typography.Blockquotes
   
@@ -259,45 +237,14 @@ blockquote {
 
 
 /*
-  Figure
-
-  Use a figure anytime you have "...an image, an illustration, a diagram, a code snippet, or a schema that is referenced in the main text, but that can be moved to another page or to an appendix without affecting the main flow"
-  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure
-
-  markup:
-  <figure>
-    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Alice_par_John_Tenniel_02.png/392px-Alice_par_John_Tenniel_02.png" alt="" />
-    <figcaption>The White Rabbit</figcaption>
-  </figure>
-
-  Styleguide Typography.Figure
-*/
-figure {
-  margin-right: 0;
-  margin-left: 0;
-  text-align: center;
-}
-
-figcaption {
-  color: #777;
-  font-style: italic;
-  font-family: $font-stack-serif;
-}
-
-
-/*
-  Various inline styles 
+  Inline styles 
 
   strong, em, sub, sup, mark, q, time, meter, progress, b, i, pre, abbr.
 
-  markup:
-  <p>Here are some <mark>marked words</mark>, and some <em>emphasized words</em> and some <strong>strong text</strong> and an <i>i element</i> and a <b>b element</b> and <q>This is an inline quote using a <code>&lt;q&gt;</code> element.</q> and this is a superscript<sup>1</sup> and a subscript<sub>2</sub>… and <abbr title="Hypertext Markup Language"> HTML</abbr> is an abbreviation.</p>
+  markup: inline.html
 
   Styleguide Typography.InlineStyles
 */
-img {
-  max-width: 100%;
-}
 
 strong {
   color: #333;
@@ -367,19 +314,13 @@ i {
 /*
   Code
 
-  Inline code should be wrapped in the &lt;code&gt; tag. Blocks of code should be wrapped in &lt;code class="code-block"&gt;.
+  Inline source code.
 
   markup:
   <p>Use the <code>var</code> keyword to initialize a variable.</p>
-  <code class="code-block">function ( param ) {
-    var foo = param;
-    doSomething( foo );
-  }
-  </code>
 
   Styleguide Typography.Code
 */
-
 code {
   background: #f3f3f3;
   padding: 0 .3em;
@@ -391,26 +332,19 @@ code {
   text-transform: none;
 }
 
-code.code-block {
-  display: block;
-  white-space: pre;
-  padding: 1em;
-}
-
-
 
 /*
   Link
 
-  Default link state is #{$color-link} and no underline.
+  Default link text is underlined.
 
   markup:
-  <a class="{$modifiers}" href="http:example.com/safasfsdf">link</a>
+  <a class="{{modifier_class}}" href="http:example.com/safasfsdf">link</a>
 
-  :visited - color #{lighten($color-link, 15%)}
-  :hover   - hover state
-  :focus   - same as hover state
-  :active  - same as hover and focus
+  :visited - Visited: lighter color
+  :hover   - Hover: no underline
+  :focus   - Focus: same as hover 
+  :active  - Active: same as hover  
 
   Styleguide Typography.Link
 */
@@ -433,15 +367,11 @@ a {
 
 
 /*
+  Horizontal Rule 
 
-  Horizontal rule 
+  Use horizontal rules to visually separate distinct “chunks” of a page.
 
-  Horizontal rules are great for visually separating distinct “chunks” of a page.
-
-  markup: 
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nisi corrupti, animi esse quam harum dolore aut, et perferendis iusto nihil vel earum tempora eum beatae ipsam, quisquam, mollitia quas.</p>
-  <hr>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nisi corrupti, animi esse quam harum dolore aut, et perferendis iusto nihil vel earum tempora eum beatae ipsam, quisquam, mollitia quas.</p>
+  markup: hr.html
 
   Styleguide Typography.HorizontalRule
 */
@@ -454,60 +384,22 @@ hr {
 }
 
 
+/*
+  Tables
 
+  weight: 2
 
+  Styleguide Table
+*/
 
 /* 
   Tables 
 
   By default tables will expand to 100% of their container. Content will be top-left aligned and cells in even rows are tinted.
 
-  markup:
-  <table>
-    <caption>This is a caption!</caption>
-    <thead>
-      <tr>
-        <th>Header 1</th>
-        <th>Header 2</th>
-        <th>Header 3</th>
-        <th>Header 4</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-      </tr>
-      <tr>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-      </tr>
-      <tr>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-      </tr>
-      <tr>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-      </tr>
-      <tr>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-        <td>data</td>
-      </tr>
-    </tbody>
-  </table>
+  markup: table.html
 
-  Styleguide Table
+  Styleguide Table.Default
 */
 table {
   width: 100%;
@@ -551,32 +443,25 @@ caption {
 
 
 /*
-
   Forms
 
-  Styleguide Form
+  weight: 3
 
+  Styleguide Form
 */
 
 
 /* 
-
   Fieldset and legend
 
-  markup:
-  <fieldset>
-    <legend>Below are form fields!!</legend>
-    <label for="field">Label</label>
-    <input type="text" id="field" name="field" />
-  </fieldset>
+  markup: fieldset.html
   
   Styleguide Form.Fieldset
-
 */
 fieldset 
 {
   border: solid 1px #ccc;
-  border-radius: .5em .5em .5em .5em; 
+  border-radius: .5em; 
   padding: #{$line-height};
 
   > :last-child {
@@ -599,11 +484,11 @@ legend
 
   :focus   - darker border
   :valid   - no special style (negates default outline/color added by some browsers);
-  :invalid - #{color-error} border;
+  :invalid - red border
 
   markup:
   <label for="name">Name</label>
-  <input class="{$modifiers}" type="text" id="name" name="name" placeholder="first and last" />
+  <input class="{{modifier_class}}" type="text" id="name" name="name" placeholder="first and last" />
   
   Styleguide Form.Label
 */
@@ -619,59 +504,13 @@ label
   letter-spacing: 1px;
 }
 
+
 /*
-  Input types
+  Input Types
 
   Each of the different HTML5 input types.
 
-  markup:
-  <label for="i1">Text</label>
-  <input type="text" id="i1" name="i1" value="" />
-  <br><br>
-  <label for="i2">Password</label>
-  <input type="password" id="2" name="i2" value="" />
-  <br><br>
-  <label for="i3">File</label>
-  <input type="file" id="3" name="i3" value="" />
-  <br><br>
-  <label for="i4">Datetime</label>
-  <input type="datetime" id="" name="i4" value="" />
-  <br><br>
-  <label for="i5">Datetime-local</label>
-  <input type="datetime-local" id="i5" name="i5" value="" />
-  <br><br>
-  <label for="i6">Date</label>
-  <input type="date" id="i6" name="i6" value="" />
-  <br><br>
-  <label for="i7">Month</label>
-  <input type="month" id="i7" name="i7" value="" />
-  <br><br>
-  <label for="i8">Time</label>
-  <input type="time" id="i8" name="i8" value="" />
-  <br><br>
-  <label for="i9">Week</label>
-  <input type="week" id="i9" name="i9" value="" />
-  <br><br>
-  <label for="i10">Number</label>
-  <input type="number" id="i10" name="i10" value="" />
-  <br><br>
-  <label for="i11">Email</label>
-  <input type="email" id="i11" name="i11" value="" />
-  <br><br>
-  <label for="i12">Url</label>
-  <input type="url" id="i12" name="i12" value="" />
-  <br><br>
-  <label for="i13">Search</label>
-  <input type="search" id="i13" name="i13" value="" />
-  <br><br>
-  <label for="i14">Tel</label>
-  <input type="tel" id="i14" name="i14" value="" />
-  <br><br>
-  <label for="i15">Color</label>
-  <input type="color" id="i15" name="i15" value="" />
-  <br><br>
-  <label for="i16">Range</label>
-  <input type="range" id="i16" name="i16" min="0" max="100" step="10" value="" />
+  markup: inputs.html
 
   Styleguide Form.Inputs
 */
@@ -763,22 +602,15 @@ input[type="color"] {
 
 
 /*
-  
-  Radio buttons.
+  Radio Buttons
 
-  markup:
-  <input id="set1-yes" type="radio" name="set1" value="yes" />
-  <label for="set1-yes">Yes</label>
-  <br>
-  <input id="set1-no" type="radio" name="set1" value="no" />
-  <label for="set1-no">No</label>
+  markup: radio.html
 
   Styleguide Form.Radio
-
 */
 input[type="radio"] {
   border: solid 1px #999;
-  font-size: 1.3em;
+  font-size: 1.2em;
   height: 1em;
   width: 1em;
   border-radius: 50%;
@@ -792,27 +624,18 @@ input[type="radio"] {
   }
 }
 
-/*
 
+/*
   Checkbox
 
-  markup:
-  <input type="checkbox" id="cb1" name="cb1" value="strawberries" />
-  <label for="cb1">Strawberries</label>
-  <br>
-  <input type="checkbox" id="cb2" name="cb2" value="grapes" />
-  <label for="cb2">Grapes</label>
-  <br>
-  <input type="checkbox" id="cb3" name="cb3" value="blueberries" />
-  <label for="cb3">Blueberries</label>
+  markup: checkbox.html
 
   Styleguide Form.Checkbox
-
 */
 input[type="checkbox"] {
   border: solid 1px #999;
   border-radius: .2em;
-  font-size: 1.2em;
+  font-size: 1em;
   height: 1em;
   width: 1em;
   line-height: 1;
@@ -862,15 +685,65 @@ input[type="url"]:invalid {
 
 
 /*
+  Media
+
+  weight: 4
+
+  Styleguide Media
+*/
+
+
+/*
+  Figure
+
+  Use a figure anytime you have "...an image, an illustration, a diagram, a code snippet, or a schema that is referenced in the main text, but that can be moved to another page or to an appendix without affecting the main flow"
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure
+
+  markup: figure.html
+
+  Styleguide Media.Figure
+*/
+figure {
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
+}
+
+figcaption {
+  color: #777;
+  font-style: italic;
+  font-family: $font-stack-serif;
+}
+
+
+/*
+  Image
+
+  Images are set to `max-width: 100%` so that they’ll flex with the width of their container.
+
+  markup: img.html
+
+  weight: -1
+
+  Styleguide Media.Image
+*/
+img {
+  max-width: 100%;
+}
+
+
+/*
   Video
 
-  Native HTML video element.
+  Native HTML video element. Videos are set to `max-width: 100%` so that they’ll flex with the width of their container.
+
+  markup: video.html
 
   Styleguide Media.Video
 */
 video {
-  width: 100% !important;
-  height: auto !important;
+  max-width: 100%;
+  height: auto;
 }
 
 

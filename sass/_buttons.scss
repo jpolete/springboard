@@ -1,49 +1,44 @@
 /*
-
   Buttons 
 
-  Use .btn on &lt;button&gt;, &lt;input&gt;, or &lt;a&gt; elements. You can mix
-  and match classes. Examples: &lt;a.danger.delete&gt; or &lt;a.outline.forward&gt;
+  Use `.btn` classes on `button`, `input`, or `a` elements. You can mix
+  and match classes.
 
-  Note: .forward, .back, .add, and .delete have no effect on &lt;input&gt; elements.
+  Note: `.btn--forward`, `.btn--back`, `.btn--add`, and `.btn--delete` have no effect on `input` elements.
 
-  :hover                       - Hover state
-  :active                      - Animates down slightly
-  :focus                       - Outline with soft glow.
+  :hover                       - Hover: Lightened color
+  :active                      - Active: Animates down slightly
+  :focus                       - Focus: Outline with soft glow
   .btn--small                  - Slightly smaller button
-  .btn--large                  - Slightly larger
-  .btn--important              - All caps text.
+  .btn--large                  - Slightly larger button
   .btn--forward                - Adds right arrow icon
   .btn--back                   - Adds left arrow icon
   .btn--add                    - Adds plus icon
   .btn--delete                 - Adds ex icon
-  .btn--download               - Adds download icon  
-  .btn--outline                - Transparent background. Uses button color for border 
+  .btn--download               - Adds download icon 
+  .btn--danger                 - Use for a button that makes permanent, non-undoable changes
+  .btn--outline                - Outline button
   .btn--outline.btn--small     - Small outline button
   .btn--outline.btn--large     - Large outline button
-  .btn--outline.btn--important - Important outline button
   .btn--outline.btn--forward   - Outline forward
   .btn--outline.btn--back      - Outline back
   .btn--outline.btn--add       - Outline add
   .btn--outline.btn--delete    - Outline delete
   .btn--outline.btn--download  - Outline download
-  .btn--danger                 - Use for a button that makes permanent, non-undoable changes. 
-  .danger.delete               - Example combining danger and delete classes.
 
   markup:
-  <input class="btn {$modifiers}" type="submit" value="Input" />
-  <a class="btn {$modifiers}" href="http://example.com">Link</a>
-  <button class="btn {$modifiers}" href="http://example.com">Button</button>
-  <a class="btn {$modifiers}" href="http://example.com" disabled>Disabled</a>
+  <input class="btn {{modifier_class}}" type="submit" value="Input" />
+  <a class="btn {{modifier_class}}" href="http://example.com">Link</a>
+  <button class="btn {{modifier_class}}" href="http://example.com">Button</button>
+  <a class="btn {{modifier_class}}" href="http://example.com" disabled>Disabled</a>
 
   Styleguide Modules.Buttons
-
 */
 %btn {
   display: inline-block;
   line-height: $line-height;
   padding: .3em 1em;
-  margin: 0 .1em;
+  margin: 0 .1em .5rem;
   border-radius: .3em;
   cursor: pointer;
   text-decoration: none;
@@ -69,6 +64,7 @@
   color: #fff;
   border: solid 1px $color-btn;
   background: $color-btn;
+  background-image: linear-gradient($color-btn-highlight, $color-btn);
 
   &:hover {
     background: $color-btn-highlight;
@@ -88,13 +84,7 @@
 }
 
 .btn--large {
-  font-size: 110%;
-  padding: .4em 1.2em;
-}
-
-.btn--important {
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  padding: .4em 1.4em;
 }
 
 .btn--outline {

@@ -37,13 +37,12 @@ $tablet: 48em;      //  768/16
 $traditional: 64em; // 1024/16
 $large: 87.5em;     // 1400/16
 
-
 /*
   Breakpoint: Big Phone
 
   Mixin to make breakpoint declarations more succinct.
 
-  Styleguide Mixin.BreakpointBigPhone
+  No styleguide reference
 */
 @mixin bigphone {
   @media screen and (min-width: $bigphone) {
@@ -57,7 +56,7 @@ $large: 87.5em;     // 1400/16
 
   Mixin to make breakpoint declarations more succinct.
 
-  Styleguide Mixin.BreakpointReader
+  No styleguide reference
 */
 @mixin reader {
   @media screen and (min-width: $reader) {
@@ -71,7 +70,7 @@ $large: 87.5em;     // 1400/16
 
   Mixin to make breakpoint declarations more succinct.
 
-  Styleguide Mixin.BreakpointTablet
+  No styleguide reference
 */
 @mixin tablet {
   @media screen and (min-width: $tablet) {
@@ -85,7 +84,7 @@ $large: 87.5em;     // 1400/16
 
   Mixin to make breakpoint declarations more succinct.
 
-  Styleguide Mixin.BreakpointTraditional
+  No styleguide reference
 */
 @mixin traditional {
   @media screen and (min-width: $traditional) {
@@ -99,7 +98,7 @@ $large: 87.5em;     // 1400/16
 
   Mixin to make breakpoint declarations more succinct.
 
-  Styleguide Mixin.BreakpointLarge
+  No styleguide reference
 */
 @mixin large {
   @media screen and (min-width: $large) {
@@ -117,7 +116,7 @@ $large: 87.5em;     // 1400/16
 
   Compatible in IE 10+, FF 23+, Chrome 29+, Safari 7+, Opera 17+, iOS Safari 7+, Android Browser 4.4+, Blackberry 10+
 
-  Styleguide Mixin.Ligatures
+  No styleguide reference
 */
 @mixin ligatures() {
   font-feature-settings: "liga", "dlig";
@@ -134,7 +133,7 @@ $large: 87.5em;     // 1400/16
   Standard clearfix hack to clear floats in a container. Use flexbox for
   layout when possible, but this is here just in case.
 
-  Styleguide Mixin.Clearfix
+  No styleguide reference
 */
 @mixin clearfix {
   &::after {

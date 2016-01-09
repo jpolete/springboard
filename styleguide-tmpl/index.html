@@ -7,87 +7,123 @@
 
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/mono-blue.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/github.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 
-  <link rel="stylesheet" href="styleguide/sbstyleguide.css">
-  <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="public/sbstyleguide.css">
+  {{{styles}}}
 </head>
 <body>
-  <header class="sbs-header">
-    <h1 class="sbs-styleguide-heading">Style Guide</h1>
+<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-times" viewBox="0 0 1024 1024">
+<title>times</title>
+<path class="path1" d="M742.997 281.003c-33.28-33.323-87.381-33.323-120.661 0l-110.336 110.336-110.336-110.336c-33.28-33.323-87.381-33.323-120.661 0-33.323 33.323-33.323 87.339 0 120.661l110.293 110.336-110.293 110.336c-33.323 33.323-33.323 87.339 0 120.661 16.64 16.683 38.485 25.003 60.331 25.003s43.691-8.32 60.331-25.003l110.336-110.336 110.336 110.336c16.64 16.683 38.485 25.003 60.331 25.003s43.691-8.32 60.331-25.003c33.323-33.323 33.323-87.339 0-120.661l-110.293-110.336 110.293-110.336c33.323-33.323 33.323-87.339 0-120.661z"></path>
+</symbol>
+</defs>
+</svg>
+  <a href="#sbs-header" class="sbs-menu">Menu</a>
+  <header id="sbs-header" class="sbs-header">
+    <a href="#sbs-styleguide-heading" class="sbs-nav-close">
+      <svg class="sbs-close-icon"><use xlink:href="#icon-times"></use></svg>
+    </a>
+    <h1 id="sbs-styleguide-heading" class="sbs-styleguide-heading">Style&nbsp;Guide</h1>
     <nav class="sbs-nav">
       <ul>
-        <li class="sbs-nav__item"><a class="sbs-nav__link" href="#top">Overview</a></li>
-        <li class="sbs-nav__item"><a class="sbs-nav__link" href="#color">Color</a></li>
-        <li class="sbs-nav__item"><a class="sbs-nav__link" href="#typography">Typography</a>
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="./"><strong>Overview</strong></a></li>
+        {{#eachRoot}}
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-{{referenceURI}}.html">{{#ifNumeric reference}}{{reference}}{{else}}{{autoincrement}}{{/ifNumeric}}. {{header}}</a>
+        {{#ifReference ../rootName}}
           <ul>
-            <li class="sbs-nav__item"><a class="sbs-nav__link" href="#typography.badge">Headings</a></li>
-            <li class="sbs-nav__item"><a class="sbs-nav__link" href="#typography.badge">Badge</a></li>
+          {{#eachSection reference}}
+            {{#ifDepth 2 }}
+              <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-{{../../referenceURI}}.html#kssref-{{referenceURI}}">{{#ifNumeric reference}}{{reference}}{{else}}{{autoincrement}}{{/ifNumeric}} {{header}}</a></li>
+            {{/ifDepth}}
+          {{/eachSection}}
           </ul>
+        {{/ifReference}}
         </li>
+        {{/eachRoot}}
       </ul>
     </nav>
   </header>
   <div class="sbs-main">
 
-  <section class="sbs-style-section">
-    <h2 class="sbs-heading">Color</h2>
-    <div class="sbs-description">
-    </div>
-    <div class="sbs-color-palette">
-      <div class="sbs-color-swatch">
-        <div class="sbs-color-swatch__sample" style="background: #33363b"></div>
-        <div class="sbs-color-swatch__label">
-          <h3 class="sbs-color-swatch__name">Soft Black</h3>
-          <p class="sbs-color-swatch__code">HEX: #33363b</p>
-          <p class="sbs-color-swatch__code">RGB (51, 54, 59)</p>
-          <p class="sbs-color-swatch__code">HSB (216, 13, 23)</p>
-          <p class="sbs-color-swatch__desc">Do not use absolute black. Instead use this “soft” black.</p>
-        </div>
-      </div>
-      <div class="sbs-color-swatch">
-        <div class="sbs-color-swatch__sample" style="background: #066085"></div>
-        <div class="sbs-color-swatch__label">
-          <h3 class="sbs-color-swatch__name">Orient</h3>
-          <p class="sbs-color-swatch__code">HEX: #066085</p>
-          <p class="sbs-color-swatch__code">RGB (6, 96, 133)</p>
-          <p class="sbs-color-swatch__code">HSB (196, 95, 52)</p>
-          <p class="sbs-color-swatch__desc"></p>
-        </div>
-      </div>
-      <div class="sbs-color-swatch">
-        <div class="sbs-color-swatch__sample" style="background: #f4f6f9"></div>
-        <div class="sbs-color-swatch__label">
-          <h3 class="sbs-color-swatch__name">Smoke White</h3>
-          <p class="sbs-color-swatch__code">HEX: #f4f6f9</p>
-          <p class="sbs-color-swatch__code">RGB (6, 96, 133)</p>
-          <p class="sbs-color-swatch__code">HSB (196, 95, 52)</p>
-          <p class="sbs-color-swatch__desc"></p>
-        </div>
-      </div>
-    </div>
-  </section>
+{{#if homepage}}
+  <div id="kssref-{{referenceURI}}"  class="sbs-style-section sbs-style-section-depth-{{ depth }}">
+  {{{homepage}}}
+  </div>
+{{else}}
+  {{!
+    Find each section, in order.
+    If there's no markup or modifiers supplied, use a Markdown-only
+    layout instead.
 
-  <section class="sbs-style-section">
-    <h2 class="sbs-heading">Badges</h2>
-    <div class="sbs-description">
-      <p>Add information. Usage: add <code>.badge</code> to a span.</p>
-    </div>
-    <hr class="sbs-rule">
-    <div class="sbs-example">
-      <span class="badge">label</span>
-      <span class="badge">label</span>
-    </div>
-    <hr class="sbs-rule">
-    <div class="sbs-code">
-      <h3 class="sbs-code-heading">HTML</h3>
-      <pre><code>&lt;span class="badge"&gt;label&lt;/span&gt;
-&lt;span class="badge"&gt;label&lt;/span&gt;</code></pre>
-    </div>
-  </section>
+    The "root" element comes first in this loop, and can be detected using
+    the "#ifDepth 1" block as seen below.
+  }}
+  {{#eachSection rootName}}
+    {{#ifDepth 1}}
+      <div id="kssref-{{referenceURI}}"  class="sbs-style-section sbs-style-section-depth-{{ depth }}">
+    {{else}}
+      <section id="kssref-{{referenceURI}}"  class="sbs-style-section sbs-style-section-depth-{{ depth }}">
+    {{/ifDepth}}
+
+    <header class="sbs-style-header{{#ifDepth 1}} sbs-top-level-ref{{/ifDepth}}">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+        {{#ifNumeric reference}}
+          {{reference}}
+        {{else}}
+          {{autoincrement}}
+        {{/ifNumeric}}
+        </div>
+        {{header}}
+      </h2>
+
+      {{#if description}}
+        <div class="sbs-description">{{{description}}}</div>
+      {{/if}}
+    </header>
+
+    {{#if markup}}
+      <div class="sbs-example">
+        {{{markup}}}
+      </div>
+    {{#eachModifier}}
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          {{{description}}}
+        </div>
+        <div class="sbs-modifier-name">
+          {{name}}
+        </div>
+        {{{markup}}}
+      </div>
+    {{/eachModifier}}
+
+      {{#ifShowCode reference}}
+      <div class="sbs-code">
+        <h3 class="sbs-example-heading">HTML</h3>
+        <pre><code class="html">{{markup}}</code></pre>
+      </div>
+      {{/ifShowCode}}
+    {{/if}}
+
+    {{#ifDepth 1}}
+      </div>
+    {{else}}
+      </section>
+    {{/ifDepth}}
+
+  {{/eachSection}}
+{{/if}}
+
+{{{scripts}}}
+<script src="public/kss.js"></script>
+
   </div>
 </body>
 </html>
