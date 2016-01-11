@@ -549,15 +549,15 @@
 
 
 /* 
-  Instrinsic Image Sizes
+  Instrinsic Media Size
 
-  Renders image wrapper element at correct dimensions even before the image loads. Minimizes page repaints, reflows.
+  Defines image or iframe-embedded video size even before the media loads. Minimizes page repaints, reflows and maintains aspect ratio on screen resize.
 
   http://daverupert.com/2015/12/intrinsic-placeholders-with-picture/
 
   markup: intrinsic.html
 
-  Styleguide Modules.InstrinsicImages
+  Styleguide Media.InstrinsicMedia
 */
 .intrinsic {
 
