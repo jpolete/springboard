@@ -692,3 +692,29 @@ code.code-block {
   padding: 1em;
 }
 
+
+/*
+  Social Media Icons
+
+  Icons for common social media sites. Sprite must be inline (in HTML doc head) to support IE8-11. To use an external sprite with older IE versions you’ll need “SVG for Everybody” or “svgxuse”.
+
+  svgxuse - https://github.com/Keyamoon/svgxuse
+
+  SVG for Everybody - https://github.com/jonathantneal/svg4everybody
+
+  (See images/_social-media-sprite.svg)
+
+  markup: social-media-icons.html
+
+  Styleguide Modules.SocialIcons
+*/
+.social-icon {
+  height: 32px;
+  width: 32px;
+  margin: 0 10px;
+  fill: rgba(0,0,0,.3);
+  transition: all 200ms ease-in-out;
+}
+.social-icon:hover {
+  fill: rgba(0,0,0,.6);
+}
