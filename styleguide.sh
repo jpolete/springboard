@@ -1,2 +1,2 @@
 #!/bin/bash
-kss-node sass styleguide --template styleguide-tmpl --helpers styleguide-tmpl/helpers --css ../style.css
+kss-node components styleguide --template styleguide-tmpl --helpers styleguide-tmpl/helpers --css ../style.css
