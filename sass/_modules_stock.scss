@@ -702,6 +702,8 @@ code.code-block {
 
   SVG for Everybody - https://github.com/jonathantneal/svg4everybody
 
+  Use role, aria-label, and title for accessibility. See source code and this Stack Overflow discussion. http://stackoverflow.com/questions/4697100/accessibility-recommended-alt-text-convention-for-svg-and-mathml
+
   (See images/_social-media-sprite.svg)
 
   markup: social-media-icons.html
@@ -718,3 +720,31 @@ code.code-block {
 .social-icon:hover {
   fill: rgba(0,0,0,.6);
 }
+
+
+/*
+  Social Share Buttons
+
+  Twitter and Facebook share buttons. For Twitter configuration see https://dev.twitter.com/web/tweet-button and https://about.twitter.com/resources/buttons. For Facebook see https://developers.facebook.com/docs/plugins/share-button
+
+  markup: social-media-share.html
+
+  Styleguide Modules.SocialSharing
+*/
+.social-share {
+
+  > span,
+  > div,
+  > iframe {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+
+
+
+
+
+
+

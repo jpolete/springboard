@@ -73,7 +73,8 @@ if ( "querySelector" in document && "addEventListener" in window ) {
 
 }
 </script>
-  <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generated on icomoon.io from the FontAwesome set -->
+<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-facebook-square" viewBox="0 0 877.7150599161796 1024">
 <title>facebook-square</title>
@@ -121,30 +122,6 @@ if ( "querySelector" in document && "addEventListener" in window ) {
 </symbol>
 </defs>
 </svg>
-
-  <!-- TODO: Remove this style element. Just used on sample index page -->
-  <style>
-    header {
-      border-bottom: solid 1px #ccc;
-    }
-    svg.icon {
-      height: 32px;
-      width: 32px;
-      margin: 0 10px;
-      fill: rgba(0,0,0,.3);
-      transition: all 200ms ease-in-out;
-    }
-    svg.icon:hover {
-      fill: rgba(0,0,0,.6);
-    }
-    @media screen and (min-width: 600px) {
-      section {
-        margin: 0 auto;
-        width: 65%;
-      }
-    }
-  </style>
-  <!-- END TODO -->
 
 </head>
 <body>
@@ -198,90 +175,11 @@ if ( "querySelector" in document && "addEventListener" in window ) {
   </header>
   <div class="main" role="main">
 
-<section>
   <h1>Read Me</h1>
   <p>Springboard is a starter kit for web projects. See <a href="README.md">README.md</a> for details.</p>
 
-  <p>Below are a few common markup samples. These will be moved to a styleguide soon.</p>
-
-  <hr>
-
-  <p>Social media share buttons</p>
-
-  <!-- Facebook Share Button: https://developers.facebook.com/docs/plugins -->
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-
-  <div class="fb-share-button" data-href="{{ craft.request.url }}" data-layout="button"></div>
-
-  <!-- Twitter Share Button: https://about.twitter.com/resources/buttons#tweet -->
-  <a href="https://twitter.com/share" class="twitter-share-button"{count} data-text="This is the pre-populated tweet text" data-via="jpolete" data-size="large">Tweet</a>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-  <hr>
-
-  <p>SVG Icons (svg sprite)</p>
-
-  <p>To create icon sprite:</p>
-  <ol>
-    <li>Export from Sketch</li>
-    <li>Run <code>svgo -f /folder-of-svgs</code> to clean/compact svg markup</li>
-    <li>Create SVG sprite on icomoon.io</li>
-  </ol>
-  <p><em>Sprite must be inline (in HTML doc head) to support IE8-11. Or use <a href="https://github.com/jonathantneal/svg4everybody">SVG for Everybody</a> or <a href="https://github.com/Keyamoon/svgxuse">svgxuse</a> for external SVG sprite.</em></p>
-
-  <!-- http://stackoverflow.com/questions/4697100/accessibility-recommended-alt-text-convention-for-svg-and-mathml -->
-  <svg role="img" aria-label="Twitter icon" class="icon">
-    <title>Twitter icon</title>
-    <use xlink:href="#icon-twitter" />
-  </svg>
-
-  <svg role="img" aria-label="Facebook icon" class="icon">
-    <title>Facebook icon</title>
-    <use xlink:href="#icon-facebook-square" />
-  </svg>
-
-  <svg role="img" aria-label="Instagram icon" class="icon">
-    <title>Instagram icon</title>
-    <use xlink:href="#icon-instagram" />
-  </svg>
-
-  <svg role="img" aria-label="Vimeo icon" class="icon">
-    <title>Vimeo icon</title>
-    <use xlink:href="#icon-vimeo-square" />
-  </svg>
-
-  <svg role="img" aria-label="Youtube icon" class="icon">
-    <title>Youtube icon</title>
-    <use xlink:href="#icon-youtube-play" />
-  </svg>
-
-  <hr>
-
-  <p>Responsive image and video.</p>
-    
-  <picture class="intrinsic intrinsic--4x3">
-    <img src="http://placehold.it/400x300" 
-         sizes="(min-width: 600px) 65vw, 100vw"
-         srcset="http://placehold.it/800x600 600w,
-                 http://placehold.it/1200x900 1200w,
-                 http://placehold.it/1800x1350 1800w" 
-         alt="Sample Image">
-  </picture>
-  <p>Responsive, intrinsically sized image.</p>
-
-  <div class="intrinsic intrinsic--16x9">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XnBbjc5hmho" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <p>Responsive, intrinsically sized video.</p>
-
-</section>
+  <h2>Style Guide</h2>
+  <p>You can generate a KSS style guide by running <code>./styleguide.sh</code> from the root of this folder. The style guide will be generated at <a href="/styleguide/">/styleguide/</a>. The template for the style guide can be found in the /styleguide-tmpl/ folder.</p>
 
   </div>
   <footer class="footer" role="contentinfo">
