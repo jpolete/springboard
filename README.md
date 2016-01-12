@@ -5,7 +5,7 @@ Springboard is my starter kit of HTML, SASS and JavaScript for new web projects.
 
 - CSS styles for common elements and modules using SASS and [SMACSS](https://smacss.com/)
 - JavaScript polyfills 
-- ~~Kss-node and a [custom styleguide template](https://github.com/jpolete/kss-node-template) to generate a style guide from the CSS comments.~~ I'm abandoning the auto-generated style guide for now. I feel that it's too generic. I still like KSS for its comment syntax and processing, but I want to go with a little more customizable output. TBD.
+- [Kss-node](https://github.com/kss-node/kss-node) and a custom styleguide template to generate a style guide from the CSS comments.
 
 The JavaScript polyfills are:
 
@@ -15,14 +15,12 @@ The JavaScript polyfills are:
 - [jQuery](https://github.com/jquery/jquery)
 
 # Getting Started
+
 To begin a new project, open a terminal, `cd` into the project directory, and run the following commands
 
-1. `npm install` (installs grunt and third-party libraries)
-2. `grunt` (copies 3rd party libraries to their production location)
-
-# Generate a Style Guide
-
-Styleguide generation is on hiatus until I find a method I'm happy with. One that strikes that balance between automation and customization.
+1. `npm install` - installs grunt and third-party libraries.
+2. `grunt` - copies 3rd party libraries to their production location.
+3. `./styleguide.sh` - generates a style guide from sass comments in the `/styleguide/` folder. Re-run this command any time to update the style guide from your CSS/SASS.
 
 # Kit Files
 
@@ -31,4 +29,3 @@ A note about .kit files… I use [Codekit](https://incident57.com/codekit/) to p
 # To-do 
 
 - Ditch grunt for a simple bash copy script.
-- Custom KSS build.
