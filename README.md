@@ -22,6 +22,10 @@ To begin a new project, open a terminal, `cd` into the project directory, and ru
 2. `grunt` - copies 3rd party libraries to their production location.
 3. `./styleguide.sh` - generates a style guide from sass comments in the `/styleguide/` folder. Re-run this command any time to update the style guide from your CSS/SASS.
 
+# Sample Style Guide
+
+You can view a [sample style guide here](https://jpolete.github.io/springboard)
+
 # Kit Files
 
 A note about .kit files… I use [Codekit](https://incident57.com/codekit/) to process frontend assets. Codekit supports ".kit" files—HTML files with special comments to support variables and includes. It’s a quick and simple way to handle page templating and enables a design-in-the-browser workflow. [Learn more here](https://incident57.com/codekit/help.html#kit)
