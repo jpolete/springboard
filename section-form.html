@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <title>Styleguide</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <link rel="stylesheet" href="public/sbstyleguide.css">
+  <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+  <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <symbol id="icon-close" viewBox="0 0 1024 1024">
+      <title>Close X</title>
+      <path class="path1" d="M742.997 281.003c-33.28-33.323-87.381-33.323-120.661 0l-110.336 110.336-110.336-110.336c-33.28-33.323-87.381-33.323-120.661 0-33.323 33.323-33.323 87.339 0 120.661l110.293 110.336-110.293 110.336c-33.323 33.323-33.323 87.339 0 120.661 16.64 16.683 38.485 25.003 60.331 25.003s43.691-8.32 60.331-25.003l110.336-110.336 110.336 110.336c16.64 16.683 38.485 25.003 60.331 25.003s43.691-8.32 60.331-25.003c33.323-33.323 33.323-87.339 0-120.661l-110.293-110.336 110.293-110.336c33.323-33.323 33.323-87.339 0-120.661z"></path>
+      </symbol>
+    </defs>
+  </svg>
+  <a href="#sbs-header" class="sbs-menu">Menu</a>
+  <header id="sbs-header" class="sbs-header">
+    <a href="#sbs-styleguide-heading" class="sbs-nav-close">
+      <svg class="sbs-close-icon"><use xlink:href="#icon-close"></use></svg>
+    </a>
+    <h1 id="sbs-styleguide-heading" class="sbs-styleguide-heading">Style&nbsp;Guide</h1>
+    <nav class="sbs-nav">
+      <ul>
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="./"><strong>Overview</strong></a></li>
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-branding.html">1. Color</a>
+        </li>
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-typography.html">2. Typography</a>
+        </li>
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-table.html">3. Tables</a>
+        </li>
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-form.html">4. Forms</a>
+          <ul>
+              <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-form.html#kssref-form-checkbox">4.1 Checkbox</a></li>
+              <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-form.html#kssref-form-errors">4.2 Error Fields</a></li>
+              <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-form.html#kssref-form-fieldset">4.3 Fieldset and legend</a></li>
+              <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-form.html#kssref-form-hint">4.4 Input Hints</a></li>
+              <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-form.html#kssref-form-inputs">4.5 Input Types</a></li>
+              <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-form.html#kssref-form-label">4.6 Labels and Inputs</a></li>
+              <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-form.html#kssref-form-layout">4.7 Form Layout</a></li>
+              <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-form.html#kssref-form-radio">4.8 Radio Buttons</a></li>
+              <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-form.html#kssref-form-radiocheckboxlayout">4.9 Radio/Checkbox Layout</a></li>
+          </ul>
+        </li>
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-media.html">5. Media</a>
+        </li>
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-modules.html">6. Modules</a>
+        </li>
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-layout.html">7. Layout</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="sbs-main">
+
+      <div id="kssref-form"  class="sbs-style-section sbs-style-section-depth-1">
+
+    <header class="sbs-style-header sbs-top-level-ref">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          4
+        </div>
+        Forms
+      </h2>
+
+    </header>
+
+
+      </div>
+
+      <section id="kssref-form-checkbox"  class="sbs-style-section sbs-style-section-depth-2">
+
+    <header class="sbs-style-header">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          4.1
+        </div>
+        Checkbox
+      </h2>
+
+    </header>
+
+      <div class="sbs-example">
+        <input type="checkbox" id="cb1" name="cb1" value="strawberries" />
+<label for="cb1">Strawberries</label>
+<br>
+<input type="checkbox" id="cb2" name="cb2" value="grapes" />
+<label for="cb2">Grapes</label>
+<br>
+<input type="checkbox" id="cb3" name="cb3" value="blueberries" />
+<label for="cb3">Blueberries</label>
+
+      </div>
+
+      <div class="sbs-code">
+        <h3 class="sbs-example-heading">HTML</h3>
+        <pre><code class="html">&lt;input type=&quot;checkbox&quot; id=&quot;cb1&quot; name=&quot;cb1&quot; value=&quot;strawberries&quot; /&gt;
+&lt;label for=&quot;cb1&quot;&gt;Strawberries&lt;/label&gt;
+&lt;br&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;cb2&quot; name=&quot;cb2&quot; value=&quot;grapes&quot; /&gt;
+&lt;label for=&quot;cb2&quot;&gt;Grapes&lt;/label&gt;
+&lt;br&gt;
+&lt;input type=&quot;checkbox&quot; id=&quot;cb3&quot; name=&quot;cb3&quot; value=&quot;blueberries&quot; /&gt;
+&lt;label for=&quot;cb3&quot;&gt;Blueberries&lt;/label&gt;
+</code></pre>
+      </div>
+
+      </section>
+
+      <section id="kssref-form-errors"  class="sbs-style-section sbs-style-section-depth-2">
+
+    <header class="sbs-style-header">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          4.2
+        </div>
+        Error Fields
+      </h2>
+
+        <div class="sbs-description"><p>When validation fails for an input, wrap the label and
+input in a <code>div.is-error</code> and include a <code>div.error-msg</code> below the input.</p>
+</div>
+    </header>
+
+      <div class="sbs-example">
+        <div class="is-error">
+  <label for="error-field">Name</label>
+  <input type="text" id="error-field" name="error-field" />
+  <div class="error-msg">Wrong!! :)</div>
+</div>
+      </div>
+
+      <div class="sbs-code">
+        <h3 class="sbs-example-heading">HTML</h3>
+        <pre><code class="html">&lt;div class=&quot;is-error&quot;&gt;
+  &lt;label for=&quot;error-field&quot;&gt;Name&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;error-field&quot; name=&quot;error-field&quot; /&gt;
+  &lt;div class=&quot;error-msg&quot;&gt;Wrong!! :)&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+
+      <section id="kssref-form-fieldset"  class="sbs-style-section sbs-style-section-depth-2">
+
+    <header class="sbs-style-header">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          4.3
+        </div>
+        Fieldset and legend
+      </h2>
+
+    </header>
+
+      <div class="sbs-example">
+        <fieldset>
+  <legend>Below are form fields!!</legend>
+  <label for="field">Label</label>
+  <input type="text" id="field" name="field" />
+</fieldset>
+
+      </div>
+
+      <div class="sbs-code">
+        <h3 class="sbs-example-heading">HTML</h3>
+        <pre><code class="html">&lt;fieldset&gt;
+  &lt;legend&gt;Below are form fields!!&lt;/legend&gt;
+  &lt;label for=&quot;field&quot;&gt;Label&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;field&quot; name=&quot;field&quot; /&gt;
+&lt;/fieldset&gt;
+</code></pre>
+      </div>
+
+      </section>
+
+      <section id="kssref-form-hint"  class="sbs-style-section sbs-style-section-depth-2">
+
+    <header class="sbs-style-header">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          4.4
+        </div>
+        Input Hints
+      </h2>
+
+        <div class="sbs-description"><p>Use input hints to offer hints or instructions to help users complete a form field.</p>
+</div>
+    </header>
+
+      <div class="sbs-example">
+        <label for="input-hint">Name</label>
+<input type="text" id="input-hint" name="input-hint" />
+<span class="input-hint">Full, legal name</span>
+      </div>
+
+      <div class="sbs-code">
+        <h3 class="sbs-example-heading">HTML</h3>
+        <pre><code class="html">&lt;label for=&quot;input-hint&quot;&gt;Name&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;input-hint&quot; name=&quot;input-hint&quot; /&gt;
+&lt;span class=&quot;input-hint&quot;&gt;Full, legal name&lt;/span&gt;</code></pre>
+      </div>
+
+      </section>
+
+      <section id="kssref-form-inputs"  class="sbs-style-section sbs-style-section-depth-2">
+
+    <header class="sbs-style-header">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          4.5
+        </div>
+        Input Types
+      </h2>
+
+        <div class="sbs-description"><p>Each of the different HTML5 input types.</p>
+</div>
+    </header>
+
+      <div class="sbs-example">
+        <label for="i1">Text</label>
+<input type="text" id="i1" name="i1" value="" />
+<br><br>
+<label for="i2">Password</label>
+<input type="password" id="2" name="i2" value="" />
+<br><br>
+<label for="i3">File</label>
+<input type="file" id="3" name="i3" value="" />
+<br><br>
+<label for="i4">Datetime</label>
+<input type="datetime" id="" name="i4" value="" />
+<br><br>
+<label for="i5">Datetime-local</label>
+<input type="datetime-local" id="i5" name="i5" value="" />
+<br><br>
+<label for="i6">Date</label>
+<input type="date" id="i6" name="i6" value="" />
+<br><br>
+<label for="i7">Month</label>
+<input type="month" id="i7" name="i7" value="" />
+<br><br>
+<label for="i8">Time</label>
+<input type="time" id="i8" name="i8" value="" />
+<br><br>
+<label for="i9">Week</label>
+<input type="week" id="i9" name="i9" value="" />
+<br><br>
+<label for="i10">Number</label>
+<input type="number" id="i10" name="i10" value="" />
+<br><br>
+<label for="i11">Email</label>
+<input type="email" id="i11" name="i11" value="" />
+<br><br>
+<label for="i12">Url</label>
+<input type="url" id="i12" name="i12" value="" />
+<br><br>
+<label for="i13">Search</label>
+<input type="search" id="i13" name="i13" value="" />
+<br><br>
+<label for="i14">Tel</label>
+<input type="tel" id="i14" name="i14" value="" />
+<br><br>
+<label for="i15">Color</label>
+<input type="color" id="i15" name="i15" value="" />
+<br><br>
+<label for="i16">Range</label>
+<input type="range" id="i16" name="i16" min="0" max="100" step="10" value="" />
+
+      </div>
+
+      <div class="sbs-code">
+        <h3 class="sbs-example-heading">HTML</h3>
+        <pre><code class="html">&lt;label for=&quot;i1&quot;&gt;Text&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;i1&quot; name=&quot;i1&quot; value=&quot;&quot; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;label for=&quot;i2&quot;&gt;Password&lt;/label&gt;
+&lt;input type=&quot;password&quot; id=&quot;2&quot; name=&quot;i2&quot; value=&quot;&quot; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;label for=&quot;i3&quot;&gt;File&lt;/label&gt;
+&lt;input type=&quot;file&quot; id=&quot;3&quot; name=&quot;i3&quot; value=&quot;&quot; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;label for=&quot;i4&quot;&gt;Datetime&lt;/label&gt;
+&lt;input type=&quot;datetime&quot; id=&quot;&quot; name=&quot;i4&quot; value=&quot;&quot; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;label for=&quot;i5&quot;&gt;Datetime-local&lt;/label&gt;
+&lt;input type=&quot;datetime-local&quot; id=&quot;i5&quot; name=&quot;i5&quot; value=&quot;&quot; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;label for=&quot;i6&quot;&gt;Date&lt;/label&gt;
+&lt;input type=&quot;date&quot; id=&quot;i6&quot; name=&quot;i6&quot; value=&quot;&quot; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;label for=&quot;i7&quot;&gt;Month&lt;/label&gt;
+&lt;input type=&quot;month&quot; id=&quot;i7&quot; name=&quot;i7&quot; value=&quot;&quot; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;label for=&quot;i8&quot;&gt;Time&lt;/label&gt;
+&lt;input type=&quot;time&quot; id=&quot;i8&quot; name=&quot;i8&quot; value=&quot;&quot; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;label for=&quot;i9&quot;&gt;Week&lt;/label&gt;
+&lt;input type=&quot;week&quot; id=&quot;i9&quot; name=&quot;i9&quot; value=&quot;&quot; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;label for=&quot;i10&quot;&gt;Number&lt;/label&gt;
+&lt;input type=&quot;number&quot; id=&quot;i10&quot; name=&quot;i10&quot; value=&quot;&quot; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;label for=&quot;i11&quot;&gt;Email&lt;/label&gt;
+&lt;input type=&quot;email&quot; id=&quot;i11&quot; name=&quot;i11&quot; value=&quot;&quot; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;label for=&quot;i12&quot;&gt;Url&lt;/label&gt;
+&lt;input type=&quot;url&quot; id=&quot;i12&quot; name=&quot;i12&quot; value=&quot;&quot; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;label for=&quot;i13&quot;&gt;Search&lt;/label&gt;
+&lt;input type=&quot;search&quot; id=&quot;i13&quot; name=&quot;i13&quot; value=&quot;&quot; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;label for=&quot;i14&quot;&gt;Tel&lt;/label&gt;
+&lt;input type=&quot;tel&quot; id=&quot;i14&quot; name=&quot;i14&quot; value=&quot;&quot; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;label for=&quot;i15&quot;&gt;Color&lt;/label&gt;
+&lt;input type=&quot;color&quot; id=&quot;i15&quot; name=&quot;i15&quot; value=&quot;&quot; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;label for=&quot;i16&quot;&gt;Range&lt;/label&gt;
+&lt;input type=&quot;range&quot; id=&quot;i16&quot; name=&quot;i16&quot; min=&quot;0&quot; max=&quot;100&quot; step=&quot;10&quot; value=&quot;&quot; /&gt;
+</code></pre>
+      </div>
+
+      </section>
+
+      <section id="kssref-form-label"  class="sbs-style-section sbs-style-section-depth-2">
+
+    <header class="sbs-style-header">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          4.6
+        </div>
+        Labels and Inputs
+      </h2>
+
+    </header>
+
+      <div class="sbs-example">
+        <label for="name">Name</label>
+<input class="[modifier class]" type="text" id="name" name="name" placeholder="first and last" />
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          darker border
+        </div>
+        <div class="sbs-modifier-name">
+          :focus
+        </div>
+        <label for="name">Name</label>
+<input class="pseudo-class-focus" type="text" id="name" name="name" placeholder="first and last" />
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          no special style (negates default outline/color added by some browsers);
+        </div>
+        <div class="sbs-modifier-name">
+          :valid
+        </div>
+        <label for="name">Name</label>
+<input class="pseudo-class-valid" type="text" id="name" name="name" placeholder="first and last" />
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          red border
+        </div>
+        <div class="sbs-modifier-name">
+          :invalid
+        </div>
+        <label for="name">Name</label>
+<input class="pseudo-class-invalid" type="text" id="name" name="name" placeholder="first and last" />
+      </div>
+
+      <div class="sbs-code">
+        <h3 class="sbs-example-heading">HTML</h3>
+        <pre><code class="html">&lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
+&lt;input class=&quot;[modifier class]&quot; type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot; placeholder=&quot;first and last&quot; /&gt;</code></pre>
+      </div>
+
+      </section>
+
+      <section id="kssref-form-layout"  class="sbs-style-section sbs-style-section-depth-2">
+
+    <header class="sbs-style-header">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          4.7
+        </div>
+        Form Layout
+      </h2>
+
+        <div class="sbs-description"><p>Each line of a form should be wrapped in a <code>.form-line</code>.</p>
+</div>
+    </header>
+
+      <div class="sbs-example">
+        <div class="form-line">
+  <div class="form-input-half">
+    <label for="FirstName">First Name</label>
+    <input type="text" id="FirstName" name="FirstName" value="" /> 
+  </div>
+  <div class="form-input-half">
+    <label for="LastName">Last Name</label>
+    <input type="text" id="LastName" name="LastName" value="" /> 
+  </div>
+</div>
+<div class="form-line">
+  <div class="form-input-third">
+    <label for="FirstName">First Name</label>
+    <input type="text" id="FirstName" name="FirstName" value="" /> 
+  </div>
+  <div class="form-input-third">
+    <label for="MiddleName">Middle Name</label>
+    <input type="text" id="MiddeName" name="MiddleName" value="" /> 
+  </div>
+  <div class="form-input-third">
+    <label for="LastName">Last Name</label>
+    <input type="text" id="LastName" name="LastName" value="" /> 
+  </div>
+</div>
+<div class="form-line">
+  <div class="form-input-half">
+    <label for="City">City</label>
+    <input type="text" id="City" name="City" value="" /> 
+  </div>
+  <div class="form-input-fourth">
+    <label for="State">State</label>
+    <input type="text" id="State" name="State" value="" /> 
+  </div>
+  <div class="form-input-fourth">
+    <label for="Zip">Zip</label>
+    <input type="text" id="Zip" name="Zip" value="" /> 
+  </div>
+</div>
+      </div>
+
+      <div class="sbs-code">
+        <h3 class="sbs-example-heading">HTML</h3>
+        <pre><code class="html">&lt;div class=&quot;form-line&quot;&gt;
+  &lt;div class=&quot;form-input-half&quot;&gt;
+    &lt;label for=&quot;FirstName&quot;&gt;First Name&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;FirstName&quot; name=&quot;FirstName&quot; value=&quot;&quot; /&gt; 
+  &lt;/div&gt;
+  &lt;div class=&quot;form-input-half&quot;&gt;
+    &lt;label for=&quot;LastName&quot;&gt;Last Name&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;LastName&quot; name=&quot;LastName&quot; value=&quot;&quot; /&gt; 
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-line&quot;&gt;
+  &lt;div class=&quot;form-input-third&quot;&gt;
+    &lt;label for=&quot;FirstName&quot;&gt;First Name&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;FirstName&quot; name=&quot;FirstName&quot; value=&quot;&quot; /&gt; 
+  &lt;/div&gt;
+  &lt;div class=&quot;form-input-third&quot;&gt;
+    &lt;label for=&quot;MiddleName&quot;&gt;Middle Name&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;MiddeName&quot; name=&quot;MiddleName&quot; value=&quot;&quot; /&gt; 
+  &lt;/div&gt;
+  &lt;div class=&quot;form-input-third&quot;&gt;
+    &lt;label for=&quot;LastName&quot;&gt;Last Name&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;LastName&quot; name=&quot;LastName&quot; value=&quot;&quot; /&gt; 
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-line&quot;&gt;
+  &lt;div class=&quot;form-input-half&quot;&gt;
+    &lt;label for=&quot;City&quot;&gt;City&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;City&quot; name=&quot;City&quot; value=&quot;&quot; /&gt; 
+  &lt;/div&gt;
+  &lt;div class=&quot;form-input-fourth&quot;&gt;
+    &lt;label for=&quot;State&quot;&gt;State&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;State&quot; name=&quot;State&quot; value=&quot;&quot; /&gt; 
+  &lt;/div&gt;
+  &lt;div class=&quot;form-input-fourth&quot;&gt;
+    &lt;label for=&quot;Zip&quot;&gt;Zip&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;Zip&quot; name=&quot;Zip&quot; value=&quot;&quot; /&gt; 
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      </section>
+
+      <section id="kssref-form-radio"  class="sbs-style-section sbs-style-section-depth-2">
+
+    <header class="sbs-style-header">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          4.8
+        </div>
+        Radio Buttons
+      </h2>
+
+    </header>
+
+      <div class="sbs-example">
+        <input id="set1-yes" type="radio" name="set1" value="yes" />
+<label for="set1-yes">Yes</label>
+<br>
+<input id="set1-no" type="radio" name="set1" value="no" />
+<label for="set1-no">No</label>
+
+      </div>
+
+      <div class="sbs-code">
+        <h3 class="sbs-example-heading">HTML</h3>
+        <pre><code class="html">&lt;input id=&quot;set1-yes&quot; type=&quot;radio&quot; name=&quot;set1&quot; value=&quot;yes&quot; /&gt;
+&lt;label for=&quot;set1-yes&quot;&gt;Yes&lt;/label&gt;
+&lt;br&gt;
+&lt;input id=&quot;set1-no&quot; type=&quot;radio&quot; name=&quot;set1&quot; value=&quot;no&quot; /&gt;
+&lt;label for=&quot;set1-no&quot;&gt;No&lt;/label&gt;
+</code></pre>
+      </div>
+
+      </section>
+
+      <section id="kssref-form-radiocheckboxlayout"  class="sbs-style-section sbs-style-section-depth-2">
+
+    <header class="sbs-style-header">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          4.9
+        </div>
+        Radio/Checkbox Layout
+      </h2>
+
+        <div class="sbs-description"><p>Group radio buttons and checkboxes in a <code>fieldset.input-list</code></p>
+</div>
+    </header>
+
+      <div class="sbs-example">
+        <fieldset class="input-list">
+  <legend>Checkboxes</legend>
+  <ul>
+    <li>
+      <input type="checkbox" id="cbone" name="cbone" />
+      <label for="cbone">One</label>
+    </li>
+    <li>
+      <input type="checkbox" id="cbtwo" name="cbtwo" />
+      <label for="cbtwo">Two</label>
+    </li>
+    <li>
+      <input type="checkbox" id="cbthree" name="cbthree" indeterminate="true" />
+      <label for="cbthree">Three</label>
+    </li>
+  </ul>
+</fieldset>
+
+<fieldset class="input-list">
+  <legend>Radio Buttons</legend>
+  <ul>
+    <li>
+      <input type="radio" id="rbone" name="rbone" />
+      <label for="rbone">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat labore repellat iste magni cum accusamus nihil commodi molestias perspiciatis facilis! Assumenda impedit tempore sed quae iusto voluptatum, placeat molestias sit.</label>
+    </li>
+    <li>
+      <input type="radio" id="rbtwo" name="rbtwo" />
+      <label for="rbtwo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vero maxime vel placeat pariatur. Sunt praesentium, necessitatibus at odio placeat, aperiam adipisci voluptatem nulla assumenda magnam eos, maxime suscipit quisquam.</label>
+    </li>
+    <li>
+      <input type="radio" id="rbthree" name="rbthree" indeterminate="true" />
+      <label for="rbthree">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, sequi magni. Ut natus libero, ipsa officiis praesentium velit, earum consequatur ipsum cumque est fugit dolorum, expedita saepe ullam delectus ab</label>
+    </li>
+  </ul>
+</fieldset>
+
+      </div>
+
+      <div class="sbs-code">
+        <h3 class="sbs-example-heading">HTML</h3>
+        <pre><code class="html">&lt;fieldset class=&quot;input-list&quot;&gt;
+  &lt;legend&gt;Checkboxes&lt;/legend&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;input type=&quot;checkbox&quot; id=&quot;cbone&quot; name=&quot;cbone&quot; /&gt;
+      &lt;label for=&quot;cbone&quot;&gt;One&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;input type=&quot;checkbox&quot; id=&quot;cbtwo&quot; name=&quot;cbtwo&quot; /&gt;
+      &lt;label for=&quot;cbtwo&quot;&gt;Two&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;input type=&quot;checkbox&quot; id=&quot;cbthree&quot; name=&quot;cbthree&quot; indeterminate=&quot;true&quot; /&gt;
+      &lt;label for=&quot;cbthree&quot;&gt;Three&lt;/label&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/fieldset&gt;
+
+&lt;fieldset class=&quot;input-list&quot;&gt;
+  &lt;legend&gt;Radio Buttons&lt;/legend&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;input type=&quot;radio&quot; id=&quot;rbone&quot; name=&quot;rbone&quot; /&gt;
+      &lt;label for=&quot;rbone&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat labore repellat iste magni cum accusamus nihil commodi molestias perspiciatis facilis! Assumenda impedit tempore sed quae iusto voluptatum, placeat molestias sit.&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;input type=&quot;radio&quot; id=&quot;rbtwo&quot; name=&quot;rbtwo&quot; /&gt;
+      &lt;label for=&quot;rbtwo&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. At vero maxime vel placeat pariatur. Sunt praesentium, necessitatibus at odio placeat, aperiam adipisci voluptatem nulla assumenda magnam eos, maxime suscipit quisquam.&lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;input type=&quot;radio&quot; id=&quot;rbthree&quot; name=&quot;rbthree&quot; indeterminate=&quot;true&quot; /&gt;
+      &lt;label for=&quot;rbthree&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, sequi magni. Ut natus libero, ipsa officiis praesentium velit, earum consequatur ipsum cumque est fugit dolorum, expedita saepe ullam delectus ab&lt;/label&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/fieldset&gt;
+</code></pre>
+      </div>
+
+      </section>
+
+
+
+<script src="public/kss.js"></script>
+
+  </div>
+</body>
+</html>

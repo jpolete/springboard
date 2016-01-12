@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <title>Styleguide</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <link rel="stylesheet" href="public/sbstyleguide.css">
+  <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+  <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <symbol id="icon-close" viewBox="0 0 1024 1024">
+      <title>Close X</title>
+      <path class="path1" d="M742.997 281.003c-33.28-33.323-87.381-33.323-120.661 0l-110.336 110.336-110.336-110.336c-33.28-33.323-87.381-33.323-120.661 0-33.323 33.323-33.323 87.339 0 120.661l110.293 110.336-110.293 110.336c-33.323 33.323-33.323 87.339 0 120.661 16.64 16.683 38.485 25.003 60.331 25.003s43.691-8.32 60.331-25.003l110.336-110.336 110.336 110.336c16.64 16.683 38.485 25.003 60.331 25.003s43.691-8.32 60.331-25.003c33.323-33.323 33.323-87.339 0-120.661l-110.293-110.336 110.293-110.336c33.323-33.323 33.323-87.339 0-120.661z"></path>
+      </symbol>
+    </defs>
+  </svg>
+  <a href="#sbs-header" class="sbs-menu">Menu</a>
+  <header id="sbs-header" class="sbs-header">
+    <a href="#sbs-styleguide-heading" class="sbs-nav-close">
+      <svg class="sbs-close-icon"><use xlink:href="#icon-close"></use></svg>
+    </a>
+    <h1 id="sbs-styleguide-heading" class="sbs-styleguide-heading">Style&nbsp;Guide</h1>
+    <nav class="sbs-nav">
+      <ul>
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="./"><strong>Overview</strong></a></li>
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-branding.html">1. Color</a>
+        </li>
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-typography.html">2. Typography</a>
+        </li>
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-table.html">3. Tables</a>
+        </li>
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-form.html">4. Forms</a>
+        </li>
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-media.html">5. Media</a>
+        </li>
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-modules.html">6. Modules</a>
+          <ul>
+              <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-modules.html#kssref-modules-badge">6.1 Badges</a></li>
+              <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-modules.html#kssref-modules-buttons">6.2 Buttons</a></li>
+              <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-modules.html#kssref-modules-centered">6.3 Centered</a></li>
+              <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-modules.html#kssref-modules-messagebox">6.4 Message Box</a></li>
+              <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-modules.html#kssref-modules-oldbrowsernotice">6.5 Old Browser Notice</a></li>
+              <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-modules.html#kssref-modules-socialicons">6.6 Social Media Icons</a></li>
+              <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-modules.html#kssref-modules-socialsharing">6.7 Social Share Buttons</a></li>
+          </ul>
+        </li>
+        <li class="sbs-nav__item"><a class="sbs-nav__link" href="section-layout.html">7. Layout</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="sbs-main">
+
+      <div id="kssref-modules"  class="sbs-style-section sbs-style-section-depth-1">
+
+    <header class="sbs-style-header sbs-top-level-ref">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          6
+        </div>
+        Modules
+      </h2>
+
+    </header>
+
+
+      </div>
+
+      <section id="kssref-modules-badge"  class="sbs-style-section sbs-style-section-depth-2">
+
+    <header class="sbs-style-header">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          6.1
+        </div>
+        Badges
+      </h2>
+
+        <div class="sbs-description"><p>Add information. Usage: add <code>.badge</code> to a span.</p>
+</div>
+    </header>
+
+      <div class="sbs-example">
+        <span class="badge">label</span>
+      </div>
+
+      <div class="sbs-code">
+        <h3 class="sbs-example-heading">HTML</h3>
+        <pre><code class="html">&lt;span class=&quot;badge&quot;&gt;label&lt;/span&gt;</code></pre>
+      </div>
+
+      </section>
+
+      <section id="kssref-modules-buttons"  class="sbs-style-section sbs-style-section-depth-2">
+
+    <header class="sbs-style-header">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          6.2
+        </div>
+        Buttons
+      </h2>
+
+        <div class="sbs-description"><p>Use <code>.btn</code> classes on <code>button</code>, <code>input</code>, or <code>a</code> elements. You can mix
+and match classes.</p>
+<p>Note: <code>.btn--forward</code>, <code>.btn--back</code>, <code>.btn--add</code>, and <code>.btn--delete</code> have no effect on <code>input</code> elements.</p>
+</div>
+    </header>
+
+      <div class="sbs-example">
+        <input class="btn [modifier class]" type="submit" value="Input" />
+<a class="btn [modifier class]" href="http://example.com">Link</a>
+<button class="btn [modifier class]" href="http://example.com">Button</button>
+<a class="btn [modifier class]" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Hover: Lightened color
+        </div>
+        <div class="sbs-modifier-name">
+          :hover
+        </div>
+        <input class="btn pseudo-class-hover" type="submit" value="Input" />
+<a class="btn pseudo-class-hover" href="http://example.com">Link</a>
+<button class="btn pseudo-class-hover" href="http://example.com">Button</button>
+<a class="btn pseudo-class-hover" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Active: Animates down slightly
+        </div>
+        <div class="sbs-modifier-name">
+          :active
+        </div>
+        <input class="btn pseudo-class-active" type="submit" value="Input" />
+<a class="btn pseudo-class-active" href="http://example.com">Link</a>
+<button class="btn pseudo-class-active" href="http://example.com">Button</button>
+<a class="btn pseudo-class-active" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Focus: Outline with soft glow
+        </div>
+        <div class="sbs-modifier-name">
+          :focus
+        </div>
+        <input class="btn pseudo-class-focus" type="submit" value="Input" />
+<a class="btn pseudo-class-focus" href="http://example.com">Link</a>
+<button class="btn pseudo-class-focus" href="http://example.com">Button</button>
+<a class="btn pseudo-class-focus" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Slightly smaller button
+        </div>
+        <div class="sbs-modifier-name">
+          .btn--small
+        </div>
+        <input class="btn btn--small" type="submit" value="Input" />
+<a class="btn btn--small" href="http://example.com">Link</a>
+<button class="btn btn--small" href="http://example.com">Button</button>
+<a class="btn btn--small" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Slightly larger button
+        </div>
+        <div class="sbs-modifier-name">
+          .btn--large
+        </div>
+        <input class="btn btn--large" type="submit" value="Input" />
+<a class="btn btn--large" href="http://example.com">Link</a>
+<button class="btn btn--large" href="http://example.com">Button</button>
+<a class="btn btn--large" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Adds right arrow icon
+        </div>
+        <div class="sbs-modifier-name">
+          .btn--forward
+        </div>
+        <input class="btn btn--forward" type="submit" value="Input" />
+<a class="btn btn--forward" href="http://example.com">Link</a>
+<button class="btn btn--forward" href="http://example.com">Button</button>
+<a class="btn btn--forward" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Adds left arrow icon
+        </div>
+        <div class="sbs-modifier-name">
+          .btn--back
+        </div>
+        <input class="btn btn--back" type="submit" value="Input" />
+<a class="btn btn--back" href="http://example.com">Link</a>
+<button class="btn btn--back" href="http://example.com">Button</button>
+<a class="btn btn--back" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Adds plus icon
+        </div>
+        <div class="sbs-modifier-name">
+          .btn--add
+        </div>
+        <input class="btn btn--add" type="submit" value="Input" />
+<a class="btn btn--add" href="http://example.com">Link</a>
+<button class="btn btn--add" href="http://example.com">Button</button>
+<a class="btn btn--add" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Adds ex icon
+        </div>
+        <div class="sbs-modifier-name">
+          .btn--delete
+        </div>
+        <input class="btn btn--delete" type="submit" value="Input" />
+<a class="btn btn--delete" href="http://example.com">Link</a>
+<button class="btn btn--delete" href="http://example.com">Button</button>
+<a class="btn btn--delete" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Adds download icon
+        </div>
+        <div class="sbs-modifier-name">
+          .btn--download
+        </div>
+        <input class="btn btn--download" type="submit" value="Input" />
+<a class="btn btn--download" href="http://example.com">Link</a>
+<button class="btn btn--download" href="http://example.com">Button</button>
+<a class="btn btn--download" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Use for a button that makes permanent, non-undoable changes
+        </div>
+        <div class="sbs-modifier-name">
+          .btn--danger
+        </div>
+        <input class="btn btn--danger" type="submit" value="Input" />
+<a class="btn btn--danger" href="http://example.com">Link</a>
+<button class="btn btn--danger" href="http://example.com">Button</button>
+<a class="btn btn--danger" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Outline button
+        </div>
+        <div class="sbs-modifier-name">
+          .btn--outline
+        </div>
+        <input class="btn btn--outline" type="submit" value="Input" />
+<a class="btn btn--outline" href="http://example.com">Link</a>
+<button class="btn btn--outline" href="http://example.com">Button</button>
+<a class="btn btn--outline" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Small outline button
+        </div>
+        <div class="sbs-modifier-name">
+          .btn--outline.btn--small
+        </div>
+        <input class="btn btn--outline btn--small" type="submit" value="Input" />
+<a class="btn btn--outline btn--small" href="http://example.com">Link</a>
+<button class="btn btn--outline btn--small" href="http://example.com">Button</button>
+<a class="btn btn--outline btn--small" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Large outline button
+        </div>
+        <div class="sbs-modifier-name">
+          .btn--outline.btn--large
+        </div>
+        <input class="btn btn--outline btn--large" type="submit" value="Input" />
+<a class="btn btn--outline btn--large" href="http://example.com">Link</a>
+<button class="btn btn--outline btn--large" href="http://example.com">Button</button>
+<a class="btn btn--outline btn--large" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Outline forward
+        </div>
+        <div class="sbs-modifier-name">
+          .btn--outline.btn--forward
+        </div>
+        <input class="btn btn--outline btn--forward" type="submit" value="Input" />
+<a class="btn btn--outline btn--forward" href="http://example.com">Link</a>
+<button class="btn btn--outline btn--forward" href="http://example.com">Button</button>
+<a class="btn btn--outline btn--forward" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Outline back
+        </div>
+        <div class="sbs-modifier-name">
+          .btn--outline.btn--back
+        </div>
+        <input class="btn btn--outline btn--back" type="submit" value="Input" />
+<a class="btn btn--outline btn--back" href="http://example.com">Link</a>
+<button class="btn btn--outline btn--back" href="http://example.com">Button</button>
+<a class="btn btn--outline btn--back" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Outline add
+        </div>
+        <div class="sbs-modifier-name">
+          .btn--outline.btn--add
+        </div>
+        <input class="btn btn--outline btn--add" type="submit" value="Input" />
+<a class="btn btn--outline btn--add" href="http://example.com">Link</a>
+<button class="btn btn--outline btn--add" href="http://example.com">Button</button>
+<a class="btn btn--outline btn--add" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Outline delete
+        </div>
+        <div class="sbs-modifier-name">
+          .btn--outline.btn--delete
+        </div>
+        <input class="btn btn--outline btn--delete" type="submit" value="Input" />
+<a class="btn btn--outline btn--delete" href="http://example.com">Link</a>
+<button class="btn btn--outline btn--delete" href="http://example.com">Button</button>
+<a class="btn btn--outline btn--delete" href="http://example.com" disabled>Disabled</a>
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          Outline download
+        </div>
+        <div class="sbs-modifier-name">
+          .btn--outline.btn--download
+        </div>
+        <input class="btn btn--outline btn--download" type="submit" value="Input" />
+<a class="btn btn--outline btn--download" href="http://example.com">Link</a>
+<button class="btn btn--outline btn--download" href="http://example.com">Button</button>
+<a class="btn btn--outline btn--download" href="http://example.com" disabled>Disabled</a>
+      </div>
+
+      <div class="sbs-code">
+        <h3 class="sbs-example-heading">HTML</h3>
+        <pre><code class="html">&lt;input class=&quot;btn [modifier class]&quot; type=&quot;submit&quot; value=&quot;Input&quot; /&gt;
+&lt;a class=&quot;btn [modifier class]&quot; href=&quot;http://example.com&quot;&gt;Link&lt;/a&gt;
+&lt;button class=&quot;btn [modifier class]&quot; href=&quot;http://example.com&quot;&gt;Button&lt;/button&gt;
+&lt;a class=&quot;btn [modifier class]&quot; href=&quot;http://example.com&quot; disabled&gt;Disabled&lt;/a&gt;</code></pre>
+      </div>
+
+      </section>
+
+      <section id="kssref-modules-centered"  class="sbs-style-section sbs-style-section-depth-2">
+
+    <header class="sbs-style-header">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          6.3
+        </div>
+        Centered
+      </h2>
+
+        <div class="sbs-description"><p>Centers inline and block content.</p>
+</div>
+    </header>
+
+      <div class="sbs-example">
+        <p class="centered">This text is centered</p>
+      </div>
+
+      <div class="sbs-code">
+        <h3 class="sbs-example-heading">HTML</h3>
+        <pre><code class="html">&lt;p class=&quot;centered&quot;&gt;This text is centered&lt;/p&gt;</code></pre>
+      </div>
+
+      </section>
+
+      <section id="kssref-modules-messagebox"  class="sbs-style-section sbs-style-section-depth-2">
+
+    <header class="sbs-style-header">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          6.4
+        </div>
+        Message Box
+      </h2>
+
+        <div class="sbs-description"><p>Use to alert the user about a current or potential outcome such as success, failure or a warning. There are four types of messages.</p>
+</div>
+    </header>
+
+      <div class="sbs-example">
+        <div class="msg [modifier class]">
+  <h2 class="notice__heading">Message Box</h2>
+  <p>I am an important message! 
+  Links are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">styled to match</a> 
+  the look of the warning box.</p>
+</div>
+
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          More important than your standard message. Warns of potential danger.
+        </div>
+        <div class="sbs-modifier-name">
+          .msg--warning
+        </div>
+        <div class="msg msg--warning">
+  <h2 class="notice__heading">Message Box</h2>
+  <p>I am an important message! 
+  Links are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">styled to match</a> 
+  the look of the warning box.</p>
+</div>
+
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          An error has occurred
+        </div>
+        <div class="sbs-modifier-name">
+          .msg--error
+        </div>
+        <div class="msg msg--error">
+  <h2 class="notice__heading">Message Box</h2>
+  <p>I am an important message! 
+  Links are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">styled to match</a> 
+  the look of the warning box.</p>
+</div>
+
+      </div>
+      <div class="sbs-example">
+        <div class="sbs-modifier-desc">
+          A success message
+        </div>
+        <div class="sbs-modifier-name">
+          .msg--success
+        </div>
+        <div class="msg msg--success">
+  <h2 class="notice__heading">Message Box</h2>
+  <p>I am an important message! 
+  Links are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">styled to match</a> 
+  the look of the warning box.</p>
+</div>
+
+      </div>
+
+      <div class="sbs-code">
+        <h3 class="sbs-example-heading">HTML</h3>
+        <pre><code class="html">&lt;div class=&quot;msg [modifier class]&quot;&gt;
+  &lt;h2 class=&quot;notice__heading&quot;&gt;Message Box&lt;/h2&gt;
+  &lt;p&gt;I am an important message! 
+  Links are &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS&quot;&gt;styled to match&lt;/a&gt; 
+  the look of the warning box.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+
+      </section>
+
+      <section id="kssref-modules-oldbrowsernotice"  class="sbs-style-section sbs-style-section-depth-2">
+
+    <header class="sbs-style-header">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          6.5
+        </div>
+        Old Browser Notice
+      </h2>
+
+        <div class="sbs-description"><p>A notice banner for older browsers encouraging users to upgrade. Really only targets old IE
+right now. Message is set to <code>display: none</code> unless it&#39;s a child of an element with a class of
+<code>ie6</code>, <code>ie7</code>, <code>ie8</code>, <code>ie9</code>. Use IE conditional comments to add these classes to the <code>html</code> root
+element.</p>
+</div>
+    </header>
+
+      <div class="sbs-example">
+        <div class="ie8">
+  <div class="old-browser-notice">
+    <p>You’re using a pretty old web browser. This site (and probably others) might not always look quite right. Why not <a href="http://browsehappy.com/">grab the latest version of your web browser here</a>?</p>
+  </div>
+</div>
+
+      </div>
+
+      <div class="sbs-code">
+        <h3 class="sbs-example-heading">HTML</h3>
+        <pre><code class="html">&lt;div class=&quot;ie8&quot;&gt;
+  &lt;div class=&quot;old-browser-notice&quot;&gt;
+    &lt;p&gt;You’re using a pretty old web browser. This site (and probably others) might not always look quite right. Why not &lt;a href=&quot;http://browsehappy.com/&quot;&gt;grab the latest version of your web browser here&lt;/a&gt;?&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+
+      </section>
+
+      <section id="kssref-modules-socialicons"  class="sbs-style-section sbs-style-section-depth-2">
+
+    <header class="sbs-style-header">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          6.6
+        </div>
+        Social Media Icons
+      </h2>
+
+        <div class="sbs-description"><p>Icons for common social media sites. Sprite must be inline (in HTML doc head) to support IE8-11. To use an external sprite with older IE versions you’ll need “SVG for Everybody” or “svgxuse”.</p>
+<p>svgxuse - <a href="https://github.com/Keyamoon/svgxuse">https://github.com/Keyamoon/svgxuse</a></p>
+<p>SVG for Everybody - <a href="https://github.com/jonathantneal/svg4everybody">https://github.com/jonathantneal/svg4everybody</a></p>
+<p>Use role, aria-label, and title for accessibility. See source code and this Stack Overflow discussion. <a href="http://stackoverflow.com/questions/4697100/accessibility-recommended-alt-text-convention-for-svg-and-mathml">http://stackoverflow.com/questions/4697100/accessibility-recommended-alt-text-convention-for-svg-and-mathml</a></p>
+<p>(See images/_social-media-sprite.svg)</p>
+</div>
+    </header>
+
+      <div class="sbs-example">
+        
+<!-- SVG sprite definition. This should go in the head of the document or as external link -->
+<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-facebook-square" viewBox="0 0 877.7150599161796 1024">
+<title>facebook-square</title>
+<path class="path1" d="M713.143 73.143q68 0 116.286 48.286t48.286 116.286v548.571q0 68-48.286 116.286t-116.286 48.286h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571q0-32 13.429-48t52.286-16l69.714-0.571v-118.286q-36-5.143-101.714-5.143-77.714 0-124.286 45.714t-46.571 129.143v97.714h-114.286v132.571h114.286v340h-304q-68 0-116.286-48.286t-48.286-116.286v-548.571q0-68 48.286-116.286t116.286-48.286h548.571z"></path>
+</symbol>
+<symbol id="icon-twitter" viewBox="0 0 950.8560180664062 1024">
+<title>twitter</title>
+<path class="path1" d="M925.714 233.143q-38.286 56-92.571 95.429 0.571 8 0.571 24 0 74.286-21.714 148.286t-66 142-105.429 120.286-147.429 83.429-184.571 31.143q-154.857 0-283.429-82.857 20 2.286 44.571 2.286 128.571 0 229.143-78.857-60-1.143-107.429-36.857t-65.143-91.143q18.857 2.857 34.857 2.857 24.571 0 48.571-6.286-64-13.143-106-63.714t-42-117.429v-2.286q38.857 21.714 83.429 23.429-37.714-25.143-60-65.714t-22.286-88q0-50.286 25.143-93.143 69.143 85.143 168.286 136.286t212.286 56.857q-4.571-21.714-4.571-42.286 0-76.571 54-130.571t130.571-54q80 0 134.857 58.286 62.286-12 117.143-44.571-21.143 65.714-81.143 101.714 53.143-5.714 106.286-28.571z"></path>
+</symbol>
+<symbol id="icon-github" viewBox="0 0 877.7155405680533 1024">
+<title>github</title>
+<path class="path1" d="M877.714 512q0 143.429-83.714 258t-216.286 158.571q-15.429 2.857-22.571-4t-7.143-17.143v-120.571q0-55.429-29.714-81.143 32.571-3.429 58.571-10.286t53.714-22.286 46.286-38 30.286-60 11.714-86q0-69.143-45.143-117.714 21.143-52-4.571-116.571-16-5.143-46.286 6.286t-52.571 25.143l-21.714 13.714q-53.143-14.857-109.714-14.857t-109.714 14.857q-9.143-6.286-24.286-15.429t-47.714-22-49.143-7.714q-25.143 64.571-4 116.571-45.143 48.571-45.143 117.714 0 48.571 11.714 85.714t30 60 46 38.286 53.714 22.286 58.571 10.286q-22.857 20.571-28 58.857-12 5.714-25.714 8.571t-32.571 2.857-37.429-12.286-31.714-35.714q-10.857-18.286-27.714-29.714t-28.286-13.714l-11.429-1.714q-12 0-16.571 2.571t-2.857 6.571 5.143 8 7.429 6.857l4 2.857q12.571 5.714 24.857 21.714t18 29.143l5.714 13.143q7.429 21.714 25.143 35.143t38.286 17.143 39.714 4 31.714-2l13.143-2.286q0 21.714 0.286 50.857t0.286 30.857q0 10.286-7.429 17.143t-22.857 4q-132.571-44-216.286-158.571t-83.714-258q0-119.429 58.857-220.286t159.714-159.714 220.286-58.857 220.286 58.857 159.714 159.714 58.857 220.286z"></path>
+</symbol>
+<symbol id="icon-pinterest-square" viewBox="0 0 877.7119776406325 1024">
+<title>pinterest-square</title>
+<path class="path1" d="M713.143 73.143q68 0 116.286 48.286t48.286 116.286v548.571q0 68-48.286 116.286t-116.286 48.286h-414.286q48.571-69.714 61.714-120 5.143-19.429 30.286-119.429 12 22.286 42 38.286t64.286 16q103.429 0 168.857-84.286t65.429-213.429q0-48-20-92.857t-55.143-79.429-87.143-55.429-112.571-20.857q-59.429 0-111.143 16.286t-87.429 43.714-61.429 62.571-38 73.143-12.286 75.714q0 58.286 22.571 102.857t66.571 62.857q7.429 2.857 13.429 0t8.286-10.857q5.714-25.143 8.571-34.857 3.429-13.143-6.286-24-28.571-35.429-28.571-85.714 0-85.714 59.143-146.571t154.571-60.857q85.143 0 132.857 46.286t47.714 120q0 96-38.571 163.429t-99.143 67.429q-34.286 0-55.429-24.857t-13.143-59.143q4.571-19.429 15.143-52.857t16.857-58.286 6.286-42.571q0-28-15.143-46.571t-43.143-18.571q-34.857 0-59.143 32.286t-24.286 79.714q0 41.143 13.714 69.143l-56 236.571q-13.714 57.143-4 145.143h-104.571q-68 0-116.286-48.286t-48.286-116.286v-548.571q0-68 48.286-116.286t116.286-48.286h548.571z"></path>
+</symbol>
+<symbol id="icon-youtube-play" viewBox="0 0 1024.0000312328339 1024">
+<title>youtube-play</title>
+<path class="path1" d="M731.429 512q0-21.143-17.143-30.857l-292.571-182.857q-17.714-11.429-37.143-1.143-18.857 10.286-18.857 32v365.714q0 21.714 18.857 32 9.143 4.571 17.714 4.571 11.429 0 19.429-5.714l292.571-182.857q17.143-9.714 17.143-30.857zM1024 512q0 54.857-0.571 85.714t-4.857 78-12.857 84.286q-9.143 41.714-39.429 70.286t-70.857 33.143q-126.857 14.286-383.429 14.286t-383.429-14.286q-40.571-4.571-71.143-33.143t-39.714-70.286q-8-37.143-12.286-84.286t-4.857-78-0.571-85.714 0.571-85.714 4.857-78 12.857-84.286q9.143-41.714 39.429-70.286t70.857-33.143q126.857-14.286 383.429-14.286t383.429 14.286q40.571 4.571 71.143 33.143t39.714 70.286q8 37.143 12.286 84.286t4.857 78 0.571 85.714z"></path>
+</symbol>
+<symbol id="icon-instagram" viewBox="0 0 877.7130457558669 1024">
+<title>instagram</title>
+<path class="path1" d="M778.286 814.857v-370.286h-77.143q11.429 36 11.429 74.857 0 72-36.571 132.857t-99.429 96.286-137.143 35.429q-112.571 0-192.571-77.429t-80-187.143q0-38.857 11.429-74.857h-80.571v370.286q0 14.857 10 24.857t24.857 10h610.857q14.286 0 24.571-10t10.286-24.857zM616 510.286q0-70.857-51.714-120.857t-124.857-50q-72.571 0-124.286 50t-51.714 120.857 51.714 120.857 124.286 50q73.143 0 124.857-50t51.714-120.857zM778.286 304.571v-94.286q0-16-11.429-27.714t-28-11.714h-99.429q-16.571 0-28 11.714t-11.429 27.714v94.286q0 16.571 11.429 28t28 11.429h99.429q16.571 0 28-11.429t11.429-28zM877.714 185.714v652.571q0 46.286-33.143 79.429t-79.429 33.143h-652.571q-46.286 0-79.429-33.143t-33.143-79.429v-652.571q0-46.286 33.143-79.429t79.429-33.143h652.571q46.286 0 79.429 33.143t33.143 79.429z"></path>
+</symbol>
+<symbol id="icon-flickr" viewBox="0 0 877.7150599161796 1024">
+<title>flickr</title>
+<path class="path1" d="M713.143 73.143q68 0 116.286 48.286t48.286 116.286v548.571q0 68-48.286 116.286t-116.286 48.286h-548.571q-68 0-116.286-48.286t-48.286-116.286v-548.571q0-68 48.286-116.286t116.286-48.286h548.571zM398.857 512q0-50.286-35.429-85.714t-85.714-35.429-85.714 35.429-35.429 85.714 35.429 85.714 85.714 35.429 85.714-35.429 35.429-85.714zM721.143 512q0-50.286-35.429-85.714t-85.714-35.429-85.714 35.429-35.429 85.714 35.429 85.714 85.714 35.429 85.714-35.429 35.429-85.714z"></path>
+</symbol>
+<symbol id="icon-tumblr-square" viewBox="0 0 877.7130457558669 1024">
+<title>tumblr-square</title>
+<path class="path1" d="M649.143 834.857l-35.429-104.571q-25.143 12.571-58.857 12.571-20.571 0.571-35.429-6t-22-18-10-23.143-2.857-24.857v-227.429h146.857v-110.857h-146.286v-186.286h-107.429q-4.571 0-5.143 5.714-2.857 25.143-10 49.714t-22.286 54.286-44 54.286-67.714 38.857v94.286h74.286v238.857q0 32.571 12.286 65.714t37.143 63.429 69.143 48.857 100.857 17.429q39.429-0.571 78-14.286t48.857-28.571zM877.714 237.714v548.571q0 68-48.286 116.286t-116.286 48.286h-548.571q-68 0-116.286-48.286t-48.286-116.286v-548.571q0-68 48.286-116.286t116.286-48.286h548.571q68 0 116.286 48.286t48.286 116.286z"></path>
+</symbol>
+<symbol id="icon-vimeo-square" viewBox="0 0 877.7130457558669 1024">
+<title>vimeo-square</title>
+<path class="path1" d="M738.286 364.571q5.714-123.429-92-126.857-132-4.571-178.286 149.143 25.143-10.857 46.857-10.857 48.571 0 42.286 54.857-2.286 32.571-42.286 95.429t-60 62.857q-24.571 0-46.857-96.571-7.429-30.857-25.714-145.714-17.143-108-91.429-101.143-33.714 4-93.714 57.143l-92.571 82.286 29.714 38.286q43.429-29.714 49.714-29.714 32.571 0 61.143 102.286 8.571 31.429 25.714 94t25.714 94q38.857 102.286 93.714 102.286 89.714 0 218.857-168 125.714-161.714 129.143-253.714zM877.714 237.714v548.571q0 68-48.286 116.286t-116.286 48.286h-548.571q-68 0-116.286-48.286t-48.286-116.286v-548.571q0-68 48.286-116.286t116.286-48.286h548.571q68 0 116.286 48.286t48.286 116.286z"></path>
+</symbol>
+<symbol id="icon-slack" viewBox="0 0 950.8550338745117 1024">
+<title>slack</title>
+<path class="path1" d="M868 443.429q35.429 0 59.143 23.143t23.714 58q0 55.429-53.143 74.286l-98.286 33.714 32 95.429q4 12 4 26.857 0 33.714-24 58.286t-57.714 24.571q-26.857 0-48.857-15.429t-30.571-41.143l-31.429-94.286-177.143 60.571 31.429 93.714q4.571 13.714 4.571 26.857 0 33.714-24 58.286t-58.286 24.571q-26.857 0-48.571-15.429t-30.286-41.143l-31.429-93.143-87.429 30.286q-16.571 5.143-28.571 5.143-34.857 0-58-22.857t-23.143-57.714q0-26.857 15.714-48.571t40.857-30.286l89.143-30.286-60-178.857-89.143 30.857q-14.857 4.571-27.429 4.571-34.286 0-57.714-23.143t-23.429-57.429q0-26.857 15.714-48.571t40.857-30.286l89.714-30.286-30.286-90.857q-4.571-13.714-4.571-26.857 0-34.286 24-58.571t58.286-24.286q26.857 0 48.571 15.429t30.286 41.143l30.857 91.429 177.143-60-30.857-91.429q-4.571-13.714-4.571-26.857 0-33.714 24.286-58.286t58-24.571q26.857 0 48.857 15.714t30.571 40.857l30.286 92 92.571-31.429q12-3.429 24.571-3.429 34.286 0 58.571 22.571t24.286 56.286q0 25.714-17.143 46.571t-42.286 29.429l-89.714 30.857 60 180.571 93.714-32q13.714-4.571 26.286-4.571zM414.286 593.143l177.143-60-60-180-177.143 61.143z"></path>
+</symbol>
+<symbol id="icon-behance-square" viewBox="0 0 877.7150599161796 1024">
+<title>behance-square</title>
+<path class="path1" d="M713.143 73.143q68 0 116.286 48.286t48.286 116.286v548.571q0 68-48.286 116.286t-116.286 48.286h-548.571q-68 0-116.286-48.286t-48.286-116.286v-548.571q0-68 48.286-116.286t116.286-48.286h548.571zM285.143 282.857h-212v449.714h218.286q66.857 0 112.571-32.857t45.714-97.429q0-90.286-81.714-114.286 61.143-29.714 61.143-93.714 0-32.571-11.143-55.143t-32.286-34.571-45.143-16.857-55.429-4.857zM272.571 464.571h-100.571v-105.143h93.143q68 0 68 51.429 0 53.714-60.571 53.714zM277.714 656h-105.714v-124h108q70.857 0 70.857 64.571 0 59.429-73.143 59.429zM649.143 674.286q-38.857 0-59.429-21.714t-20.571-61.143h234.857q0.571-5.714 0.571-17.143 0-75.429-42.571-126t-116.286-50.571q-73.143 0-120 49.143t-46.857 123.429q0 77.143 45.143 124t121.714 46.857q117.143 0 152.571-109.143h-78.857q-6.286 19.429-27.143 30.857t-43.143 11.429zM643.429 465.143q64.571 0 70.857 69.714h-145.143q2.286-32 22.286-50.857t52-18.857zM550.857 313.143h182.286v44h-182.286v-44z"></path>
+</symbol>
+</defs>
+</svg>
+
+<!-- Render the icons with svg "use". Note the role, aria label and title for accessibility -->
+<svg role="img" aria-label="Twitter icon" class="social-icon">
+  <title>Twitter icon</title>
+  <use xlink:href="#icon-twitter" />
+</svg>
+
+<svg role="img" aria-label="Facebook icon" class="social-icon">
+  <title>Facebook icon</title>
+  <use xlink:href="#icon-facebook-square" />
+</svg>
+
+<svg role="img" aria-label="Instagram icon" class="social-icon">
+  <title>Instagram icon</title>
+  <use xlink:href="#icon-instagram" />
+</svg>
+
+<svg role="img" aria-label="Vimeo icon" class="social-icon">
+  <title>Vimeo icon</title>
+  <use xlink:href="#icon-vimeo-square" />
+</svg>
+
+<svg role="img" aria-label="Youtube icon" class="social-icon">
+  <title>Youtube icon</title>
+  <use xlink:href="#icon-youtube-play" />
+</svg>      
+
+<svg role="img" aria-label="Github icon" class="social-icon">
+  <title>Github icon</title>
+  <use xlink:href="#icon-github" />
+</svg>      
+
+<svg role="img" aria-label="Pinterest icon" class="social-icon">
+  <title>Pinterest icon</title>
+  <use xlink:href="#icon-pinterest-square" />
+</svg>      
+
+<svg role="img" aria-label="Flickr icon" class="social-icon">
+  <title>Flickr icon</title>
+  <use xlink:href="#icon-flickr" />
+</svg>      
+
+<svg role="img" aria-label="Tumblr icon" class="social-icon">
+  <title>Tumblr icon</title>
+  <use xlink:href="#icon-tumblr-square" />
+</svg>      
+
+<svg role="img" aria-label="Slack icon" class="social-icon">
+  <title>Slack icon</title>
+  <use xlink:href="#icon-slack" />
+</svg>      
+
+      </div>
+
+      <div class="sbs-code">
+        <h3 class="sbs-example-heading">HTML</h3>
+        <pre><code class="html">
+&lt;!-- SVG sprite definition. This should go in the head of the document or as external link --&gt;
+&lt;svg style=&quot;position: absolute; width: 0; height: 0;&quot; width=&quot;0&quot; height=&quot;0&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;
+&lt;defs&gt;
+&lt;symbol id=&quot;icon-facebook-square&quot; viewBox=&quot;0 0 877.7150599161796 1024&quot;&gt;
+&lt;title&gt;facebook-square&lt;/title&gt;
+&lt;path class=&quot;path1&quot; d=&quot;M713.143 73.143q68 0 116.286 48.286t48.286 116.286v548.571q0 68-48.286 116.286t-116.286 48.286h-107.429v-340h113.714l17.143-132.571h-130.857v-84.571q0-32 13.429-48t52.286-16l69.714-0.571v-118.286q-36-5.143-101.714-5.143-77.714 0-124.286 45.714t-46.571 129.143v97.714h-114.286v132.571h114.286v340h-304q-68 0-116.286-48.286t-48.286-116.286v-548.571q0-68 48.286-116.286t116.286-48.286h548.571z&quot;&gt;&lt;/path&gt;
+&lt;/symbol&gt;
+&lt;symbol id=&quot;icon-twitter&quot; viewBox=&quot;0 0 950.8560180664062 1024&quot;&gt;
+&lt;title&gt;twitter&lt;/title&gt;
+&lt;path class=&quot;path1&quot; d=&quot;M925.714 233.143q-38.286 56-92.571 95.429 0.571 8 0.571 24 0 74.286-21.714 148.286t-66 142-105.429 120.286-147.429 83.429-184.571 31.143q-154.857 0-283.429-82.857 20 2.286 44.571 2.286 128.571 0 229.143-78.857-60-1.143-107.429-36.857t-65.143-91.143q18.857 2.857 34.857 2.857 24.571 0 48.571-6.286-64-13.143-106-63.714t-42-117.429v-2.286q38.857 21.714 83.429 23.429-37.714-25.143-60-65.714t-22.286-88q0-50.286 25.143-93.143 69.143 85.143 168.286 136.286t212.286 56.857q-4.571-21.714-4.571-42.286 0-76.571 54-130.571t130.571-54q80 0 134.857 58.286 62.286-12 117.143-44.571-21.143 65.714-81.143 101.714 53.143-5.714 106.286-28.571z&quot;&gt;&lt;/path&gt;
+&lt;/symbol&gt;
+&lt;symbol id=&quot;icon-github&quot; viewBox=&quot;0 0 877.7155405680533 1024&quot;&gt;
+&lt;title&gt;github&lt;/title&gt;
+&lt;path class=&quot;path1&quot; d=&quot;M877.714 512q0 143.429-83.714 258t-216.286 158.571q-15.429 2.857-22.571-4t-7.143-17.143v-120.571q0-55.429-29.714-81.143 32.571-3.429 58.571-10.286t53.714-22.286 46.286-38 30.286-60 11.714-86q0-69.143-45.143-117.714 21.143-52-4.571-116.571-16-5.143-46.286 6.286t-52.571 25.143l-21.714 13.714q-53.143-14.857-109.714-14.857t-109.714 14.857q-9.143-6.286-24.286-15.429t-47.714-22-49.143-7.714q-25.143 64.571-4 116.571-45.143 48.571-45.143 117.714 0 48.571 11.714 85.714t30 60 46 38.286 53.714 22.286 58.571 10.286q-22.857 20.571-28 58.857-12 5.714-25.714 8.571t-32.571 2.857-37.429-12.286-31.714-35.714q-10.857-18.286-27.714-29.714t-28.286-13.714l-11.429-1.714q-12 0-16.571 2.571t-2.857 6.571 5.143 8 7.429 6.857l4 2.857q12.571 5.714 24.857 21.714t18 29.143l5.714 13.143q7.429 21.714 25.143 35.143t38.286 17.143 39.714 4 31.714-2l13.143-2.286q0 21.714 0.286 50.857t0.286 30.857q0 10.286-7.429 17.143t-22.857 4q-132.571-44-216.286-158.571t-83.714-258q0-119.429 58.857-220.286t159.714-159.714 220.286-58.857 220.286 58.857 159.714 159.714 58.857 220.286z&quot;&gt;&lt;/path&gt;
+&lt;/symbol&gt;
+&lt;symbol id=&quot;icon-pinterest-square&quot; viewBox=&quot;0 0 877.7119776406325 1024&quot;&gt;
+&lt;title&gt;pinterest-square&lt;/title&gt;
+&lt;path class=&quot;path1&quot; d=&quot;M713.143 73.143q68 0 116.286 48.286t48.286 116.286v548.571q0 68-48.286 116.286t-116.286 48.286h-414.286q48.571-69.714 61.714-120 5.143-19.429 30.286-119.429 12 22.286 42 38.286t64.286 16q103.429 0 168.857-84.286t65.429-213.429q0-48-20-92.857t-55.143-79.429-87.143-55.429-112.571-20.857q-59.429 0-111.143 16.286t-87.429 43.714-61.429 62.571-38 73.143-12.286 75.714q0 58.286 22.571 102.857t66.571 62.857q7.429 2.857 13.429 0t8.286-10.857q5.714-25.143 8.571-34.857 3.429-13.143-6.286-24-28.571-35.429-28.571-85.714 0-85.714 59.143-146.571t154.571-60.857q85.143 0 132.857 46.286t47.714 120q0 96-38.571 163.429t-99.143 67.429q-34.286 0-55.429-24.857t-13.143-59.143q4.571-19.429 15.143-52.857t16.857-58.286 6.286-42.571q0-28-15.143-46.571t-43.143-18.571q-34.857 0-59.143 32.286t-24.286 79.714q0 41.143 13.714 69.143l-56 236.571q-13.714 57.143-4 145.143h-104.571q-68 0-116.286-48.286t-48.286-116.286v-548.571q0-68 48.286-116.286t116.286-48.286h548.571z&quot;&gt;&lt;/path&gt;
+&lt;/symbol&gt;
+&lt;symbol id=&quot;icon-youtube-play&quot; viewBox=&quot;0 0 1024.0000312328339 1024&quot;&gt;
+&lt;title&gt;youtube-play&lt;/title&gt;
+&lt;path class=&quot;path1&quot; d=&quot;M731.429 512q0-21.143-17.143-30.857l-292.571-182.857q-17.714-11.429-37.143-1.143-18.857 10.286-18.857 32v365.714q0 21.714 18.857 32 9.143 4.571 17.714 4.571 11.429 0 19.429-5.714l292.571-182.857q17.143-9.714 17.143-30.857zM1024 512q0 54.857-0.571 85.714t-4.857 78-12.857 84.286q-9.143 41.714-39.429 70.286t-70.857 33.143q-126.857 14.286-383.429 14.286t-383.429-14.286q-40.571-4.571-71.143-33.143t-39.714-70.286q-8-37.143-12.286-84.286t-4.857-78-0.571-85.714 0.571-85.714 4.857-78 12.857-84.286q9.143-41.714 39.429-70.286t70.857-33.143q126.857-14.286 383.429-14.286t383.429 14.286q40.571 4.571 71.143 33.143t39.714 70.286q8 37.143 12.286 84.286t4.857 78 0.571 85.714z&quot;&gt;&lt;/path&gt;
+&lt;/symbol&gt;
+&lt;symbol id=&quot;icon-instagram&quot; viewBox=&quot;0 0 877.7130457558669 1024&quot;&gt;
+&lt;title&gt;instagram&lt;/title&gt;
+&lt;path class=&quot;path1&quot; d=&quot;M778.286 814.857v-370.286h-77.143q11.429 36 11.429 74.857 0 72-36.571 132.857t-99.429 96.286-137.143 35.429q-112.571 0-192.571-77.429t-80-187.143q0-38.857 11.429-74.857h-80.571v370.286q0 14.857 10 24.857t24.857 10h610.857q14.286 0 24.571-10t10.286-24.857zM616 510.286q0-70.857-51.714-120.857t-124.857-50q-72.571 0-124.286 50t-51.714 120.857 51.714 120.857 124.286 50q73.143 0 124.857-50t51.714-120.857zM778.286 304.571v-94.286q0-16-11.429-27.714t-28-11.714h-99.429q-16.571 0-28 11.714t-11.429 27.714v94.286q0 16.571 11.429 28t28 11.429h99.429q16.571 0 28-11.429t11.429-28zM877.714 185.714v652.571q0 46.286-33.143 79.429t-79.429 33.143h-652.571q-46.286 0-79.429-33.143t-33.143-79.429v-652.571q0-46.286 33.143-79.429t79.429-33.143h652.571q46.286 0 79.429 33.143t33.143 79.429z&quot;&gt;&lt;/path&gt;
+&lt;/symbol&gt;
+&lt;symbol id=&quot;icon-flickr&quot; viewBox=&quot;0 0 877.7150599161796 1024&quot;&gt;
+&lt;title&gt;flickr&lt;/title&gt;
+&lt;path class=&quot;path1&quot; d=&quot;M713.143 73.143q68 0 116.286 48.286t48.286 116.286v548.571q0 68-48.286 116.286t-116.286 48.286h-548.571q-68 0-116.286-48.286t-48.286-116.286v-548.571q0-68 48.286-116.286t116.286-48.286h548.571zM398.857 512q0-50.286-35.429-85.714t-85.714-35.429-85.714 35.429-35.429 85.714 35.429 85.714 85.714 35.429 85.714-35.429 35.429-85.714zM721.143 512q0-50.286-35.429-85.714t-85.714-35.429-85.714 35.429-35.429 85.714 35.429 85.714 85.714 35.429 85.714-35.429 35.429-85.714z&quot;&gt;&lt;/path&gt;
+&lt;/symbol&gt;
+&lt;symbol id=&quot;icon-tumblr-square&quot; viewBox=&quot;0 0 877.7130457558669 1024&quot;&gt;
+&lt;title&gt;tumblr-square&lt;/title&gt;
+&lt;path class=&quot;path1&quot; d=&quot;M649.143 834.857l-35.429-104.571q-25.143 12.571-58.857 12.571-20.571 0.571-35.429-6t-22-18-10-23.143-2.857-24.857v-227.429h146.857v-110.857h-146.286v-186.286h-107.429q-4.571 0-5.143 5.714-2.857 25.143-10 49.714t-22.286 54.286-44 54.286-67.714 38.857v94.286h74.286v238.857q0 32.571 12.286 65.714t37.143 63.429 69.143 48.857 100.857 17.429q39.429-0.571 78-14.286t48.857-28.571zM877.714 237.714v548.571q0 68-48.286 116.286t-116.286 48.286h-548.571q-68 0-116.286-48.286t-48.286-116.286v-548.571q0-68 48.286-116.286t116.286-48.286h548.571q68 0 116.286 48.286t48.286 116.286z&quot;&gt;&lt;/path&gt;
+&lt;/symbol&gt;
+&lt;symbol id=&quot;icon-vimeo-square&quot; viewBox=&quot;0 0 877.7130457558669 1024&quot;&gt;
+&lt;title&gt;vimeo-square&lt;/title&gt;
+&lt;path class=&quot;path1&quot; d=&quot;M738.286 364.571q5.714-123.429-92-126.857-132-4.571-178.286 149.143 25.143-10.857 46.857-10.857 48.571 0 42.286 54.857-2.286 32.571-42.286 95.429t-60 62.857q-24.571 0-46.857-96.571-7.429-30.857-25.714-145.714-17.143-108-91.429-101.143-33.714 4-93.714 57.143l-92.571 82.286 29.714 38.286q43.429-29.714 49.714-29.714 32.571 0 61.143 102.286 8.571 31.429 25.714 94t25.714 94q38.857 102.286 93.714 102.286 89.714 0 218.857-168 125.714-161.714 129.143-253.714zM877.714 237.714v548.571q0 68-48.286 116.286t-116.286 48.286h-548.571q-68 0-116.286-48.286t-48.286-116.286v-548.571q0-68 48.286-116.286t116.286-48.286h548.571q68 0 116.286 48.286t48.286 116.286z&quot;&gt;&lt;/path&gt;
+&lt;/symbol&gt;
+&lt;symbol id=&quot;icon-slack&quot; viewBox=&quot;0 0 950.8550338745117 1024&quot;&gt;
+&lt;title&gt;slack&lt;/title&gt;
+&lt;path class=&quot;path1&quot; d=&quot;M868 443.429q35.429 0 59.143 23.143t23.714 58q0 55.429-53.143 74.286l-98.286 33.714 32 95.429q4 12 4 26.857 0 33.714-24 58.286t-57.714 24.571q-26.857 0-48.857-15.429t-30.571-41.143l-31.429-94.286-177.143 60.571 31.429 93.714q4.571 13.714 4.571 26.857 0 33.714-24 58.286t-58.286 24.571q-26.857 0-48.571-15.429t-30.286-41.143l-31.429-93.143-87.429 30.286q-16.571 5.143-28.571 5.143-34.857 0-58-22.857t-23.143-57.714q0-26.857 15.714-48.571t40.857-30.286l89.143-30.286-60-178.857-89.143 30.857q-14.857 4.571-27.429 4.571-34.286 0-57.714-23.143t-23.429-57.429q0-26.857 15.714-48.571t40.857-30.286l89.714-30.286-30.286-90.857q-4.571-13.714-4.571-26.857 0-34.286 24-58.571t58.286-24.286q26.857 0 48.571 15.429t30.286 41.143l30.857 91.429 177.143-60-30.857-91.429q-4.571-13.714-4.571-26.857 0-33.714 24.286-58.286t58-24.571q26.857 0 48.857 15.714t30.571 40.857l30.286 92 92.571-31.429q12-3.429 24.571-3.429 34.286 0 58.571 22.571t24.286 56.286q0 25.714-17.143 46.571t-42.286 29.429l-89.714 30.857 60 180.571 93.714-32q13.714-4.571 26.286-4.571zM414.286 593.143l177.143-60-60-180-177.143 61.143z&quot;&gt;&lt;/path&gt;
+&lt;/symbol&gt;
+&lt;symbol id=&quot;icon-behance-square&quot; viewBox=&quot;0 0 877.7150599161796 1024&quot;&gt;
+&lt;title&gt;behance-square&lt;/title&gt;
+&lt;path class=&quot;path1&quot; d=&quot;M713.143 73.143q68 0 116.286 48.286t48.286 116.286v548.571q0 68-48.286 116.286t-116.286 48.286h-548.571q-68 0-116.286-48.286t-48.286-116.286v-548.571q0-68 48.286-116.286t116.286-48.286h548.571zM285.143 282.857h-212v449.714h218.286q66.857 0 112.571-32.857t45.714-97.429q0-90.286-81.714-114.286 61.143-29.714 61.143-93.714 0-32.571-11.143-55.143t-32.286-34.571-45.143-16.857-55.429-4.857zM272.571 464.571h-100.571v-105.143h93.143q68 0 68 51.429 0 53.714-60.571 53.714zM277.714 656h-105.714v-124h108q70.857 0 70.857 64.571 0 59.429-73.143 59.429zM649.143 674.286q-38.857 0-59.429-21.714t-20.571-61.143h234.857q0.571-5.714 0.571-17.143 0-75.429-42.571-126t-116.286-50.571q-73.143 0-120 49.143t-46.857 123.429q0 77.143 45.143 124t121.714 46.857q117.143 0 152.571-109.143h-78.857q-6.286 19.429-27.143 30.857t-43.143 11.429zM643.429 465.143q64.571 0 70.857 69.714h-145.143q2.286-32 22.286-50.857t52-18.857zM550.857 313.143h182.286v44h-182.286v-44z&quot;&gt;&lt;/path&gt;
+&lt;/symbol&gt;
+&lt;/defs&gt;
+&lt;/svg&gt;
+
+&lt;!-- Render the icons with svg &quot;use&quot;. Note the role, aria label and title for accessibility --&gt;
+&lt;svg role=&quot;img&quot; aria-label=&quot;Twitter icon&quot; class=&quot;social-icon&quot;&gt;
+  &lt;title&gt;Twitter icon&lt;/title&gt;
+  &lt;use xlink:href=&quot;#icon-twitter&quot; /&gt;
+&lt;/svg&gt;
+
+&lt;svg role=&quot;img&quot; aria-label=&quot;Facebook icon&quot; class=&quot;social-icon&quot;&gt;
+  &lt;title&gt;Facebook icon&lt;/title&gt;
+  &lt;use xlink:href=&quot;#icon-facebook-square&quot; /&gt;
+&lt;/svg&gt;
+
+&lt;svg role=&quot;img&quot; aria-label=&quot;Instagram icon&quot; class=&quot;social-icon&quot;&gt;
+  &lt;title&gt;Instagram icon&lt;/title&gt;
+  &lt;use xlink:href=&quot;#icon-instagram&quot; /&gt;
+&lt;/svg&gt;
+
+&lt;svg role=&quot;img&quot; aria-label=&quot;Vimeo icon&quot; class=&quot;social-icon&quot;&gt;
+  &lt;title&gt;Vimeo icon&lt;/title&gt;
+  &lt;use xlink:href=&quot;#icon-vimeo-square&quot; /&gt;
+&lt;/svg&gt;
+
+&lt;svg role=&quot;img&quot; aria-label=&quot;Youtube icon&quot; class=&quot;social-icon&quot;&gt;
+  &lt;title&gt;Youtube icon&lt;/title&gt;
+  &lt;use xlink:href=&quot;#icon-youtube-play&quot; /&gt;
+&lt;/svg&gt;      
+
+&lt;svg role=&quot;img&quot; aria-label=&quot;Github icon&quot; class=&quot;social-icon&quot;&gt;
+  &lt;title&gt;Github icon&lt;/title&gt;
+  &lt;use xlink:href=&quot;#icon-github&quot; /&gt;
+&lt;/svg&gt;      
+
+&lt;svg role=&quot;img&quot; aria-label=&quot;Pinterest icon&quot; class=&quot;social-icon&quot;&gt;
+  &lt;title&gt;Pinterest icon&lt;/title&gt;
+  &lt;use xlink:href=&quot;#icon-pinterest-square&quot; /&gt;
+&lt;/svg&gt;      
+
+&lt;svg role=&quot;img&quot; aria-label=&quot;Flickr icon&quot; class=&quot;social-icon&quot;&gt;
+  &lt;title&gt;Flickr icon&lt;/title&gt;
+  &lt;use xlink:href=&quot;#icon-flickr&quot; /&gt;
+&lt;/svg&gt;      
+
+&lt;svg role=&quot;img&quot; aria-label=&quot;Tumblr icon&quot; class=&quot;social-icon&quot;&gt;
+  &lt;title&gt;Tumblr icon&lt;/title&gt;
+  &lt;use xlink:href=&quot;#icon-tumblr-square&quot; /&gt;
+&lt;/svg&gt;      
+
+&lt;svg role=&quot;img&quot; aria-label=&quot;Slack icon&quot; class=&quot;social-icon&quot;&gt;
+  &lt;title&gt;Slack icon&lt;/title&gt;
+  &lt;use xlink:href=&quot;#icon-slack&quot; /&gt;
+&lt;/svg&gt;      
+</code></pre>
+      </div>
+
+      </section>
+
+      <section id="kssref-modules-socialsharing"  class="sbs-style-section sbs-style-section-depth-2">
+
+    <header class="sbs-style-header">
+      <h2 class="sbs-heading">
+        <div class="sbs-section-number">
+        Section
+          6.7
+        </div>
+        Social Share Buttons
+      </h2>
+
+        <div class="sbs-description"><p>Twitter and Facebook share buttons. For Twitter configuration see <a href="https://dev.twitter.com/web/tweet-button">https://dev.twitter.com/web/tweet-button</a> and <a href="https://about.twitter.com/resources/buttons">https://about.twitter.com/resources/buttons</a>. For Facebook see <a href="https://developers.facebook.com/docs/plugins/share-button">https://developers.facebook.com/docs/plugins/share-button</a></p>
+</div>
+    </header>
+
+      <div class="sbs-example">
+          <!-- These Facebook Open Graph meta tags should go in the head of your page -->
+  <meta property="og:site_name" content="Springboard" />
+  <meta property="og:url" content="http://example.com/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Article title" />
+  <meta property="og:description" content="Description for FB share" />
+  <meta property="og:image" content="http://example.com/image.jpg" />
+
+
+  <div class="social-share">
+
+    <!-- Facebook Share Button: https://developers.facebook.com/docs/plugins -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="fb-share-button" data-href="http://example.com" data-layout="button"></div>
+
+    <!-- Twitter Share Button: https://about.twitter.com/resources/buttons#tweet -->
+    <a href="https://twitter.com/share" class="twitter-share-button"{count} data-text="This is the pre-populated tweet text" data-via="jpolete">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      
+  </div>
+
+      </div>
+
+      <div class="sbs-code">
+        <h3 class="sbs-example-heading">HTML</h3>
+        <pre><code class="html">  &lt;!-- These Facebook Open Graph meta tags should go in the head of your page --&gt;
+  &lt;meta property=&quot;og:site_name&quot; content=&quot;Springboard&quot; /&gt;
+  &lt;meta property=&quot;og:url&quot; content=&quot;http://example.com/&quot; /&gt;
+  &lt;meta property=&quot;og:type&quot; content=&quot;article&quot; /&gt;
+  &lt;meta property=&quot;og:title&quot; content=&quot;Article title&quot; /&gt;
+  &lt;meta property=&quot;og:description&quot; content=&quot;Description for FB share&quot; /&gt;
+  &lt;meta property=&quot;og:image&quot; content=&quot;http://example.com/image.jpg&quot; /&gt;
+
+
+  &lt;div class=&quot;social-share&quot;&gt;
+
+    &lt;!-- Facebook Share Button: https://developers.facebook.com/docs/plugins --&gt;
+    &lt;div id=&quot;fb-root&quot;&gt;&lt;/div&gt;
+    &lt;script&gt;(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = &quot;//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.5&quot;;
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, &#x27;script&#x27;, &#x27;facebook-jssdk&#x27;));&lt;/script&gt;
+
+    &lt;div class=&quot;fb-share-button&quot; data-href=&quot;http://example.com&quot; data-layout=&quot;button&quot;&gt;&lt;/div&gt;
+
+    &lt;!-- Twitter Share Button: https://about.twitter.com/resources/buttons#tweet --&gt;
+    &lt;a href=&quot;https://twitter.com/share&quot; class=&quot;twitter-share-button&quot;{count} data-text=&quot;This is the pre-populated tweet text&quot; data-via=&quot;jpolete&quot;&gt;Tweet&lt;/a&gt;
+    &lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?&#x27;http&#x27;:&#x27;https&#x27;;if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+&#x27;://platform.twitter.com/widgets.js&#x27;;fjs.parentNode.insertBefore(js,fjs);}}(document, &#x27;script&#x27;, &#x27;twitter-wjs&#x27;);&lt;/script&gt;
+      
+  &lt;/div&gt;
+</code></pre>
+      </div>
+
+      </section>
+
+
+
+<script src="public/kss.js"></script>
+
+  </div>
+</body>
+</html>

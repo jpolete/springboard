@@ -1,0 +1,426 @@
+
+////////////////////////
+//
+// Font and colors
+
+$font-stack-sans: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, san-serif;
+$color-biscay: #14315d;
+$color-white-smoke: #f4f6fa;
+$color-cadet-blue: #a7b7c8;
+$color-mystic: #e2e8f2;
+$color-madison: #2a3b54;
+$color-font: $color-biscay;
+$color-rule: rgba(0,0,1,.1);
+$nav-width: 14rem;
+
+////////////////////////
+
+// Override Highlight.js syntax highlighting background color
+.hljs {
+  background: $color-white-smoke;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: $font-stack-sans;
+  font-size: 16px;
+  color: $color-biscay;
+}
+
+.sbs-menu {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  padding: 1rem 1.4rem;
+  border-bottom-right-radius: .25rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,.4);
+  font: normal .8rem/1 $font-stack-sans;
+  text-transform: uppercase;
+  background: #fff;
+  color: #444;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    color: #444;
+    border: 0;
+  }
+}
+
+.sbs-header {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background: $color-white-smoke;
+  padding: 0 0 4rem;
+  margin: 0;
+  width: $nav-width;
+  height: 100%;
+  border-right: solid 1px $color-rule;
+  margin: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transition: all 200ms ease-in-out;
+  transform: translateX(-$nav-width);
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color-mystic;
+    border-radius: .5rem;
+    box-shadow: inset 0 0 0 2px $color-cadet-blue;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $color-cadet-blue;
+  }
+
+  &:target {
+    transform: translateX(0);
+  }
+
+}
+
+.sbs-nav-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  font: bold 1.2rem/3.2rem $font-stack-sans;
+  height: 3.2rem;
+  width: 3.2rem;
+  text-align: center;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    color: #444;
+    border: 0;
+  }
+}
+
+.sbs-close-icon {
+  width: 1.5rem;
+  height: 3.2rem;
+  fill: #444;
+}
+
+.sbs-styleguide-heading {
+  font: normal 1rem/1.2 $font-stack-sans;
+  padding: 1rem 4.2rem 1rem 1rem;
+  background: #fff;
+  border-bottom: solid 3px $color-cadet-blue;
+}
+
+.sbs-nav {
+  padding: 0;
+  font-size: .9rem;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.sbs-nav__item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: solid 1px rgba(0,0,0,.05);
+  border-width: 0 0 1px;
+
+  &:last-child {
+    border: 0;
+  }
+
+  ul {
+    background: darken($color-white-smoke, 5%);
+
+    a {
+      padding-left: 2rem;
+    }
+  }
+}
+
+.sbs-nav__link,
+.sbs-nav__link:link,
+.sbs-nav__link:visited,
+.sbs-nav__link:hover,
+.sbs-nav__link:focus,
+.sbs-nav__link:active {
+  display: block;
+  padding: .75rem 1.2rem;
+  color: $color-biscay;
+  border: 0;
+  text-decoration: none;
+}
+
+.sbs-nav__link:hover {
+  background: $color-mystic;
+  border-width: 0 0 1px;
+}
+
+.sbs-nav__item .sbs-nav__item .sbs-nav__link {
+  padding-left: 2rem;
+
+  &:hover {
+    background: darken($color-mystic, 3%);
+  }
+}
+
+.sbs-main {
+  position: relative;
+  z-index: 1;
+}
+
+.sbs-style-section {
+  border-bottom: solid 1px $color-rule;
+}
+
+.sbs-heading {
+  margin: 0 0 1rem;
+  padding: 0;
+  font: bold 1.5rem/1.3 $font-stack-sans;
+}
+
+.sbs-style-header.sbs-top-level-ref {
+  background: $color-madison;
+  padding-top: 4rem;
+
+  .sbs-heading {
+    color: #fff;
+    margin: 0;
+    font-size: 2.2rem;
+  }
+
+  .sbs-section-number {
+    color: rgba(255,255,255,.4);
+  }
+
+  .sbs-description {
+    p, ul, ol {
+      color: rgba(255,255,255,.7);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.sbs-section-number {
+  margin: 0;
+  padding: 0;
+  font: normal .9rem/1.3 $font-stack-sans;
+  color: #aaa;
+}
+
+.sbs-description {
+  margin: 0 0 1rem;
+
+  p, ul, ol {
+    margin: 0 0 1rem;
+    padding: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.sbs-style-header,
+.sbs-example,
+.sbs-code,
+.sbs-block {
+  padding: 1rem;
+}
+
+.sbs-example {
+  position: relative;
+  margin: 0;
+  border-top: dashed 1px $color-rule;
+}
+
+.sbs-example-heading {
+  text-transform: uppercase;
+  font: normal .8rem/1 $font-stack-sans;
+  letter-spacing: 1px;
+  margin: 0 0 .5rem;
+  padding: 0;
+}
+
+.sbs-modifier-name {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  padding: .2rem .5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent $color-rule $color-rule $color-rule;
+  border-radius: 0 0 .2rem .2rem;
+  font-size: .8rem;
+  line-height: 1;
+  background: $color-white-smoke;
+}
+
+.sbs-modifier-desc {
+  font-size: .9rem;
+  padding: 0 0 .5rem;
+}
+
+.sbs-rule {
+  border: dashed 1px #ccc;
+  border-width: 1px 0 0;
+  height: 1px;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.sbs-code {
+  border-top: dashed 1px $color-rule;
+  -webkit-overflow-scrolling: touch;
+
+  code {
+    font-size: .9rem;
+    padding: 1rem;
+  }
+}
+
+
+// Tweak navigation for larger screens
+@media screen and (min-width: 40rem) {
+  .sbs-menu,
+  .sbs-nav-close {
+    display: none;
+  }
+  .sbs-header {
+    transform: translateX(0);
+  }
+  .sbs-main {
+    margin-left: $nav-width;
+  }
+  .sbs-style-header,
+  .sbs-example,
+  .sbs-code,
+  .sbs-block {
+    padding: 2rem;
+  }
+}
+
+
+
+
+
+///////////////////////////////////////////////
+//  
+//  Colors Swatches
+//
+//  You can include an HTML fragment in a KSS comment to display your color palette.
+//  Use the following example as a guide.
+//
+//  KSS Comment Example:
+//  --------------------
+//  
+//  Color
+//
+//  Color palatte of the website
+//
+//  markup: colors.html
+//
+//  Styleguide Branding.Color
+//
+//
+//  HTML Fragment Example (color.html):
+//  -----------------------------------
+//
+//  <div class="sbs-color-palette">
+//    <div class="sbs-color-swatch">
+//      <div class="sbs-color-swatch__sample" style="background: #33363b"></div>
+//      <div class="sbs-color-swatch__label">
+//        <h3 class="sbs-color-swatch__name">Soft Black</h3>
+//        <p class="sbs-color-swatch__code">HEX: #33363b</p>
+//        <p class="sbs-color-swatch__code">RGB (51, 54, 59)</p>
+//        <p class="sbs-color-swatch__code">HSB (216, 13, 23)</p>
+//        <p class="sbs-color-swatch__desc">Do not use absolute black.</p>
+//      </div>
+//    </div>
+//  </div>
+//
+/////////////////////////////////////////////////
+.sbs-color-palette {
+  background: $color-white-smoke;
+  padding: 1rem;
+  box-shadow: inset 0 0 2px rgba(0,0,0,.3);
+  border-radius: .25rem;
+}
+
+.sbs-color-swatch {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 1rem 1rem 0;
+  width: 12rem;
+  box-shadow: 0 0 4px rgba(0,0,0,.3);
+  border-radius: .25rem;
+  overflow: auto;
+}
+
+.sbs-color-swatch__sample {
+  height: 12rem;
+}
+
+.sbs-color-swatch__label {
+  padding: 1rem;
+  background: #fff;
+}
+
+.sbs-color-swatch__name {
+  display: block;
+  font: bold 1rem/1.2 $font-stack-sans;
+}
+
+.sbs-color-swatch__code {
+  display: block;
+  margin: 0 0 .25rem;
+  font: normal .8rem/1.4 $font-stack-sans;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+.sbs-color-swatch__desc {
+  display: block;
+  margin: 1rem 0 .5rem;
+  padding: 1rem 0 0;
+  border-top: solid 1px $color-rule;
+  font: normal .8rem/1.4 $font-stack-sans;
+  color: #aaa;
+}
+
+
+
+
+
+
+
+
