@@ -596,7 +596,7 @@ input[type="range"]:focus {
 
 input[type="color"] {
   /*Ensure height matches text input height*/
-  height: $font-size-base/2 + #{$line-height};
+  height: "#{$font-size-base/2} + #{$line-height}";
   background: transparent;
 }
 
