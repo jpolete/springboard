@@ -20,7 +20,8 @@ To begin a new project, open a terminal, `cd` into the project directory, and ru
 
 1. `npm install` - installs grunt and third-party libraries.
 2. `grunt` - copies 3rd party libraries to their production location.
-3. `./styleguide.sh` - generates a style guide from sass comments in the `/styleguide/` folder. Re-run this command any time to update the style guide from your CSS/SASS.
+3. `scripts/sass.sh` - Process SASS into CSS. If you're using CodeKit, Grunt, etc. you can skip this.
+4. `scripts/styleguide.sh` - Generate a style guide from sass comments. Re-run this command any time to update the style guide from your CSS/SASS. The style guide is generated at `/styleguide/`.
 
 # Sample Style Guide
 
