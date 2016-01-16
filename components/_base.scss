@@ -584,7 +584,7 @@ input[type="search"]:focus,
 input[type="tel"]:focus, 
 select:focus, 
 textarea:focus {
-  border-color: #777;
+  border-color: $color-field-focus;
   box-shadow: none;
   outline: 0;
 }
