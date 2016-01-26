@@ -15,5 +15,8 @@ var __app__ = {};
 // Named breakpoints (these should really match named Sass breakpoints)
 // @codekit-append "_breakpoints.js";
 
+// Converts yes/no radio button pairs into toggles
+// @codekit-append "_toggles.js";
+
 // Run / initialize code defined in other modules
 // @codekit-append "_start.js";

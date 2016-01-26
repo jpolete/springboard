@@ -1,0 +1,127 @@
+$toggle-color: #6d6; //green
+
+%hide {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+}
+
+/*
+  Toggle Switch
+
+  Converts a pair or yes/no radio buttons into a toggle switch by wrapping them in a `div.j-toggle`. Set the color of the toggle switch with `$toggle-color` sass variable in the `_js_toggles.scss` file.
+
+  IMPORTANT: The yes/positive radio button *must* come first in source order.
+
+  markup: j-toggle.html
+
+  Styleguide Modules.Toggle
+*/
+.toggle-switch {
+  // Size toggle by changing font-size
+  font-size: 1.3em;
+  box-sizing: content-box;
+  line-height: 1;
+  position: relative;
+  display: table;
+  background: #eee;
+  background-position: 1.85em 50%;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjx
+zdmcgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB2ZXJzaW
+9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9I
+mh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5i
+b2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2g
+gMy4yLjIgKDk5ODMpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg
+ogICAgPHRpdGxlPmV4PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZ
+XNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IkludHJvZHVjdGlvbiIgc3Ryb2tlPSJu
+b25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2t
+ldGNoOnR5cGU9Ik1TUGFnZSI+CiAgICAgICAgPGcgaWQ9ImV4IiBza2V0Y2g6dHlwZT0iTVNBcn
+Rib2FyZEdyb3VwIiBmaWxsPSIjMEEwQjA5IiBvcGFjaXR5PSIwLjE5NTA3OTI5MSI+CiAgICAgI
+CAgICAgIDxwYXRoIGQ9Ik0xLjMzNzcyMzQyLDEzLjA3ODg5MjUgTDIuOTQyNjE1MjQsMTQuNjYy
+MjUzOSBDMy4xNTQyODAzNCwxNC44OTQ2MzA3IDMuNDI4MDMzODcsMTUgMy43NDUwNjExNSwxNSB
+DNC4wNjIwODg0MywxNSA0LjMxNTE0NTgxLDE0Ljg5NDYzMDcgNC41NDc1MDcwNiwxNC42NjIyNT
+M5IEw4LjAxMDM0ODA3LDExLjE5OTE4MDIgTDExLjQ3MzE4OTEsMTQuNjYyMjUzOSBDMTEuNjg0O
+DU0MiwxNC44OTQ2MzA3IDExLjk1ODYwNzcsMTUgMTIuMjc1NjM1LDE1IEMxMi41OTI2NjIzLDE1
+IDEyLjg0NTcxOTcsMTQuODk0NjMwNyAxMy4wNzgwODA5LDE0LjY2MjI1MzkgTDE0LjY4Mjk3Mjc
+sMTMuMDc4ODkyNSBDMTQuODkzNjk3MSwxMi44NDY1MTU3IDE1LDEyLjU3MTgwMyAxNSwxMi4yNz
+YzOTI3IEMxNSwxMS45NTkzNDQxIDE0Ljg5MzY5NzEsMTEuNjg0NjMxNCAxNC42ODI5NzI3LDExL
+jQ3Mzg5MjkgTDExLjIyMDEzMTcsOC4wMTA4MTkxNyBMMTQuNjgyOTcyNyw0LjU0Nzc0NTQ1IEMx
+NC44OTM2OTcxLDQuMzE1MzY4NTkgMTUsNC4wNDA2NTU4NyAxNSwzLjc0NTI0NTYyIEMxNSwzLjQ
+yODE5NzAzIDE0Ljg5MzY5NzEsMy4xNTM0ODQzMSAxNC42ODI5NzI3LDIuOTQyNzQ1NzggTDEzLj
+A3ODA4MDksMS4zMzc3NDYxMiBDMTIuODQ1NzE5NywxLjEwNTM2OTI2IDEyLjU5MjY2MjMsMSAxM
+i4yNzU2MzUsMSBDMTEuOTU4NjA3NywxIDExLjY4NDg1NDIsMS4xMDUzNjkyNiAxMS40NzMxODkx
+LDEuMzM3NzQ2MTIgTDguMDEwMzQ4MDcsNC44MDA4MTk4NCBMNC41NDc1MDcwNiwxLjMzNzc0NjE
+yIEM0LjMxNTE0NTgxLDEuMTA1MzY5MjYgNC4wNjIwODg0MywxIDMuNzQ1MDYxMTUsMSBDMy40Mj
+gwMzM4NywxIDMuMTU0MjgwMzQsMS4xMDUzNjkyNiAyLjk0MjYxNTI0LDEuMzM3NzQ2MTIgTDEuM
+zM3NzIzNDIsMi45NDI3NDU3OCBDMS4xMjY5OTkwNiwzLjE1MzQ4NDMxIDEsMy40MjgxOTcwMyAx
+LDMuNzQ1MjQ1NjIgQzEsNC4wNDA2NTU4NyAxLjEyNjk5OTA2LDQuMzE1MzY4NTkgMS4zMzc3MjM
+0Miw0LjU0Nzc0NTQ1IEw0LjgwMDU2NDQ0LDguMDEwODE5MTcgTDEuMzM3NzIzNDIsMTEuNDczOD
+kyOSBDMS4xMjY5OTkwNiwxMS42ODQ2MzE0IDEsMTEuOTU5MzQ0MSAxLDEyLjI3NjM5MjcgQzEsM
+TIuNTcxODAzIDEuMTI2OTk5MDYsMTIuODQ2NTE1NyAxLjMzNzcyMzQyLDEzLjA3ODg5MjUiIGlk
+PSJGaWxsLTIwOSIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCI+PC9wYXRoPgogICAgICAgIDw
+vZz4KICAgIDwvZz4KPC9zdmc+");
+  border: solid 1px #ccc;
+  border-radius: .8em/50%;
+  height: 1.5em;
+  width: 3em;
+  transition: all .2s ease-in-out;
+
+  &:after {
+    content: ' ';
+    display: block;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .2), -1px 1px 2px rgba(0, 0, 0, .1);
+    transition: all .2s ease-in-out;
+  }
+
+  &[data-state="on"] {
+    background: $toggle-color;
+    border-color: $toggle-color;
+    background-repeat: no-repeat;
+    background-position: .45em 50%;
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjx
+zdmcgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB2ZXJzaW
+9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9I
+mh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5i
+b2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2g
+gMy4yLjIgKDk5ODMpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPg
+ogICAgPHRpdGxlPmNoZWNrPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guP
+C9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IkludHJvZHVjdGlvbiIgc3Ryb2tl
+PSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI
+gc2tldGNoOnR5cGU9Ik1TUGFnZSI+CiAgICAgICAgPGcgaWQ9ImNoZWNrIiBza2V0Y2g6dHlwZT
+0iTVNBcnRib2FyZEdyb3VwIiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjc1MTIyNDM0NyI+C
+iAgICAgICAgICAgIDxwYXRoIGQ9Ik0wLjEwNjEwNTI2Myw5LjEzNjEzMzMzIEw1LjM2MDg0MjEx
+LDE0LjU0NDEzMzMgQzUuNTQ5NDczNjgsMTQuNzM4MjY2NyA1Ljc5NTM2ODQyLDE0LjgzNTMzMzM
+gNi4wNzkxNTc4OSwxNC44MzUzMzMzIEM2LjM2Mjk0NzM3LDE0LjgzNTMzMzMgNi42MDgsMTQuNz
+M4MjY2NyA2Ljc5NzQ3MzY4LDE0LjU0NDEzMzMgTDE1Ljg3MDMxNTgsNS4yMDY2NjY2NyBDMTYuM
+DU4OTQ3NCw0Ljk5MjYgMTYuMTUzMjYzMiw0Ljc1OTQ2NjY3IDE2LjE1MzI2MzIsNC40Njc0IEMx
+Ni4xNTMyNjMyLDQuMTc1MzMzMzMgMTYuMDU4OTQ3NCwzLjkyMjI2NjY3IDE1Ljg3MDMxNTgsMy4
+3MjgxMzMzMyBMMTQuNDMzNjg0MiwyLjI0OTYgQzE0LjI0NDIxMDUsMi4wMzU1MzMzMyAxMy45OT
+kxNTc5LDEuOTM4NDY2NjcgMTMuNzE1MzY4NCwxLjkzODQ2NjY3IEMxMy40MzE1Nzg5LDEuOTM4N
+DY2NjcgMTMuMTg1Njg0MiwyLjAzNTUzMzMzIDEyLjk5NzA1MjYsMi4yNDk2IEw2LjA3OTE1Nzg5
+LDkuMzY5MjY2NjcgTDIuOTc5MzY4NDIsNi4xNzkwNjY2NyBDMi43ODk4OTQ3NCw1Ljk2NSAyLjU
+0NDg0MjExLDUuODY3OTMzMzMgMi4yNjEwNTI2Myw1Ljg2NzkzMzMzIEMxLjk3NzI2MzE2LDUuOD
+Y3OTMzMzMgMS43MzEzNjg0Miw1Ljk2NSAxLjU0MjczNjg0LDYuMTc5MDY2NjcgTDAuMTA2MTA1M
+jYzLDcuNjU3NiBDLTAuMDgyNTI2MzE1OCw3Ljg1MTczMzMzIC0wLjE3NzY4NDIxMSw4LjEwNDgg
+LTAuMTc3Njg0MjExLDguMzk2ODY2NjcgQy0wLjE3NzY4NDIxMSw4LjY4ODkzMzMzIC0wLjA4MjU
+yNjMxNTgsOC45MjIwNjY2NyAwLjEwNjEwNTI2Myw5LjEzNjEzMzMzIiBpZD0iRmlsbC0xMTIiIH
+NrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+C
+jwvc3ZnPg==");
+
+    &:after {
+      transform: translateX(1.5em);
+    }
+  }
+
+  input[type=radio] {
+    @extend %hide;
+  }
+
+  label {
+    @extend %hide;
+  }
+
+}
