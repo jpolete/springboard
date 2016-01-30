@@ -19,7 +19,8 @@
 .form-input-full,
 .form-input-half,
 .form-input-third,
-.form-input-quarter {
+.form-input-quarter,
+.form-input-three-quarters {
   width: 100%;
   margin: 0 0 $line-height;
 }
@@ -37,8 +38,8 @@
   .form-input-full,
   .form-input-half,
   .form-input-third,
-  .form-input-fourth,
-  .form-input-three-fourths {
+  .form-input-quarter,
+  .form-input-three-quarters {
     margin: 0;
   }
 
@@ -60,13 +61,13 @@
     margin-right: 2%;
   }
 
-  .form-input-fourth {
+  .form-input-quarter {
     float: left;
     width: 23%;
     margin-right: 2%;
   }
 
-  .form-input-three-fourths {
+  .form-input-three-quarters {
     float: left;
     width: 73%;
     margin-right: 2%;
