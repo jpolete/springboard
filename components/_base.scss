@@ -20,6 +20,10 @@
   font-size: 100%;
   font-family: inherit; 
   box-sizing: border-box;
+
+  &::selection {
+    background: $color-text-select;
+  }
 }
 
 html, 
@@ -339,7 +343,7 @@ code {
   Default link text is underlined.
 
   markup:
-  <a class="{{modifier_class}}" href="http:example.com/safasfsdf">link</a>
+  <a class="{{modifier_class}}" href="http:example.com/safasfsdf">your sample link</a>
 
   :visited - Visited: lighter color
   :hover   - Hover: no underline
@@ -351,17 +355,27 @@ code {
 a {
   color: $color-link;
   text-decoration: none;
-  border-bottom: solid 1px #ccc;
-
-  &:visited { 
-    color: desaturate(lighten($color-link, 25%), 5%);
-  }
+  @include textShadowUnderlineCrop(#fff);
+  @include smartUnderline(#fff, $color-link);
 
   &:hover,
   &:focus,
   &:active { 
     text-decoration: none;
     border-bottom: none;
+  }
+
+  &:visited {
+    color: $color-link-visited;
+    @include smartUnderline(#fff, $color-link-visited);
+  }
+
+  &:hover {
+    background: none;
+  }
+
+  &::selection {
+    text-shadow: none;
   }
 }
 

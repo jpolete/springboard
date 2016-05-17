@@ -18,6 +18,8 @@ $font-stack-form-ui: $font-stack-sans;
 $color-cerulean: #00a4de;
 $color-field-focus: $color-cerulean;
 $color-link: #06c;
+$color-link-visited: desaturate(lighten($color-link, 25%), 5%);
+$color-text-select: #c5e0fb;
 
 $color-info: #066085;
 $color-success: #4b6b4b;
@@ -126,6 +128,41 @@ $large: 87.5em;     // 1400/16
   -webkit-font-feature-settings: "liga" on, "dlig"; 
   -o-font-feature-settings: "liga" on, "dlig";     
   text-rendering: optimizeLegibility;
+}
+
+/*
+  textShadowUnderlineCrop()
+
+  For use with "smart" link underlining. See https://eager.io/blog/smarter-link-underlines/.
+  Add a text shadow of the same color as the background to crop the link underline, letting
+  descenders "poke" through, breaking the underline.
+
+  See also smartUnderline().
+
+  No styleguide reference
+*/
+@mixin textShadowUnderlineCrop($background-color) {
+  text-shadow:
+    .03em 0 $background-color,
+    -.03em 0 $background-color,
+    .06em 0 $background-color,
+    -.06em 0 $background-color,
+    .09em 0 $background-color,
+    -.09em 0 $background-color,
+    .12em 0 $background-color,
+    -.12em 0 $background-color,
+    .15em 0 $background-color,
+    -.15em 0 $background-color;
+}
+
+@mixin smartUnderline($background-color, $color) {
+  background-image:
+    linear-gradient($background-color, $background-color),
+    linear-gradient($background-color, $background-color),
+    linear-gradient($color, $color);
+  background-size: .05em 1px, .05em 1px, 1px 1px;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: 0% 99%, 100% 99%, 0% 99%;
 }
 
 
