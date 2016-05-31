@@ -21,13 +21,19 @@ Here are some polyfills you should consider using. In fact, the default page tem
 
 ## Getting Started
 
-The pattern library is built using [Fractal](https://github.com/frctl/fractal). If you’ve never installed it before, open a shell and enter this at the prompt.
+The pattern library is built using [Fractal](https://github.com/frctl/fractal). If you’ve never installed it before, open a shell and enter this at the prompt. You only need to do this once per machine.
 
 ```
 $ npm i -g @frctl/fractal
 ```
 
-Once you’ve done that (or if you already have in the past), start the server like this.
+Then install Fractal’s dependencies.
+
+```
+$ npm install 
+```
+
+Finally, start the server like this.
 
 ```
 $ fractal start --watch
