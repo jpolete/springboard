@@ -1,37 +1,49 @@
 
 # Overview
 
-Springboard is my starter kit of HTML, SASS and JavaScript for new web projects. It is designed for a design-in-the-browser workflow using [Codekit](https://incident57.com/codekit/) for file processing and browser refreshing. It includes
+Springboard is my starter kit of HTML, SASS and JavaScript for new web projects. It’s designed as a starter kit pattern library. It uses [Fractal](https://github.com/frctl/fractal) to generate the pattern library. 
 
-- CSS styles for common elements and modules using SASS and [SMACSS](https://smacss.com/)
-- JavaScript polyfills 
-- [Kss-node](https://github.com/kss-node/kss-node) and a custom styleguide template to generate a style guide from the CSS comments.
+For asset processing and browser refreshing, I use [Codekit](https://incident57.com/codekit/). If you use the terminal or another tool to compile assets, here are the two main assets that need processing.
 
-The JavaScript polyfills are:
+- `sass/styles.scss` should be processed to `public/style.css`
+- `js/main.js` should be processed to `public/js/main.min.js`. (see main.js comments for includes.)
+
+
+## Polyfills
+
+At one time I had grunt set up to download and then copy third party libaries, but it seems ridiculous to use npm to install thousands of lines of code just to download and copy a few libraries that you may or may not use.
+
+Here are some polyfills you should consider using. In fact, the default page template at `components/04-templates/_page.hbs` expects both of these. Save them to `public/js/lib`:
 
 - [HTML5 Shiv](https://github.com/aFarkas/html5shiv)
 - [Picturefill](https://github.com/scottjehl/picturefill)
-- [Shoestring](https://github.com/filamentgroup/shoestring)
-- [jQuery](https://github.com/jquery/jquery)
 
-# Getting Started
 
-To begin a new project, open a terminal, `cd` into the project directory, and run the following commands
+## Getting Started
 
-1. `npm install` - installs grunt and third-party libraries.
-2. `grunt` - copies 3rd party libraries to their production location.
-3. `scripts/sass.sh` - Process SASS into CSS. If you're using CodeKit, Grunt, etc. you can skip this.
+The pattern library is built using [Fractal](https://github.com/frctl/fractal). If you’ve never installed it before, open a shell and enter this at the prompt.
 
-# Building/viewing the Pattern Libaray
+```
+$ npm i -g @frctl/fractal
+```
 
-1. `npm i -g @frctl/fractal` - only if you've never installed [Fractal](https://github.com/frctl/fractal) on your machine before.
-2. `cd patternlib` - cd into the patternlib directory.
-3. `fractal start --watch` - launch the web interface for the Fractal pattern library, then browse to `http://localhost:3000`
+Once you’ve done that (or if you already have in the past), start the server like this.
 
-# Kit Files
+```
+$ fractal start --watch
+```
 
-A note about .kit files… I use [Codekit](https://incident57.com/codekit/) to process frontend assets. Codekit supports ".kit" files—HTML files with special comments to support variables and includes. It’s a quick and simple way to handle page templating and enables a design-in-the-browser workflow. [Learn more here](https://incident57.com/codekit/help.html#kit)
+Browse to [localhost:3000](http://localhost:3000) to view the pattern library. 
 
-# To-do 
+Check out the [Fractal documentation](https://github.com/frctl/fractal/tree/master/docs) for full details on building patterns.
 
-- Ditch grunt for a simple bash copy script.
+
+## Other Stuff
+
+### Starter Files
+
+The “starters” folder has a couple of files in it that may be helpful depending on your project.
+
+- sample.htaccess
+- sample-functions.php (for Wordpress)
+

@@ -20,6 +20,39 @@ RewriteBase /
     RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L]
 </IfModule>
 
+
+#==============================================================================
+# Wordpress Pretty URLs 
+# RewriteRule ^index\.php$ - [L]
+
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule . /index.php [L]
+#==============================================================================
+
+
+
+<IfModule mod_php5.c>
+
+#==============================================================================
+# Override some PHP defaults
+
+# php_value post_max_size        20M
+# php_value upload_max_filesize  20M
+# php_value memory_limit         500M
+# php_value SMTP                 localhost
+# php_value smtp_port            25
+# php_value sendmail_from        mail@example.com
+#==============================================================================
+
+# Send mail to catchmail for development 
+# (Find catchmail path with `which catchmail`)
+# http://berk.es/2011/05/29/mailcatcher-for-drupal-and-other-php-applications-the-simple-version
+# php_value sendmail_path        /usr/bin/env /Users/jasonpolete/.rvm/gems/ruby-1.9.3-p194@global/bin/catchmail
+
+</IfModule>
+
+
 <IfModule mod_expires.c>
 ExpiresActive on
 ExpiresByType image/x-icon "access plus 1 month"
