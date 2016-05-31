@@ -1,0 +1,19 @@
+/*
+  Code Block
+
+  A block of source code.
+
+  markup:
+  <code class="code-block">function ( param ) {
+    var foo = param;
+    doSomething( foo );
+  }
+  </code>
+
+  Styleguide Typography.CodeBlock
+*/
+code.code-block {
+  display: block;
+  white-space: pre;
+  padding: 1em;
+}

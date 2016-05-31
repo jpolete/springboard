@@ -1,0 +1,10 @@
+context:
+  radiobuttons:
+    - label: Yes
+      id: yes
+      name: answer
+      value: yes
+    - label: No
+      id: no
+      name: answer
+      value: no

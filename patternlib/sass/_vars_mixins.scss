@@ -1,0 +1,183 @@
+
+// 
+// DEFINE VARIABLES
+// 
+// Define base font sizes, colors and other site-wide values here.
+// 
+
+// Font attributes
+$font-size-base: 16px;
+$line-height: 1.4rem;
+$font-stack-sans: "Helvetica Neue", Helvetica, Verdana, sans-serif;
+$font-stack-serif: Georgia, serif;
+$font-stack-mono: "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+$font-stack-form-ui: $font-stack-sans;
+
+// Colors
+$color-cerulean: #00a4de;
+$color-field-focus: $color-cerulean;
+$color-link: $color-cerulean;
+$color-link-visited: desaturate(lighten($color-link, 25%), 5%);
+$color-text-select: #c5e0fb;
+
+$color-info: #066085;
+$color-success: #4b6b4b;
+$color-warning: #6c6c3a;
+$color-error: #c03333;
+
+$color-selected-box: #198bed;
+$color-btn: $color-cerulean;
+$color-btn-highlight: lighten($color-cerulean, 5%);
+
+$color-soft-black: #33363b;
+$color-font: $color-soft-black;
+
+
+// Device class, named breakpoints
+$bigphone: 31.25em; //  500/16
+$reader: 37.5em;    //  600/16
+$tablet: 48em;      //  768/16
+$traditional: 64em; // 1024/16
+$large: 87.5em;     // 1400/16
+
+/*
+  Breakpoint: Big Phone
+
+  Mixin to make breakpoint declarations more succinct.
+
+  No styleguide reference
+*/
+@mixin bigphone {
+  @media screen and (min-width: $bigphone) {
+    @content;
+  }
+}
+
+
+/*
+  Breakpoint: Reader
+
+  Mixin to make breakpoint declarations more succinct.
+
+  No styleguide reference
+*/
+@mixin reader {
+  @media screen and (min-width: $reader) {
+    @content;
+  }
+}
+
+
+/*
+  Breakpoint: Tablet
+
+  Mixin to make breakpoint declarations more succinct.
+
+  No styleguide reference
+*/
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+
+/*
+  Breakpoint: Traditional
+
+  Mixin to make breakpoint declarations more succinct.
+
+  No styleguide reference
+*/
+@mixin traditional {
+  @media screen and (min-width: $traditional) {
+    @content;
+  }
+}
+
+
+/*
+  Breakpoint: Large
+
+  Mixin to make breakpoint declarations more succinct.
+
+  No styleguide reference
+*/
+@mixin large {
+  @media screen and (min-width: $large) {
+    @content;
+  }
+}
+
+/*
+  ligatures()
+
+  !!Use with care. Has broken font rendering in IE with some fonts!!
+
+  https://www.typotheque.com/articles/opentype_features_in_web_browsers
+  https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering
+
+  Compatible in IE 10+, FF 23+, Chrome 29+, Safari 7+, Opera 17+, iOS Safari 7+, Android Browser 4.4+, Blackberry 10+
+
+  No styleguide reference
+*/
+@mixin ligatures() {
+  font-feature-settings: "liga", "dlig";
+  -moz-font-feature-settings: "liga=1, dlig=1";       
+  -webkit-font-feature-settings: "liga" on, "dlig"; 
+  -o-font-feature-settings: "liga" on, "dlig";     
+  text-rendering: optimizeLegibility;
+}
+
+/*
+  textShadowUnderlineCrop()
+
+  For use with "smart" link underlining. See https://eager.io/blog/smarter-link-underlines/.
+  Add a text shadow of the same color as the background to crop the link underline, letting
+  descenders "poke" through, breaking the underline.
+
+  See also smartUnderline().
+
+  No styleguide reference
+*/
+@mixin textShadowUnderlineCrop($background-color) {
+  text-shadow:
+    .03em 0 $background-color,
+    -.03em 0 $background-color,
+    .06em 0 $background-color,
+    -.06em 0 $background-color,
+    .09em 0 $background-color,
+    -.09em 0 $background-color,
+    .12em 0 $background-color,
+    -.12em 0 $background-color,
+    .15em 0 $background-color,
+    -.15em 0 $background-color;
+}
+
+@mixin smartUnderline($background-color, $color) {
+  background-image:
+    linear-gradient($background-color, $background-color),
+    linear-gradient($background-color, $background-color),
+    linear-gradient($color, $color);
+  background-size: .05em 1px, .05em 1px, 1px 1px;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: 0% 99%, 100% 99%, 0% 99%;
+}
+
+
+/*
+  Clearfix.
+
+  Standard clearfix hack to clear floats in a container. Use flexbox for
+  layout when possible, but this is here just in case.
+
+  No styleguide reference
+*/
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+

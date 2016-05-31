@@ -1,0 +1,4 @@
+label: Centered
+notes: Centers text and block elements
+context:
+  centeredText: This element is horizontally centered.

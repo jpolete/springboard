@@ -1,0 +1,14 @@
+/* 
+  Implied Content
+
+  Use to hide content that would be implied for visual users, such
+  as in "read more" links. (idea swiped from the css of informationarchitects.jp)
+*/
+.implied {
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  background: transparent;
+}

@@ -1,0 +1,48 @@
+label: Button
+collated: true
+context:
+  href: "http://example.com"
+  text: "Default"
+variants:
+  - name: Small
+    context:
+      modifier: small
+      text: Small 
+  - name: Large
+    context:
+      modifier: large
+      text: Large 
+  - name: Danger
+    context:
+      modifier: danger
+      text: Danger!
+  - name: Outline
+    context:
+      modifier: outline
+      text: Outline 
+  - name: Forward
+    context:
+      modifier: forward
+      text: Forward
+  - name: Back
+    context:
+      modifier: back
+      text: Back
+  - name: Add
+    context:
+      modifier: add
+      text: Add
+  - name: Delete
+    context:
+      modifier: delete
+      text: Delete
+  - name: Download
+    context:
+      modifier: download
+      text: Download
+  - name: Disabled
+    context:
+      text: Disabled
+  - name: Link
+    context:
+      text: Link

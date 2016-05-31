@@ -1,0 +1,149 @@
+/*
+  Form Line
+
+  A single line of a form that may contain multiple form fields.
+*/
+.form-line {
+  @include tablet {
+    position: relative;
+    left: 1%; /*Keep form lines centered. Offsets the 3% trailing margin */
+    width: 100%;
+    margin-bottom: $line-height;
+    @include clearfix;
+  }
+}
+
+/* 
+  Form Layout
+
+  Each line of a form should be wrapped in a `.form-line`. 
+*/
+.input-width {
+  width: 100%;
+  margin: 0 0 $line-height;
+
+  @include tablet {
+    margin: 0;
+    float: left;
+
+    &--full {
+      width: 98%;
+      margin-right: 2%;
+    }
+
+    &--half {
+      width: 48%;
+      margin-right: 2%;
+    }
+
+    &--third {
+      width: 31.3333333%;
+      margin-right: 2%;
+    }
+
+    &--two-thirds {
+      width: 62.6666666%;
+      margin-right: 2%;
+    }
+
+    &--fourth {
+      width: 23%;
+      margin-right: 2%;
+    }
+
+    &--three-fourths {
+      width: 73%;
+      margin-right: 2%;
+    }
+  }
+
+}
+
+
+/* 
+  Radio/Checkbox Layout 
+
+  Group radio buttons and checkboxes in a `fieldset.input-list`
+*/
+.input-list {
+  legend {
+    @extend label;
+    line-height: 1.2;
+    margin: 0 0 .5rem;
+    padding: 0;
+  }
+
+  ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  li {
+    padding-top: .1em;
+    padding-bottom: .1em;
+    margin: 0;
+    white-space: nowrap;
+
+    > input {
+      margin-top: .1em;
+      vertical-align: top;
+    }
+  }
+
+  label {
+    text-transform: none;
+    font-size: 100%;
+    letter-spacing: 0;
+    white-space: normal;
+  }
+}
+
+
+/*
+  Input Hints
+
+  Use input hints to offer hints or instructions to help users complete a form field.
+*/
+.input-hint {
+  display: block;
+  padding: 0 .4em;
+  margin: .5em 0 0;
+  color: #aaa;
+  font-size: 80%;
+  font-family: $font-stack-form-ui;
+}
+
+
+/*
+  Error Fields 
+
+  When validation fails for an input, wrap the label and 
+  input in a `div.is-error` and include a `div.error-msg` below the input. 
+*/
+.is-error {
+  label {
+    color: $color-error;
+  }
+  input {
+    border-color: $color-error;
+    background: lighten($color-error, 43%);
+    box-shadow: none;
+    &:focus {
+      border-color: $color-error;
+    }
+  }
+}
+
+
+/*
+  Error Message
+
+  And error message for an input field or any place, really.
+*/
+.error-msg {
+  display: block;
+  padding: .5em;
+  color: $color-error;
+  font-family: $font-stack-form-ui;
+}

@@ -4,6 +4,11 @@ module.exports = function( grunt ) {
   grunt.initConfig({
     pkg: grunt.file.readJSON( "package.json" ),
     dirs: {
+      patternlib: {
+        js: {
+          lib: "patternlib/public/js/lib/"
+        }
+      },
       js: {
         lib: "js/lib/"
       },
@@ -19,8 +24,12 @@ module.exports = function( grunt ) {
         command: [
           "mkdir -p js/lib",
           "cp <%= dirs.node.picturefill %> <%= dirs.js.lib %>picturefill.min.js",
+          "cp <%= dirs.node.picturefill %> <%= dirs.patternlib.js.lib %>picturefill.min.js",
           "cp <%= dirs.node.jquery %> <%= dirs.js.lib %>jquery.min.js",
+          "cp <%= dirs.node.jquery %> <%= dirs.patternlib.js.lib %>jquery.min.js",
           "cp <%= dirs.node.shoestring %> <%= dirs.js.lib %>shoestring.js",
+          "cp <%= dirs.node.shoestring %> <%= dirs.patternlib.js.lib %>shoestring.js",
+          "cp <%= dirs.node.html5shiv %> <%= dirs.patternlib.js.lib %>html5shiv.min.js",
           "cp <%= dirs.node.html5shiv %> <%= dirs.js.lib %>html5shiv.min.js"
         ].join(";"),
       },

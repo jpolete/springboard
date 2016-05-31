@@ -21,11 +21,12 @@ To begin a new project, open a terminal, `cd` into the project directory, and ru
 1. `npm install` - installs grunt and third-party libraries.
 2. `grunt` - copies 3rd party libraries to their production location.
 3. `scripts/sass.sh` - Process SASS into CSS. If you're using CodeKit, Grunt, etc. you can skip this.
-4. `scripts/styleguide.sh` - Generate a style guide from sass comments. Re-run this command any time to update the style guide from your CSS/SASS. The style guide is generated at `/styleguide/`.
 
-# Sample Style Guide
+# Building/viewing the Pattern Libaray
 
-You can view a [sample style guide here](https://jpolete.github.io/springboard)
+1. `npm i -g @frctl/fractal` - only if you've never installed [Fractal](https://github.com/frctl/fractal) on your machine before.
+2. `cd patternlib` - cd into the patternlib directory.
+3. `fractal start --watch` - launch the web interface for the Fractal pattern library, then browse to `http://localhost:3000`
 
 # Kit Files
 
