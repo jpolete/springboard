@@ -2,6 +2,312 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19127",
 "files": {
+	"\/patternlib\/components\/01-elements\/blockquote.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/blockquote.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/figure\/figure.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/figure\/figure.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/figure\/figure.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/figure\/figure.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/headings.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/headings.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/horizonal-rule.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/horizonal-rule.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/img\/img.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/img\/img.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/img\/img.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/img\/img.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inline.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inline.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/checkboxes\/checkboxes.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/checkboxes\/checkboxes.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/checkboxes\/checkboxes.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/checkboxes\/checkboxes.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/email\/email.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/email\/email.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/email\/email.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/email\/email.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/file\/file.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/file\/file.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/file\/file.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/file\/file.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/number\/number.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/number\/number.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/number\/number.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/number\/number.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/password\/password.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/password\/password.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/password\/password.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/password\/password.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/radio-buttons\/radio-buttons.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/radio-buttons\/radio-buttons.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/radio-buttons\/radio-buttons.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/radio-buttons\/radio-buttons.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/search\/search.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/search\/search.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/search\/search.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/search\/search.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/tel\/tel.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/tel\/tel.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/tel\/tel.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/tel\/tel.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/text\/text.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/text\/text.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/text\/text.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/text\/text.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/url\/url.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/url\/url.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/inputs\/url\/url.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/inputs\/url\/url.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/links.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/links.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/lists\/definition.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/lists\/definition.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/lists\/ordered.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/lists\/ordered.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/lists\/unordered.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/lists\/unordered.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/paragraphs.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/paragraphs.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/preformatted.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/preformatted.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/patternlib\/components\/01-elements\/tables\/numeric\/_sass.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -17,6 +323,24 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/patternlib\/components\/01-elements\/tables\/numeric\/numeric.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/tables\/numeric\/numeric.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/tables\/numeric\/numeric.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/tables\/numeric\/numeric.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/patternlib\/components\/01-elements\/tables\/responsive-linear\/_sass.scss": {
 		"createSourceMap": 0,
@@ -34,6 +358,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/patternlib\/components\/01-elements\/tables\/responsive-linear\/responsive-linear.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/tables\/responsive-linear\/responsive-linear.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/patternlib\/components\/01-elements\/tables\/responsive-scroll\/_sass.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -49,6 +382,24 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/patternlib\/components\/01-elements\/tables\/responsive-scroll\/responsive-scroll.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/tables\/responsive-scroll\/responsive-scroll.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/01-elements\/tables\/standard.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/01-elements\/tables\/standard.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/patternlib\/components\/02-modules\/button\/_sass.scss": {
 		"createSourceMap": 0,
@@ -66,6 +417,42 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/patternlib\/components\/02-modules\/button\/button--disabled.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/button\/button--disabled.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/button\/button--link.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/button\/button--link.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/button\/button.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/button\/button.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/button\/button.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/button\/button.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/patternlib\/components\/02-modules\/centered\/_sass.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -81,6 +468,24 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/patternlib\/components\/02-modules\/centered\/centered.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/centered\/centered.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/centered\/centered.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/centered\/centered.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/patternlib\/components\/02-modules\/code-block\/_sass.scss": {
 		"createSourceMap": 0,
@@ -98,6 +503,24 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/patternlib\/components\/02-modules\/code-block\/code-block.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/code-block\/code-block.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/code-block\/code-block.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/code-block\/code-block.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/patternlib\/components\/02-modules\/constrained\/_sass.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -113,6 +536,24 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/patternlib\/components\/02-modules\/constrained\/constrained.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/constrained\/constrained.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/constrained\/constrained.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/constrained\/constrained.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/patternlib\/components\/02-modules\/fineprint\/_sass.scss": {
 		"createSourceMap": 0,
@@ -130,6 +571,24 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/patternlib\/components\/02-modules\/fineprint\/fineprint.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/fineprint\/fineprint.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/fineprint\/fineprint.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/fineprint\/fineprint.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/patternlib\/components\/02-modules\/form-related\/_sass.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -145,6 +604,114 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/patternlib\/components\/02-modules\/form-related\/error-msg\/error-msg.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/form-related\/error-msg\/error-msg.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/form-related\/error-msg\/error-msg.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/form-related\/error-msg\/error-msg.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/form-related\/form-line\/form-line.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/form-related\/form-line\/form-line.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/form-related\/form-line\/form-line.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/form-related\/form-line\/form-line.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/form-related\/input-hint\/input-hint.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/form-related\/input-hint\/input-hint.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/form-related\/input-hint\/input-hint.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/form-related\/input-hint\/input-hint.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/form-related\/input-width\/input-width.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/form-related\/input-width\/input-width.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/form-related\/input-width\/input-width.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/form-related\/input-width\/input-width.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/form-related\/is-error\/is-error.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/form-related\/is-error\/is-error.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/form-related\/is-error\/is-error.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/form-related\/is-error\/is-error.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/form-related\/radio-checkbox-list\/radio-checkbox-list.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/form-related\/radio-checkbox-list\/radio-checkbox-list.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/form-related\/radio-checkbox-list\/radio-checkbox-list.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/form-related\/radio-checkbox-list\/radio-checkbox-list.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/patternlib\/components\/02-modules\/implied\/_sass.scss": {
 		"createSourceMap": 0,
@@ -162,6 +729,24 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/patternlib\/components\/02-modules\/implied\/implied.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/implied\/implied.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/implied\/implied.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/implied\/implied.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/patternlib\/components\/02-modules\/intrinsic-media\/_sass.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -177,6 +762,42 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/patternlib\/components\/02-modules\/intrinsic-media\/intrinsic-media--16x9.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/intrinsic-media\/intrinsic-media--16x9.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/intrinsic-media\/intrinsic-media--4x3.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/intrinsic-media\/intrinsic-media--4x3.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/intrinsic-media\/intrinsic-media.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/intrinsic-media\/intrinsic-media.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/intrinsic-media\/intrinsic-media.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/intrinsic-media\/intrinsic-media.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/patternlib\/components\/02-modules\/logo\/_sass.scss": {
 		"createSourceMap": 0,
@@ -194,6 +815,24 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/patternlib\/components\/02-modules\/logo\/logo.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/logo\/logo.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/logo\/logo.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/logo\/logo.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/patternlib\/components\/02-modules\/lozenge\/_sass.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -209,6 +848,24 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/patternlib\/components\/02-modules\/lozenge\/lozenge.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/lozenge\/lozenge.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/lozenge\/lozenge.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/lozenge\/lozenge.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/patternlib\/components\/02-modules\/menu\/_sass.scss": {
 		"createSourceMap": 0,
@@ -226,6 +883,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/patternlib\/components\/02-modules\/menu\/menu.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/menu\/menu.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/patternlib\/components\/02-modules\/nav\/_sass.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -241,6 +907,24 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/patternlib\/components\/02-modules\/nav\/nav.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/nav\/nav.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/nav\/nav.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/nav\/nav.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/patternlib\/components\/02-modules\/notice\/_sass.scss": {
 		"createSourceMap": 0,
@@ -258,6 +942,24 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/patternlib\/components\/02-modules\/notice\/notice.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/notice\/notice.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/notice\/notice.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/notice\/notice.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/patternlib\/components\/02-modules\/nowrap\/_sass.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -273,6 +975,24 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/patternlib\/components\/02-modules\/nowrap\/nowrap.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/nowrap\/nowrap.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/nowrap\/nowrap.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/nowrap\/nowrap.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/patternlib\/components\/02-modules\/old-browser-notice\/_sass.scss": {
 		"createSourceMap": 0,
@@ -290,6 +1010,24 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/patternlib\/components\/02-modules\/old-browser-notice\/old-browser-notice.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/old-browser-notice\/old-browser-notice.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/old-browser-notice\/old-browser-notice.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/old-browser-notice\/old-browser-notice.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/patternlib\/components\/02-modules\/social-icons\/_sass.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -305,6 +1043,24 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/patternlib\/components\/02-modules\/social-icons\/social-icons.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/social-icons\/social-icons.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/social-icons\/social-icons.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/social-icons\/social-icons.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/patternlib\/components\/02-modules\/social-share\/_sass.scss": {
 		"createSourceMap": 0,
@@ -322,6 +1078,24 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/patternlib\/components\/02-modules\/social-share\/social-share.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/social-share\/social-share.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/social-share\/social-share.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/social-share\/social-share.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/patternlib\/components\/02-modules\/tag\/_sass.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -337,6 +1111,24 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/patternlib\/components\/02-modules\/tag\/tag.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/tag\/tag.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/tag\/tag.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/tag\/tag.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/patternlib\/components\/02-modules\/toggle\/_sass.scss": {
 		"createSourceMap": 0,
@@ -364,6 +1156,96 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/patternlib\/components\/02-modules\/toggle\/toggle.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/toggle\/toggle.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/02-modules\/toggle\/toggle.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/02-modules\/toggle\/toggle.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/03-structures\/footer\/footer.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/03-structures\/footer\/footer.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/03-structures\/footer\/footer.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/03-structures\/footer\/footer.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/03-structures\/header\/header.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/03-structures\/header\/header.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/04-templates\/_page.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/04-templates\/_page.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/04-templates\/home\/home.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/04-templates\/home\/home.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/04-templates\/home\/home.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/04-templates\/home\/home.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/04-templates\/templates.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/04-templates\/templates.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/patternlib\/components\/_preview.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/patternlib\/components\/_preview.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/patternlib\/js\/_breakpoints.js": {
 		"fileType": 64,
@@ -548,15 +1430,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/patternlib\/sass\/_vars_mixins.scss": {
+	"\/patternlib\/sass\/global.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/patternlib\/sass\/_vars_mixins.scss",
-		"outputAbbreviatedPath": "\/patternlib\/css\/_vars_mixins.css",
+		"inputAbbreviatedPath": "\/patternlib\/sass\/global.scss",
+		"outputAbbreviatedPath": "\/patternlib\/css\/global.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -758,7 +1640,7 @@
 	"coffeeSyntaxCheckerStyle": 1,
 	"externalServerAddress": "http:\/\/localhost:3000",
 	"externalServerPreviewPathAddition": "",
-	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
+	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp, hbs, yml",
 	"hamlAutoOutputPathEnabled": 1,
 	"hamlAutoOutputPathFilenamePattern": "*.html",
 	"hamlAutoOutputPathRelativePath": "",
