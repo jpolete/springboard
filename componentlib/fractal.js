@@ -6,7 +6,7 @@
 /*
  * Require the Fractal module
  */
-const fractal = require( "@frctl/fractal" );
+const fractal = module.exports = require( "@frctl/fractal" ).create();
 
 /*
  * Give your project a title.
@@ -16,17 +16,12 @@ fractal.set( "project.title", "Springboard" );
 /*
  * Tell Fractal where to look for components.
  */
-fractal.set( "components.path", "components" );
+fractal.components.set( "path",  __dirname + "/components" );
 
 /*
- * Tell Fractal where to look for documentation pages.
+ * Default layout.
  */
-fractal.set( "docs.path", "docs" );
-
-/*
- * Tell the Fractal web preview plugin where to look for static assets.
- */
-fractal.set( "plugins.web.static.path", "public" );
+fractal.components.set( "default.preview", "@preview" );
 
 /*
  * Set global layout
@@ -34,6 +29,25 @@ fractal.set( "plugins.web.static.path", "public" );
 fractal.set( "components.default.preview", "@preview" );
 
 /*
- * Set skin for default Mandelbrot theme
+ * Tell Fractal where to look for documentation pages.
  */
-fractal.set( "themes.mandelbrot.skin", "black" );
+fractal.docs.set( "path", __dirname + "/docs" );
+
+/*
+ * Tell the Fractal web preview plugin where to look for static assets.
+ */
+fractal.web.set( "static.path",  __dirname + "/public" );
+
+/*
+ * Destination for static build.
+ */
+fractal.web.set( "builder.dest", __dirname + "/build" );
+
+/*
+ * Set skin customization
+ */
+const mandelbrot = require( "@frctl/mandelbrot" );
+const theme = mandelbrot({
+    skin: "black"
+});
+fractal.web.theme( theme );

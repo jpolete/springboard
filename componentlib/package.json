@@ -2,6 +2,6 @@
   "name": "patternlab",
   "version": "0.1.0",
   "dependencies": {
-    "@frctl/fractal": "^0.11.4"
+    "@frctl/fractal": "^1.0.0"
   }
 }
