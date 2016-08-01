@@ -1382,6 +1382,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/componentlib\/sass\/_global.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/componentlib\/sass\/_global.scss",
+		"outputAbbreviatedPath": "\/componentlib\/css\/_global.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/componentlib\/sass\/_layout.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1430,22 +1446,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/componentlib\/sass\/global.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/componentlib\/sass\/global.scss",
-		"outputAbbreviatedPath": "\/componentlib\/css\/global.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/componentlib\/sass\/style.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
@@ -1454,7 +1454,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/componentlib\/sass\/style.scss",
-		"outputAbbreviatedPath": "\/patternlib\/public\/style.css",
+		"outputAbbreviatedPath": "\/componentlib\/public\/style.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
