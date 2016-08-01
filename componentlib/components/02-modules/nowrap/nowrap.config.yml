@@ -1,0 +1,4 @@
+label: Nowrap
+notes: Prevents text (or other inline elements) from wrapping.
+context:
+  nowrap: This text doesn't wrap… Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi incidunt ipsa cupiditate facere alias numquam voluptatem, accusamus non blanditiis, soluta reiciendis consequatur quam vero asperiores ipsum voluptatum perferendis ipsam velit.

@@ -1,0 +1,4 @@
+notes: Use input hints to offer hints or instructions to help users complete a form field.
+context:
+  hint:
+    text: Hint normally shown directly below an input field.

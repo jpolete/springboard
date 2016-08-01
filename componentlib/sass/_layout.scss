@@ -1,0 +1,32 @@
+
+/*
+  Page Header
+
+*/
+[role="banner"] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $color-soft-black;
+  color: #fff;
+  color: rgba(255,255,255,.9);
+}
+
+
+/*
+  Main Content
+
+*/
+[role="main"] {
+  padding: 1rem;
+}
+
+
+/*
+  Page Footer
+
+*/
+[role="contentinfo"] {
+  border-top: solid 1px #ccc;
+}
+

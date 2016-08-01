@@ -1,0 +1,13 @@
+/*
+  Social Media Icons
+*/
+.social-icon {
+  height: 2rem;
+  width: 2rem;
+  margin: 0 .5rem;
+  fill: rgba(0,0,0,.3);
+  transition: all 200ms ease-in-out;
+}
+.social-icon:hover {
+  fill: rgba(0,0,0,.6);
+}

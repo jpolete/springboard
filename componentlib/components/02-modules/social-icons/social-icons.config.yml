@@ -1,0 +1,67 @@
+label: Social Media Icons
+context:
+  filename: social-media.svg
+collated: true
+variants:
+  - name: default
+    context:
+      icon:
+        name: twitter
+        id: icon-twitter 
+  - name: facebook
+    context:
+      icon:
+        name: Facebook
+        id: icon-facebook-square 
+  - name: instagram
+    context:
+      icon:
+        name: Instagram
+        id: icon-instagram 
+  - name: Linkedin
+    context:
+      icon:
+        name: Linkedin
+        id: icon-linkedin-square
+  - name: Snapchat
+    context:
+      icon:
+        name: Snapchat
+        id: icon-snapchat-ghost
+  - name: Vimeo
+    context:
+      icon:
+        name: Vimeo
+        id: icon-vimeo-square
+  - name: Youtube
+    context:
+      icon:
+        name: Youtube
+        id: icon-youtube-play
+  - name: Github
+    context:
+      icon:
+        name: Github
+        id: icon-github
+  - name: Pinterest
+    context:
+      icon:
+        name: Pinterest
+        id: icon-pinterest-square 
+  - name: Flickr
+    context:
+      icon:
+        name: Flickr
+        id: icon-flickr
+  - name: Tumblr
+    context:
+      icon:
+        name: Tumblr
+        id: icon-tumblr-square 
+  - name: Slack
+    context:
+      icon:
+        name: Slack
+        id: icon-slack
+
+
