@@ -1,7 +1,9 @@
 
 # Overview
 
-Springboard is my starter kit of HTML, SASS and JavaScript for new web projects. It’s designed as a starter kit pattern library. It uses [Fractal](https://github.com/frctl/fractal) to generate the pattern library. 
+Springboard is my starter kit of HTML, SASS and JavaScript for new web projects. It has a few sample files in `starters`, and a basic component library in `componentlib`.
+
+## Asset Processing
 
 For asset processing and browser refreshing, I use [Codekit](https://incident57.com/codekit/). If you use the terminal or another tool to compile assets, here are the two main assets that need processing.
 
@@ -15,8 +17,8 @@ At one time I had grunt set up to download and then copy third party libaries, b
 
 Here are some polyfills you should consider using. In fact, the default page template at `components/04-templates/_page.hbs` expects both of these. Save them to `public/js/lib`:
 
-- [HTML5 Shiv](https://github.com/aFarkas/html5shiv)
-- [Picturefill](https://github.com/scottjehl/picturefill)
+- [HTML5 Shiv](https://github.com/aFarkas/html5shiv) -> `componentlib/public/js/lib/html5shiv.min.js`
+- [Picturefill](https://github.com/scottjehl/picturefill) -> `componentlib/public/js/lib/picturefill.min.js`
 
 
 ## Getting Started
@@ -27,7 +29,7 @@ The pattern library is built using [Fractal](https://github.com/frctl/fractal). 
 $ npm i -g @frctl/fractal
 ```
 
-Then install Fractal’s dependencies.
+Then `cd` into the `componentlib` folder, and install Fractal’s dependencies.
 
 ```
 $ npm install 
@@ -41,7 +43,7 @@ $ fractal start --watch
 
 Browse to [localhost:3000](http://localhost:3000) to view the pattern library. 
 
-Check out the [Fractal documentation](https://github.com/frctl/fractal/tree/master/docs) for full details on building patterns.
+Check out the [Fractal documentation](http://fractal.build/) for full details on building patterns.
 
 
 ## Other Stuff
