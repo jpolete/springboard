@@ -1,7 +1,0 @@
-label: Error Field
-notes: Wrap label and input in a `div.is-error`
-context:
-  label: Field
-  id: field
-  name: field
-  value: invalid value
