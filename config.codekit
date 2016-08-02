@@ -1193,6 +1193,31 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/componentlib\/components\/03-structures\/grid\/_sass.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/componentlib\/components\/03-structures\/grid\/_sass.scss",
+		"outputAbbreviatedPath": "\/componentlib\/components\/03-structures\/css\/_sass.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/componentlib\/components\/03-structures\/grid\/grid.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/componentlib\/components\/03-structures\/grid\/grid.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/componentlib\/components\/03-structures\/header\/header.hbs": {
 		"fileType": 8192,
 		"ignore": 0,

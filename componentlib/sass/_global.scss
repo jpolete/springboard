@@ -1,8 +1,6 @@
 
 // 
-// DEFINE VARIABLES
-// 
-// Define base font sizes, colors and other site-wide values here.
+// Global Variables & Mixins
 // 
 
 // Font attributes
@@ -12,6 +10,7 @@ $font-stack-sans: "Helvetica Neue", Helvetica, Verdana, sans-serif;
 $font-stack-serif: Georgia, serif;
 $font-stack-mono: "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
 $font-stack-form-ui: $font-stack-sans;
+
 
 // Colors
 $color-cerulean: #00a4de;
@@ -33,76 +32,49 @@ $color-soft-black: #33363b;
 $color-font: $color-soft-black;
 
 
-// Device class, named breakpoints
+// Flexible grid values
+$col-count: 12;
+$gutter: 2;
+$col: (100 - ($gutter * ($col-count - 1))) / $col-count;
+
+
+// Device classes / named breakpoints
 $bigphone: 31.25em; //  500/16
 $reader: 37.5em;    //  600/16
 $tablet: 48em;      //  768/16
 $traditional: 64em; // 1024/16
 $large: 87.5em;     // 1400/16
 
-/*
-  Breakpoint: Big Phone
 
-  Mixin to make breakpoint declarations more succinct.
-
-  No styleguide reference
-*/
+// Breakpoint Mixin: Big Phone
 @mixin bigphone {
   @media screen and (min-width: $bigphone) {
     @content;
   }
 }
 
-
-/*
-  Breakpoint: Reader
-
-  Mixin to make breakpoint declarations more succinct.
-
-  No styleguide reference
-*/
+// Breakpoint Mixin: Reader
 @mixin reader {
   @media screen and (min-width: $reader) {
     @content;
   }
 }
 
-
-/*
-  Breakpoint: Tablet
-
-  Mixin to make breakpoint declarations more succinct.
-
-  No styleguide reference
-*/
+// Breakpoint Mixin: Tablet
 @mixin tablet {
   @media screen and (min-width: $tablet) {
     @content;
   }
 }
 
-
-/*
-  Breakpoint: Traditional
-
-  Mixin to make breakpoint declarations more succinct.
-
-  No styleguide reference
-*/
+// Breakpoint Mixin: Traditional
 @mixin traditional {
   @media screen and (min-width: $traditional) {
     @content;
   }
 }
 
-
-/*
-  Breakpoint: Large
-
-  Mixin to make breakpoint declarations more succinct.
-
-  No styleguide reference
-*/
+// Breakpoint Mixin: Large Screen
 @mixin large {
   @media screen and (min-width: $large) {
     @content;
@@ -118,8 +90,6 @@ $large: 87.5em;     // 1400/16
   https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering
 
   Compatible in IE 10+, FF 23+, Chrome 29+, Safari 7+, Opera 17+, iOS Safari 7+, Android Browser 4.4+, Blackberry 10+
-
-  No styleguide reference
 */
 @mixin ligatures() {
   font-feature-settings: "liga", "dlig";
@@ -165,14 +135,7 @@ $large: 87.5em;     // 1400/16
 }
 
 
-/*
-  Clearfix.
-
-  Standard clearfix hack to clear floats in a container. Use flexbox for
-  layout when possible, but this is here just in case.
-
-  No styleguide reference
-*/
+// Standard micro clearfix
 @mixin clearfix {
   &::after {
     clear: both;
@@ -180,4 +143,23 @@ $large: 87.5em;     // 1400/16
     display: table;
   }
 }
+
+// Flexible Grids: Row
+@mixin row() {
+  display: block;
+  width: 100%;
+  @include clearfix;
+}
+
+// Flexible Grides: Column(s)
+@mixin span-cols($count) {
+  float: left;
+  width: #{$col * $count + $gutter * ($count - 1)}#{"%"};
+  margin-right: #{$gutter}#{"%"};
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 
