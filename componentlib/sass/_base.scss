@@ -27,13 +27,11 @@ body {
 
 
 /*
-
  Disable buggy font boosting in Chrome for Android
  https://bugs.webkit.org/show_bug.cgi?id=84186
 
  ...And in mobile safari
  https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust
-
 */
 body * {
   max-height: 1000000em;
@@ -76,22 +74,6 @@ figure {
 
 /*
   Typography
-
-  Ligatures are turned off by default, but can be turned on by uncommenting @include ligatures()
-
-  weight: 1
-
-  Styleguide Typography
-*/
-
-/*
-  Headings
-
-  markup: headings.html
-
-  weight: -2
-
-  Styleguide Typography.Headings
 */
 h1,
 h2,
@@ -105,8 +87,7 @@ h6 {
   line-height: 1;
 }
 
-h1, 
-.h1 {
+h1, .h1 {
   font-size: 2.625em; 
   margin-bottom: $line-height;
 
@@ -115,32 +96,27 @@ h1,
   }
 }
 
-h2, 
-.h2 {
+h2, .h2 {
   font-size: 2em;
   margin-bottom: $line-height/2;
 }
 
-h3, 
-.h3 {
+h3, .h3 {
   font-size: 1.5em;
   margin-bottom: $line-height/2;
 }
 
-h4, 
-.h4 {
+h4, .h4 {
   font-size: 1.3125em;
   margin-bottom: $line-height/2;
 }
 
-h5, 
-.h5 {
+h5, .h5 {
   font-size: 1.125em;
   margin-bottom: $line-height/2;
 }
 
-h6, 
-.h6 {
+h6, .h6 {
   font-size: .9em;
   margin-bottom: $line-height/4;
   text-transform: uppercase;
@@ -149,29 +125,6 @@ h6,
   color: lighten($color-font, 30%);
 }
 
-/*
-  Paragraphs
-
-  Paragraphs are separated by a standard line height (see `_vars_mixins.scss` for all variables).
-
-  markup: paragraphs.html
-
-  weight: -1
-
-  Styleguide Typography.Paragraph
-*/
-
-
-/*
-  Lists
-
-  Unordered and ordered lists use disc and decimals respectively, 
-  and definition lists display definition terms in bold.
-
-  markup: lists.html
-
-  Styleguide Typography.Lists
-*/
 ul, 
 ol {
   padding-left: 1.5em;
@@ -206,19 +159,6 @@ dd {
   margin-bottom: $line-height;
 }
 
-
-/*
-
-  Blockquotes
-
-  Use blockquotes for larger quote passages. Include the quote 
-  itself in one or more &lt;p&gt; elements.
-
-  markup: blockquote.html
-
-  Styleguide Typography.Blockquotes
-  
-*/
 blockquote {
   border-left: solid 4px #ccc;
   padding-left: 1.4em;
@@ -227,23 +167,12 @@ blockquote {
   line-height: 1.5;
 }
 
-
-/*
-  Inline styles 
-
-  strong, em, sub, sup, mark, q, time, meter, progress, b, i, pre, abbr.
-
-  markup: inline.html
-
-  Styleguide Typography.InlineStyles
-*/
-
-strong {
+strong, b {
   color: #333;
   font-weight: bold;
 }
 
-em {
+em, i {
   font-style: italic;
 }
 
@@ -286,24 +215,6 @@ meter {}
 
 progress {}
 
-b {
-  font-weight: bold; // http://dev.w3.org/html5/markup/b.html 
-}
-
-i {
-  font-style: italic; // http://dev.w3.org/html5/markup/i.html 
-}
-
-/*
-  Code
-
-  Inline source code.
-
-  markup:
-  <p>Use the <code>var</code> keyword to initialize a variable.</p>
-
-  Styleguide Typography.Code
-*/
 code {
   background: #f3f3f3;
   padding: 0 .3em;
@@ -323,22 +234,6 @@ pre {
   text-transform: none;
 }
 
-
-/*
-  Link
-
-  Default link text is underlined.
-
-  markup:
-  <a class="{{modifier_class}}" href="http:example.com/safasfsdf">your sample link</a>
-
-  :visited - Visited: lighter color
-  :hover   - Hover: no underline
-  :focus   - Focus: same as hover 
-  :active  - Active: same as hover  
-
-  Styleguide Typography.Link
-*/
 a {
   color: $color-font;
   text-decoration: none;
@@ -362,16 +257,6 @@ a {
 
 }
 
-
-/*
-  Horizontal Rule 
-
-  Use horizontal rules to visually separate distinct “chunks” of a page.
-
-  markup: hr.html
-
-  Styleguide Typography.HorizontalRule
-*/
 hr {
   clear: both;
   border: solid 1px #ccc;
@@ -380,24 +265,6 @@ hr {
   margin-bottom: 2em;
 }
 
-
-/*
-  Tables
-
-  weight: 2
-
-  Styleguide Table
-*/
-
-/* 
-  Tables 
-
-  By default tables will expand to 100% of their container. Content will be top-left aligned and cells in even rows are tinted.
-
-  markup: table.html
-
-  Styleguide Table.Default
-*/
 table {
   width: 100%;
   padding: 0;
@@ -438,25 +305,7 @@ caption {
   text-align: left;
 }
 
-
-/*
-  Forms
-
-  weight: 3
-
-  Styleguide Form
-*/
-
-
-/* 
-  Fieldset and legend
-
-  markup: fieldset.html
-  
-  Styleguide Form.Fieldset
-*/
-fieldset 
-{
+fieldset {
   border: solid 1px #ccc;
   border-radius: .5em; 
   padding: #{$line-height};
@@ -466,8 +315,7 @@ fieldset
   }
 }
 
-legend 
-{
+legend {
   padding: 0 1em;
   margin-left: -1em;
   color: #333;
@@ -475,20 +323,6 @@ legend
   font-weight: bold;
 }
 
-
-/* 
-  Labels and Inputs
-
-  :focus   - darker border
-  :valid   - no special style (negates default outline/color added by some browsers);
-  :invalid - red border
-
-  markup:
-  <label for="name">Name</label>
-  <input class="{{modifier_class}}" type="text" id="name" name="name" placeholder="first and last" />
-  
-  Styleguide Form.Label
-*/
 label
 {
   display: inline-block;
@@ -501,16 +335,6 @@ label
   letter-spacing: 1px;
 }
 
-
-/*
-  Input Types
-
-  Each of the different HTML5 input types.
-
-  markup: inputs.html
-
-  Styleguide Form.Inputs
-*/
 input[type="text"], 
 input[type="password"], 
 input[type="file"], 
@@ -556,12 +380,11 @@ Make sure date/time fields are as tall as empty text fields for consistency.
 Mobile Safari collapses them.
 line height + vertical padding + border widths
 */
-input[type="datetime"],
 input[type="datetime-local"],
 input[type="date"],
 input[type="month"],
-input[type="time"],
-input[type="week"] {
+input[type="week"],
+input[type="time"] {
   min-height: calc(#{$line-height} + .5em + 4px); 
 }
 
@@ -597,14 +420,6 @@ input[type="color"] {
   background: transparent;
 }
 
-
-/*
-  Radio Buttons
-
-  markup: radio.html
-
-  Styleguide Form.Radio
-*/
 input[type="radio"] {
   border: solid 1px #999;
   font-size: 1.2em;
@@ -621,14 +436,6 @@ input[type="radio"] {
   }
 }
 
-
-/*
-  Checkbox
-
-  markup: checkbox.html
-
-  Styleguide Form.Checkbox
-*/
 input[type="checkbox"] {
   border: solid 1px #999;
   border-radius: .2em;
@@ -679,27 +486,6 @@ input[type="url"]:invalid {
   box-shadow: none;
 }
 
-
-
-/*
-  Media
-
-  weight: 4
-
-  Styleguide Media
-*/
-
-
-/*
-  Figure
-
-  Use a figure anytime you have "...an image, an illustration, a diagram, a code snippet, or a schema that is referenced in the main text, but that can be moved to another page or to an appendix without affecting the main flow"
-  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure
-
-  markup: figure.html
-
-  Styleguide Media.Figure
-*/
 figure {
   margin-right: 0;
   margin-left: 0;
@@ -712,32 +498,10 @@ figcaption {
   font-family: $font-stack-serif;
 }
 
-
-/*
-  Image
-
-  Images are set to `max-width: 100%` so that they’ll flex with the width of their container.
-
-  markup: img.html
-
-  weight: -1
-
-  Styleguide Media.Image
-*/
 img {
   max-width: 100%;
 }
 
-
-/*
-  Native Video
-
-  Native HTML video element. Videos are set to `max-width: 100%` so that they’ll flex with the width of their container.
-
-  markup: video.html
-
-  Styleguide Media.Video
-*/
 video {
   max-width: 100%;
   height: auto;
