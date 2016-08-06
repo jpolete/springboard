@@ -88,8 +88,6 @@ $large: 87.5em;     // 1400/16
 
   https://www.typotheque.com/articles/opentype_features_in_web_browsers
   https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering
-
-  Compatible in IE 10+, FF 23+, Chrome 29+, Safari 7+, Opera 17+, iOS Safari 7+, Android Browser 4.4+, Blackberry 10+
 */
 @mixin ligatures() {
   font-feature-settings: "liga", "dlig";
@@ -100,15 +98,11 @@ $large: 87.5em;     // 1400/16
 }
 
 /*
-  textShadowUnderlineCrop()
-
   For use with "smart" link underlining. See https://eager.io/blog/smarter-link-underlines/.
   Add a text shadow of the same color as the background to crop the link underline, letting
   descenders "poke" through, breaking the underline.
 
   See also smartUnderline().
-
-  No styleguide reference
 */
 @mixin textShadowUnderlineCrop($background-color) {
   text-shadow:

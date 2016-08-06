@@ -444,15 +444,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/componentlib\/components\/02-modules\/button\/button--link.hbs": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/componentlib\/components\/02-modules\/button\/button--link.hbs",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/componentlib\/components\/02-modules\/button\/button.config.yml": {
 		"fileType": 8192,
 		"ignore": 0,
