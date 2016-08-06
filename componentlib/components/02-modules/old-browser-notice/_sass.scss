@@ -5,10 +5,6 @@
   right now. Message is set to `display: none` unless it's a child of an element with a class of
   `ie6`, `ie7`, `ie8`, `ie9`. Use IE conditional comments to add these classes to the `html` root
   element.
-
-  markup: old-browser-notice.html
-
-  Styleguide Modules.OldBrowserNotice
 */
 .old-browser-notice {
   display: none;

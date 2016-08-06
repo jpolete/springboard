@@ -5,11 +5,9 @@
 */
 .form-line {
   @include tablet {
-    position: relative;
-    left: 1%; /*Keep form lines centered. Offsets the 3% trailing margin */
     width: 100%;
     margin-bottom: $line-height;
-    @include clearfix;
+    @include row;
   }
 }
 
@@ -19,44 +17,16 @@
   Each line of a form should be wrapped in a `.form-line`. 
 */
 .input-width {
-  width: 100%;
-  margin: 0 0 $line-height;
-
+  margin-bottom: $line-height;
   @include tablet {
-    margin: 0;
-    float: left;
-
-    &--full {
-      width: 98%;
-      margin-right: 2%;
-    }
-
-    &--half {
-      width: 48%;
-      margin-right: 2%;
-    }
-
-    &--third {
-      width: 31.3333333%;
-      margin-right: 2%;
-    }
-
-    &--two-thirds {
-      width: 62.6666666%;
-      margin-right: 2%;
-    }
-
-    &--fourth {
-      width: 23%;
-      margin-right: 2%;
-    }
-
-    &--three-fourths {
-      width: 73%;
-      margin-right: 2%;
-    }
+    margin-bottom: 0;
+    &--full { @include span-cols(12); }
+    &--half { @include span-cols(6); }
+    &--third { @include span-cols(4); }
+    &--two-thirds { @include span-cols(8); }
+    &--fourth { @include span-cols(3); }
+    &--three-fourths { @include span-cols(9); }
   }
-
 }
 
 

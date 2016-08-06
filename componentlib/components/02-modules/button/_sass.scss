@@ -1,15 +1,6 @@
-/*
-  Buttons 
 
-  Use `.btn` classes on `button`, `input`, or `a` elements. You can mix
-  and match classes.
-*/
-.btn,
-.btn:link,
-.btn:visited,
-.btn:hover,
-.btn:focus,
-.btn:active {
+button,
+.btn {
   display: inline-block;
   vertical-align: middle;
   border: solid 1px transparent;
@@ -23,9 +14,6 @@
   // background-image: linear-gradient($color-btn-highlight, $color-btn);
   appearance: none;
   transition: all 100ms ease-in-out;
-}
-
-.btn {
   padding: .3em 1em;
   margin: 0 .1em .5rem;
   font-size: .875em; 
@@ -55,6 +43,7 @@
 
 }
 
+button[disabled],
 .btn[disabled] {
   color: #ccc !important;
   background: #eee !important;
@@ -64,9 +53,8 @@
 }
 
 .btn--small {
-  font-size: 70%;
-  letter-spacing: 1px;
-  padding: .2em 1em;
+  font-size: 80%;
+  padding: .15em .9em;
 }
 
 .btn--large {
@@ -74,7 +62,12 @@
   padding: .4em 1.4em;
 }
 
-.btn--outline {
+.btn--outline,
+.btn--outline:link,
+.btn--outline:visited,
+.btn--outline:hover,
+.btn--outline:focus,
+.btn--outline:active {
   color: $color-btn;
   border: solid 1px $color-btn;
   background: transparent;
@@ -92,7 +85,12 @@
   }
 }
 
-.btn--danger {
+.btn--danger,
+.btn--danger:link,
+.btn--danger:visited,
+.btn--danger:hover,
+.btn--danger:focus,
+.btn--danger:active {
   color: #fff;
   background: $color-error;
   border: solid 1px transparent;
