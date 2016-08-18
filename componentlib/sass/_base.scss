@@ -213,7 +213,9 @@ time {}
 
 meter {}
 
-progress {}
+progress {
+  @include progress-bar($color-cerulean, #ccc);
+}
 
 code {
   background: #f3f3f3;

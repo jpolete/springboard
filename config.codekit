@@ -317,6 +317,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/componentlib\/components\/01-elements\/progress.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/componentlib\/components\/01-elements\/progress.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/componentlib\/components\/01-elements\/progress.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/componentlib\/components\/01-elements\/progress.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/componentlib\/components\/01-elements\/tables\/numeric\/_sass.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,

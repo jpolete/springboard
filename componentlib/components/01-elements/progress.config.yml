@@ -1,0 +1,4 @@
+context:
+  max: 100
+  value: 30
+  percent: 30

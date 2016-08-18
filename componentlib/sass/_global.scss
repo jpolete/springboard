@@ -156,4 +156,33 @@ $large: 87.5em;     // 1400/16
   }
 }
 
+@mixin progress-bar($color, $bg) {
+  border-radius: .15em;
+  height: 1rem;
+  width: 100%;
+  color: $color;
+  background-color: $bg;
+  overflow: hidden;
+  appearance: none;
+
+  &::-webkit-progress-inner-element {
+    border: none;
+  }
+
+  &::-webkit-progress-bar {
+    background-color: $bg;
+  }
+
+  &::-webkit-progress-value {
+    background-color: $color;
+  }
+
+  &::-moz-progress-bar {
+    background-color: $color;
+  }
+
+  &::ms-fill {
+    background-color: $color;
+  }
+}
 
