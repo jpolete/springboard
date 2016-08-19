@@ -24,11 +24,6 @@ fractal.components.set( "path",  __dirname + "/components" );
 fractal.components.set( "default.preview", "@preview" );
 
 /*
- * Set global layout
- */
-fractal.set( "components.default.preview", "@preview" );
-
-/*
  * Tell Fractal where to look for documentation pages.
  */
 fractal.docs.set( "path", __dirname + "/docs" );
