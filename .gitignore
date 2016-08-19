@@ -32,3 +32,6 @@ craft/storage/backups
 craft/storage/rebrand
 craft/storage/runtime
 craft/storage/userphotos
+
+# Fractal
+componentlib/build/**
