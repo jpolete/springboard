@@ -7,6 +7,9 @@ git checkout develop
 git pull
 git push
 
+# Compile SASS
+sass -t compressed style.scss ../public/style.css
+
 # Build static Fractal Web UI
 (cd componentlib && fractal build && cd ..)
 

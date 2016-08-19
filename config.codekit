@@ -1354,39 +1354,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
-	"\/componentlib\/public\/js\/lib\/html5shiv.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/componentlib\/public\/js\/lib\/html5shiv.min.js",
-		"outputAbbreviatedPath": "\/componentlib\/public\/js\/lib\/html5shiv.min.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/componentlib\/public\/js\/lib\/picturefill.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/componentlib\/public\/js\/lib\/picturefill.min.js",
-		"outputAbbreviatedPath": "\/componentlib\/public\/js\/lib\/picturefill.min.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/componentlib\/public\/js\/main.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/componentlib\/public\/js\/main.min.js",
-		"outputAbbreviatedPath": "\/componentlib\/public\/js\/main.min.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/componentlib\/public\/style.css": {
 		"fileType": 16,
 		"ignore": 1,
