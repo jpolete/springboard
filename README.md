@@ -3,6 +3,8 @@
 
 Springboard is my starter kit of HTML, SASS and JavaScript for new web projects. It has a few sample files in `starters`, and a basic component library in `componentlib`.
 
+See a sample of the [component library](http://jpolete.github.io/springboard).
+
 ## Asset Processing
 
 For asset processing and browser refreshing, I use [Codekit](https://incident57.com/codekit/). If you use the terminal or another tool to compile assets, here are the two main assets that need processing.
@@ -29,7 +31,7 @@ The pattern library is built using [Fractal](https://github.com/frctl/fractal). 
 $ npm i -g @frctl/fractal
 ```
 
-Then `cd` into the `componentlib` folder, and install Fractal’s dependencies.
+In the project folder, `cd` into the `componentlib` directory, and install Fractal’s dependencies.
 
 ```
 $ npm install 
