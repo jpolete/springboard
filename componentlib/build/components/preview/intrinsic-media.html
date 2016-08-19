@@ -1,0 +1,38 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link media="all" rel="stylesheet" href="/style.css">
+  <title>Yrdstick Components Intrinsic Media</title>
+  <style>
+    body { padding: 1rem; }
+  </style>
+</head>
+<body>
+  <!-- Start: @intrinsic-media--default -->
+<picture class="intrinsic intrinsic--square">
+  <source media="(min-width: 500px)" srcset="http://placehold.it/1000x1000?text=Square">
+  <img class="intrinsic-item" srcset="http://placehold.it/300x300?text=Square" alt="Square Image">
+</picture>
+
+<!-- End: @intrinsic-media--default -->
+
+<!-- Start: @intrinsic-media--16x9 -->
+<div class="intrinsic intrinsic--16x9">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/XnBbjc5hmho" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<!-- End: @intrinsic-media--16x9 -->
+
+<!-- Start: @intrinsic-media--4x3 -->
+<div class="intrinsic intrinsic--4x3">
+  <img class="intrinsic-item" srcset="http://placehold.it/1200x900?text=4x3" alt="4x3 Image">
+</div>
+
+<!-- End: @intrinsic-media--4x3 -->
+
+</body>
+<script src="/js/main.min.js"></script>
+</html>

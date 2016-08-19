@@ -1,0 +1,45 @@
+
+/*
+  Responsive Table (Linearized)
+
+  "Linearizes" table cells for small viewports. Relies on duplicating the 
+  table headings in data-label attributes for each cell.
+
+  markup: table-responsive-linear.html
+
+  Styleguide Table.Linearize
+*/
+@media screen and (max-width: 37.5em) {
+  .linearizable {
+    thead {
+      display: none;
+    }
+    tr {
+      display: block;
+      padding: .4em;
+      margin: 0 0 1em;
+      border: solid 1px #ccc;
+      border-radius: .4em;
+
+      &:nth-child(even) td {
+        background: transparent;
+      }
+    }
+    td {
+      display: block;
+      padding: .6em;
+      border-bottom: dotted 1px #ccc;
+      text-align: right;
+
+      &:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+      }
+
+      &:last-child {
+        border: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+
+.row { @include row; }
+.col1  { @include span-cols(1); }
+.col2  { @include span-cols(2); }
+.col3  { @include span-cols(3); }
+.col4  { @include span-cols(4); }
+.col5  { @include span-cols(5); }
+.col6  { @include span-cols(6); }
+.col7  { @include span-cols(7); }
+.col8  { @include span-cols(8); }
+.col9  { @include span-cols(9); }
+.col10 { @include span-cols(10); }
+.col11 { @include span-cols(11); }
+.col12 { @include span-cols(12); }
+
+.row--sample {
+  margin: .5rem 0;
+
+  > div { 
+    text-align: center; 
+    background: #eee; 
+    padding: .25rem;
+  }
+}

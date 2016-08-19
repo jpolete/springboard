@@ -1,0 +1,43 @@
+/*
+  Old Browser Notice
+
+  A notice banner for older browsers encouraging users to upgrade. Really only targets old IE
+  right now. Message is set to `display: none` unless it's a child of an element with a class of
+  `ie6`, `ie7`, `ie8`, `ie9`. Use IE conditional comments to add these classes to the `html` root
+  element.
+*/
+.old-browser-notice {
+  display: none;
+  background: $color-info;
+
+  p {
+    padding: 1rem;
+    margin: 0 auto;
+    font: normal .9em/1.4 $font-stack-sans;
+    max-width: 45em;
+    color: #fff;
+    text-align: center;
+  }
+
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:focus,
+  a:active {
+    color: lighten($color-info, 60%);
+    text-decoration: underline;
+    border: 0;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.ie7 .old-browser-notice,
+.ie8 .old-browser-notice,
+.ie9 .old-browser-notice {
+  display: block;
+}
+
