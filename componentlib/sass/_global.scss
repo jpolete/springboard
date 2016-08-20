@@ -13,24 +13,35 @@ $font-stack-form-ui: $font-stack-sans;
 
 
 // Colors
+
+// Palette
 $color-cerulean: #00a4de;
+$color-lime-green: #29cc29;
+$color-tropical-blue: #c5e0fb;
+$color-soft-black: #33363b;
+$color-orient: #066085;
+$color-axolotl: #4b6b4b;
+$color-yellow-metal: #6c6c3a;
+$color-red: #c03333;
+
+// Semantic
 $color-field-focus: $color-cerulean;
 $color-link: $color-cerulean;
 $color-link-visited: desaturate(lighten($color-link, 25%), 5%);
-$color-text-select: #c5e0fb;
+$color-text-select: $color-tropical-blue;
 
-$color-info: #066085;
-$color-success: #4b6b4b;
-$color-warning: #6c6c3a;
-$color-error: #c03333;
+$color-info: $color-orient;
+$color-success: $color-axolotl;
+$color-warning: $color-yellow-metal;
+$color-error: $color-red;
 
 $color-selected-box: #198bed;
 $color-btn: $color-cerulean;
 $color-btn-highlight: lighten($color-cerulean, 5%);
 
-$color-soft-black: #33363b;
 $color-font: $color-soft-black;
 
+$toggle-color: $color-lime-green;
 
 // Flexible grid values
 $col-count: 12;
