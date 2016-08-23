@@ -3725,6 +3725,40 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/componentlib\/components\/02-modules\/filter\/_sass.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/componentlib\/components\/02-modules\/filter\/_sass.scss",
+		"outputAbbreviatedPath": "\/componentlib\/components\/02-modules\/css\/_sass.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/componentlib\/components\/02-modules\/filter\/filter.config.yml": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/componentlib\/components\/02-modules\/filter\/filter.config.yml",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/componentlib\/components\/02-modules\/filter\/filter.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/componentlib\/components\/02-modules\/filter\/filter.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/componentlib\/components\/02-modules\/fineprint\/_sass.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,

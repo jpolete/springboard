@@ -1,0 +1,31 @@
+
+.filter {
+  position: relative;
+  display: inline-block;
+
+  input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  label {
+    display: inline-block;
+    margin: 0;
+    padding: .25em .6em;
+    border: solid 1px #ddd;
+    border-radius: .95em;
+    background: #fff;
+    text-transform: none;
+    line-height: 1.4;
+    letter-spacing: 0;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  input:checked + label {
+    color: #fff;
+    background: $color-cerulean;
+    border-color: darken($color-cerulean, 4%);
+  }
+
+}
