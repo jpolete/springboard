@@ -2,9 +2,11 @@
 .filter {
   position: relative;
   display: inline-block;
+  margin: 0 0 .25rem;
 
   input {
     position: absolute;
+    left: .6rem;
     opacity: 0;
   }
 
@@ -25,7 +27,6 @@
   input:checked + label {
     color: #fff;
     background: $color-cerulean;
-    border-color: darken($color-cerulean, 4%);
+    border-color: transparent;
   }
-
 }
