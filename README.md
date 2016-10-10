@@ -40,7 +40,7 @@ $ npm install
 Finally, start the server like this.
 
 ```
-$ fractal start --watch
+$ fractal start --sync
 ```
 
 Browse to [localhost:3000](http://localhost:3000) to view the pattern library. 
