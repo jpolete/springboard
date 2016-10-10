@@ -1,5 +1,8 @@
 context:
   filters:
-    - name: Kentucky
-    - name: Indiana
-    - name: Tennessee
+    - id: Kentucky
+      name: state
+    - id: Indiana
+      name: state
+    - id: Tennessee
+      name: state

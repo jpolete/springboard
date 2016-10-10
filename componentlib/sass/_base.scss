@@ -468,7 +468,7 @@ input[type="radio"]:checked,
 input[type="checkbox"]:checked {
   background: 
     $color-selected-box 
-    url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxOXB4IiBoZWlnaHQ9IjE5cHgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+DQogIDxkZWZzLz4NCiAgPGcgaWQ9ImNoZWNrIiBmaWxsPSIjRkZGRkZGIj4NCiAgICA8cGF0aCBkPSJNMy41ODAwNzgxMiwxMC45MzYwMzUyIEw1LjQ0MTE2MjExLDkuMjI0NjA5MzggTDcuNSwxMiBMMTQuMzQ4Mzg4Nyw0LjU5MzAxNzU4IEwxNS44MzE1NDMsNi4zMjg4NTc0MiBMNy41LDE1LjQ2MTQyNTggTDMuNTgwMDc4MTIsMTAuOTM2MDM1MiBaIiBpZD0iY2hlY2stMiI+PC9wYXRoPg0KICA8L2c+DQo8L3N2Zz4=)
+    url('data:image/svg+xml;utf8,<svg width="19" height="19" xmlns="http://www.w3.org/2000/svg"><path d="M3.58 10.936l1.86-1.71L7.5 12l6.848-7.407 1.484 1.736L7.5 15.46l-3.92-4.524z" fill="#fff"/></svg>')
     50% 50%
     no-repeat;
   border-color: $color-selected-box;

@@ -3741,6 +3741,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/componentlib\/components\/02-modules\/filter\/filter--pill.hbs": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/componentlib\/components\/02-modules\/filter\/filter--pill.hbs",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/componentlib\/components\/02-modules\/filter\/filter.config.yml": {
 		"fileType": 8192,
 		"ignore": 0,

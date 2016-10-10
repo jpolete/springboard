@@ -15,7 +15,6 @@
     margin: 0;
     padding: .25em .6em;
     border: solid 1px #ddd;
-    border-radius: .95em;
     background: #fff;
     text-transform: none;
     line-height: 1.4;
@@ -28,5 +27,21 @@
     color: #fff;
     background: $color-cerulean;
     border-color: transparent;
+  }
+}
+
+.filter--pill {
+  @extend .filter;
+
+  label {
+    border-radius: .95em;
+  }
+}
+
+.filter--rect {
+  @extend .filter;
+
+  label {
+    border-radius: .3em;
   }
 }
