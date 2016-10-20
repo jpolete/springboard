@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
     <link rel="shortcut icon" href="../../_theme/favicon.ico" type="image/ico">
 
-<link rel="stylesheet" href="../../_theme/css/black.css?cachebust=1.0.4" type="text/css">
+<link rel="stylesheet" href="../../_theme/css/black.css?cachebust=1.0.7" type="text/css">
 
 
 <title>Inline | Springboard</title>
@@ -83,44 +88,6 @@
                 data-role="window"
                 src="../preview/inline.html"
                 sandbox="allow-same-origin allow-scripts"
-                srcdoc="&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;link media=&quot;all&quot; rel=&quot;stylesheet&quot; href=&quot;../../style.css&quot;&gt;
-  &lt;title&gt;Yrdstick Components Default&lt;/title&gt;
-  &lt;style&gt;
-    body { padding: 1rem; }
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;p&gt;
-Here are some &lt;mark&gt;marked words&lt;/mark&gt;, and…
-&lt;br /&gt;
-some &lt;em&gt;emphasized words&lt;/em&gt; and… 
-&lt;br /&gt;
-some &lt;strong&gt;strong text&lt;/strong&gt; and…
-&lt;br /&gt;
-an &lt;i&gt;i element&lt;/i&gt; and…
-&lt;br /&gt;
-a &lt;b&gt;b element&lt;/b&gt; and…
-&lt;br /&gt; 
-&lt;q&gt;This is an inline quote&lt;/q&gt; and…
-&lt;br /&gt;
-this is &lt;code&gt;someCode() { }&lt;/code&gt; and…
-&lt;br /&gt;
-this is a superscript&lt;sup&gt;1&lt;/sup&gt; and a subscript&lt;sub&gt;2&lt;/sub&gt; and… 
-&lt;br /&gt;
-this is an abreviation &lt;abbr title=&quot;Hypertext Markup Language&quot;&gt; HTML&lt;/abbr&gt; and…
-&lt;br /&gt;
-this is a time: &lt;time datetime=&quot;2015-05-14T00:00:00&quot;&gt;May 14, 2015&lt;/time&gt; and …
-&lt;br /&gt;
-this is progress: &lt;progress value=&quot;30&quot; max=&quot;100&quot;&gt;30%&lt;/progress&gt;
-&lt;/p&gt;
-
-&lt;/body&gt;
-&lt;script src=&quot;../../js/main.min.js&quot;&gt;&lt;/script&gt;
-&lt;/html&gt;"
                  style=""
                 marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
             </iframe>
@@ -253,7 +220,6 @@ this is progress: &lt;progress value=&quot;30&quot; max=&quot;100&quot;&gt;30%&l
     <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span> this is a superscript<span class="hljs-tag">&lt;<span class="hljs-name">sup</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">sup</span>&gt;</span> and a subscript<span class="hljs-tag">&lt;<span class="hljs-name">sub</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">sub</span>&gt;</span> and…
     <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span> this is an abreviation <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Hypertext Markup Language"</span>&gt;</span> HTML<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span> and…
     <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span> this is a time: <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">"2015-05-14T00:00:00"</span>&gt;</span>May 14, 2015<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span> and …
-    <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span> this is progress: <span class="hljs-tag">&lt;<span class="hljs-name">progress</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"100"</span>&gt;</span>30%<span class="hljs-tag">&lt;/<span class="hljs-name">progress</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
         
     </code>
@@ -282,8 +248,6 @@ this is a superscript<span class="hljs-tag">&lt;<span class="hljs-name">sup</spa
 this is an abreviation <span class="hljs-tag">&lt;<span class="hljs-name">abbr</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Hypertext Markup Language"</span>&gt;</span> HTML<span class="hljs-tag">&lt;/<span class="hljs-name">abbr</span>&gt;</span> and…
 <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
 this is a time: <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">"2015-05-14T00:00:00"</span>&gt;</span>May 14, 2015<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span> and …
-<span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
-this is progress: <span class="hljs-tag">&lt;<span class="hljs-name">progress</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"30"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"100"</span>&gt;</span>30%<span class="hljs-tag">&lt;/<span class="hljs-name">progress</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 </span></pre>
     </code>
@@ -1247,6 +1211,70 @@ this is progress: <span class="hljs-tag">&lt;<span class="hljs-name">progress</s
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-filter">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Filter</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="filter--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="filter--pill.html" data-pjax>
+                <span>Pill</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="fineprint.html" data-pjax>
@@ -1921,7 +1949,7 @@ this is progress: <span class="hljs-tag">&lt;<span class="hljs-name">progress</s
 
 
 
-<script src="../../_theme/js/mandelbrot.js?cachebust=1.0.4"></script>
+<script src="../../_theme/js/mandelbrot.js?cachebust=1.0.7"></script>
 
 
 

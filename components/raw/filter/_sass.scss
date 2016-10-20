@@ -1,0 +1,47 @@
+
+.filter {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 .25rem;
+
+  input {
+    position: absolute;
+    left: .6rem;
+    opacity: 0;
+  }
+
+  label {
+    display: inline-block;
+    margin: 0;
+    padding: .25em .6em;
+    border: solid 1px #ddd;
+    background: #fff;
+    text-transform: none;
+    line-height: 1.4;
+    letter-spacing: 0;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  input:checked + label {
+    color: #fff;
+    background: $color-cerulean;
+    border-color: transparent;
+  }
+}
+
+.filter--pill {
+  @extend .filter;
+
+  label {
+    border-radius: .95em;
+  }
+}
+
+.filter--rect {
+  @extend .filter;
+
+  label {
+    border-radius: .3em;
+  }
+}
