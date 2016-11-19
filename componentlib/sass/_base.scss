@@ -262,6 +262,7 @@ a {
   &:focus,
   &.focus {
     background: $color-link;
+    outline: none;
     text-shadow: none;
   }
 
