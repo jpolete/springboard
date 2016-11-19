@@ -27,7 +27,7 @@ $color-red: #c03333;
 // Semantic
 $color-field-focus: $color-cerulean;
 $color-link: $color-cerulean;
-$color-link-visited: desaturate(lighten($color-link, 25%), 5%);
+$color-link-visited: #ccc;
 $color-text-select: $color-tropical-blue;
 
 $color-info: $color-orient;
@@ -122,11 +122,7 @@ $large: 87.5em;     // 1400/16
     .06em 0 $background-color,
     -.06em 0 $background-color,
     .09em 0 $background-color,
-    -.09em 0 $background-color,
-    .12em 0 $background-color,
-    -.12em 0 $background-color,
-    .15em 0 $background-color,
-    -.15em 0 $background-color;
+    -.09em 0 $background-color;
 }
 
 @mixin smartUnderline($background-color, $color) {
@@ -136,7 +132,7 @@ $large: 87.5em;     // 1400/16
     linear-gradient($color, $color);
   background-size: .05em 1px, .05em 1px, 1px 1px;
   background-repeat: no-repeat, no-repeat, repeat-x;
-  background-position: 0% 99%, 100% 99%, 0% 99%;
+  background-position: 0% 98%, 100% 98%, 0% 98%;
 }
 
 
