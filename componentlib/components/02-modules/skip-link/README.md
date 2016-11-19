@@ -16,3 +16,5 @@ The link is positioned offscreen so that it is invisible for sighted users. When
   </main>
 </body>
 ```
+
+*Idea taken from "Inclusive Design Patterns" by Heydon Pickering.*
