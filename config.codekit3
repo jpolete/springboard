@@ -1294,6 +1294,12 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/componentlib\/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "\/build\/componentlib\/node_modules",
+		"oF": 0
+		},
 	"\/componentlib\/package.json": {
 		"ft": 524288,
 		"oA": 1,
