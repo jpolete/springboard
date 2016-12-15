@@ -79,26 +79,66 @@
 </head>
 <body>
   
+  <a class="skip-link" href="#main">Skip to main content</a>  
 <div class=""> 
   <div class="old-browser-notice">
     <p>You’re using a pretty old web browser. Some aspects of this site might not look or function quite right. Why not <a href="http://browsehappy.com/">grab the latest version of your favorite web browser here</a>?</p>
   </div>
 </div>
 <header role="banner">
-    <a href="/" class="logo">Springboard</a>
-    <a href="#nav" class="menu">Menu</a>
-</header>
+  <nav class="nav" role="navigation" aria-label="site">
+    <button hidden class="nav__menu-button">Menu</button>
+    <ul class="nav__items">
+      <li class="nav__item"><a class="nav__link" href="/"><img src="/images/logo-full.svg" alt="Springboard Home Page"></a></li>
+      <li class="nav__item"><a class="nav__link" href="/link1">Link 1</a></li>
+      <li class="nav__item"><a class="nav__link" href="/link2">Link 2</a></li>
+      <li class="nav__item selected"><a class="nav__link" href="#main"><span class="implied">Current Page </span>Link 3</a></li>
+      <li class="nav__item"><a class="nav__link" href="/link4">Link 4</a></li>
+      <li class="nav__item"><a class="nav__link" href="/link5">Link 5</a></li>
+    </ul>
+  </nav>
+  <script>
+    (function() {
+      if ( window.matchMedia ) {
+        var button = document.querySelector('[aria-label="site"] button');
+        var menu = button.nextElementSibling;
+        var menuItems = menu.querySelectorAll( "li" );
+        button.hidden = false;
+  
+        button.addEventListener('click', function() {
+          var expanded = this.getAttribute('aria-expanded') === 'true';
+          expandMenu( !expanded )
+        });
+  
+        function expandMenu( expand ) {
+          button.setAttribute('aria-expanded', String(expand));
+          for ( var i = 0; i < menuItems.length; i++ ) {
+            if ( i != 0 ) {
+              menuItems[i].hidden = !expand;
+            }
+          }
+        }
+  
+        function handleResize() {
+          expandMenu( !mql.matches );
+        }
+  
+        var mql = window.matchMedia( "(max-width: 767px)" );
+        mql.addListener( handleResize );
+  
+        if ( mql.matches ) {
+          button.setAttribute('aria-expanded', 'false');
+          expandMenu( false );
+        }
+      }
+  
+    })();
+  </script></header>
 <!-- Include aria role for <=IE11 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main -->
-<main role="main">
+<main id="main" role="main">
   <p>This is a sample page template. It includes the header from <code>structures/header</code> and the footer from <code>structures/footer</code></p>
 </main>
 <footer role="contentinfo">
-    <nav id="nav" class="nav" role="navigation">
-      <ul class="nav__items">
-        <li class="nav__item"><a class="nav__link" href="/">Home</a></li>
-        <li class="nav__item"><a class="nav__link" href="/about">About</a></li>
-      </ul>
-    </nav>
   <p class="centered fineprint">Springboard footer &copy; this year</p>
 </footer>
 
