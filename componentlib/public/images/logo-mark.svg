@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="87" viewBox="0 0 56 87" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="b" x1="50%" x2="50%" y1="37.193%" y2="62.16%">
+      <stop stop-color="#FFFFFF" stop-opacity=".244" offset="0%"/>
+      <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"/>
+    </linearGradient>
+    <polygon id="a" points="1 50.162 49 70.293 49 86.293 1 66.162"/>
+    <polyline id="c" points="49.106 50.018 .894 25.076 .894 41.076 49.106 66.018"/>
+    <polyline id="d" points="49.106 25.018 .894 .076 .894 16.076 49.106 41.018"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(3)">
+      <use fill="#06567D" xlink:href="#a"/>
+      <use fill="url(#b)" xlink:href="#a"/>
+      <use fill="#06567D" xlink:href="#c"/>
+      <use fill="url(#b)" xlink:href="#c"/>
+      <g>
+        <use fill="#06567D" xlink:href="#d"/>
+        <use fill="url(#b)" xlink:href="#d"/>
+      </g>
+    </g>
+    <g fill="#20A7E9">
+      <rect width="56" height="16" y="50" rx="4"/>
+      <rect width="56" height="16" y="25" rx="4"/>
+      <rect width="56" height="16" rx="4"/>
+    </g>
+  </g>
+</svg>

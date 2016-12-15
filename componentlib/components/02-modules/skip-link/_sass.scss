@@ -1,12 +1,13 @@
 
-[href="#main"] {
+.skip-link {
   position: absolute;
   top: 0; 
-  right: 100%; 
+  right: 110%; 
+  z-index: 2;
   background: #fff;
   color: #000;
 }
 
-[href="#main"]:focus {
+.skip-link:focus {
   right: auto;
 }
