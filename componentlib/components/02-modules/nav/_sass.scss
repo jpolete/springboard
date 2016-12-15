@@ -84,7 +84,7 @@
   }
 
   .nav__link:focus {
-    outline: dotted 1px $color-cerulean;
+    outline: dotted 1px $color-focus;
     background: transparent;
   }
 
@@ -116,5 +116,5 @@
 }
 
 .nav__menu-button:focus {
-  outline: dotted 1px $color-cerulean;
+  outline: dotted 1px $color-focus;
 }

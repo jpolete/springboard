@@ -214,7 +214,7 @@ time {}
 meter {}
 
 progress {
-  @include progress-bar($color-cerulean, #ccc);
+  @include progress-bar($color-active, #ccc);
 }
 
 code {
@@ -429,7 +429,7 @@ input[type="search"]:focus,
 input[type="tel"]:focus, 
 select:focus, 
 textarea:focus {
-  border-color: $color-field-focus;
+  border-color: $color-focus;
   box-shadow: none;
   outline: 0;
 }
