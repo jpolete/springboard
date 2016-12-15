@@ -1,5 +1,5 @@
 
-<img src="componentlib/public/images/logo-full@2x.png" alt="Springboard Logo" style="width:20em;">
+<img src="componentlib/public/images/logo-full@2x.png" alt="Springboard Logo" width="320">
 
 # Overview
 
