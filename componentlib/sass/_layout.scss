@@ -1,11 +1,10 @@
 
 [role="banner"] {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: $color-soft-black;
-  color: #fff;
-  color: rgba(255,255,255,.9);
+  position: relative;
+  @include tablet {
+    height: 5rem;
+    background: #f3f3f3;
+  }
 }
 
 .l-constrained {
@@ -17,6 +16,9 @@
 main,
 [role="main"] {
   padding: 1rem;
+  @include tablet {
+    padding: 3rem;
+  }
 }
 
 [role="contentinfo"] {

@@ -1,5 +1,5 @@
 
-[href="#main"] {
+.skip-link {
   position: absolute;
   top: 0; 
   right: 110%; 
@@ -7,6 +7,6 @@
   color: #000;
 }
 
-[href="#main"]:focus {
+.skip-link:focus {
   right: auto;
 }

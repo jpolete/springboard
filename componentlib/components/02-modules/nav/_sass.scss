@@ -1,4 +1,4 @@
-.nav {
+.nav {  
   margin: 0;
   padding: 0;
 }
@@ -12,6 +12,17 @@
   display: block;
   margin: 0;
   padding: 0;
+  background: #f3f3f3;
+}
+
+.nav__item:first-child {
+  display: block;
+  background: #fff;
+
+  img {
+    display: block;
+    height: 2em;
+  }
 }
 
 .nav__link,
@@ -28,16 +39,25 @@
 }
 
 .nav__link:focus {
-  background: #eee;
+  background: #e6e6e6;
 }
 
 @include tablet {
 
-  .nav {
+  .nav__item:first-child {
     position: absolute;
-    top: .5rem;
-    right: 1rem;
-    font-size: .9rem;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background: transparent;
+  }
+
+  .nav__items {
+    float: right;
+    text-align: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
   }
 
   .nav__item {
@@ -51,8 +71,16 @@
   .nav__link:active {
     display: inline-block;
     padding: .5rem;
-    color: #fff;
+    color: #999;
     border: 0;
+
+    .selected & {
+      color: #000;
+    }
+  }
+
+  .nav__link:hover {
+    text-decoration: underline;
   }
 
   .nav__link:focus {
@@ -62,3 +90,31 @@
 
 }
 
+.nav__menu-button,
+.nav__menu-button:link,
+.nav__menu-button:visited,
+.nav__menu-button:hover,
+.nav__menu-button:focus,
+.nav__menu-button:active {
+  float: right;
+  padding: 1rem;
+  margin: 0;
+  border: 0;
+  color: $color-soft-black;
+  background: transparent;
+  font-size: 75%;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: none;
+  transform: none;
+  box-shadow: none;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.nav__menu-button:focus {
+  outline: dotted 1px $color-cerulean;
+}

@@ -7,7 +7,7 @@
 		"uuidString": "2F039655-D9D6-4CA9-BA07-8627B1CE5009"
 		}
 	],
-"creatorBuild": "25444",
+"creatorBuild": "25479",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
@@ -723,31 +723,6 @@
 		"oAP": "\/componentlib\/components\/02-modules\/intrinsic-media\/intrinsic-media.hbs",
 		"oF": 0
 		},
-	"\/componentlib\/components\/02-modules\/logo\/_sass.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/componentlib\/components\/02-modules\/css\/_sass.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/componentlib\/components\/02-modules\/logo\/logo.config.yml": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/componentlib\/components\/02-modules\/logo\/logo.config.yml",
-		"oF": 0
-		},
-	"\/componentlib\/components\/02-modules\/logo\/logo.hbs": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/componentlib\/components\/02-modules\/logo\/logo.hbs",
-		"oF": 0
-		},
 	"\/componentlib\/components\/02-modules\/lozenge\/_sass.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -790,25 +765,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"\/componentlib\/components\/02-modules\/menu\/_sass.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/componentlib\/components\/02-modules\/css\/_sass.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/componentlib\/components\/02-modules\/menu\/menu.hbs": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/componentlib\/components\/02-modules\/menu\/menu.hbs",
-		"oF": 0
 		},
 	"\/componentlib\/components\/02-modules\/nav\/_sass.scss": {
 		"aP": 0,
@@ -1326,6 +1282,26 @@
 		"oAP": "\/componentlib\/public\/audio\/a-case-of-identity.ogg",
 		"oF": 0
 		},
+	"\/componentlib\/public\/images\/logo-full.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/componentlib\/public\/images\/logo-full.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/componentlib\/public\/images\/logo-mark.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/componentlib\/public\/images\/logo-mark.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/componentlib\/public\/images\/social-media.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1452,6 +1428,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/componentlib\/sass\/_state.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/componentlib\/css\/_state.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/componentlib\/sass\/style.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1500,6 +1489,12 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/springboard.sketch": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/springboard.sketch",
+		"oF": 0
 		},
 	"\/springboard.sublime-project": {
 		"ft": 8192,
@@ -1978,6 +1973,10 @@
 			"active": 0,
 			"optionString": "{'properties': 'always'}"
 			},
+		"capitalized-comments": {
+			"active": 0,
+			"optionString": "'always', {'ignoreInlineComments': false, 'ignoreConsecutiveComments': false}"
+			},
 		"class-methods-use-this": {
 			"active": 0,
 			"optionString": "{'exceptMethods': []}"
@@ -2141,6 +2140,10 @@
 		"max-statements": {
 			"active": 0,
 			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
+			},
+		"max-statements-per-line": {
+			"active": 0,
+			"optionString": "{'max': 1}"
 			},
 		"multiline-ternary": {
 			"active": 0,
@@ -2506,6 +2509,10 @@
 			"active": 0,
 			"optionString": "'except-parens'"
 			},
+		"no-return-await": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-script-url": {
 			"active": 0,
 			"optionString": ""
@@ -2737,6 +2744,10 @@
 		"radix": {
 			"active": 0,
 			"optionString": "'always'"
+			},
+		"require-await": {
+			"active": 0,
+			"optionString": ""
 			},
 		"require-jsdoc": {
 			"active": 0,
@@ -3570,6 +3581,10 @@
 			},
 		"space-colon": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"support-ie8": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"toplevel": {
