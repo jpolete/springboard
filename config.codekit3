@@ -7,7 +7,7 @@
 		"uuidString": "2F039655-D9D6-4CA9-BA07-8627B1CE5009"
 		}
 	],
-"creatorBuild": "25479",
+"creatorBuild": "25504",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
@@ -1282,6 +1282,14 @@
 		"oAP": "\/componentlib\/public\/audio\/a-case-of-identity.ogg",
 		"oF": 0
 		},
+	"\/componentlib\/public\/images\/logo-full.png": {
+		"ft": 32768,
+		"iS": 14193,
+		"oA": 0,
+		"oAP": "\/componentlib\/public\/images\/logo-full.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/componentlib\/public\/images\/logo-full.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1292,6 +1300,22 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/componentlib\/public\/images\/logo-full@2x.png": {
+		"ft": 32768,
+		"iS": 31795,
+		"oA": 0,
+		"oAP": "\/componentlib\/public\/images\/logo-full@2x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/componentlib\/public\/images\/logo-mark.png": {
+		"ft": 32768,
+		"iS": 1586,
+		"oA": 0,
+		"oAP": "\/componentlib\/public\/images\/logo-mark.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/componentlib\/public\/images\/logo-mark.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1301,6 +1325,14 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/componentlib\/public\/images\/logo-mark@2x.png": {
+		"ft": 32768,
+		"iS": 3795,
+		"oA": 0,
+		"oAP": "\/componentlib\/public\/images\/logo-mark@2x.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/componentlib\/public\/images\/social-media.svg": {
 		"ft": 2097152,
@@ -2177,6 +2209,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
@@ -2716,6 +2752,10 @@
 		"prefer-const": {
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
 		"prefer-numeric-literals": {
 			"active": 0,
