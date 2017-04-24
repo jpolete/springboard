@@ -1,13 +1,10 @@
 context:
-  bodyClasses: "locked"
-  hidden: false 
-  id: modal
-  heading:
-    id: "dialog-heading"
-    text: "This is the dialog heading"
-  description:
-    id: "dialog-description"
-    text: "This is a description of the dialog box. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem amet soluta magnam optio earum saepe voluptatum perferendis esse quibusdam vitae. Quam sequi magni maxime ullam incidunt, voluptates enim dolor nisi."
+  title: I'm a Modal Dialog!
+  content: "This is a description of the dialog box. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem amet soluta magnam optio earum saepe voluptatum perferendis esse quibusdam vitae. Quam sequi magni maxime ullam incidunt, voluptates enim dolor nisi."
   buttons:
     - button:
         text: Okay
+        callback: okayCallback
+    - button:
+        text: Cancel
+        

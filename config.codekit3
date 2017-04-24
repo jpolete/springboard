@@ -7,18 +7,12 @@
 		"uuidString": "2F039655-D9D6-4CA9-BA07-8627B1CE5009"
 		}
 	],
-"creatorBuild": "25479",
+"creatorBuild": "25813",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/.gitignore",
-		"oF": 0
-		},
-	"\/.sass-cache": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/.sass-cache",
 		"oF": 0
 		},
 	"\/build.sh": {
@@ -766,6 +760,40 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/componentlib\/components\/02-modules\/modal\/_modal.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/componentlib\/components\/02-modules\/modal\/_modal.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/componentlib\/components\/02-modules\/modal\/_sass.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/componentlib\/components\/02-modules\/css\/_sass.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/componentlib\/components\/02-modules\/modal\/modal.config.yml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/componentlib\/components\/02-modules\/modal\/modal.config.yml",
+		"oF": 0
+		},
+	"\/componentlib\/components\/02-modules\/modal\/modal.hbs": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/componentlib\/components\/02-modules\/modal\/modal.hbs",
+		"oF": 0
+		},
 	"\/componentlib\/components\/02-modules\/nav\/_sass.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1243,7 +1271,7 @@
 		},
 	"\/componentlib\/js\/main.js": {
 		"ft": 64,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "\/componentlib\/public\/js\/main.min.js",
 		"oF": 2,
@@ -1349,18 +1377,15 @@
 		"oA": 0,
 		"oAP": "\/componentlib\/public\/video\/queen-delightful-alert.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/componentlib\/public\/video\/queen-delightful-alert.vtt": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/componentlib\/public\/video\/queen-delightful-alert.vtt",
-		"oF": 0
-		},
-	"\/componentlib\/sass\/.sass-cache": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/componentlib\/sass\/.sass-cache",
 		"oF": 0
 		},
 	"\/componentlib\/sass\/_base.scss": {
@@ -1494,18 +1519,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/springboard.sketch",
-		"oF": 0
-		},
-	"\/springboard.sublime-project": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/springboard.sublime-project",
-		"oF": 0
-		},
-	"\/springboard.sublime-workspace": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/springboard.sublime-workspace",
 		"oF": 0
 		},
 	"\/starters\/sample-functions.php": {
@@ -2177,6 +2190,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
@@ -2195,6 +2212,10 @@
 			},
 		"no-class-assign": {
 			"active": 1,
+			"optionString": ""
+			},
+		"no-compare-neg-zero": {
+			"active": 0,
 			"optionString": ""
 			},
 		"no-cond-assign": {
@@ -2397,6 +2418,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
@@ -2474,6 +2499,10 @@
 			"optionString": ""
 			},
 		"no-proto": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-prototype-builtins": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -2673,6 +2702,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
+			},
 		"object-curly-newline": {
 			"active": 0,
 			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
@@ -2717,9 +2750,17 @@
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
 			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
+			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -2814,6 +2855,10 @@
 			"optionString": ""
 			},
 		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
 			"active": 0,
 			"optionString": "'never'"
 			},
@@ -3260,7 +3305,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"quality": 100
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -3283,14 +3329,6 @@
 		"autoOutputPathStyle": 0,
 		"orderOutput": 0,
 		"outputStyle": 1
-		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
@@ -3353,7 +3391,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"optimizerType": 1,
+		"quality": 100
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
