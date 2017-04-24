@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <link media="all" rel="stylesheet" href="../../style.css">
-  <title>Yrdstick Components {{ _target.label }}</title>
+  <title>Springboard Component {{ _target.label }}</title>
   <style>
     body { padding: 1rem; }
   </style>
+  <script src="../../js/main.min.js"></script>
 </head>
-<body>
+<body class="{{ _target.context.bodyClasses }}">
   {{{ yield }}}
 </body>
-<script src="../../js/main.min.js"></script>
 </html>

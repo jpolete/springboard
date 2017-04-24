@@ -1,0 +1,19 @@
+
+<button class="open-modal">Open Modal</button>
+
+<div title="{{ heading.text }}" class="modal-content"><p>This is the dialog content.</p></div>
+
+<script>
+  var okayCallback = function( modal ) {
+    console.log( "Okay clicked" );
+    modal.close();
+  }
+  new Modal({
+    trigger: ".open-modal",
+    content: ".modal-content",
+    buttons: [
+      { text: "Okay", callback: okayCallback },
+      { text: "Cancel" }
+    ]
+  });
+</script>
