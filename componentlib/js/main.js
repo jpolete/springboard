@@ -15,3 +15,6 @@ var __app__ = {};
 
 // Converts yes/no radio button pairs into toggles
 // @codekit-append "../components/02-modules/toggle/_toggle.js";
+
+// Open a modal dialog box
+// @codekit-append "../components/02-modules/modal/_modal.js";
