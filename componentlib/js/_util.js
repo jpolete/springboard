@@ -18,7 +18,11 @@
     };
 
     app.hasClass = function( el, klass ) {
-      return el.className.indexOf( klass ) !== -1;
+      if ( !el.className ) {
+        return false;
+      }
+      var klasses = el.className.split( " " );
+      return klasses.indexOf( klass ) !== -1;
     };
 
     app.removeClass = function( el, klass ) {

@@ -1316,10 +1316,14 @@
 		"oA": 0,
 		"oAP": "\/componentlib\/public\/images\/logo-full.png",
 		"oF": 0,
+<<<<<<< HEAD
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+=======
+		"opt": 0
+>>>>>>> master
 		},
 	"\/componentlib\/public\/images\/logo-full.svg": {
 		"ft": 2097152,
@@ -1337,10 +1341,14 @@
 		"oA": 0,
 		"oAP": "\/componentlib\/public\/images\/logo-full@2x.png",
 		"oF": 0,
+<<<<<<< HEAD
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+=======
+		"opt": 0
+>>>>>>> master
 		},
 	"\/componentlib\/public\/images\/logo-mark.png": {
 		"ft": 32768,
@@ -1348,10 +1356,14 @@
 		"oA": 0,
 		"oAP": "\/componentlib\/public\/images\/logo-mark.png",
 		"oF": 0,
+<<<<<<< HEAD
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+=======
+		"opt": 0
+>>>>>>> master
 		},
 	"\/componentlib\/public\/images\/logo-mark.svg": {
 		"ft": 2097152,
@@ -1369,10 +1381,14 @@
 		"oA": 0,
 		"oAP": "\/componentlib\/public\/images\/logo-mark@2x.png",
 		"oF": 0,
+<<<<<<< HEAD
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+=======
+		"opt": 0
+>>>>>>> master
 		},
 	"\/componentlib\/public\/images\/social-media.svg": {
 		"ft": 2097152,
