@@ -16,6 +16,8 @@
   },
   "scripts": {
     "dev": "gulp watch & fractal start --sync",
-    "build": "gulp && fractal build"
+    "build": "gulp && fractal build",
+    "fractal:dev": "fractal start --sync",
+    "fractal:build": "fractal build"
   }
 }
