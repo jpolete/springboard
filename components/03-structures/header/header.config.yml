@@ -1,0 +1,8 @@
+context:
+  nav:
+    links:
+      - url: "#"
+        text: "Pricing"
+        current: true
+      - url: "#"
+        text: "Documentation"

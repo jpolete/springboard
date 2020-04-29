@@ -2,36 +2,15 @@
 .DS_Store
 profile
 
-# Sass noise
-**/*.scssc
-**/.sass-cache
-
-# Sublime Text config
-*.sublime-project
-*.sublime-workspace
-
-# Codekit config
-# config.codekit
-
 # NPM
-**/node_modules/*
+node_modules
 npm-debug.log
 
 # Generated CSS and sourcemaps
-**/*.css
-**/*.css.map
+public/styles/*
 
-# JS Libs
-**/js/lib/*
+# Generated JS
+public/js/*
 
-# Minified JS
-**/js/*.min.js
-
-# Craft
-craft/storage/backups
-craft/storage/rebrand
-craft/storage/runtime
-craft/storage/userphotos
-
-# Fractal
-componentlib/build/**
+# Fractal build dir
+build

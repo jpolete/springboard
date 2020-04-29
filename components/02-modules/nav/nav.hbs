@@ -1,0 +1,46 @@
+<nav class="nav" role="navigation" aria-label="site">
+  <button hidden class="nav__menu-button">Menu</button>
+  <ul class="nav__items">
+    <li class="nav__item"><a class="nav__link" href="/" ><img src="{{path "/images/logo-full.svg"}}" alt="Home"></a></li>
+    {{#each links }}
+    <li class="nav__item {{#if current }}selected{{/if}}"><a class="nav__link" href="{{ this.url }}" >{{ this.text }}</a></li>
+    {{/each}}
+  </ul>
+</nav>
+<script>
+  (function() {
+    if ( window.matchMedia ) {
+      var button = document.querySelector('[aria-label="site"] button');
+      var menu = button.nextElementSibling;
+      var menuItems = menu.querySelectorAll( "li" );
+      button.hidden = false;
+
+      button.addEventListener('click', function() {
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        expandMenu( !expanded )
+      });
+
+      function expandMenu( expand ) {
+        button.setAttribute('aria-expanded', String(expand));
+        for ( var i = 0; i < menuItems.length; i++ ) {
+          if ( i != 0 ) {
+            menuItems[i].hidden = !expand;
+          }
+        }
+      }
+
+      function handleResize() {
+        expandMenu( !mql.matches );
+      }
+
+      var mql = window.matchMedia( "(max-width: 767px)" );
+      mql.addListener( handleResize );
+
+      if ( mql.matches ) {
+        button.setAttribute('aria-expanded', 'false');
+        expandMenu( false );
+      }
+    }
+
+  })();
+</script>

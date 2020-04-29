@@ -1,0 +1,28 @@
+
+[role="banner"] {
+  position: relative;
+  @include tablet {
+    height: 5rem;
+    background: #f3f3f3;
+  }
+}
+
+.l-constrained {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main,
+[role="main"] {
+  padding: 1rem;
+  @include tablet {
+    padding: 3rem;
+  }
+}
+
+[role="contentinfo"] {
+  border-top: solid 1px #ccc;
+  padding: 2em;
+}
+

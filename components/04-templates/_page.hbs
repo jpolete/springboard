@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if IE]>
+<html class="ie" lang="en">
+<![endif]-->
+<!--[if !IE]>
+<html lang="en">
+<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <title>{{ _target.label }}</title>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <meta name="description" content="">
+
+  <link rel="stylesheet" href="../../styles/style.css" />
+
+  <!-- TODO: Populate Facebook Open Graph meta tags 
+       https://developers.facebook.com/docs/sharing/webmasters 
+  <meta property="og:site_name" content="Springboard" />
+  <meta property="og:url" content="http://example.com/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Article title" />
+  <meta property="og:description" content="Description for FB share" />
+  <meta property="og:image" content="http://example.com/image.jpg" />
+  END TODO -->
+
+  <!-- TODO: Generate icons and remove the placeholders. http://realfavicongenerator.net/ 
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  END TODO -->
+  
+</head>
+<body>
+  {{> @skip-link }}
+  {{{ yield }}}
+  <script src="../../js/main.min.js"></script>
+</body>
+</html>

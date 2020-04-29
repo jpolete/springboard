@@ -1,0 +1,21 @@
+{
+  "name": "springboard",
+  "version": "0.1.0",
+  "license": "MIT",
+  "dependencies": {
+    "@frctl/fractal": "^1.2.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "scripts": {
+    "dev": "gulp watch & fractal start --sync",
+    "build": "gulp && fractal build"
+  }
+}

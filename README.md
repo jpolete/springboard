@@ -1,61 +1,48 @@
 
-<img src="componentlib/public/images/logo-full@2x.png" alt="Springboard Logo" width="320">
+<img src="/blob/master/public/images/logo-full@2x.png" alt="Springboard Logo" width="320">
 
 # Overview
 
-Springboard is my starter kit of HTML, SASS and JavaScript for new web projects. It has a few sample files in `starters`, and a basic component library in `componentlib`.
+Springboard is a starter component library for new web projects—basic HTML, SASS and JavaScript.
 
 See a sample of the [component library](http://jpolete.github.io/springboard).
 
 ## Asset Processing
 
-For asset processing and browser refreshing, I use [Codekit](https://incident57.com/codekit/). If you use the terminal or another tool to compile assets, here are the two main assets that need processing.
+Asset processing is done by gulp. 
 
-- `sass/styles.scss` should be processed to `public/style.css`
-- `js/main.js` should be processed to `public/js/main.min.js`. (see main.js comments for includes.)
-
-
-## Polyfills
-
-At one time I had grunt set up to download and then copy third party libaries, but it seems ridiculous to use npm to install thousands of lines of code just to download and copy a few libraries that you may or may not use.
-
-Here are some polyfills you should consider using. In fact, the default page template at `components/04-templates/_page.hbs` expects both of these. Save them to `public/js/lib`:
-
-- [HTML5 Shiv](https://github.com/aFarkas/html5shiv) -> `componentlib/public/js/lib/html5shiv.min.js`
-- [Picturefill](https://github.com/scottjehl/picturefill) -> `componentlib/public/js/lib/picturefill.min.js`
-
+- Input: `sass/styles.scss` => Output: `public/style.css`
+- Input: `js/main.js` => Output: `public/js/main.min.js` 
 
 ## Getting Started
 
-The pattern library is built using [Fractal](https://github.com/frctl/fractal). If you’ve never installed it before, open a shell and enter this at the prompt. You only need to do this once per machine.
+The pattern library is built using [Fractal](https://github.com/frctl/fractal). 
+
+Install Fractal if it's not installed already.
 
 ```
 $ npm i -g @frctl/fractal
 ```
 
-In the project folder, `cd` into the `componentlib` directory, and install Fractal’s dependencies.
+Install project dependencies.
 
 ```
 $ npm install 
 ```
 
-Finally, start the server like this.
+## Commands
+
+Start a development environment. The development environment processes SASS and JavaScript files automatically and they're updated and runs a Fractal server (which includes live reloading in the browser: [localhost:3000](http://localhost:3000))
 
 ```
-$ fractal start --sync
+$ npm run dev
 ```
 
-Browse to [localhost:3000](http://localhost:3000) to view the pattern library. 
+To build a static pattern library for hosting.
+
+```
+$ npm run build
+```
 
 Check out the [Fractal documentation](http://fractal.build/) for full details on building patterns.
-
-
-## Other Stuff
-
-### Starter Files
-
-The “starters” folder has a couple of files in it that may be helpful depending on your project.
-
-- sample.htaccess
-- sample-functions.php (for Wordpress)
 

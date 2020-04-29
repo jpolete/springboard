@@ -1,0 +1,152 @@
+
+// 
+// Global Variables & Mixins
+// 
+
+// Font attributes
+$font-size-base: 16px;
+$line-height: 1.4rem;
+$font-stack-sans: "Helvetica Neue", Helvetica, Verdana, sans-serif;
+$font-stack-serif: Georgia, serif;
+$font-stack-mono: "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+$font-stack-form-ui: $font-stack-sans;
+
+
+// Colors
+
+// Palette
+$color-cerulean: #00a4de;
+$color-lime-green: #29cc29;
+$color-tropical-blue: #c5e0fb;
+$color-soft-black: #33363b;
+$color-orient: #066085;
+$color-axolotl: #4b6b4b;
+$color-yellow-metal: #6c6c3a;
+$color-red: #c03333;
+
+// Semantic
+$color-focus: $color-cerulean;
+$color-active: $color-cerulean;
+$color-link: $color-cerulean;
+$color-link-visited: #ccc;
+$color-text-select: $color-tropical-blue;
+
+$color-info: $color-orient;
+$color-success: $color-axolotl;
+$color-warning: $color-yellow-metal;
+$color-error: $color-red;
+
+$color-selected-box: #198bed;
+$color-btn: $color-cerulean;
+$color-btn-highlight: lighten($color-cerulean, 5%);
+
+$color-font: $color-soft-black;
+
+$toggle-color: $color-lime-green;
+
+// Flexible grid values
+$col-count: 12;
+$gutter: 2;
+$col: (100 - ($gutter * ($col-count - 1))) / $col-count;
+
+
+// Device classes / named breakpoints
+$bigphone: 31.25em; //  500/16
+$reader: 37.5em;    //  600/16
+$tablet: 48em;      //  768/16
+$traditional: 64em; // 1024/16
+$large: 87.5em;     // 1400/16
+
+
+// Breakpoint Mixin: Big Phone
+@mixin bigphone {
+  @media screen and (min-width: $bigphone) {
+    @content;
+  }
+}
+
+// Breakpoint Mixin: Reader
+@mixin reader {
+  @media screen and (min-width: $reader) {
+    @content;
+  }
+}
+
+// Breakpoint Mixin: Tablet
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+// Breakpoint Mixin: Traditional
+@mixin traditional {
+  @media screen and (min-width: $traditional) {
+    @content;
+  }
+}
+
+// Breakpoint Mixin: Large Screen
+@mixin large {
+  @media screen and (min-width: $large) {
+    @content;
+  }
+}
+
+// Standard micro clearfix
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+// Flexible Grids: Row
+@mixin row() {
+  display: block;
+  width: 100%;
+  @include clearfix;
+}
+
+// Flexible Grides: Column(s)
+@mixin span-cols($count) {
+  float: left;
+  width: #{$col * $count + $gutter * ($count - 1)}#{"%"};
+  margin-right: #{$gutter}#{"%"};
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@mixin progress-bar($color, $bg) {
+  border-radius: .15em;
+  height: 1rem;
+  width: 100%;
+  color: $color;
+  background-color: $bg;
+  overflow: hidden;
+  appearance: none;
+
+  &::-webkit-progress-inner-element {
+    border: none;
+  }
+
+  &::-webkit-progress-bar {
+    background-color: $bg;
+  }
+
+  &::-webkit-progress-value {
+    background-color: $color;
+  }
+
+  &::-moz-progress-bar {
+    background-color: $color;
+  }
+
+  &::ms-fill {
+    background-color: $color;
+  }
+}
+
