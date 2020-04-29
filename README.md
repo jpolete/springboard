@@ -1,5 +1,5 @@
 
-<img src="/blob/master/public/images/logo-full@2x.png" alt="Springboard Logo" width="320">
+<img src="https://github.com/jpolete/springboard/blob/develop/public/images/logo-full@2x.png?raw=true" alt="Springboard Logo" width="320">
 
 # Overview
 
