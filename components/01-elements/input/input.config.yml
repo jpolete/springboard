@@ -1,0 +1,101 @@
+title: Input
+status: ready
+default: Text
+context:
+  name: input
+  value: 
+  type: text
+  id: inputid
+  label: 
+    for: inputid
+    text: label
+  placeholder: placeholder
+variants:
+  - name: Email
+    context:
+      type: email
+      label: 
+        text: Email
+      placeholder: you@example.com
+  - name: File
+    context:
+      type: file
+      label: 
+        text: Upload File
+  - name: Number
+    context:
+      label: 
+        text: Number
+      type: number
+      min: 0
+      max: 100
+      step: 10
+  - name: Password
+    context:
+      type: password
+      label:
+        text: Password
+  - name: Search
+    context:
+      type: search
+      label:
+        text: Search
+  - name: Tel
+    context:
+      type: tel
+      label: 
+        text: Phone
+      placeholder: (555) 555-5555
+  - name: URL
+    context:
+      type: url
+      label: 
+        text: URL
+      placeholder: https://example.com
+  - name: Radio Button
+    context:
+      type: radio
+      label:
+        text: Radio button
+      labelAfter: true
+  - name: Checkbox
+    context:
+      type: checkbox
+      label:
+        text: Checkbox
+      labelAfter: true
+  - name: Date
+    context:
+      type: date
+      label:
+        text: Date
+  - name: Time
+    context:
+      type: time
+      label:
+        text: Time
+  - name: Color
+    context:
+      type: color
+      labelAfter: true
+      value: "#2886ff"
+      label: 
+        text: Select a Color
+  - name: Range
+    context:
+      label:
+        text: Range
+      type: range
+      min: 0
+      max: 10
+  - name: Disabled
+    context:
+       disabled: true
+       value: This field is disabled
+  - name: Validation Styling
+    context:
+      label:
+        text: Four-digit year (pattern attribute validation)
+      placeholder: 2001
+      pattern: "\\d{4}"
+      type: text

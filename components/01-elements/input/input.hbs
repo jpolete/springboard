@@ -1,0 +1,14 @@
+{{#unless labelAfter }}{{> @label label }}{{/unless}}
+<input 
+  type="{{ type }}" 
+  id="{{ id }}" 
+  name="{{ name }}" 
+  value="{{ value }}" 
+  placeholder="{{ placeholder }}"
+  {{#if disabled }}disabled{{/if}}
+  {{#if pattern }}pattern="{{ pattern }}"{{/if}}
+  {{#if required }}required{{/if}}
+  {{#if min }}min="{{ min }}"{{/if}} 
+  {{#if max }}max="{{ max }}"{{/if}} 
+  {{#if step }}step={{ step }}{{/if}} />
+{{#if labelAfter }}{{> @label label }}{{/if}}

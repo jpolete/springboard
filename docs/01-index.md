@@ -16,5 +16,6 @@ Much of the usability and accessibility ideas were taken from Heydon Pickering's
 
 Other great resources:
 
+- [Mozilla HTML Elements Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 - [The A11y Project](https://a11yproject.com/)
 - [WAI ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices-1.1)
