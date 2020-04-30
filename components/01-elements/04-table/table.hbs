@@ -1,0 +1,27 @@
+<div 
+  class="table-{{modifier}}"
+  {{#if tabindex}}tabindex="{{ tabindex }}"{{/if}}
+  {{#if role}}role="{{ role }}"{{/if}} 
+  {{#if ariaLabelledBy}}aria-labelledby="{{ ariaLabelledBy }}"{{/if}}>
+  <table>
+    <caption {{#if captionId}}id="{{ captionId }}"{{/if}}>{{ caption }}</caption>
+    <thead>
+      <tr>
+        {{#each header}}
+        <th {{#if class}}class="{{ class }}" {{/if}}>{{ text }}</th>
+        {{/each}}
+      </tr>
+    </thead>
+    <tbody>
+      {{#each row}}
+      <tr>
+        {{#each col}}
+        <td 
+          {{#if ../../dataLabels}}data-label="{{#with (lookup ../../header @index) }}{{text}}{{/with}}"{{/if}} 
+          {{#if class}}class="{{ class }}" {{/if}}> {{ text }} </td>
+        {{/each}}
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

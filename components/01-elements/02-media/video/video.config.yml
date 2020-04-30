@@ -1,0 +1,8 @@
+context:
+  poster: "../../video/queen-delightful-alert.png"
+  track: 
+    src: "../../video/queen-delightful-alert.vtt"
+    lang: "en"
+  source:
+    - "../../video/queen-delightful-alert.mp4"
+  alt: "Your browser does not support HTML5 video"

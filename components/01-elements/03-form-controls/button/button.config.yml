@@ -44,3 +44,4 @@ variants:
     context:
       modifier: disabled
       text: Disabled
+      disabled: true

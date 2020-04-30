@@ -1,0 +1,86 @@
+
+table {
+  width: 100%;
+  padding: 0;
+  margin: 1em 0;
+  font-size: .9em;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+thead,
+tbody,
+tfoot {
+  width: 100%;
+}
+
+th, td {
+  font-family: $font-stack-sans;
+  vertical-align: top;
+  text-align: left;
+  border-bottom: solid 1px #ccc;
+  padding: $font-size-base/2 $font-size-base;
+}
+
+tr:nth-child(even) th,
+tr:nth-child(even) td {
+  background: #f3f3f3;
+}
+
+th {
+  font-weight: bold;
+}
+
+caption {
+  color: #888;
+  caption-side: top;
+  text-align: left;
+}
+
+@media screen and (max-width: 37.5em) {
+  .table-linearizable {
+    thead {
+      display: none;
+    }
+    tr {
+      display: block;
+      padding: .4em;
+      margin: 0 0 1em;
+      border: solid 1px #ccc;
+      border-radius: .4em;
+
+      &:nth-child(even) td {
+        background: transparent;
+      }
+    }
+    td {
+      display: block;
+      padding: .6em;
+      border-bottom: dotted 1px #ccc;
+      text-align: right;
+
+      &:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+      }
+
+      &:last-child {
+        border: 0;
+      }
+    }
+  }
+}
+
+.table-scroll {
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+th.numeric,
+td.numeric {
+  text-align: right;
+}

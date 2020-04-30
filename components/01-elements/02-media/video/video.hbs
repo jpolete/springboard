@@ -1,0 +1,7 @@
+<video controls poster="{{ poster }}">
+  {{#each source }}
+  <source src="{{ this }}" type="video/mp4">
+  {{/each}}
+  <track kind="subtitles" src="{{ track.src }}" srclang="{{ track.lang }}" />
+  {{ alt }}
+</video>

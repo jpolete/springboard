@@ -1,0 +1,60 @@
+context:
+  caption: Artists! Albums! Years! Formats!
+  header:
+    - text: Artist
+    - text: Album
+    - text: Year
+      class: numeric
+    - text: Digital
+      class: numeric
+    - text: Vinyl
+      class: numeric
+  row:
+    - col:
+        - text: Flaming Lips
+        - text: The Soft Bulletin
+        - text: 1999
+          class: numeric
+        - text: $9.99
+          class: numeric
+        - text: $22.99
+          class: numeric
+    - col:
+        - text: Nirvana
+        - text: Bleach
+        - text: 1991
+          class: numeric
+        - text: $8.99
+          class: numeric
+        - text: $20.99
+          class: numeric
+    - col:
+        - text: Leonard Cohen
+        - text: Old Ideas
+        - text: 2012
+          class: numeric
+        - text: $9.99
+          class: numeric
+        - text: $23.99
+          class: numeric
+    - col:
+        - text: Run the Jewels
+        - text: RTJ 4 🤜🏿 👈🏼
+        - text: 2020
+          class: numeric
+        - text: $0.00
+          class: numeric
+        - text: $24.99
+          class: numeric
+variants:
+  - name: Linear
+    context:
+      modifier: linearizable
+      dataLabels: true
+  - name: Horizontal Scroll
+    context:
+      modifier: scroll
+      tabindex: "0"
+      role: group
+      ariaLabelledBy: caption
+      captionId: caption
