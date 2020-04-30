@@ -2,7 +2,7 @@
 title: Springboard
 ---
 
-Springboard is an HTML, CSS (SASS), and JavaScript starter kit for new projects. Base styles are provided for most common HTML elements. Additionally some common UI elements are defined as "modules"—things like button styles, a flexible grid, common social media icons, form element layouts, notice boxes, etc.
+Springboard is an HTML, CSS (SASS), and JavaScript starter kit for new projects. Base styles are provided for most common HTML elements. Additionally some common UI elements are defined as "modules"—things like common social media icons, notice boxes, etc.
 
 ## Technology
 
