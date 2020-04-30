@@ -367,7 +367,7 @@ select,
 textarea {
   display: inline-block;
   width: 100%;
-  padding: .5em;
+  padding: .75em;
   border: solid 1px #999;
   border-radius: .25em; 
   box-shadow: inset 0 0 2px rgba(0,0,0,.2);
@@ -436,7 +436,7 @@ input[type="color"] {
 
 input[type="radio"] {
   border: solid 1px #999;
-  font-size: 1.2em;
+  font-size: 1em;
   height: 1em;
   width: 1em;
   border-radius: 50%;
@@ -453,7 +453,7 @@ input[type="radio"] {
 input[type="checkbox"] {
   border: solid 1px #999;
   border-radius: .2em;
-  font-size: 1em;
+  font-size: 1.1em;
   height: 1em;
   width: 1em;
   line-height: 1;
@@ -476,14 +476,19 @@ input[type="checkbox"] {
   margin: 0 0 .15em;
 }
 
-input[type="radio"]:checked,
 input[type="checkbox"]:checked {
   background: 
     $color-selected-box 
-    url('data:image/svg+xml;utf8,<svg width="19" height="19" xmlns="http://www.w3.org/2000/svg"><path d="M3.58 10.936l1.86-1.71L7.5 12l6.848-7.407 1.484 1.736L7.5 15.46l-3.92-4.524z" fill="#fff"/></svg>')
+    url('data:image/svg+xml;utf8,<svg width="19" height="19" xmlns="http://www.w3.org/2000/svg"><path d="M3.58 10.936l1.86-1.71L7.5 12l6.848-7.407 1.484 1.736L7.5 15.46l-3.92-4.524z" fill="white"/></svg>')
     50% 50%
     no-repeat;
   border-color: $color-selected-box;
+}
+
+input[type="radio"]:checked {
+  border-color: $color-selected-box;
+  background: $color-selected-box;
+  box-shadow: inset 0 0 0 3px #fff;
 }
 
 input[type="email"]:valid,

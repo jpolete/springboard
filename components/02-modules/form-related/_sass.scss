@@ -71,21 +71,6 @@
 
 
 /*
-  Input Hints
-
-  Use input hints to offer hints or instructions to help users complete a form field.
-*/
-.input-hint {
-  display: block;
-  padding: 0 .4em;
-  margin: .5em 0 0;
-  color: #999;
-  font-size: 85%;
-  font-family: $font-stack-form-ui;
-}
-
-
-/*
   Error Fields 
 
   When validation fails for an input, wrap the label and 

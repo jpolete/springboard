@@ -1,0 +1,8 @@
+notes: Use input tips to offer tips or instructions to help users complete a form field.
+context:
+  input:
+    id: input
+    name: input
+  tip:
+    text: Tip normally shown directly below an input field.
+    id: inputtip
