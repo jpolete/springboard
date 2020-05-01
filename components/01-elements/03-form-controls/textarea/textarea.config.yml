@@ -1,0 +1,6 @@
+context:
+  id: textarea
+  name: textarea
+  label:
+    for: textarea
+    text: Text area

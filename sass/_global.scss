@@ -93,6 +93,29 @@ $large: 87.5em;     // 1400/16
   }
 }
 
+// Styles common to all form inputs and select
+%input {
+  display: inline-block;
+  width: 100%;
+  padding: .75em;
+  border: solid 1px #999;
+  border-radius: .25em; 
+  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+  outline: 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: $color-font;
+  background: #fff;
+  appearance: none;
+}
+
+%inputfocus {
+  border-color: $color-focus;
+  box-shadow: none;
+  outline: 0;
+}
+
+
 // Standard micro clearfix
 @mixin clearfix {
   &::after {

@@ -1,0 +1,6 @@
+{{ render '@label' label }}
+<textarea 
+  id="{{ id }}" 
+  name="{{ name }}" 
+  cols="{{#if cols}}{{ cols }}{{else}}30{{/if}}" 
+  rows="{{#if rows}}{{ rows }}{{else}}10{{/if}}"></textarea>

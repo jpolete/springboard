@@ -1,0 +1,14 @@
+context:
+  label:
+    text: "Choose Your Beverage"
+    for: beverages
+  id: beverages
+  option:
+    - text: 
+      value:
+    - text: Coffee
+      value: 1
+    - text: Tea
+      value: 2
+    - text: Water
+      value: 3

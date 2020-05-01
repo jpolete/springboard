@@ -11,21 +11,8 @@ input[type="number"],
 input[type="email"], 
 input[type="url"], 
 input[type="search"], 
-input[type="tel"], 
-select, 
-textarea {
-  display: inline-block;
-  width: 100%;
-  padding: .75em;
-  border: solid 1px #999;
-  border-radius: .25em; 
-  box-shadow: inset 0 0 2px rgba(0,0,0,.2);
-  outline: 0;
-  font-size: inherit;
-  font-family: inherit;
-  color: $color-font;
-  background: #fff;
-  appearance: none;
+input[type="tel"] {
+  @extend %input;
 }
 
 input::placeholder {
@@ -64,12 +51,8 @@ input[type="number"]:focus,
 input[type="email"]:focus, 
 input[type="url"]:focus, 
 input[type="search"]:focus, 
-input[type="tel"]:focus, 
-select:focus, 
-textarea:focus {
-  border-color: $color-focus;
-  box-shadow: none;
-  outline: 0;
+input[type="tel"]:focus {
+  @extend %inputfocus;
 }
 
 input[type="color"]:focus, 

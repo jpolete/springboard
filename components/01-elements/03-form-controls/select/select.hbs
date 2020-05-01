@@ -1,0 +1,6 @@
+{{render '@label' label }}
+<select name="{{ name }}" id="{{ id }}">
+  {{#each option}}
+  <option value="{{ value }}">{{ text }}</option>
+  {{/each}}
+</select>
