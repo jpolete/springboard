@@ -1,0 +1,18 @@
+collated: true
+context:
+  text: Link
+  url: "https://kljasdfkljasasdfasfasdfasklkjikuiou.com"
+  separator: "<br>"
+variants:
+  - name: visited
+    context:
+      modifier: visited
+  - name: hover
+    context:
+      modifier: hover
+  - name: focus
+    context:
+      modifier: focus
+  - name: active
+    context:
+      modifier: active

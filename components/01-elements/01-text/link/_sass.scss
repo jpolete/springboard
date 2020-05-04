@@ -1,0 +1,33 @@
+
+a {
+  color: $color-link;
+  text-decoration: underline;
+
+  &:hover, &.hover,
+  &:focus, &.focus,
+  &:active, &.active {
+    text-decoration: none;
+  }
+
+  &:visited,
+  &.visited {
+    color: lighten($color-link, 20%);
+  }
+
+  &:hover,
+  &.hover {
+    background: none;
+  }
+
+  &:focus,
+  &.focus {
+    outline: dotted 1px #999;
+  }
+
+  &:active,
+  &.active {
+    outline: dotted 1px #999;
+    color: darken($color-link, 10%);
+  }
+
+}
