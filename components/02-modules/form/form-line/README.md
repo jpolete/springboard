@@ -1,3 +1,4 @@
-Form lines group form inputs together on a single line. Your `form-input` fractions should add up to a whole for any given line. 
+Form lines group form inputs together on a single line on larger viewports. Use child `div`s to wrap labels, inputs and other input-related elements. 
 
-For example a `form-line` might contain two `.form-input--half`s or it might contain one `.form-input--half` and two `.form-input--fourth`s.
+Child `div`s can include a `portion-1`, `portion-2`, or `portion-3` class to indicate the fraction of the line that the child should take up. No class is the same as `portion-1`.
+

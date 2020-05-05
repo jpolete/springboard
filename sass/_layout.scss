@@ -1,9 +1,19 @@
 
 [role="banner"] {
-  position: relative;
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,.95);
+
   @include tablet {
     height: 5rem;
-    background: #f3f3f3;
+    border-bottom: solid 1px #ccc;
+  }
+}
+
+@supports (backdrop-filter: blur(4px)) {
+  [role="banner"] {
+    background: rgba(255,255,255,.85);
+    backdrop-filter: blur(4px);
   }
 }
 
@@ -17,12 +27,12 @@ main,
 [role="main"] {
   padding: 1rem;
   @include tablet {
-    padding: 3rem;
+    padding: 2rem;
   }
 }
 
 [role="contentinfo"] {
   border-top: solid 1px #ccc;
-  padding: 2em;
+  padding: 2rem;
 }
 

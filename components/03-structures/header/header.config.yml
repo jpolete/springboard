@@ -2,7 +2,7 @@ context:
   nav:
     links:
       - url: "#"
-        text: "Pricing"
+        text: "Link 1"
         current: true
       - url: "#"
-        text: "Documentation"
+        text: "Link 2"

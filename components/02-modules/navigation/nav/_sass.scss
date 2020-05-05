@@ -1,6 +1,7 @@
 .nav {  
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .nav__items {
@@ -72,7 +73,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 1rem;
+    padding: 1rem 0;
     background: transparent;
   }
 
