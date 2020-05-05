@@ -1,0 +1,13 @@
+context:
+  msg: Your input is invalid because...
+  tip:
+    id: inputtip
+  input:
+    name: input
+    type: text
+    id: inputid
+    ariaDescribedby: inputtip
+    ariaInvalid: true
+    label: 
+      for: inputid
+      text: label

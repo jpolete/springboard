@@ -1,0 +1,11 @@
+<fieldset class="input-group">
+  <legend>{{ legend }}</legend>
+  <ul>
+    {{#each choices }}
+    <li>
+      <input type="radio" id="{{ this.id }}" name="{{ this.name }}" value="{{ this.value }}">
+      <label for="{{ this.id }}">{{ this.label }}</label>
+    </li>
+    {{/each}}
+  </ul>
+</fieldset>

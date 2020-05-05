@@ -1,0 +1,10 @@
+label: Primary Navigation
+context:
+  links:
+    - url: "#"
+      text: "Link 1"
+    - url: "#"
+      text: "Link 2"
+      current: true
+    - url: "#"
+      text: "Link 3"

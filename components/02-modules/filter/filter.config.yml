@@ -1,8 +1,0 @@
-context:
-  filters:
-    - id: Kentucky
-      name: state
-    - id: Indiana
-      name: state
-    - id: Tennessee
-      name: state

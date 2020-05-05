@@ -1,0 +1,16 @@
+label: Social Media Share
+context:
+  url: "https://localhost:3000"
+  twitter:
+    message: This is the pre-populated tweet text
+    via: jpolete
+    hashtags: somehashtag,anotherhashtag
+    related: "yourcompany,anotherrecommendation"
+  fb:
+    description: Description that will appear on Facebook post
+    title: Page or Article title
+    site: Springboard
+    image: "https://example.com/image.jpg"
+    appid: yourfacebookappidhere
+    type: article
+

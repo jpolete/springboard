@@ -1,0 +1,34 @@
+<!-- These Facebook Open Graph meta tags should go in the head of your page -->
+<meta property="og:site_name" content="{{ fb.site }}" />
+<meta property="og:url" content="{{ url }}" />
+<meta property="og:type" content="{{ fb.type }}" />
+<meta property="og:title" content="{{ fb.title }}" />
+<meta property="og:description" content="{{ fb.description }}" />
+<meta property="og:image" content="{{ fb.image }}" />
+{{#if fb.appid}}
+<meta property="fb:app_id" content="{{ fb.appid }}" />
+{{/if}}
+
+
+<div class="social-share-bar">
+
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
+
+  <div class="fb-share-button" 
+    data-href="{{ fb.url }}" 
+    data-layout="button" 
+    data-size="small">
+    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ url }}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share to Facebook</a>
+  </div>
+
+  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" 
+    data-text="{{ twitter.message }}" 
+    {{#if url }}data-url="{{ url }}"{{/if}}
+    {{#if twitter.via}}data-via="{{ twitter.via }}"{{/if}}
+    {{#if twitter.hashtags}}data-hashtags="{{ twitter.hashtags }}"{{/if}}
+    {{#if twitter.related}}data-related="{{ twitter.related }}"{{/if}}
+    data-show-count="false">Tweet</a>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+</div>

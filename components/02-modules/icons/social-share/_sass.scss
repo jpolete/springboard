@@ -1,0 +1,10 @@
+
+.social-share-bar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  
+  > * {
+    margin-right: .25em;
+  }
+}

@@ -5,6 +5,8 @@
   name="{{ name }}" 
   value="{{ value }}" 
   placeholder="{{ placeholder }}"
+  {{#if ariaDescribedby }}aria-describedby="{{ ariaDescribedby }}"{{/if}}
+  {{#if ariaInvalid }}aria-invalid="{{ ariaInvalid }}"{{/if}}
   {{#if disabled }}disabled{{/if}}
   {{#if pattern }}pattern="{{ pattern }}"{{/if}}
   {{#if required }}required{{/if}}

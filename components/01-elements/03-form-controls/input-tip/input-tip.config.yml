@@ -1,0 +1,15 @@
+notes: Use input tips to offer tips or instructions to help users complete a form field.
+context:
+  input:
+    name: input
+    value: 
+    type: text
+    id: inputid
+    ariaDescribedby: inputtip
+    label: 
+      for: inputid
+      text: label
+  placeholder: placeholder
+  tip:
+    text: Optional tip normally shown directly below an input field.
+    id: inputtip

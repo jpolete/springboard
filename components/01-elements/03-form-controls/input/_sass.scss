@@ -152,3 +152,8 @@ input[disabled] {
   color: #888;
   box-shadow: none;
 }
+
+input[aria-invalid] {
+  border-color: $color-error !important;
+  background: #fee !important;
+}

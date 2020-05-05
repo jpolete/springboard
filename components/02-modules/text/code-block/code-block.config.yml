@@ -1,0 +1,9 @@
+label: Code Block
+notes: A block of source code.
+context:
+  code: >
+    function ( param ) {
+      var foo = param;
+      doSomething( foo );
+    }
+
