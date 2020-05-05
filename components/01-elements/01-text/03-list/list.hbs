@@ -1,0 +1,12 @@
+<{{#if ordered}}ol{{else}}ul{{/if}}>
+  {{#each items}}
+  <li>{{ item.text }}
+    {{~#if item.sublist~}}
+    <{{#if item.sublist.ordered}}ol{{else}}ul{{/if}}>
+      {{#each item.sublist.items}}
+      <li>{{ item.text }}</li>
+      {{/each}}
+    </{{#if item.sublist.ordered}}ol{{else}}ul{{/if}}>
+    {{/if}}</li>
+  {{/each}}
+</{{#if ordered}}ol{{else}}ul{{/if}}>

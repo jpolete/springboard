@@ -1,0 +1,12 @@
+<{{ wrapper }} class="intrinsic intrinsic--{{ modifier }}">
+  {{#if sources}}
+  {{#each sources}}
+  <source media="{{ media }}" srcset="{{ srcset }}">
+  {{/each}}
+  {{/if}}
+  {{#if iframe}}
+  <iframe width="{{ iframe.width }}" height="{{ iframe.height }}" src="{{ src }}" frameborder="0" allowfullscreen></iframe>
+  {{else}}
+  <img {{#if srcset}}srcset="{{ srcset }}"{{/if}} src="{{ src }}" alt="{{ alt }}">
+  {{/if}}
+</{{ wrapper }}>

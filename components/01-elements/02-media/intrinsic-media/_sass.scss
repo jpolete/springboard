@@ -1,10 +1,4 @@
-/* 
-  Instrinsic Media Size
 
-  Defines image or iframe-embedded video size even before the media loads. Minimizes page repaints, reflows and maintains aspect ratio on screen resize.
-
-  http://daverupert.com/2015/12/intrinsic-placeholders-with-picture/
-*/
 .intrinsic {
 
   // Make sure wrapper is set to block
@@ -31,6 +25,7 @@
   }
 
   // Force the item to fill the intrinsic box
+  > .intrinsic__item,
   > img,
   > iframe,
   > embed,

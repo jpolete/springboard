@@ -1,0 +1,36 @@
+default: Square
+context:
+  wrapper: div
+  modifier: square
+  src: http://placehold.it/600x600?text=square
+  alt: Square image
+variants:
+  - name: "4x3"
+    context:
+      src: http://placehold.it/1200x900?text=4x3
+      alt: "4x3 Image"
+      modifier: "4x3"
+  - name: "16x9"
+    context:
+      modifier: "16x9"
+      src: http://placehold.it/1600x900?text=16x9
+      alt: 16x9 image
+  - name: Picture Element
+    context:
+      wrapper: picture
+      modifier: "4x3"
+      src: "http://placehold.it/800x600?text=Zoomed+/+Cropped+Photo"
+      alt: Square image
+      sources:
+        - media: "(min-width: 800px)"
+          srcset: "http://placehold.it/1600x1200?text=Large+Detailed+Photo"
+  - name: iFrame
+    context: 
+      modifier: "16x9"
+      src: "https://www.youtube.com/embed/XnBbjc5hmho"
+      iframe: 
+        width: 560
+        height: 315
+      
+  
+ 

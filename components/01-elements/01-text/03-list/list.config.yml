@@ -1,0 +1,75 @@
+default: unordered
+context:
+  items:
+    - item: 
+        text: Item
+    - item: 
+        text: Item
+    - item: 
+        text: Item
+    - item: 
+        text: Item
+        sublist:
+          items:
+            - item: 
+                text: Subitem
+            - item: 
+                text: Subitem
+            - item: 
+                text: Subitem
+    - item: 
+        text: Item
+    - item: 
+        text: Item
+variants:
+  - name: ordered
+    context:
+      ordered: true
+      items:
+        - item: 
+            text: Item
+        - item: 
+            text: Item
+        - item: 
+            text: Item
+        - item: 
+            text: Item
+            sublist:
+              ordered: true
+              items:
+                - item: 
+                    text: Subitem
+                - item: 
+                    text: Subitem
+                - item: 
+                    text: Subitem
+        - item: 
+            text: Item
+        - item: 
+            text: Item
+  - name: mixed
+    context:
+      ordered: true
+      items:
+        - item: 
+            text: Ordered Item
+        - item: 
+            text: Ordered Item
+        - item: 
+            text: Ordered Item
+        - item: 
+            text: Ordered Item
+            sublist:
+              ordered: false
+              items:
+                - item: 
+                    text: Unordered Subitem
+                - item: 
+                    text: Unordered Subitem
+                - item: 
+                    text: Unordered Subitem
+        - item: 
+            text: Item
+        - item: 
+            text: Item
+
