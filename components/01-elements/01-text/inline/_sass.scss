@@ -32,3 +32,22 @@ mark {
 abbr {
   border-bottom: dotted 1px #ccc;
 }
+
+q:before {
+  content: "“";
+}
+
+q:after {
+  content: "”";
+}
+
+code {
+  background: #f3f3f3;
+  padding: 0 .3em;
+  border: solid 1px #ddd;
+  border-radius: .2em;
+  font-family: $font-stack-mono;
+  font-size: 90%;
+  font-style: normal;
+  text-transform: none;
+}

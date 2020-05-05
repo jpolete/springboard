@@ -24,6 +24,8 @@ $color-axolotl: #4b6b4b;
 $color-yellow-metal: #6c6c3a;
 $color-red: #c03333;
 
+$color-primary: $color-cerulean;
+
 // Semantic
 $color-focus: $color-cerulean;
 $color-active: $color-cerulean;
@@ -140,36 +142,6 @@ $large: 87.5em;     // 1400/16
 
   &:last-child {
     margin-right: 0;
-  }
-}
-
-@mixin progress-bar($color, $bg) {
-  border-radius: .15em;
-  height: 1rem;
-  width: 100%;
-  color: $color;
-  background-color: $bg;
-  overflow: hidden;
-  appearance: none;
-
-  &::-webkit-progress-inner-element {
-    border: none;
-  }
-
-  &::-webkit-progress-bar {
-    background-color: $bg;
-  }
-
-  &::-webkit-progress-value {
-    background-color: $color;
-  }
-
-  &::-moz-progress-bar {
-    background-color: $color;
-  }
-
-  &::ms-fill {
-    background-color: $color;
   }
 }
 

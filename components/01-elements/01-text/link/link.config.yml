@@ -16,3 +16,6 @@ variants:
   - name: active
     context:
       modifier: active
+  - name: new tab
+    context:
+      target: "_blank"

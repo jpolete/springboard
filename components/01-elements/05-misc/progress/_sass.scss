@@ -1,0 +1,31 @@
+$color-progress-bg: #ddd;
+
+progress {
+  border-radius: .15em;
+  height: 1rem;
+  width: 100%;
+  color: $color-primary;
+  background-color: $color-progress-bg;
+  overflow: hidden;
+  appearance: none;
+
+  &::-webkit-progress-inner-element {
+    border: none;
+  }
+
+  &::-webkit-progress-bar {
+    background-color: $color-progress-bg;
+  }
+
+  &::-webkit-progress-value {
+    background-color: $color-primary;
+  }
+
+  &::-moz-progress-bar {
+    background-color: $color-primary;
+  }
+
+  &::ms-fill {
+    background-color: $color-progress-bg;
+  }
+}
