@@ -1,7 +1,3 @@
-
-// 1.25 Scale
-// https://type-scale.com/?size=16&scale=1.250&text=A%20Visual%20Type%20Scale&font=Merriweather&fontweight=600&bodyfont=Merriweather&bodyfontweight=400&lineheight=1.65&backgroundcolor=white&fontcolor=%23333&preview=false
-
 h1,
 h2,
 h3,
@@ -12,29 +8,78 @@ h6 {
   color: $color-soft-black;
   font-weight: bold;
   line-height: 1.2;
-  margin: 2rem 0 1rem;
+  margin: 2rem 0 0.5rem;
 }
 
-h1, .h1 {
-  font-size: 3.052em; 
+h1,
+.h1 {
 }
 
-h2, .h2 {
-  font-size: 2.441em;
+
+// 1.125 Scale
+// https://type-scale.com/?size=16&scale=1.125&text=A%20Visual%20Type%20Scale&font=Merriweather&fontweight=600&bodyfont=Merriweather&bodyfontweight=400&lineheight=1.65&backgroundcolor=white&fontcolor=%23333&preview=false
+
+h1,
+.h1 {
+  font-size: 1.802em;
 }
 
-h3, .h3 {
-  font-size: 1.953em;
+h2,
+.h2 {
+  font-size: 1.602em;
 }
 
-h4, .h4 {
-  font-size: 1.563em;
+h3,
+.h3 {
+  font-size: 1.424em;
 }
 
-h5, .h5 {
+h4,
+.h4 {
+  font-size: 1.266em;
+}
+
+h5,
+.h5 {
   font-size: 1.125em;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 1em;
+}
+
+// 1.25 Scale
+// https://type-scale.com/?size=16&scale=1.250&text=A%20Visual%20Type%20Scale&font=Merriweather&fontweight=600&bodyfont=Merriweather&bodyfontweight=400&lineheight=1.65&backgroundcolor=white&fontcolor=%23333&preview=false
+
+@include traditional {
+  h1,
+  .h1 {
+    font-size: 3.052em;
+  }
+
+  h2,
+  .h2 {
+    font-size: 2.441em;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.953em;
+  }
+
+  h4,
+  .h4 {
+    font-size: 1.563em;
+  }
+
+  h5,
+  .h5 {
+    font-size: 1.125em;
+  }
+
+  h6,
+  .h6 {
+    font-size: 1em;
+  }
 }
