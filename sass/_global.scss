@@ -46,12 +46,6 @@ $color-font: $color-soft-black;
 
 $toggle-color: $color-lime-green;
 
-// Flexible grid values
-$col-count: 12;
-$gutter: 2;
-$col: (100 - ($gutter * ($col-count - 1))) / $col-count;
-
-
 // Device classes / named breakpoints
 $bigphone: 31.25em; //  500/16
 $reader: 37.5em;    //  600/16
@@ -118,30 +112,4 @@ $large: 87.5em;     // 1400/16
 }
 
 
-// Standard micro clearfix
-@mixin clearfix {
-  &::after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-}
-
-// Flexible Grids: Row
-@mixin row() {
-  display: block;
-  width: 100%;
-  @include clearfix;
-}
-
-// Flexible Grides: Column(s)
-@mixin span-cols($count) {
-  float: left;
-  width: #{$col * $count + $gutter * ($count - 1)}#{"%"};
-  margin-right: #{$gutter}#{"%"};
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
 
