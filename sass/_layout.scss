@@ -17,19 +17,7 @@
   }
 }
 
-.l-constrained {
-  max-width: 50rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-main,
-[role="main"] {
-  padding: 1rem;
-  @include tablet {
-    padding: 2rem;
-  }
-}
+main { }
 
 [role="contentinfo"] {
   border-top: solid 1px #ccc;

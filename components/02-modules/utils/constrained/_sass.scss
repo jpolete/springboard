@@ -3,3 +3,10 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.constrained--padded {
+  padding: 1rem;
+  @include tablet {
+    padding: 2rem;
+  }
+}
