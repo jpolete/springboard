@@ -5,7 +5,7 @@
 
 Springboard is a starter component library for new web projects—basic HTML, SASS and JavaScript.
 
-See a sample of the [component library](http://jpolete.github.io/springboard).
+See a sample of the [component library](https://jpolete.github.io/springboard).
 
 ## Getting Started
 
