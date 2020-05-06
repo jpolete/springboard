@@ -44,12 +44,12 @@ function processJs() {
 
 function watch() {
   gulp.watch(scss.allSass, processScss)
-    .on("change", function (event) {
-      console.log("File " + event.path + " was " + event.type + ", running tasks...");
+    .on("change", function (file) {
+      console.log("File " + file + " was changed, running tasks...");
     });
   gulp.watch(js.files, processJs)
-    .on("change", function (event) {
-      console.log("File " + event.path + " was " + event.type + ", running tasks...");
+    .on("change", function (file) {
+      console.log("File " + file + " was changed, running tasks...");
     });
 }
 
