@@ -1,31 +1,35 @@
 
 
-  <!-- These Facebook Open Graph meta tags should go in the head of your page -->
-  <meta property="og:site_name" content="Springboard" />
-  <meta property="og:url" content="http://example.com/" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Article title" />
-  <meta property="og:description" content="Description for FB share" />
-  <meta property="og:image" content="http://example.com/image.jpg" />
+<!-- These Facebook Open Graph meta tags should go in the head of your page -->
+<meta property="og:site_name" content="Springboard" />
+<meta property="og:url" content="https://localhost:3000" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Page or Article title" />
+<meta property="og:description" content="Description that will appear on Facebook post" />
+<meta property="og:image" content="https://example.com/image.jpg" />
+<meta property="fb:app_id" content="yourfacebookappidhere" />
 
 
-  <div class="social-share">
+<div class="social-share-bar">
 
-    <!-- Facebook Share Button: https://developers.facebook.com/docs/plugins -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
 
-    <div class="fb-share-button" data-href="http://example.com" data-layout="button"></div>
-
-    <!-- Twitter Share Button: https://about.twitter.com/resources/buttons#tweet -->
-    <a href="https://twitter.com/share" class="twitter-share-button"{count} data-text="This is the pre-populated tweet text" data-via="jpolete">Tweet</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-      
+  <div class="fb-share-button" 
+    data-href="" 
+    data-layout="button" 
+    data-size="small">
+    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://localhost:3000&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share to Facebook</a>
   </div>
+
+  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" 
+    data-text="This is the pre-populated tweet text" 
+    data-url="https://localhost:3000"
+    data-via="jpolete"
+    data-hashtags="somehashtag,anotherhashtag"
+    data-related="yourcompany,anotherrecommendation"
+    data-show-count="false">Tweet</a>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+</div>
 

@@ -1,0 +1,53 @@
+
+strong, b {
+  color: #333;
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+mark {
+  background: #ff0;
+  font-weight: 400;
+  font-style: normal;
+}
+
+abbr {
+  border-bottom: dotted 1px #ccc;
+}
+
+q:before {
+  content: "“";
+}
+
+q:after {
+  content: "”";
+}
+
+code {
+  background: #f3f3f3;
+  padding: 0 .3em;
+  border: solid 1px #ddd;
+  border-radius: .2em;
+  font-family: $font-stack-mono;
+  font-size: 90%;
+  font-style: normal;
+  text-transform: none;
+}

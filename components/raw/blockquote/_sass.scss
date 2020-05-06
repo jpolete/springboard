@@ -1,0 +1,17 @@
+
+blockquote {
+  border-left: solid 4px #ccc;
+  padding-left: 1.4em;
+  padding: 1em 1em 1em 1.4em;
+  // font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+blockquote footer {
+  font-style: italic;
+  font-size: 1rem;
+
+  &::before {
+    content: '- ';
+  }
+}

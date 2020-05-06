@@ -1,0 +1,20 @@
+ol, ul {
+  padding-left: 1.5em;
+}
+
+ol {
+  list-style: decimal outside;
+
+  ol {
+    list-style: lower-alpha outside;
+  }
+}
+
+li {
+  margin-bottom: $line-height/2;
+
+  > ol, ul {
+    margin-top: $line-height/2;
+    margin-bottom: $line-height/2;
+  }
+}

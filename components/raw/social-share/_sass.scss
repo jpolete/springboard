@@ -1,17 +1,10 @@
-/*
-  Social Share Buttons
 
-  Twitter and Facebook share buttons. For Twitter configuration see https://dev.twitter.com/web/tweet-button and https://about.twitter.com/resources/buttons. For Facebook see https://developers.facebook.com/docs/plugins/share-button
-
-  markup: social-media-share.html
-
-  Styleguide Modules.SocialSharing
-*/
-.social-share {
-  > span,
-  > div,
-  > iframe {
-    display: inline-block;
-    vertical-align: middle;
+.social-share-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  > * {
+    margin-right: .25em;
   }
 }

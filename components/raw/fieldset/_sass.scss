@@ -1,0 +1,18 @@
+
+fieldset {
+  border: solid 1px #ccc;
+  border-radius: .5em; 
+  padding: #{$line-height};
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+legend {
+  padding: 0 1em;
+  margin-left: -1em;
+  color: #333;
+  font-family: $font-stack-form-ui;
+  font-weight: bold;
+}

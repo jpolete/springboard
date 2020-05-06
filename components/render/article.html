@@ -1,0 +1,183 @@
+
+
+<header role="banner">
+  <div class="constrained">
+    <nav class="nav" role="navigation" aria-label="site">
+      <button hidden class="nav__menu-button">Menu</button>
+      <ul class="nav__items">
+        <li class="nav__item"><a class="nav__link" href="/" ><img src="../../images/logo-full.svg" alt="Home"></a></li>
+        <li class="nav__item selected"><a class="nav__link" href="#" >Link 1</a></li>
+        <li class="nav__item "><a class="nav__link" href="#" >Link 2</a></li>
+      </ul>
+    </nav>
+    <script>
+      (function() {
+        if ( window.matchMedia ) {
+          var button = document.querySelector('[aria-label="site"] button');
+          var menu = button.nextElementSibling;
+          var menuItems = menu.querySelectorAll( "li" );
+          button.hidden = false;
+    
+          button.addEventListener('click', function() {
+            var expanded = this.getAttribute('aria-expanded') === 'true';
+            expandMenu( !expanded )
+          });
+    
+          function expandMenu( expand ) {
+            button.setAttribute('aria-expanded', String(expand));
+            for ( var i = 0; i < menuItems.length; i++ ) {
+              if ( i != 0 ) {
+                menuItems[i].hidden = !expand;
+              }
+            }
+          }
+    
+          function handleResize() {
+            expandMenu( !mql.matches );
+          }
+    
+          var mql = window.matchMedia( "(max-width: 767px)" );
+          mql.addListener( handleResize );
+    
+          if ( mql.matches ) {
+            button.setAttribute('aria-expanded', 'false');
+            expandMenu( false );
+          }
+        }
+    
+      })();
+    </script>
+  </div>
+</header>
+
+
+<main id="main">
+  <div class="constrained constrained--padded">
+    <h1>First Level Heading / Title of the Page</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, iste amet tempora, eligendi exercitationem
+      recusandae officiis nostrum nobis eos, repellat unde quia deserunt maxime mollitia consequatur incidunt similique
+      eius? Eligendi?</p>
+
+    <h2>A Subheading</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam soluta non recusandae quo ab modi doloremque,
+      eveniet mollitia doloribus natus dolore optio hic illo aut quos libero inventore error. Nostrum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus consequuntur, recusandae odio, blanditiis
+      itaque, a provident ab ut molestias error vero veniam quos nesciunt libero placeat corrupti nihil nostrum natus.
+    </p>
+
+    <h3>Third Level Heading</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, voluptas! Tenetur obcaecati, facere
+      consectetur quas incidunt consequatur porro consequuntur dignissimos molestias magnam, expedita, ex quia. Modi
+      alias sequi officia nam!</p>
+
+    <h4>Fourth Level Heading</h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore nihil doloremque magnam, commodi sint perspiciatis reiciendis nisi enim ut placeat autem eaque cum dicta ducimus quasi molestiae officiis ullam fugit.</p>
+
+    <blockquote>
+  <p>No live organism can continue for long to exist sanely under conditions of absolute reality; even larks and katydids are supposed, by some, to dream. Hill House, not sane, stood by itself against its hills, holding darkness within; it had stood so for eighty years and might stand for eighty more. Within, walls continued upright, bricks met neatly, floors were firm, and doors were sensibly shut; silence lay steadily against the wood and stone of Hill House, and whatever walked there, walked alone.</p>
+
+  <footer>
+    Opening of <cite><a href="https://en.wikipedia.org/wiki/The_Haunting_of_Hill_House">The Haunting of Hill House</a></cite> by Shirley Jackson
+
+  </footer>
+</blockquote>
+
+
+    <h5>Fifth Level Heading</h5>
+    <div 
+  class="table-linearizable"
+  
+   
+  >
+  <table>
+    <caption >Artists! Albums! Years! Formats!</caption>
+    <thead>
+      <tr>
+        <th >Artist</th>
+        <th >Album</th>
+        <th class="numeric" >Year</th>
+        <th class="numeric" >Digital</th>
+        <th class="numeric" >Vinyl</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td 
+          data-label="Artist" 
+          > Flaming Lips </td>
+        <td 
+          data-label="Album" 
+          > The Soft Bulletin </td>
+        <td 
+          data-label="Year" 
+          class="numeric" > 1999 </td>
+        <td 
+          data-label="Digital" 
+          class="numeric" > $9.99 </td>
+        <td 
+          data-label="Vinyl" 
+          class="numeric" > $22.99 </td>
+      </tr>
+      <tr>
+        <td 
+          data-label="Artist" 
+          > Nirvana </td>
+        <td 
+          data-label="Album" 
+          > Bleach </td>
+        <td 
+          data-label="Year" 
+          class="numeric" > 1991 </td>
+        <td 
+          data-label="Digital" 
+          class="numeric" > $8.99 </td>
+        <td 
+          data-label="Vinyl" 
+          class="numeric" > $20.99 </td>
+      </tr>
+      <tr>
+        <td 
+          data-label="Artist" 
+          > Leonard Cohen </td>
+        <td 
+          data-label="Album" 
+          > Old Ideas </td>
+        <td 
+          data-label="Year" 
+          class="numeric" > 2012 </td>
+        <td 
+          data-label="Digital" 
+          class="numeric" > $9.99 </td>
+        <td 
+          data-label="Vinyl" 
+          class="numeric" > $23.99 </td>
+      </tr>
+      <tr>
+        <td 
+          data-label="Artist" 
+          > Run the Jewels </td>
+        <td 
+          data-label="Album" 
+          > RTJ 4 🤜🏿 👈🏼 </td>
+        <td 
+          data-label="Year" 
+          class="numeric" > 2020 </td>
+        <td 
+          data-label="Digital" 
+          class="numeric" > $0.00 </td>
+        <td 
+          data-label="Vinyl" 
+          class="numeric" > $24.99 </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  </div>
+</main>
+
+<footer role="contentinfo">
+  <div class="constrained">
+    <p class="centered fineprint">Springboard footer &copy; this year</p>
+  </div>
+</footer>
+

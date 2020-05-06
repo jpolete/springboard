@@ -1,81 +1,35 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 6]>
-<html class="ie ie6" lang="en-US">
+<!--[if IE]>
+<html class="ie" lang="en">
 <![endif]-->
-<!--[if IE 7]>
-<html class="ie ie7" lang="en-US">
+<!--[if !IE]>
+<html lang="en">
 <![endif]-->
-<!--[if IE 8]>
-<html class="ie ie8" lang="en-US">
-<![endif]-->
-<!--[if IE 9]>
-<html class="ie ie9" lang="en-US">
-<![endif]-->
-<!--[if !(IE 6) & !(IE 7) & !(IE 8) & !(IE 9)]><!-->
-<html lang="en-US">
-<!--<![endif]-->
 <head>
   <meta charset="utf-8" />
   <title>Default</title>
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-  <meta name="keywords" content="">
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../../styles/style.css" />
 
   <!-- TODO: Populate Facebook Open Graph meta tags 
        https://developers.facebook.com/docs/sharing/webmasters 
-
   <meta property="og:site_name" content="Springboard" />
   <meta property="og:url" content="http://example.com/" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Article title" />
   <meta property="og:description" content="Description for FB share" />
   <meta property="og:image" content="http://example.com/image.jpg" />
-
   END TODO -->
 
   <!-- TODO: Generate icons and remove the placeholders. http://realfavicongenerator.net/ 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   END TODO -->
-
-  <!--[if lte IE 9]>
-  <script src="/js/lib/html5shiv.min.js"></script>
-  <![endif]-->
   
-  <script>
-    // Async js loading... https://github.com/filamentgroup/loadJS
-    function loadJS( src, cb ) {
-      "use strict";
-      var ref = window.document.getElementsByTagName( "script" )[ 0 ],
-      script = window.document.createElement( "script" );
-      script.src = src;
-      script.async = true;
-      ref.parentNode.insertBefore( script, ref );
-      if ( cb && typeof( cb ) === "function" ) {
-        script.onload = cb;
-      }
-      return script;
-    }
-
-    // Cut-the-mustard / progressive enhancement
-    // http://timkadlec.com/2014/10/reducing-javascript-bloat-with-shoestring/
-    if ( "querySelector" in document && "addEventListener" in window ) {
-      document.documentElement.className += " enhanced";
-
-      // Picturefill polyfil
-      loadJS( "../../js/lib/picturefill.min.js" );
-
-      // Main JS file
-      loadJS( "../../js/main.min.js" );
-
-    }
-  </script> 
-
 </head>
 <body>
   
@@ -86,62 +40,67 @@
   </div>
 </div>
 <header role="banner">
-  <nav class="nav" role="navigation" aria-label="site">
-    <button hidden class="nav__menu-button">Menu</button>
-    <ul class="nav__items">
-      <li class="nav__item"><a class="nav__link" href="/"><img src="../../images/logo-full.svg" alt="Springboard Home Page"></a></li>
-      <li class="nav__item"><a class="nav__link" href="/link1">Link 1</a></li>
-      <li class="nav__item"><a class="nav__link" href="/link2">Link 2</a></li>
-      <li class="nav__item selected"><a class="nav__link" href="#main"><span class="implied">Current Page </span>Link 3</a></li>
-      <li class="nav__item"><a class="nav__link" href="/link4">Link 4</a></li>
-      <li class="nav__item"><a class="nav__link" href="/link5">Link 5</a></li>
-    </ul>
-  </nav>
-  <script>
-    (function() {
-      if ( window.matchMedia ) {
-        var button = document.querySelector('[aria-label="site"] button');
-        var menu = button.nextElementSibling;
-        var menuItems = menu.querySelectorAll( "li" );
-        button.hidden = false;
-  
-        button.addEventListener('click', function() {
-          var expanded = this.getAttribute('aria-expanded') === 'true';
-          expandMenu( !expanded )
-        });
-  
-        function expandMenu( expand ) {
-          button.setAttribute('aria-expanded', String(expand));
-          for ( var i = 0; i < menuItems.length; i++ ) {
-            if ( i != 0 ) {
-              menuItems[i].hidden = !expand;
+  <div class="constrained">
+    <nav class="nav" role="navigation" aria-label="site">
+      <button hidden class="nav__menu-button">Menu</button>
+      <ul class="nav__items">
+        <li class="nav__item"><a class="nav__link" href="/" ><img src="../../images/logo-full.svg" alt="Home"></a></li>
+        <li class="nav__item selected"><a class="nav__link" href="#" >Link 1</a></li>
+        <li class="nav__item "><a class="nav__link" href="#" >Link 2</a></li>
+      </ul>
+    </nav>
+    <script>
+      (function() {
+        if ( window.matchMedia ) {
+          var button = document.querySelector('[aria-label="site"] button');
+          var menu = button.nextElementSibling;
+          var menuItems = menu.querySelectorAll( "li" );
+          button.hidden = false;
+    
+          button.addEventListener('click', function() {
+            var expanded = this.getAttribute('aria-expanded') === 'true';
+            expandMenu( !expanded )
+          });
+    
+          function expandMenu( expand ) {
+            button.setAttribute('aria-expanded', String(expand));
+            for ( var i = 0; i < menuItems.length; i++ ) {
+              if ( i != 0 ) {
+                menuItems[i].hidden = !expand;
+              }
             }
           }
+    
+          function handleResize() {
+            expandMenu( !mql.matches );
+          }
+    
+          var mql = window.matchMedia( "(max-width: 767px)" );
+          mql.addListener( handleResize );
+    
+          if ( mql.matches ) {
+            button.setAttribute('aria-expanded', 'false');
+            expandMenu( false );
+          }
         }
-  
-        function handleResize() {
-          expandMenu( !mql.matches );
-        }
-  
-        var mql = window.matchMedia( "(max-width: 767px)" );
-        mql.addListener( handleResize );
-  
-        if ( mql.matches ) {
-          button.setAttribute('aria-expanded', 'false');
-          expandMenu( false );
-        }
-      }
-  
-    })();
-  </script></header>
-<!-- Include aria role for <=IE11 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main -->
-<main id="main" role="main">
-  <p>This is a sample page template. It includes the header from <code>structures/header</code> and the footer from <code>structures/footer</code></p>
+    
+      })();
+    </script>
+  </div>
+</header>
+
+<main id="main">
+  <div class="constrained constrained--padded">
+    <p>This is a sample page template. It includes the header from <code>structures/header</code> and the footer from <code>structures/footer</code></p>
+  </div>
 </main>
 <footer role="contentinfo">
-  <p class="centered fineprint">Springboard footer &copy; this year</p>
+  <div class="constrained">
+    <p class="centered fineprint">Springboard footer &copy; this year</p>
+  </div>
 </footer>
 
+  <script src="../../js/main.min.js"></script>
 </body>
 </html>
 

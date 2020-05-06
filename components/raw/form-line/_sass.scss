@@ -1,0 +1,29 @@
+
+.form-line > * {
+  margin-bottom: 1.4em;
+}
+
+@include reader {
+  .form-line {
+    display: flex;
+    margin-bottom: 1.4rem;
+
+    > * {
+      margin-right: 1em;
+      margin-bottom: 0;
+      flex: 1;
+    }
+
+    > :last-child {
+      margin-right: 0;
+    }
+  }
+
+  .portion-2 {
+    flex: 2;
+  }
+
+  .portion-3 {
+    flex: 3;
+  }
+}
