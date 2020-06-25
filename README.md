@@ -25,7 +25,7 @@ $ npm install
 
 ## Commands
 
-Start a development environment. The development environment processes SASS and JavaScript files automatically and they're updated and runs a Fractal server (which includes live reloading in the browser: [localhost:3000](http://localhost:3000))
+The development environment processes SASS and JavaScript files automatically as they're updated and runs a Fractal server (which includes live reloading in the browser: [localhost:3000](http://localhost:3000))
 
 Linux/Mac (this will process assets and watch for changes as well as run a Fractal server and watch for component changes)
 
